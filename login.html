@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin login</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px 20px;
+    background:
+      radial-gradient(circle at 15% 10%, rgba(31,95,82,0.12), transparent 42%),
+      radial-gradient(circle at 85% 0%, rgba(181,101,29,0.08), transparent 36%),
+      var(--paper);
+  }
+  .login-card {
+    width: min(420px, 100%);
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 32px 28px;
+    box-shadow: 0 18px 40px rgba(20,30,25,0.06);
+  }
+  .login-card h1 {
+    font-family: var(--serif);
+    margin: 0 0 8px;
+    font-size: 1.7rem;
+  }
+  .login-card p {
+    color: var(--ink-soft);
+    margin: 0 0 22px;
+    font-size: 0.95rem;
+  }
+  .login-card label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .login-card input {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 11px 12px;
+    font: inherit;
+    margin-bottom: 14px;
+  }
+  .login-msg {
+    min-height: 1.2em;
+    font-size: 0.85rem;
+    color: var(--accent-2);
+    margin-bottom: 10px;
+  }
+  .login-msg.ok { color: var(--accent); }
+</style>
+</head>
+<body class="login-page">
+  <form class="login-card" id="login-form">
+    <h1>Admin access</h1>
+    <p>Sign in with your authorized email. Only you can open the editor.</p>
+    <div class="login-msg" id="msg"></div>
+    <label for="email">Email</label>
+    <input id="email" type="email" required autocomplete="username" placeholder="you@example.com">
+    <label for="password">Access password</label>
+    <input id="password" type="password" required autocomplete="current-password" placeholder="Access password">
+    <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">Sign in</button>
+    <p style="margin:16px 0 0; font-size:0.8rem;">On Railway, set <code>ADMIN_EMAIL</code> and <code>ADMIN_PASSWORD</code>. Local default password: <code>local-dev-only</code>.</p>
+  </form>
+<script>
+const params = new URLSearchParams(location.search);
+const nextRaw = (params.get("next") || "admin.html").replace(/[.\s]+$/g, "");
+const next = nextRaw === "admin" || nextRaw === "/admin" ? "admin.html" : (nextRaw || "admin.html");
+document.getElementById("login-form").addEventListener("submit", async e => {
+  e.preventDefault();
+  const msg = document.getElementById("msg");
+  msg.textContent = "Checking…";
+  msg.className = "login-msg";
+  try {
+    const res = await fetch("/api/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        email: document.getElementById("email").value.trim(),
+        password: document.getElementById("password").value
+      })
+    });
+    const data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data.error || "Login failed");
+    msg.textContent = "Welcome back — opening the editor…";
+    msg.className = "login-msg ok";
+    location.href = "admin.html";
+  } catch (err) {
+    msg.textContent = err.message || "Access denied";
+  }
+});
+</script>
+</body>
+</html>

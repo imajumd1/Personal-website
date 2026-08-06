@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishita — Edit Site</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<header class="admin-top">
+  <div class="wrap">
+    <div>
+      <h1>Edit your site</h1>
+      <p class="sub">You are signed in as admin. Use the left menu to edit each page, then click <strong>Save all changes</strong>.</p>
+    </div>
+    <div class="admin-actions">
+      <span class="status-pill" id="status">Loading…</span>
+      <a class="btn btn-ghost btn-small" href="index.html">View site</a>
+      <button class="btn btn-ghost btn-small" id="logout-btn" type="button">Log out</button>
+      <button class="btn btn-primary" id="save-btn">Save all changes</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap admin-shell">
+  <nav class="admin-nav" id="admin-nav">
+    <button type="button" data-panel="home" class="active">Home</button>
+    <button type="button" data-panel="biography">Biography</button>
+    <button type="button" data-panel="education">Education</button>
+    <button type="button" data-panel="ai">AI Journey</button>
+    <button type="button" data-panel="books">Books</button>
+    <button type="button" data-panel="musings">Musings</button>
+    <button type="button" data-panel="art">Art</button>
+    <button type="button" data-panel="hiking">Hiking</button>
+    <button type="button" data-panel="site">Site settings</button>
+  </nav>
+
+  <div id="panels">
+    <!-- Home -->
+    <section class="panel active" id="panel-home">
+      <h2>Home</h2>
+      <p class="panel-lede">Hero copy, photo, and the four pillar cards — each can have a cover image plus extra JPEG slides.</p>
+      <div class="field"><label>Eyebrow</label><input id="home-eyebrow"></div>
+      <div class="field"><label>Headline</label><textarea id="home-headline"></textarea></div>
+      <div class="field"><label>Pitch</label><div id="home-pitch"></div></div>
+      <div class="field">
+        <label>Hero photo</label>
+        <input id="home-heroImage" placeholder="images/hero/your-photo.jpg">
+        <div class="upload-row">
+          <input type="file" id="home-hero-file" accept="image/*">
+          <button type="button" class="btn btn-ghost btn-small" data-upload="home-hero">Upload</button>
+        </div>
+        <img class="thumb" id="home-hero-preview" alt="Hero preview" hidden>
+        <div class="thumb empty" id="home-hero-empty">No photo yet</div>
+      </div>
+      <div class="field"><label>Hero label (shown if no photo)</label><input id="home-heroLabel"></div>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Pillars</h3>
+      <div id="home-highlights"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-highlight">+ Add pillar</button>
+    </section>
+
+    <!-- Biography -->
+    <section class="panel" id="panel-biography">
+      <h2>Biography</h2>
+      <p class="panel-lede">Page heading, summary, career timeline, and callouts.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="bio-eyebrow" placeholder="01 / Biography"></div>
+        <div class="field"><label>Page title</label><input id="bio-title" placeholder="Who I Am"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="bio-lede"></div></div>
+      <div class="field"><label>Summary</label><div id="bio-summary"></div></div>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Career</h3>
+      <div id="bio-career"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-career">+ Add role</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Callouts</h3>
+      <div id="bio-callouts"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-callout">+ Add callout</button>
+    </section>
+
+    <!-- Education -->
+    <section class="panel" id="panel-education">
+      <h2>Education</h2>
+      <p class="panel-lede">Page heading, schools, and the “what I learned” reflections.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="edu-eyebrow" placeholder="02 / Education"></div>
+        <div class="field"><label>Page title</label><input id="edu-title" placeholder="How I Learned"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="edu-lede"></div></div>
+      <div id="edu-schools"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-school">+ Add school</button>
+    </section>
+
+    <!-- AI -->
+    <section class="panel" id="panel-ai">
+      <h2>AI Journey</h2>
+      <p class="panel-lede">Page heading, story, GitHub username, and featured projects.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="ai-eyebrow" placeholder="03 / AI Journey"></div>
+        <div class="field"><label>Page title</label><input id="ai-title" placeholder="Building With AI"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="ai-lede"></div></div>
+      <div class="field"><label>Story</label><div id="ai-story"></div></div>
+      <div class="field"><label>GitHub username</label><input id="ai-github"></div>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Featured projects</h3>
+      <div id="ai-projects"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-project">+ Add project</button>
+    </section>
+
+    <!-- Books -->
+    <section class="panel" id="panel-books">
+      <h2>Books</h2>
+      <p class="panel-lede">Page heading and flip-card books. Upload a cover or leave blank for a color gradient.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="books-eyebrow" placeholder="04 / Books"></div>
+        <div class="field"><label>Page title</label><input id="books-title" placeholder="What I'm Reading"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="books-lede"></div></div>
+      <div id="books-list"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-book">+ Add book</button>
+    </section>
+
+    <!-- Musings -->
+    <section class="panel" id="panel-musings">
+      <h2>Musings</h2>
+      <p class="panel-lede">Page heading and dateless opinions. Tag: tech, leadership, or life.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="musings-eyebrow" placeholder="05 / Musings"></div>
+        <div class="field"><label>Page title</label><input id="musings-title" placeholder="My $0.02"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="musings-lede"></div></div>
+      <div id="musings-list"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-musing">+ Add musing</button>
+    </section>
+
+    <!-- Art -->
+    <section class="panel" id="panel-art">
+      <h2>Art</h2>
+      <p class="panel-lede">Page heading and gallery pieces. Upload images into images/art/.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="art-eyebrow" placeholder="06 / Art"></div>
+        <div class="field"><label>Page title</label><input id="art-title" placeholder="My Art"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="art-lede"></div></div>
+      <div id="art-list"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-art">+ Add piece</button>
+    </section>
+
+    <!-- Hiking -->
+    <section class="panel" id="panel-hiking">
+      <h2>Hiking</h2>
+      <p class="panel-lede">Page heading, stats, and trip log. Optionally upload trail photos.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="hike-eyebrow" placeholder="07 / Hiking"></div>
+        <div class="field"><label>Page title</label><input id="hike-title" placeholder="On the Trail"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="hike-lede"></div></div>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Stats</h3>
+      <div id="hike-stats"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-stat">+ Add stat</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Trips</h3>
+      <div id="hike-trips"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-trip">+ Add trip</button>
+    </section>
+
+    <!-- Site -->
+    <section class="panel" id="panel-site">
+      <h2>Site settings</h2>
+      <p class="panel-lede">Change the display name shown in the nav and footer, plus your contact email.</p>
+      <div class="field"><label>Display name</label><input id="site-brand" placeholder="Ishita"><p class="hint">Appears in the top-left nav, footer copyright, and browser tab titles.</p></div>
+      <div class="field"><label>Email</label><input id="site-email" type="email"></div>
+    </section>
+  </div>
+</main>
+
+<script src="js/richtext.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

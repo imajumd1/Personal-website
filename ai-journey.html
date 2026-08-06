@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dia — AI Journey</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Dia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="ai-journey.html">AI Journey</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="musings.html">Musings</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="hiking.html">Hiking</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">03 / AI Journey</span>
+    <h1>Building With AI</h1>
+    <p class="lede">
+      How I got into this, what I've shipped, and where you can go poke at the code.
+      <span class="placeholder-note">placeholder — set your GitHub username in js/ai-journey.js</span>
+    </p>
+    <div class="btn-row" style="margin-top:18px;">
+      <a class="btn btn-primary" id="github-link" href="https://github.com/" target="_blank" rel="noopener">View my GitHub →</a>
+    </div>
+  </div>
+</header>
+
+<main class="page-body">
+  <div class="wrap">
+
+    <article class="reveal" style="max-width:70ch; color:var(--ink-soft); font-size:1.05rem; margin-bottom:50px;">
+      <p>
+        I'm a rare executive who stepped away from organizational leadership to build with AI from
+        first principles — and that hands-on technical depth is what now shapes how I lead. It
+        started at Huawei's Central Research Institute, shaping the architecture for next-gen,
+        context-aware AI systems, and it became personal when I co-founded a startup building a
+        human-powered, AI platform at the intersection of health, data, and AI — a care support
+        platform for families with special needs.
+      </p>
+      <p>
+        Today, as Chief Data and AI Officer, I lead global data and AI strategy — building trusted,
+        intelligent systems and championing a culture of data literacy and ethical AI adoption. I
+        still stay in the build, not just above it: using AI tools directly for product design,
+        rapid prototyping, and QA, the same way I did as a co-founder.
+      </p>
+    </article>
+
+    <h2 style="font-family:var(--serif); margin-bottom:14px;">How I Build</h2>
+    <article class="reveal" style="max-width:70ch; color:var(--ink-soft); font-size:1.05rem; margin-bottom:56px;">
+      <p>
+        I think in products, and it always starts with a problem, not a piece of technology. I dig
+        into a real pain point, ask the questions nobody wants to sit through, and only then start
+        building. These days that means turning an idea into a working prototype fast, using AI and
+        synthetic data to show real value and get honest feedback, instead of a slide deck.
+      </p>
+      <p>
+        From there it's iteration: testing with customers, working closely with design, refining
+        based on what actually lands versus what I assumed would. Once it's proven, I hand it off to
+        engineering to make it fast, resilient, and built to scale.
+      </p>
+      <p>
+        AI has genuinely stretched what I can do myself. I used to stop at defining requirements and
+        scoping the product. Now I can design it, prototype it, test it on my own machine, push it to
+        git, and get it live on the cloud, before engineering ever has to touch it.
+        <span class="placeholder-note">placeholder — add your GitHub username + Railway projects below</span>
+      </p>
+    </article>
+
+    <h2 style="font-family:var(--serif); margin-bottom:8px;">Live on Railway</h2>
+    <p style="color:var(--ink-soft); margin-top:0; margin-bottom:22px;">
+      Projects I've actually deployed — click through to use them.
+    </p>
+    <div class="cards-grid reveal" id="railway-projects"></div>
+
+    <h2 style="font-family:var(--serif); margin:56px 0 8px;">From GitHub</h2>
+    <p style="color:var(--ink-soft); margin-top:0; margin-bottom:22px;" id="github-status">
+      Loading recent repositories…
+    </p>
+    <div class="cards-grid reveal" id="github-repos"></div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> Dia</span>
+  <a href="mailto:imajumd1@gmail.com">imajumd1@gmail.com</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/ai-journey.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

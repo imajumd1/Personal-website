@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishita — Musings</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ishita</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="ai-journey.html">AI Journey</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="musings.html">Musings</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="hiking.html">Hiking</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">05 / Musings</span>
+    <h1>My $0.02</h1>
+    <p class="lede">
+      No timestamps on purpose — an idea here should read the same whether you find it today or in five years.
+    </p>
+  </div>
+</header>
+
+<main class="page-body">
+  <div class="wrap">
+    <div class="musing-controls">
+      <button class="tag-filter active" data-tag="all">All</button>
+      <button class="tag-filter" data-tag="tech">Tech</button>
+      <button class="tag-filter" data-tag="leadership">Leadership</button>
+      <button class="tag-filter" data-tag="life">Life</button>
+      <button class="btn btn-ghost" style="margin-left:auto; padding:7px 16px; font-size:0.85rem;" id="shuffle-btn">🔀 Shuffle</button>
+    </div>
+    <div id="musings-list"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> <span class="brand-text">Ishita</span></span>
+  <a href="mailto:imajumd1@gmail.com">imajumd1@gmail.com</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/content.js"></script>
+<script src="js/musings.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

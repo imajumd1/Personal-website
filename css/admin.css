@@ -1,0 +1,321 @@
+/* Admin editor styles — extends site design system */
+
+.admin-body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(31, 95, 82, 0.08), transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(181, 101, 29, 0.06), transparent 35%),
+    var(--paper);
+}
+
+.admin-top {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(250, 250, 248, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.admin-top .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-top h1 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.admin-top .sub {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin: 2px 0 0;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.status-pill {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.status-pill.error {
+  background: #fbeee1;
+  color: var(--accent-2);
+}
+.status-pill.ok {
+  background: #e7f3ea;
+  color: #1f5f52;
+}
+
+.admin-shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  padding: 28px 0 80px;
+}
+@media (max-width: 860px) {
+  .admin-shell { grid-template-columns: 1fr; }
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: sticky;
+  top: 88px;
+  align-self: start;
+}
+@media (max-width: 860px) {
+  .admin-nav {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.admin-nav button {
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+.admin-nav button:hover {
+  background: var(--paper-raised);
+  border-color: var(--line);
+}
+.admin-nav button.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.panel {
+  display: none;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.panel.active { display: block; }
+
+.panel h2 {
+  font-family: var(--serif);
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+}
+.panel .panel-lede {
+  color: var(--ink-soft);
+  margin: 0 0 22px;
+  font-size: 0.95rem;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+.field label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+  color: var(--ink);
+}
+.field textarea { min-height: 90px; resize: vertical; }
+.field .hint {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 640px) {
+  .row-2 { grid-template-columns: 1fr; }
+}
+
+.item-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background: #fcfcfa;
+}
+.item-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.item-card-head strong {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.thumb {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #eee;
+  object-fit: cover;
+  display: block;
+  margin-top: 8px;
+}
+.thumb.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  background: linear-gradient(145deg, var(--accent), #10352e);
+  color: rgba(255,255,255,0.85);
+}
+
+.upload-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 8px;
+}
+.upload-row input[type="file"] {
+  font-size: 0.85rem;
+}
+
+.btn-danger {
+  background: transparent;
+  border: 1px solid #d9b59a;
+  color: var(--accent-2);
+}
+.btn-danger:hover {
+  background: #fbeee1;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+}
+
+.slide-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+.slide-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  background: #fff;
+}
+.slide-item .thumb {
+  max-width: 100%;
+  margin-top: 0;
+}
+.attach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.attach-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+/* Rich text editor */
+.rte {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.rte-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  background: #f7f7f4;
+}
+.rte-toolbar button {
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 8px;
+  padding: 6px 9px;
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  color: var(--ink);
+}
+.rte-toolbar button:hover {
+  background: #fff;
+  border-color: var(--line);
+}
+.rte-sep {
+  width: 1px;
+  background: var(--line);
+  margin: 0 4px;
+}
+.rte-editor {
+  padding: 12px 14px;
+  min-height: 110px;
+  outline: none;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.rte-editor:focus {
+  box-shadow: inset 0 0 0 2px rgba(31, 95, 82, 0.12);
+}
+.rte-editor p { margin: 0 0 0.7em; }
+.rte-editor p:last-child { margin-bottom: 0; }
+.rte-editor ul, .rte-editor ol {
+  margin: 0.4em 0 0.8em;
+  padding-left: 1.3em;
+}
+.rte-editor h3 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  margin: 0.4em 0 0.5em;
+}
+.rte-editor a { color: var(--accent); }

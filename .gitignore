@@ -1,0 +1,22 @@
+# Secrets & local auth
+data/.secret_key
+.env
+.env.*
+!.env.example
+railway.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Uploads that shouldn't be versioned by default (content.json still tracks paths)
+# Keep uploaded site assets under images/; ignore scratch uploads if needed
+uploads/.tmp/

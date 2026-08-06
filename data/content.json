@@ -1,0 +1,389 @@
+{
+  "site": {
+    "brand": "Ishita",
+    "email": "imajumd1@gmail.com"
+  },
+  "home": {
+    "eyebrow": "Elevator Pitch",
+    "headline": "A learner and builder at heart, I lead by staying close to the work and paying forward everything it's taught me.",
+    "pitch": "<p>I'm Ishita Majumdar. I run high-impact teams and I stay in the build, not just above it. I have executive credibility paired with hands-on technical depth  and it's the through line of everything below.</p>",
+    "heroImage": "images/hero/PXL_20250819_201111143.jpg",
+    "heroLabel": "Ishita Majumdar",
+    "highlights": [
+      {
+        "num": "25",
+        "title": "Years in Tech",
+        "text": "<p data-path-to-node=\"2,0\">My career spans from Principal Engineer at Motorola to Chief Data and AI Officer today, evolving through cellular technology, IP networks, and modern AI. Throughout this journey, my focus has always been on applying technology to solve complex problems for both consumers and enterprises.</p><p data-path-to-node=\"2,1\">I believe this is the most exciting time to be a technologist. We have the unique opportunity to build solutions from scratch, lead large-scale transformations, and tackle key challenges like optimizing costs, driving adoption, and boosting productivity.</p>",
+        "image": "images/pillars/years-in-tech.jpg",
+        "slides": [
+          "images/pillars/years-in-tech.jpg"
+        ]
+      },
+      {
+        "num": "02",
+        "title": "Product Thinking",
+        "text": "<p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">I think in terms of products. I start with a problem statement or a customer pain point, then deepen my understanding through discovery and targeted questions. From there, I usually build a functional prototype with AI and synthetic data to show value and get feedback. I keep iterating and testing based on customer input, working closely with design. Eventually I hand it off to engineering to optimize the code and build in scale, resiliency, and reliability.</p><p>\n</p><p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">Honestly, AI has changed how far I take this myself. My role used to stop at understanding requirements and scoping the product. Now I go further, actually building and testing a prototype on my own machine before pushing it to git and hosting it on the cloud.</p>",
+        "image": "images/pillars/product-thinking.jpg",
+        "slides": [
+          "images/pillars/product-thinking.jpg"
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Data - What can it tell?",
+        "text": "<p>I haveb s</p>",
+        "image": "images/pillars/data-insights.jpg",
+        "slides": [
+          "images/pillars/data-insights.jpg"
+        ]
+      },
+      {
+        "num": "04",
+        "title": "Learning AI",
+        "text": "<p>From first-principles building to leading AI in production — prototypes, governance, and the habit of staying in the build while scaling impact.</p>",
+        "image": "images/pillars/learning-ai.jpg",
+        "slides": [
+          "images/pillars/learning-ai.jpg"
+        ]
+      },
+      {
+        "num": "05",
+        "title": "Leading Transformation",
+        "text": "<p>Cross-functional programs that change how the enterprise works — new platforms, new ways of deciding, and measurable gains in speed and efficiency.</p>",
+        "image": "images/pillars/leading-transformation.jpg",
+        "slides": [
+          "images/pillars/leading-transformation.jpg"
+        ]
+      }
+    ]
+  },
+  "biography": {
+    "eyebrow": "01 / Biography",
+    "title": "Who I Am",
+    "lede": "<p>The LinkedIn version, minus the corporate filter — with a few callouts that never made it onto a resume.</p>",
+    "summary": "<p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles, and that hands-on technical depth now shapes how I lead. Today, I run high-impact product and engineering teams, leading complex, cross-functional initiatives that deliver on time, on budget, and against business objectives.</p><p>I've built and scaled Product organizations, led data engineering and analytics platforms, and co-founded a startup to build an AI-powered health assistant.</p><p>I bring a combination most leaders don't: executive credibility paired with hands-on build experience. I stay in the build, not just above it, applying that depth to introduce stronger operating rhythms and new ways of working. Everything I drive starts with customer obsession and ends in outcomes that grow revenue and efficiency, not just plans.</p>",
+    "career": [
+      {
+        "title": "Chief Data and AI Officer — Relanto",
+        "meta": "Nov 2025 – Present · Fremont, CA",
+        "text": "<p>Leading global data and AI strategy — building trusted, intelligent systems that transform how the enterprise makes decisions, automates workflows, and delivers customer value, while championing data literacy and ethical AI adoption.</p>",
+        "attachments": []
+      },
+      {
+        "title": "Co-Founder / CPTO — Stealth Startup",
+        "meta": "Apr 2024 – Oct 2025 · 1 yr 7 mos",
+        "text": "<p>We started this company as three co-founders, inspired by our common experiences as care givers to children/young adults who have neuro-developmental conditions. With the advent of generative AI, we decided to build a prototype using LLM and see if we can build an agent focused on answering questions from families who are struggling to get advice on....&nbsp;</p><p>What to do when your child has a meltdown and we know she is on the spectrum?</p><p>Can I see a private behavioral therapist and not have to wait for 2 months, if I am willing to spend money from my pocket?</p><p>Can the government help? How?</p><p>Information was fragmented and un trusted. What if we can build a healthcare platform that is an integrated source of information, community, access to medical help and most importantly getting advice from folks who are trusted and experienced?</p><p>Product wise, it was great! GTM was it was not too great. It seemed after 2 years, that it should be a non profit</p>",
+        "attachments": []
+      },
+      {
+        "title": "Vice President, Data Analytics Platforms — eBay",
+        "meta": "Jan 2020 – Mar 2024 · San Francisco Bay Area",
+        "text": "<h3 style=\"margin: 0px; font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);\"><br></h3><h3 style=\"margin: 0px; font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: normal;\">By this time, I have spent many years in the data space. Enabling big data stack, using open source technology, for customer use cases in the telecom space. Defining and managing data products from Site DB, Data Analytics platforms, Data tools, Data preparation for ML algorithms. Realizing the massive importance of data from ingest to insights for better buyer and seller experience. Acknowledging how hard it is to maintain clean, compliant and trusted data for all consumers. The SQL savvy users: the Developers, the Analysts. The non SQL savvy users like the product managers, sales, business development managers. Increasingly, I believed that Data in any form should be accessible by any enterprise worker - with the right controls and access of course. It should be the Data org's responsibility to make this possible.&nbsp; Hence it was a natural career transition for me to lead the data organization including data engineers, data scientists and data product managers on this journey to make data and data derivatives - accessible by everyone independently. For this, I added my three steel threads on how to achieve this.</span></h3><ol><li>Build an A+ team. I pursued external and internal candidates with equal gusto so that can complement each other in their passion for getting the best out of data. My golden rule: hire no-ego, smart people who can work as a team.</li><li>Be accountable for making data work for others. Data consumers should trust the data for any use case</li><li>Be transparent with Data measures. That means sit with our customers to jointly determine KPIs and then keep on measuring them and publish the dashboards for all to see. No hiding!</li></ol><p></p>",
+        "attachments": []
+      },
+      {
+        "title": "Global Head of Technology Products — eBay",
+        "meta": "Jul 2014 – Dec 2019 · San Jose, CA",
+        "text": "<h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">I joined eBay to manage the Data Products from infrastructure to analytics to data tools. My technical expertise was in the data analytics space and very soon extended I learned to understand how experiment platforms work for decision making and how personalization platforms collect behavior signals and deliver \"next best action\".</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\"><br></span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How do we build the right platform to collect the true signals and separate from noise?&nbsp;</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How can we conduct faster experiments and better hypothesis testing?</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How do we deliver in biweekly sprints and have better output and adoption?</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How do we set up the right process for customer escalations?</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\"><br></span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">My portfolio extended over time to include the entire tech stack from metal to ML. Datacenter &amp; Network, Cloud and Security, AI/ML Platform, Developer tools. As I built the team, I realized this will be a unique combination of technical product managers and technical program managers alike. The Product managers were responsible for product vision, strategy, roadmap, customer engagement and stakeholder management. These folks transitioned from engineering careers to become dedicated product managers so they understood the technology, had the domain knowledge to challenge</span></h3>",
+        "attachments": []
+      },
+      {
+        "title": "Sr. Director, Technology Strategy & Innovation — Huawei",
+        "meta": "Jun 2011 – Jul 2014 · Santa Clara, CA",
+        "text": "<p>Led global strategy for Big Data and AI product innovation across the U.S. and China. Defined the vision for Spark-based data infrastructure and shaped the architecture for next-gen, context-aware AI systems.</p>",
+        "attachments": []
+      },
+      {
+        "title": "Executive in Residence — Plug and Play Tech Center",
+        "meta": "Aug 2008 – Jun 2011 · Sunnyvale / Palo Alto / Redwood City, CA",
+        "text": "<p>Advisor and collaborator across a community of 200+ startups, VCs, and angel investors — product development, fundraising, partnerships, and executive team management.</p>",
+        "attachments": []
+      },
+      {
+        "title": "Director; Principal Engineer — Motorola",
+        "meta": "Aug 1997 – May 2008 · 10 yrs 10 mos",
+        "text": "<p>Directed commercialization of emerging technologies within Motorola's Internal Ventures group, securing seed funding for 10 internal startups and delivering 3 revenue-generating ventures. Earlier, architected VoIP systems for all-IP networks (SIP, CDMA, GSM, iDEN) and built capacity-planning tools used by telecom customers worldwide.</p>",
+        "attachments": []
+      }
+    ],
+    "callouts": [
+      {
+        "title": "3 US Patents",
+        "text": "<p>Inventor on patents spanning text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.</p>"
+      },
+      {
+        "title": "Recognized Data & Tech Leader",
+        "text": "<p>Named a Top 10 Data Innovator (2024), a CDO Magazine Global Data Power Woman (2023), and one of the Top 100 Women of Influence in Silicon Valley (2020).</p>"
+      },
+      {
+        "title": "Built Community, Not Just Products",
+        "text": "<p>I am a community builder across my entire career.</p><p>@Motorola - I</p><p>San Francisco chapter of Chief, served 5 years on the board of Nerdy Girl Success, and grew eBay's Women in Technology community to 2,000 volunteers worldwide as its Global President.</p>"
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "02 / Education",
+    "title": "How I Learned",
+    "lede": "<p>Not just where I studied, but what actually stuck. Click \"what I learned\" on each stop.</p>",
+    "schools": [
+      {
+        "title": "The University of Chicago, Booth School of Business",
+        "meta": "MBA, Finance & Strategy · 2002 – 2004",
+        "blurb": "<p>An engineer's detour into finance and strategy — learning to speak the language of the business side of technology.</p>",
+        "learned": "<p>Booth taught me to reason from first principles about markets and capital, not just systems — the frameworks I still use to connect a technical roadmap to revenue and efficiency outcomes.</p>"
+      },
+      {
+        "title": "Northern Illinois University",
+        "meta": "MS, Mathematics",
+        "blurb": "<p>Deepened the theoretical foundation beneath the engineering work that came before it.</p>",
+        "learned": "<p>Pure mathematics builds a tolerance for sitting with a hard, unsolved problem — a habit that's paid off in every ambiguous, first-of-its-kind system I've since had to architect.</p>"
+      },
+      {
+        "title": "Clemson University",
+        "meta": "MS, Operations Research",
+        "blurb": "<p>Where optimization theory turned into a practical toolkit for making systems and decisions more efficient.</p>",
+        "learned": "<p>Operations research is the art of finding the best decision under real constraints — the same lens I bring to platform architecture and to leading teams under tight timelines and budgets.</p>"
+      },
+      {
+        "title": "Jadavpur University",
+        "meta": "Bachelor of Science, Mathematics",
+        "blurb": "<p>Where it all started — the foundation that made everything after it possible.</p>",
+        "learned": "<p>Rigor first. A proof either holds or it doesn't — that early standard for evidence and precision still shapes how I evaluate ideas today.</p>"
+      }
+    ]
+  },
+  "aiJourney": {
+    "eyebrow": "03 / AI Journey",
+    "title": "Building With AI",
+    "lede": "<p>How I got into this, what I've shipped, and where you can go poke at the code.</p>",
+    "story": "<p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles — and that hands-on technical depth is what now shapes how I lead. It started at Huawei's Central Research Institute, shaping the architecture for next-gen, context-aware AI systems, and it became personal when I co-founded a startup building a human-powered, AI platform at the intersection of health, data, and AI — a care support platform for families with special needs.</p><p>Today, as Chief Data and AI Officer, I lead global data and AI strategy — building trusted, intelligent systems and championing a culture of data literacy and ethical AI adoption. I still stay in the build, not just above it: using AI tools directly for product design, rapid prototyping, and QA, the same way I did as a co-founder.</p>",
+    "githubUsername": "imajumd1",
+    "projects": [
+      {
+        "name": "Claude AI Summarizer",
+        "description": "<p>An AI summarization tool built with Claude CLI — hands-on practice turning language models into something useful.</p>",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer",
+        "tags": [
+          "AI",
+          "Python"
+        ]
+      },
+      {
+        "name": "Skills Intelligence HR App",
+        "description": "<p>A skills-based workforce management system — applying data and AI thinking to how organizations understand talent.</p>",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
+        "tags": [
+          "AI",
+          "HTML"
+        ]
+      },
+      {
+        "name": "Racing Car Summary",
+        "description": "<p>An AI news agent with a twist — shipping a working agent that digests and summarizes what matters.</p>",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
+        "tags": [
+          "AI",
+          "Python"
+        ]
+      }
+    ]
+  },
+  "books": {
+    "eyebrow": "04 / Books",
+    "title": "What I'm Reading",
+    "lede": "<p>Click a cover to flip it over for the summary.</p>",
+    "items": [
+      {
+        "title": "Think Again",
+        "author": "Adam Grant",
+        "cover": "images/books/images.jpg",
+        "colors": [
+          "#1f5f52",
+          "#0a1f1a"
+        ],
+        "rating": 5,
+        "summary": "<p>This book will shake your core beliefs and give you the courage to try something new.&nbsp;</p>"
+      },
+      {
+        "title": "My Life in Full",
+        "author": "Indra Nooyi",
+        "cover": "images/books/images-2.jpg",
+        "colors": [
+          "#b5651d",
+          "#5a2e0d"
+        ],
+        "rating": 5,
+        "summary": ""
+      },
+      {
+        "title": "The Second Mountain",
+        "author": "David Brooks",
+        "cover": "",
+        "colors": [
+          "#2f4f6f",
+          "#101c2b"
+        ],
+        "rating": 5,
+        "summary": ""
+      },
+      {
+        "title": "The Running Ground",
+        "author": "Nicholas Thompson",
+        "cover": "",
+        "colors": [
+          "#6f4f8f",
+          "#25152f"
+        ],
+        "rating": 4,
+        "summary": "<p>Operating rhythm as a craft. Grove's framing of leverage, meetings, and one-on-ones still shapes how I run product, data, and engineering teams.</p>"
+      }
+    ]
+  },
+  "musings": {
+    "eyebrow": "05 / Musings",
+    "title": "My $0.02",
+    "lede": "<p>No timestamps on purpose — an idea here should read the same whether you find it today or in five years.</p>",
+    "items": [
+      {
+        "tag": "leadership",
+        "title": "Stay in the build, not just above it",
+        "body": "<p>Executive credibility without hands-on depth becomes theater. The leaders I trust can still read a design doc, ship a prototype, and feel the tradeoffs their teams live with every day.</p>"
+      },
+      {
+        "tag": "tech",
+        "title": "AI strategy fails when it never touches a workflow",
+        "body": "<p>Models are not outcomes. Trusted systems, clear data ownership, and one painful process made better beat a roadmap full of demos that never change how people work.</p>"
+      },
+      {
+        "tag": "life",
+        "title": "Customer obsession is a discipline, not a slogan",
+        "body": "<p>Every initiative I drive starts with who feels the result and ends in revenue or efficiency — not in a polished plan that never leaves the slide deck.</p>"
+      },
+      {
+        "tag": "tech",
+        "title": "First principles beat borrowed frameworks",
+        "body": "<p>Stepping away from the org chart to build with AI from scratch reset how I lead. You can't govern what you don't understand at the level of the actual system.</p>"
+      },
+      {
+        "tag": "leadership",
+        "title": "Operating rhythm is a product",
+        "body": "<p>Stronger ways of working — reviews, decision rights, experiment loops — compound faster than any single feature. Treat the cadence like something you design and ship.</p>"
+      }
+    ]
+  },
+  "art": {
+    "eyebrow": "06 / Art",
+    "title": "My Art",
+    "lede": "<p>A portfolio in progress. Click any piece for the full story behind it.</p>",
+    "items": [
+      {
+        "title": "Teal Field Study",
+        "image": "",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "aspect": 1,
+        "summary": "<p>Acrylic on paper. An experiment in letting warm rust cut through a deep teal ground — the same palette that runs through this site.</p>"
+      },
+      {
+        "title": "Fog Line, Bay Edge",
+        "image": "",
+        "colors": [
+          "#2f4f6f",
+          "#1f5f52"
+        ],
+        "aspect": 1.3,
+        "summary": "<p>Ink and watercolor. A quiet horizon where water, sky, and distance refuse to stay in separate lanes.</p>"
+      },
+      {
+        "title": "Circuit Bloom",
+        "image": "",
+        "colors": [
+          "#6f4f8f",
+          "#b5651d"
+        ],
+        "aspect": 0.8,
+        "summary": "<p>Mixed media. Geometry borrowed from systems diagrams, softened until it feels more like a garden than a schematic.</p>"
+      },
+      {
+        "title": "Trail Marker",
+        "image": "",
+        "colors": [
+          "#b5651d",
+          "#274b3e"
+        ],
+        "aspect": 1.1,
+        "summary": "<p>Gouache. A small piece about wayfinding — the moment a path becomes a choice instead of a line on a map.</p>"
+      },
+      {
+        "title": "Night Shift",
+        "image": "",
+        "colors": [
+          "#274b3e",
+          "#6f4f8f"
+        ],
+        "aspect": 0.9,
+        "summary": "<p>Digital sketch. Late-hour color blocks for when the work stretches past the daylight and still needs shape.</p>"
+      }
+    ]
+  },
+  "hiking": {
+    "eyebrow": "07 / Hiking",
+    "title": "On the Trail",
+    "lede": "<p>Adventures, summits, and the routes that stuck with me.</p>",
+    "stats": [
+      {
+        "num": 42,
+        "label": "Trails Hiked"
+      },
+      {
+        "num": 310,
+        "label": "Miles Logged"
+      },
+      {
+        "num": 3,
+        "label": "States / Countries"
+      },
+      {
+        "num": 8849,
+        "label": "Highest Peak (ft)"
+      }
+    ],
+    "trips": [
+      {
+        "name": "Mission Peak",
+        "meta": "Fremont, CA · 6.4 mi · Hard",
+        "photo": "",
+        "colors": [
+          "#274b3e",
+          "#6f8f45"
+        ],
+        "story": "<p>The local proving ground. Steep, crowded on weekends, and still the climb that resets a week of meetings into something simpler: one foot, then the next.</p>"
+      },
+      {
+        "name": "Dipsea Trail",
+        "meta": "Marin County, CA · 7.4 mi · Hard",
+        "photo": "",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "story": "<p>Stairs, redwoods, and the sudden reveal of the Pacific. A reminder that the best routes refuse to stay at one elevation — literal or otherwise.</p>"
+      },
+      {
+        "name": "Half Dome",
+        "meta": "Yosemite, CA · 14+ mi · Strenuous",
+        "photo": "",
+        "colors": [
+          "#2f4f6f",
+          "#274b3e"
+        ],
+        "story": "<p>Cables, granite, and a summit that makes every prior training hike feel like rehearsal. Worth every early alarm and every blister.</p>"
+      }
+    ]
+  }
+}
