@@ -68,6 +68,8 @@ function normalizeContent(raw) {
   if (!c.education.eyebrow) c.education.eyebrow = "02 / Education";
   if (!c.aiJourney.title) c.aiJourney.title = "Building With AI";
   if (!c.aiJourney.eyebrow) c.aiJourney.eyebrow = "03 / AI Journey";
+  if (!Array.isArray(c.aiJourney.gitProjects)) c.aiJourney.gitProjects = [];
+  if (!Array.isArray(c.aiJourney.projects)) c.aiJourney.projects = [];
   if (!c.hiking.title) c.hiking.title = "On the Trail";
   if (!c.hiking.eyebrow) c.hiking.eyebrow = "07 / Hiking";
   return c;
@@ -273,9 +275,33 @@ function renderAI() {
   setStaticRte("ai-lede", a.lede || "");
   setStaticRte("ai-story", paragraphsToHtml(a.story), { minHeight: "140px" });
   $("#ai-github").value = a.githubUsername || "";
+  const gitList = $("#ai-git-projects");
+  gitList.innerHTML = "";
+  (a.gitProjects || []).forEach((item, i) => gitList.appendChild(gitProjectCard(item, i)));
   const list = $("#ai-projects");
   list.innerHTML = "";
   (a.projects || []).forEach((item, i) => list.appendChild(projectCard(item, i)));
+}
+
+function gitProjectCard(item, i) {
+  const el = document.createElement("div");
+  el.className = "item-card";
+  el.innerHTML = `
+    <div class="item-card-head">
+      <strong>Git project ${i + 1}</strong>
+      <button type="button" class="btn btn-danger btn-small" data-remove="gitProject">Remove</button>
+    </div>
+    <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name || "")}"></div>
+    <div class="field"><label>Summary</label><textarea data-k="summary" rows="3">${escapeHtml(item.summary || "")}</textarea></div>
+    <div class="field"><label>Cover image path</label><input data-k="image" value="${escapeHtml(item.image || "")}"></div>
+    <div class="upload-row">
+      <input type="file" accept="image/*" data-upload-folder="projects">
+      <button type="button" class="btn btn-ghost btn-small" data-upload-into="image">Upload cover</button>
+    </div>
+    ${item.image ? `<img class="thumb" src="${escapeHtml(item.image)}" alt="">` : `<div class="thumb empty">No cover yet</div>`}
+    <div class="field"><label>GitHub repo URL</label><input data-k="repoUrl" value="${escapeHtml(item.repoUrl || "")}"></div>
+  `;
+  return el;
 }
 
 function projectCard(item, i) {
@@ -283,7 +309,7 @@ function projectCard(item, i) {
   el.className = "item-card";
   el.innerHTML = `
     <div class="item-card-head">
-      <strong>Project ${i + 1}</strong>
+      <strong>Featured ${i + 1}</strong>
       <button type="button" class="btn btn-danger btn-small" data-remove="project">Remove</button>
     </div>
     <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name)}"></div>
@@ -511,6 +537,13 @@ function gatherContent() {
     learned: getRteHtml(card, "learned")
   }));
 
+  const gitProjects = collectFromCards($("#ai-git-projects"), card => ({
+    name: $("[data-k=name]", card).value.trim(),
+    summary: $("[data-k=summary]", card).value.trim(),
+    image: $("[data-k=image]", card).value.trim(),
+    repoUrl: $("[data-k=repoUrl]", card).value.trim()
+  }));
+
   const projects = collectFromCards($("#ai-projects"), card => ({
     name: $("[data-k=name]", card).value.trim(),
     description: getRteHtml(card, "description"),
@@ -597,6 +630,7 @@ function gatherContent() {
       lede: getStaticRte("ai-lede"),
       story: getStaticRte("ai-story"),
       githubUsername: $("#ai-github").value.trim(),
+      gitProjects,
       projects
     },
     books: {
@@ -695,6 +729,11 @@ function bindActions() {
   $("#add-school").addEventListener("click", () => {
     content.education.schools.push({ title: "New school", meta: "", blurb: "", learned: "" });
     renderEducation();
+  });
+  $("#add-git-project").addEventListener("click", () => {
+    content.aiJourney.gitProjects = content.aiJourney.gitProjects || [];
+    content.aiJourney.gitProjects.push({ name: "New Git project", summary: "", image: "", repoUrl: "" });
+    renderAI();
   });
   $("#add-project").addEventListener("click", () => {
     content.aiJourney.projects.push({ name: "New project", description: "", liveUrl: "", repoUrl: "", tags: [] });
@@ -827,6 +866,7 @@ function bindActions() {
         career: () => content.biography.career.splice(idx, 1),
         callout: () => content.biography.callouts.splice(idx, 1),
         school: () => content.education.schools.splice(idx, 1),
+        gitProject: () => content.aiJourney.gitProjects.splice(idx, 1),
         project: () => content.aiJourney.projects.splice(idx, 1),
         book: () => content.books.items.splice(idx, 1),
         musing: () => content.musings.items.splice(idx, 1),

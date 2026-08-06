@@ -189,6 +189,110 @@
           "Python"
         ]
       }
+    ],
+    "gitProjects": [
+      {
+        "name": "AI News Agent",
+        "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
+        "image": "images/projects/ai-news-agent.jpg",
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
+      },
+      {
+        "name": "Aurora Health Agent",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "image": "images/projects/aurora-health.jpg",
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
+      },
+      {
+        "name": "Claude AI Summarizer",
+        "summary": "Hands-on practice turning language models into something useful — an AI summarization tool built with Claude CLI.",
+        "image": "images/projects/claude-summarizer.jpg",
+        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
+      },
+      {
+        "name": "Racing Car Summary",
+        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
+        "image": "images/projects/racing-car-summary.jpg",
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
+      },
+      {
+        "name": "Skills Intelligence HR App",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "image": "images/projects/skills-hr.jpg",
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
+      },
+      {
+        "name": "Wiki MCP",
+        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access — search, fetch, and research tools built to learn core MCP concepts.",
+        "image": "images/projects/wiki-mcp.jpg",
+        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
+      },
+      {
+        "name": "Spelling Bee",
+        "summary": "Ishita's spelling bee creation — a playful React game for practicing spelling with a clean, modern interface.",
+        "image": "images/projects/spelling-bee.jpg",
+        "repoUrl": "https://github.com/imajumd1/spelling-bee"
+      },
+      {
+        "name": "Evite Twin",
+        "summary": "An event invitation app with backend support, email invites, and RSVP tracking — a twin of the classic Evite experience.",
+        "image": "images/projects/evitetwin.jpg",
+        "repoUrl": "https://github.com/imajumd1/evitetwin"
+      },
+      {
+        "name": "Dream Garage",
+        "summary": "A personal collection app for adding and showcasing dream cars — a fun build focused on product feel and interaction.",
+        "image": "images/projects/dreamgarage.jpg",
+        "repoUrl": "https://github.com/imajumd1/dreamgarage"
+      },
+      {
+        "name": "Instagram Post (Cursor)",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
+        "image": "images/projects/instagram-post.jpg",
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
+      },
+      {
+        "name": "Audiobook",
+        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
+        "image": "images/projects/audiobook.jpg",
+        "repoUrl": "https://github.com/imajumd1/audiobook"
+      },
+      {
+        "name": "LinkedIn-Validated Ecommerce",
+        "summary": "A scraping and analysis agent that identifies eBay's top competitors and pulls CEO/CFO details from LinkedIn into competitive reports.",
+        "image": "images/projects/ecommerce.jpg",
+        "repoUrl": "https://github.com/imajumd1/linkedin-validated-ecommerce"
+      },
+      {
+        "name": "Lighthouse",
+        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
+        "image": "images/projects/lighthouse.jpg",
+        "repoUrl": "https://github.com/imajumd1/Lighthouse"
+      },
+      {
+        "name": "Contact Form App",
+        "summary": "A clean contact form web application — practice shipping a simple, usable interface end to end.",
+        "image": "images/projects/contact.jpg",
+        "repoUrl": "https://github.com/imajumd1/contact-form-app"
+      },
+      {
+        "name": "Contact Me App",
+        "summary": "A professional contact form with rich text editing, file uploads, and email notifications in a modern black-and-white UI.",
+        "image": "images/projects/contact.jpg",
+        "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26"
+      },
+      {
+        "name": "Copilot Contact Me",
+        "summary": "A contact-me page built with GitHub Copilot — exploring AI-assisted coding while shipping a working contact experience.",
+        "image": "images/projects/contact.jpg",
+        "repoUrl": "https://github.com/imajumd1/Copilot-Contact-me-"
+      },
+      {
+        "name": "Personal Website",
+        "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
+        "image": "images/projects/personal-website.jpg",
+        "repoUrl": "https://github.com/imajumd1/Personal-website"
+      }
     ]
   },
   "books": {

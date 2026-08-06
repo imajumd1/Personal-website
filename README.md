@@ -1,40 +1,111 @@
-# Your site
+# Ishita — Personal Website
 
-A static, 8-page personal site (home + 7 sections) built to stand in for a LinkedIn profile. No build step — open `index.html` in a browser, or drag the whole `website` folder onto Netlify Drop / GitHub Pages / Railway's static site deploy to put it online.
+Personal site for **Ishita Majumdar** (brand: **Ishita**). Multi-page static HTML/CSS/JS with a small Python CMS so content lives in `data/content.json` and can be edited through an authenticated admin UI.
 
-## What to fill in
+**Repo:** [github.com/imajumd1/Personal-website](https://github.com/imajumd1/Personal-website)
 
-Everything marked with a `[bracketed placeholder]` or an orange **placeholder — ...** tag needs your real content. Quick map:
+## Pages
 
-| Page | File | What to edit |
-|---|---|---|
-| Home | `index.html` | Elevator pitch, 4 highlight bullets, hero image |
-| Biography | `biography.html` | LinkedIn summary + 3 special callouts |
-| Education | `education.html` | Schools, degrees, "what I learned" per stop |
-| AI Journey | `ai-journey.html` + `js/ai-journey.js` | Story text, your GitHub username, Railway project list |
-| Books | `js/books.js` | Title, author, cover image path, summary, rating |
-| Musings | `js/musings.js` | Your opinions — no dates by design, keep them evergreen |
-| Art | `js/art.js` | Piece titles, image paths, summaries |
-| Hiking | `js/hiking.js` | Stats + trip log |
+| Page | File | Notes |
+|------|------|--------|
+| Home | `index.html` | Elevator pitch, hero photo, pillar cards |
+| Biography | `biography.html` | Summary and callouts |
+| Education | `education.html` | Schools / learning stops |
+| AI Journey | `ai-journey.html` | Story, Railway projects, **My Git Projects** cards |
+| Books | `books.html` | Reading list with flip cards |
+| My $0.02 | `musings.html` | Evergreen opinions (no dates by design) |
+| Art | `art.html` | Artwork gallery |
+| Hiking | `hiking.html` | Trails and trip log |
+| Admin | `admin.html` | CMS (login required) |
+| Login | `login.html` | Email + password gate |
 
-## Images
+## Stack
 
-Drop your photos into these folders and point the matching JS/HTML file at them:
-- `images/hero.jpg` — used in the home page hero (swap the placeholder `<div>` for an `<img>`, or set it as a CSS background)
-- `images/books/` — book cover photos, referenced from `js/books.js` (`cover` field)
-- `images/art/` — your artwork, referenced from `js/art.js` (`image` field)
-- `images/hiking/` — trail photos, referenced from `js/hiking.js` (swap `trail-photo` gradient for a background image)
+- Static front end: HTML, `css/style.css`, page scripts under `js/`
+- Backend: `server.py` — `ThreadingHTTPServer` serving static files plus:
+  - `GET/POST /api/content` — read/write `data/content.json`
+  - `POST /api/login`, `POST /api/logout`, `GET /api/session`
+  - `POST /api/upload` — images/docs into `images/{folder}/`
+- No Node build step; Python 3 stdlib only
 
-## AI Journey — live GitHub data
+## Run locally
 
-`js/ai-journey.js` fetches your public repos straight from the GitHub API at page load, once you set:
-
-```js
-const GITHUB_USERNAME = "your-github-username";
+```bash
+cd website   # this folder
+python3 server.py
 ```
 
-Your Railway-hosted projects are listed separately in the same file (`RAILWAY_PROJECTS`) since the API can't tell which repos are deployed there — add each one manually with its live URL.
+Open:
 
-## Deploying
+- Site: http://127.0.0.1:8080/
+- Admin login: http://127.0.0.1:8080/login.html
 
-Any static host works since there's no backend: Railway (static site), Netlify, Vercel, or GitHub Pages. Just upload the whole `website` folder.
+Default local credentials (override with env vars):
+
+| Variable | Default (local) | Purpose |
+|----------|-----------------|---------|
+| `PORT` | `8080` | HTTP port |
+| `HOST` | `0.0.0.0` | Bind address |
+| `ADMIN_EMAIL` | `imajumd1@gmail.com` | Allowed admin email |
+| `ADMIN_PASSWORD` | `local-dev-only` | Admin password |
+| `SECRET_KEY` | auto-generated into `data/.secret_key` | Session signing |
+
+`data/.secret_key` is gitignored. Set `SECRET_KEY` explicitly in production.
+
+## Editing content
+
+1. Sign in at `/login.html`, then open `/admin.html`.
+2. Edit sections (home pillars, page titles/eyebrows/ledes, books, art, hiking, AI Journey story, Git projects, etc.).
+3. Use the rich text editor where available; upload images into allowed folders (`hero`, `books`, `art`, `hiking`, `pillars`, `roles`, `projects`).
+4. Save — writes `data/content.json`. Public pages load that JSON via `/api/content`.
+
+You can also edit `data/content.json` by hand while the server is stopped (or carefully while running).
+
+### My Git Projects
+
+On AI Journey, curated cards (`aiJourney.gitProjects`) show image, summary, and repo URL. Manage them in Admin → AI Journey. Thumbnails live under `images/projects/`.
+
+## Theme
+
+Visitors can switch palettes (default slate, ink, copper, forest) via the theme control; preference is stored in the browser. See `design.md`.
+
+## Deploy (Railway)
+
+`Procfile`:
+
+```
+web: python3 server.py
+```
+
+Copy `railway.env.example` → set real values on Railway (do not commit secrets):
+
+```
+ADMIN_EMAIL=...
+ADMIN_PASSWORD=...   # strong password
+SECRET_KEY=...       # long random string
+PORT=8080
+```
+
+Railway injects `PORT`; the server reads it. After deploy, log into `/login.html` with your production admin credentials.
+
+Other hosts that can run a Python web process work the same way. Pure static hosting alone is not enough if you need the CMS/API.
+
+## Project layout
+
+```
+├── index.html, *.html     # pages
+├── css/style.css          # public design system
+├── css/admin.css          # admin UI
+├── js/                    # page + admin + richtext scripts
+├── images/                # media (hero, pillars, projects, …)
+├── data/content.json      # CMS source of truth
+├── server.py              # static + API + auth
+├── Procfile               # Railway
+├── railway.env.example
+├── scope.md               # product scope
+└── design.md              # visual / UX notes
+```
+
+## License / use
+
+Personal portfolio site — content and branding are Ishita’s.

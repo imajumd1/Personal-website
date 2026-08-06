@@ -991,6 +991,68 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 8px;
 }
 
+/* ---------- Git project cards ---------- */
+.git-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+@media (max-width: 900px) {
+  .git-projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .git-projects-grid { grid-template-columns: 1fr; }
+}
+
+.git-project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.git-project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--accent-deep) 12%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.git-project-media {
+  aspect-ratio: 16 / 10;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--accent-soft);
+}
+
+.git-project-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 18px 20px;
+  flex: 1;
+}
+.git-project-body h3 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  margin: 0;
+  line-height: 1.25;
+}
+.git-project-body p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  flex: 1;
+}
+.git-project-link {
+  align-self: flex-start;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--line);
