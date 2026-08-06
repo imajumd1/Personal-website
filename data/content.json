@@ -6,7 +6,7 @@
   "home": {
     "eyebrow": "Elevator Pitch",
     "headline": "A learner and builder at heart, I lead by staying close to the work and paying forward everything it's taught me.",
-    "pitch": "<p>I'm Ishita Majumdar. I have been an individual contributor in the past three years learning how to build with AI. Before that, I ran high-impact teams and I stay in the build, not just above it. I love doing both and often swapping roles. Whatever the role I play, I stay close to the build, ensuring we deliver value at every stage&nbsp; and it's the through line of everything below.</p>",
+    "pitch": "<p>I'm Ishita Majumdar. I move fluidly between leading high-impact teams and building hands-on, most recently spending three years deep in AI development. Staying close to the actual work is how I ensure we deliver real value at every level.</p>",
     "heroImage": "images/hero/PXL_20250819_201111143.jpg",
     "heroLabel": "Ishita Majumdar",
     "highlights": [
@@ -158,38 +158,6 @@
     "lede": "<p>How I got into this, what I've shipped, and where you can go poke at the code.</p>",
     "story": "<p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles — and that hands-on technical depth is what now shapes how I lead. It started at Huawei's Central Research Institute, shaping the architecture for next-gen, context-aware AI systems, and it became personal when I co-founded a startup building a human-powered, AI platform at the intersection of health, data, and AI — a care support platform for families with special needs.</p><p>Today, as Chief Data and AI Officer, I lead global data and AI strategy — building trusted, intelligent systems and championing a culture of data literacy and ethical AI adoption. I still stay in the build, not just above it: using AI tools directly for product design, rapid prototyping, and QA, the same way I did as a co-founder.</p>",
     "githubUsername": "imajumd1",
-    "projects": [
-      {
-        "name": "Claude AI Summarizer",
-        "description": "<p>An AI summarization tool built with Claude CLI — hands-on practice turning language models into something useful.</p>",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer",
-        "tags": [
-          "AI",
-          "Python"
-        ]
-      },
-      {
-        "name": "Skills Intelligence HR App",
-        "description": "<p>A skills-based workforce management system — applying data and AI thinking to how organizations understand talent.</p>",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
-        "tags": [
-          "AI",
-          "HTML"
-        ]
-      },
-      {
-        "name": "Racing Car Summary",
-        "description": "<p>An AI news agent with a twist — shipping a working agent that digests and summarizes what matters.</p>",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
-        "tags": [
-          "AI",
-          "Python"
-        ]
-      }
-    ],
     "gitProjects": [
       {
         "name": "AI News Agent",
@@ -292,6 +260,38 @@
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/projects/personal-website.jpg",
         "repoUrl": "https://github.com/imajumd1/Personal-website"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Claude AI Summarizer",
+        "description": "<p>An AI summarization tool built with Claude CLI — hands-on practice turning language models into something useful.</p>",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer",
+        "tags": [
+          "AI",
+          "Python"
+        ]
+      },
+      {
+        "name": "Skills Intelligence HR App",
+        "description": "<p>A skills-based workforce management system — applying data and AI thinking to how organizations understand talent.</p>",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
+        "tags": [
+          "AI",
+          "HTML"
+        ]
+      },
+      {
+        "name": "Racing Car Summary",
+        "description": "<p>An AI news agent with a twist — shipping a working agent that digests and summarizes what matters.</p>",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
+        "tags": [
+          "AI",
+          "Python"
+        ]
       }
     ]
   },
