@@ -13,7 +13,7 @@
       {
         "num": "01",
         "title": "Years in Tech",
-        "text": "<p data-path-to-node=\"2\">My journey spans from engineering cellular infrastructure at Motorola to driving enterprise intelligence as Chief Data and AI Officer today—evolving through every major shift from IP networks to modern AI. Across every decade and technology cycle, my north star has remained unchanged: applying cutting-edge engineering to solve complex, real-world problems for people and enterprises.</p><p data-path-to-node=\"3\">We are living through the most extraordinary era in technology history. For builders and leaders, the canvas has never been broader. We have a rare, historic opportunity to build solutions from first principles, lead defining transformations, and solve the fundamental challenges of our time; reimagining productivity, scaling human potential, and building a more intelligent future.</p>",
+        "text": "<p data-path-to-node=\"2\">My journey spans from engineering cellular infrastructure at Motorola to driving enterprise intelligence as Head of Data and AI today, evolving through every major technology shift. Across every decade and technology cycle, my north star has remained unchanged: applying cutting-edge engineering to solve complex, real-world problems for people and enterprises.</p><p data-path-to-node=\"3\">We are living through the most extraordinary era in technology history. For builders and leaders, the canvas has never been broader. We have a rare, historic opportunity to build solutions from first principles, lead defining transformations, and solve the fundamental challenges of our time; reimagining productivity, scaling human potential, and building a more intelligent future.</p>",
         "image": "images/pillars/years-in-tech.jpg",
         "slides": [
           "images/pillars/years-in-tech.jpg"
@@ -22,7 +22,7 @@
       {
         "num": "02",
         "title": "Product Thinking",
-        "text": "<p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">I think in terms of products. I start with a problem statement or a customer pain point, then deepen my understanding through discovery and targeted questions. From there, I usually build a functional prototype with AI and synthetic data to show value and get feedback. I keep iterating and testing based on customer input, working closely with design. Eventually I hand it off to engineering to optimize the code and build in scale, resiliency, and reliability.</p><p>\n</p><p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">Honestly, AI has changed how far I take this myself. My role used to stop at understanding requirements and scoping the product. Now I go further, actually building and testing a prototype on my own machine before pushing it to git and hosting it on the cloud.</p><p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">Having spent years as a PM, scaling and leading a PMO and driving many cross functional initiatives teams, and then leading engineering teams brings my leadership full circle. It taught me that while frameworks, governance, and team alignment are essential for scaling, true product empathy comes from staying directly connected to the build. By pairing hands-on prototyping with strategic oversight, I can mentor teams with greater clarity, compress discovery cycles, and ensure we build products that solve real problems at enterprise scale.</p>",
+        "text": "<p data-path-to-node=\"4,0\">My approach to product leadership bridges high-level strategy with hands-on technical execution. I start with customer discovery, using AI and synthetic data to rapidly build and host functional prototypes for early feedback. Once value is proven, I partner with engineering to scale for enterprise reliability.</p><p data-path-to-node=\"4,1\">My career spans leading PMOs, driving cross-functional initiatives, and managing engineering teams. Staying active in the build gives me deep product empathy—allowing me to compress discovery cycles, mentor teams with technical clarity, and drive meaningful outcomes at scale.</p>",
         "image": "images/pillars/product-thinking.jpg",
         "slides": [
           "images/pillars/product-thinking.jpg"
@@ -31,7 +31,7 @@
       {
         "num": "03",
         "title": "Data - What can it tell?",
-        "text": "<p data-path-to-node=\"2\">To me, data is not just a measure of past performance, it is the bedrock of enterprise strategy and decision intelligence. Ultimately, data-driven insights are not meant for an elite few—they must be democratized across the organization, accessible to every employee through whichever interface or conduit they choose. Any enterprise workers should able to answer...</p><ul data-path-to-node=\"3\"><li><p data-path-to-node=\"3,0,0\"><span data-path-to-node=\"3,0,0\" data-index-in-node=\"0\"><u>What is happening?</u></span> Establishing real-time visibility and a single source of truth across complex, cross-functional ecosystems</p></li><li><p data-path-to-node=\"3,1,0\"><span data-path-to-node=\"3,1,0\" data-index-in-node=\"0\"><u>Why is it happening?</u></span> Uncovering operational friction, systemic root causes, and hidden vulnerabilities before they impact business performance</p></li><li><p data-path-to-node=\"3,2,0\"><span data-path-to-node=\"3,2,0\" data-index-in-node=\"0\"><u style=\"\">What comes next?</u></span> Unlocking predictive power—leveraging clean datasets, custom LLMs and Gen AI models to automate decisions, optimize capital allocation and drive proactive strategy</p></li></ul><p data-path-to-node=\"4\">Turning data into business impact requires more than algorithms; it demands rigorous governance, data quality frameworks, and product-focused execution to transform operational data into a primary driver of enterprise value.</p>",
+        "text": "<p data-path-to-node=\"2,0\">Data isn't just a record of what happened yesterday, it’s how we make smarter decisions tomorrow. I believe everyone in an organization, regardless of their role, should have easy access to clear information so they can quickly understand where things stand, why problems are happening, and what steps to take next.</p><p data-path-to-node=\"2,1\">Turning information into real impact takes more than just smart technology. Algorithms and agents alone won't get you there, it takes solid quality standards, thoughtful oversight, and a focus on real human needs to turn everyday data into meaningful progress.</p>",
         "image": "images/pillars/data-insights.jpg",
         "slides": [
           "images/pillars/data-insights.jpg"
@@ -40,7 +40,7 @@
       {
         "num": "04",
         "title": "Learning AI from first principals",
-        "text": "<p data-path-to-node=\"3\">To me, AI leadership isn’t about sitting at a 30,000-foot level and looking at status reports. Iit’s about knowing how things actually work under the hood so you can lead with clarity.&nbsp;</p><p data-path-to-node=\"3\">My own journey with modern AI started with the fundamentals: downloading Ollama, running open-source models locally, and experimenting in the OpenAI sandbox and plugins to get a feel for capabilities and prompt dynamics.</p><p data-path-to-node=\"3\">As the tooling evolved, so did my workflow. I moved into hands-on agentic development with Cursor, Windsurf, and ultimately Claude Code, embracing the shift toward \"vibe coding\" to turn complex product ideas into working software faster than ever before. For me, staying close to the build means going all the way to production; writing code, pushing to Git, and hosting live apps on Railway so I can share fully functional Web URLs directly with stakeholders for early feedback and user testing.</p><p data-path-to-node=\"4\">By actively building at every stage of the technical evolution, I can bridge the gap between early experimentation and real enterprise impact, ensuring our high-level strategy stays firmly anchored in technical reality.</p>",
+        "text": "<p data-path-to-node=\"3\">To me, AI leadership isn’t about sitting at a 30,000-foot level and looking at status reports. Iit’s about knowing how things actually work under the hood so you can lead with clarity.&nbsp;</p><p data-path-to-node=\"1,1\">My journey started with the basics: running open-source modelssetting up local environments like Ollama and experimenting in prompt sandboxes. As the tools evolved, so did my workflow. Today, I use agentic tools like Cursor, Windsurf, and Claude Code to prototype and \"vibe code\" ideas into working software. For me, staying close to the build means going all the way to production—writing code, pushing to Git, and hosting live apps on the cloud to get real stakeholder feedback fast.</p><p data-path-to-node=\"1,2\">By building at every stage, I bridge the gap between early experimentation and real enterprise impact, keeping high-level strategy firmly grounded in technical reality.</p>",
         "image": "images/pillars/learning-ai.jpg",
         "slides": [
           "images/pillars/learning-ai.jpg"
@@ -49,7 +49,7 @@
       {
         "num": "05",
         "title": "Leading Transformation",
-        "text": "<p data-path-to-node=\"0\">Leading enterprise transformation isn’t just about rolling out new technology, it’s about changing how an organization operates.&nbsp;</p><p data-path-to-node=\"0\">Whether it was aggressively retiring legacy infrastructure to eliminate technical debt, modernizing core platforms to run on open-source frameworks, or agentifying end-to-end workflows to bring real-time intelligence into daily operations, the goal has always been the same: building systems that are resilient, scalable, and fast. For transformations to be a success both adoption and adaption need to occur simultaneously. My job was not done after build, test, deploy. It continued with training, governance, support and increase adoption.</p><p data-path-to-node=\"1\">True transformation happens at the intersection of architecture and behavior. It means shifting from rigid, siloed processes to flexible platforms and data-driven decisioning. By establishing unified governance and staying close to the execution, I’ve helped organizations dismantle operational friction, accelerate cycle times, and unlock measurable gains in speed, efficiency, and enterprise agility.</p>",
+        "text": "<p data-path-to-node=\"8,0\">Real transformation happens at the intersection of architecture and behavior. Rolling out technology is only half the battle, changing how people work is where the real value lies.</p><p data-path-to-node=\"8,1\">From clearing out legacy technical debt to building agentic workflows, my goal is always to create fast, resilient platforms that people actually use. That’s why my work doesn't end at deployment; it extends into training, support, and governance. Staying close to the build allows me to remove operational friction, speed up decision-making, and make change stick.</p>",
         "image": "images/pillars/leading-transformation.jpg",
         "slides": [
           "images/pillars/leading-transformation.jpg"
@@ -58,9 +58,11 @@
       {
         "num": "06",
         "title": "Lessons learned",
-        "text": "Over a 25-year career, our defining insights rarely come from standard resume highlights. I believe true leadership maturity is shaped as much by failures and hard-won learnings as by high-profile wins. Here are the core experiences that have most deeply defined my executive approach.<br><div><ol><li><p data-path-to-node=\"0\">Early in my leadership career, I spearheaded a critical initiative to achieve six-nines system availability. Fully immersed in technical execution, I went into a C-level review status meeting, confident, until asked about parallel vendor negotiations for our core database infrastructure. I didn't have the answers.</p><p data-path-to-node=\"1\">It was a pivotal wake-up call. I learned, true end-to-end ownership requires total visibility across technical, operational, and commercial workstream. Given a second chance, I unified governance across all streams, delivered the initiative successfully, and fundamentally redefined what complete executive accountability meant for my leadership going forward.</p></li><li>While leading a CEO-prioritized technology transformation, execution was running smoothly under strong PMO governance and rigorous risk frameworks. Then the unexpected happened: a competitor aggressively poached dozens of key engineers from a critical team. It was a classic \"unknown unknown\" that threatened our entire timeline. We immediately pivoted, built and activated a contingency plan, and protected both our target delivery date and budget. The core takeaway was clear: no matter how airtight your plan is, macro surprises will happen, and true program leadership is defined by how fast you adapt. Keep calm and carry on!</li><li><p data-path-to-node=\"2\">Perhaps the hardest-earned insight of my career is that technical excellence and flawless strategy mean very little without strong organizational trust. Early on, it’s easy to believe that compelling data and execution speed alone will win the day. But real impact is ultimately gated by the strength of your relationships—upward, downward, and across peer networks.</p><p data-path-to-node=\"3\">Building trust and respect at every level takes distinct leadership muscles. Because there’s no universal playbook, navigating these dynamics requires learning how to initiate, cultivate, and maintain authentic relationships on the ground.</p></li></ol></div>",
-        "image": "",
-        "slides": []
+        "text": "<p data-path-to-node=\"5,0\">True leadership maturity is built on hard-won lessons. These three core principles define my approach:</p><ul data-path-to-node=\"5,1\"><li><p data-path-to-node=\"5,1,0,0\"><b data-path-to-node=\"5,1,0,0\" data-index-in-node=\"0\">End-to-End Accountability:</b> Real ownership isn't just delivering code, it's having full visibility across technical, operational, and commercial workstreams.</p></li><li><p data-path-to-node=\"5,1,1,0\"><b data-path-to-node=\"5,1,1,0\" data-index-in-node=\"0\">Adaptive Resilience:</b> No matter how airtight your plan, macro shocks happen. Leadership is defined by how fast you pivot and protect outcomes when the unexpected hits.</p></li><li><p data-path-to-node=\"5,1,2,0\"><b data-path-to-node=\"5,1,2,0\" data-index-in-node=\"0\">Trust Over Pure Execution:</b> Flawless strategy means nothing without strong relationships. Driving real impact requires cultivating trust upward, downward, and across peer networks.</p></li></ul>",
+        "image": "images/pillars/pexels-yankrukov-8617774.jpg",
+        "slides": [
+          "images/pillars/pexels-yankrukov-8617774.jpg"
+        ]
       }
     ]
   },
@@ -68,7 +70,7 @@
     "eyebrow": "01 / Biography",
     "title": "Who I Am",
     "lede": "<p>The LinkedIn version, minus the corporate filter, with a few callouts that never made it onto a resume.</p>",
-    "summary": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and that hands-on technical depth is what shapes how I lead today. It started at Huawei’s Central Research Institute, where I worked on the architecture for next-generation, context-aware AI systems. It extended at eBay where we continuously strived for engineering excellence in modernizing data tech stack to be current with new technologies which are not bounded by vendor contracts. It became deeply personal when I co-founded a startup building a human-powered AI platform at the intersection of health, data, and care support for families with special needs.&nbsp;</p><p data-path-to-node=\"1\">As Chief AI officer, I lead global data and AI strategy, building trusted, intelligent systems while driving a culture of data literacy and ethical AI adoption across the enterprise. But I still stay active in the build, not just above it. I regularly use modern AI tools for product design, rapid prototyping, and QA, bringing the same hands-on builder mindset to enterprise leadership that I relied on as a founder.</p>",
+    "summary": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and my innate curiosity and exploration is what continues to shape how I lead today.&nbsp;</p><p data-path-to-node=\"0\">Early in my career, I focused on architecting context-aware systems and later moved into modernizing data platforms to keep them agile, cutting-edge, and open source based. The work became deeply personal when I co-founded a startup centered on human-powered AI—building a support and care platform for families navigating special needs. Today, I lead global data and AI strategies, creating trusted, intelligent systems and inspiring a culture of data literacy and ethical AI adoption across enterprise teams. Yet I remain an active builder at heart, using modern AI tools every day for design, rapid prototyping, and QA, bringing that same authentic founder’s mindset to every level of leadership.</p>",
     "career": [
       {
         "title": "Chief Data and AI Officer — Relanto",
@@ -136,26 +138,26 @@
       {
         "title": "The University of Chicago, Booth School of Business",
         "meta": "MBA, Finance & Strategy · 2002 – 2004",
-        "blurb": "<p>An engineer's detour into finance and strategy — learning to speak the language of the business side of technology.</p>",
-        "learned": "<p>Booth taught me to reason from first principles about markets and capital, not just systems — the frameworks I still use to connect a technical roadmap to revenue and efficiency outcomes.</p>"
+        "blurb": "<p>A Mathematician's detour into finance and strategy learning to speak the language of the business side of technology.</p>",
+        "learned": "<p>Booth taught me to reason from first principles about markets and capital, not just systems. The frameworks I still use to connect a technical roadmap to revenue and efficiency outcomes.</p>"
       },
       {
         "title": "Northern Illinois University",
         "meta": "MS, Mathematics",
-        "blurb": "<p>Deepened the theoretical foundation beneath the engineering work that came before it.</p>",
-        "learned": "<p>Pure mathematics builds a tolerance for sitting with a hard, unsolved problem — a habit that's paid off in every ambiguous, first-of-its-kind system I've since had to architect.</p>"
+        "blurb": "<p>Deepened the theoretical foundation of Mathematics and taught me to explore unknowns.</p>",
+        "learned": "<p>Pure mathematics builds a tolerance for sitting with a hard, unsolved problem, a habit that's paid off in every ambiguous, first-of-its-kind system I've since had to architect.</p>"
       },
       {
         "title": "Clemson University",
         "meta": "MS, Operations Research",
         "blurb": "<p>Where optimization theory turned into a practical toolkit for making systems and decisions more efficient.</p>",
-        "learned": "<p>Operations research is the art of finding the best decision under real constraints — the same lens I bring to platform architecture and to leading teams under tight timelines and budgets.</p>"
+        "learned": "<p>Operations research is the art of finding the best decision under real constraints, the same lens I bring to platform architecture and to leading teams under tight timelines and budgets.</p>"
       },
       {
         "title": "Jadavpur University",
         "meta": "Bachelor of Science, Mathematics",
-        "blurb": "<p>Where it all started — the foundation that made everything after it possible.</p>",
-        "learned": "<p>Rigor first. A proof either holds or it doesn't — that early standard for evidence and precision still shapes how I evaluate ideas today.</p>"
+        "blurb": "<p>Where it all started, the foundation that made everything after it possible.</p>",
+        "learned": "<p>Rigor first. A proof either holds or it doesn't, that early standard for evidence and precision still shapes how I evaluate ideas today.</p>"
       }
     ]
   },
@@ -310,7 +312,7 @@
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/projects/personal-website.jpg",
-        "liveUrl": "https://web-production-28d7c.up.railway.app/"
+        "liveUrl": "https://web-production-4381.up.railway.app/"
       }
     ],
     "projects": [
@@ -350,7 +352,7 @@
           "#0a1f1a"
         ],
         "rating": 5,
-        "summary": "<p>This book will shake your core beliefs and give you the courage to try something new.&nbsp;</p>"
+        "summary": "<p>This book reinforced my belief in trying something new and completely radical and see what happens. I challenged my old way of thinking, and experimented with my Data team in one of our offsites, where we went around the table inviting opinions from all on how to modernize the data stack thinking again, this time differently. I often go back to the examples in this book to get courage, inspiration and most importantly validation for rethinking and redoing and evolving as a technologist and a human being. \"Rethink\" gave me the courage to be a founder, to take risks and continue my zig-zag career and be comfortable in NOT conforming to the path that is always taken.</p>"
       },
       {
         "title": "My Life in Full",
@@ -361,29 +363,40 @@
           "#5a2e0d"
         ],
         "rating": 5,
-        "summary": ""
+        "summary": "<p>I have always been a big fan on Indra Nooyi and always wanted to meet her in person for a chat. Instead, I met her through her book and it absolutely filled me with joy and admiration as I turned the pages. Her childhood, her parents, grandparents, all seemed to remind me of my life too (although we are from two different parts on India). Even in her meteoric rise in her professional career, she somehow did not lose her sense of humor and remained grounded as a person playing many many roles all at once. Reading this book was similar to being wrapped up in a cozy blanket which I have for 20 years now sipping a cup of tea and nodding my head at the beautiful narrative which painted familiar pictures in my head.</p>"
       },
       {
         "title": "The Second Mountain",
         "author": "David Brooks",
-        "cover": "",
+        "cover": "images/books/images-copy.jpg",
         "colors": [
           "#2f4f6f",
           "#101c2b"
         ],
         "rating": 5,
-        "summary": ""
+        "summary": "<p>I came across \"Second Mountain\" at a time when I was embarking on a founder's journey without any kind of start-up experience whatsoever. All I knew was, I need to build something for parents with neurodiverse dependents, so that they get peace of mind. And I could do it leveraging gen AI and the myriad tools that it provided. To me, this was my second mountain, something purposeful and meaningful that was bigger than me. Reading the book was an eye opener in to myself in many ways. What drives me? What gives me purpose? What makes me happy? This is also a book which I have gifted to at least 10 people as I thought it will motivate them as well</p>"
       },
       {
         "title": "The Running Ground",
         "author": "Nicholas Thompson",
-        "cover": "",
+        "cover": "images/books/9780593244128__26595.jpg",
         "colors": [
           "#6f4f8f",
           "#25152f"
         ],
         "rating": 4,
-        "summary": "<p>I am not a runner, married to one, yes but running is not something I like. Yet this book is so much about life through running. It talks bout grit and endurance through some excellent narration on the human story. It was hard to stop reading, as if I was in a reading race myself.</p>"
+        "summary": "<p>I am not a runner, married to one, yes but running is not something I like. Yet this book captured me from the very beginning. Because it fundamentally talks about human endurance and the mindset required to tackle long, challenging paths. It was a metaphor for life's larger marathons. That could be navigating complex career pivots, building something meaningful from scratch, or supporting loved ones when they go through difficult times (I have experienced all three). It keeps on making the point, not to judge yourself on how well you did in the short sprints but try and maintain your pace every day so that there is happiness in the pursuit of the challenge, not necessarily beating the clock.</p>"
+      },
+      {
+        "title": "GRIT",
+        "author": "Angela Duckworth",
+        "cover": "images/books/9781501111105__12821.jpg",
+        "colors": [
+          "#1f5f52",
+          "#0a1f1a"
+        ],
+        "rating": 5,
+        "summary": "<p>I honestly did not understand the meaning of GRIT till I read the book. I always thought, one is born talented. You are exceptional at Math, you are a born tennis player, you are ahead of your age group in piano. You are a natural genius. This book taught me, even with teh natural credentials, what sustains you throughout life is your perseverance and your efforts. You have to relentless. You have to be passionate. You have to be patient. I also used a lot of GRIT examples as a parent and introduced \"deliberate practice\" in the vocabulary of the family.</p>"
       }
     ]
   },
@@ -421,58 +434,78 @@
   },
   "art": {
     "eyebrow": "06 / Art",
-    "title": "My Art",
-    "lede": "<p>A portfolio in progress. Click any piece for the full story behind it.</p>",
+    "title": "My Art Collage",
+    "lede": "<p>I create art purely for the joy, energy, and freedom it gives me. Without a fixed style, I love experimenting with different medium, from acrylics and oils to pastels and fine-line pens and moving fluidly across styles like portraits, abstract, and cubism. For me, creating art is a feeling of total liberation: a safe place for unfettered exploration without worrying about success, failure, or external judgment.</p>",
     "items": [
       {
-        "title": "Teal Field Study",
-        "image": "",
+        "title": "Abstract wall art",
+        "image": "images/art/Abstract-wall.jpg",
         "colors": [
           "#1f5f52",
           "#b5651d"
         ],
         "aspect": 1,
-        "summary": "<p>Acrylic on paper. An experiment in letting warm rust cut through a deep teal ground — the same palette that runs through this site.</p>"
+        "summary": "<p>This wall collage in our home is a collection of piecework brought together by my pieces and some amazing contributions from my daughter and a close artist friend. There wasn't a grand plan behind it, just an organic mix of colors, styles, and shared harmony. Over the years, it has become the backdrop to countless family photos and celebrations.</p>"
       },
       {
-        "title": "Fog Line, Bay Edge",
-        "image": "",
+        "title": "Abstract cubism experiment",
+        "image": "images/art/Abstract-cubism.jpg",
         "colors": [
           "#2f4f6f",
           "#1f5f52"
         ],
         "aspect": 1.3,
-        "summary": "<p>Ink and watercolor. A quiet horizon where water, sky, and distance refuse to stay in separate lanes.</p>"
+        "summary": "<p>Acrylic on canvas. Created in a single sitting, this triptych was driven by a linear challenge: lean heavily into line work and let the form evolve naturally, whether the final output being bizzarre&nbsp; kaleidoscopes patterns or cubic faces. It’s about embracing bold, clashing colors and layering down paint without fear or second-guessing.</p>"
       },
       {
-        "title": "Circuit Bloom",
-        "image": "",
+        "title": "Corked wine glass",
+        "image": "images/art/Cork-painting.jpg",
         "colors": [
           "#6f4f8f",
           "#b5651d"
         ],
         "aspect": 0.8,
-        "summary": "<p>Mixed media. Geometry borrowed from systems diagrams, softened until it feels more like a garden than a schematic.</p>"
+        "summary": "<p>This mixed-media piece came out of a lockdown realization. My wine cork collection had accelerated quite a bit during COVID, so I decided to turn lemons into lemonade or in this case, a tongue-in-cheek Greek-style goblet The most fun part was using a dripper to lay down a mix of real wine and glue, giving the canvas a uniquely sticky, freshly-poured look.</p>"
       },
       {
-        "title": "Trail Marker",
-        "image": "",
+        "title": "Covid Diary",
+        "image": "images/art/Diary.jpg",
         "colors": [
           "#b5651d",
           "#274b3e"
         ],
         "aspect": 1.1,
-        "summary": "<p>Gouache. A small piece about wayfinding — the moment a path becomes a choice instead of a line on a map.</p>"
+        "summary": "<p>During the hardest stretches of COVID, I started creating these quick daily art pieces as a cathartic outlet. Using markers, colored pencils, crayons, or whatever was at hand, I spent 10 to 15 minutes capturing the exact mood of the day be it anger, frustration, Mother’s Day, or Christmas. These were spontaneous bursts of unfiltered emotions. The art was messy, amateur and one try only.&nbsp; If art could be translated to emotional text, it would be like reading my journal on some very hard days.</p>"
       },
       {
-        "title": "Night Shift",
-        "image": "",
+        "title": "Hide and Seek",
+        "image": "images/art/3-ladies.jpg",
         "colors": [
           "#274b3e",
           "#6f4f8f"
         ],
         "aspect": 0.9,
-        "summary": "<p>Digital sketch. Late-hour color blocks for when the work stretches past the daylight and still needs shape.</p>"
+        "summary": "<p>Inspired by a museum piece, I intentionally exaggerated the oversized hats to fully camouflage the figures, deepening the sense of mystery, elegance, and allure.</p>"
+      },
+      {
+        "title": "Veiled Face",
+        "image": "images/art/Madhubani.jpg",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "aspect": 1,
+        "summary": "<p>This artwork is a personal take on traditional Madhubani art, known for its fine lines and geometric patterns. I added my own spin with a confetti-like overlay, creating the impression of a heavy veil draped over beauty and raw emotion.</p>"
+      },
+      {
+        "title": "Peacock Plumage",
+        "image": "images/art/Peaccock-alpana.jpeg",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "aspect": 1,
+        "summary": "<p>Using leftover house paint on our concrete walkway, I decided to turn an ordinary side path into something that brings an instant smile. I layered white and red brush strokes with delicate, raindrop-style flourishes to capture the rich, intricate feel of a peacock’s feathers.</p>"
       }
     ]
   },
@@ -494,7 +527,7 @@
         "label": "States / Countries"
       },
       {
-        "num": 8849,
+        "num": 13000,
         "label": "Highest Peak (ft)"
       }
     ],
