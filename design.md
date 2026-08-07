@@ -63,8 +63,9 @@ Hierarchy: large serif pitch on home; page heroes use serif `h1` + softer lede; 
 
 ### Pillars (home highlights)
 
-- Grid of highlight/pillar items: optional cover image, title, truncated text with expand, optional slide rotation from extra JPEGs.
-- Editorial cards with radius and light borders — content-first, not dashboard widgets.
+- **Scan + read:** a selected-pillar stage (large image + full text at a comfortable measure) above a compact five-tile rail.
+- Click a rail tile (or use ←/→ in the stage / arrow keys on the rail) to swap the reading stage. Previews stay short; full copy lives only in the stage.
+- Optional multi-image slideshow still runs inside the stage media.
 
 ### My Git Projects
 
@@ -81,7 +82,7 @@ Hierarchy: large serif pitch on home; page heroes use serif `h1` + softer lede; 
 
 ## Motion
 
-Intentional, light motion: nav hover, hero image hover, pillar expand, project card hover, theme button pressed state. Prefer short transitions over decorative animation noise.
+Intentional, light motion: nav hover, hero image hover, pillar stage swap, project card hover, theme button pressed state. Prefer short transitions over decorative animation noise.
 
 ## Admin UX
 

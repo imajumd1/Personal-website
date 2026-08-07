@@ -38,28 +38,44 @@ document.addEventListener("DOMContentLoaded", async () => {
         : `<p style="color:var(--ink-soft);">No Git projects yet — add them in the admin editor.</p>`;
     }
 
-    const railwayEl = document.getElementById("railway-projects");
-    if (railwayEl) {
-      railwayEl.innerHTML = (a.projects || []).map(p => `
-        <div class="repo-card">
-          <span class="badge-live">● featured</span>
-          <h4>${escapeHtml(p.name)}</h4>
-          <div class="rich-text">${richHtml(p.description)}</div>
-          <div class="repo-meta">
-            ${(p.tags || []).map(t => `<span>#${escapeHtml(t)}</span>`).join("")}
-          </div>
-          <div class="btn-row" style="margin-top:14px;">
-            ${p.liveUrl
-              ? `<a class="btn btn-primary" style="padding:8px 16px; font-size:0.85rem;" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Open live →</a>`
-              : ""}
-            ${p.repoUrl
-              ? `<a class="btn btn-ghost" style="padding:8px 16px; font-size:0.85rem;" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">Code</a>`
-              : ""}
-          </div>
-        </div>
-      `).join("");
+    const buildsEl = document.getElementById("featured-builds");
+    if (buildsEl) {
+      const builds = Array.isArray(a.featuredBuilds)
+        ? a.featuredBuilds
+        : Array.isArray(a.projects)
+          ? a.projects.map(legacyProjectToBuild)
+          : [];
+      buildsEl.innerHTML = builds.length
+        ? builds.map(p => `
+          <article class="git-project-card">
+            <div class="git-project-media" style="${
+              p.image
+                ? `background-image:url('${escapeHtml(p.image)}')`
+                : `background:linear-gradient(155deg, var(--accent), var(--accent-deep))`
+            }"></div>
+            <div class="git-project-body">
+              <h3>${escapeHtml(p.name || "Build")}</h3>
+              <p>${escapeHtml(p.summary || "")}</p>
+              ${p.liveUrl
+                ? `<a class="btn btn-primary git-project-link" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Open live →</a>`
+                : ""}
+            </div>
+          </article>
+        `).join("")
+        : `<p style="color:var(--ink-soft);">No featured builds yet — add them in the admin editor.</p>`;
     }
   } catch (err) {
     console.error(err);
   }
 });
+
+function legacyProjectToBuild(p) {
+  const raw = p.summary || p.description || "";
+  const summary = String(raw).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return {
+    name: p.name || "",
+    summary,
+    image: p.image || "",
+    liveUrl: p.liveUrl || ""
+  };
+}

@@ -69,6 +69,19 @@ function normalizeContent(raw) {
   if (!c.aiJourney.title) c.aiJourney.title = "Building With AI";
   if (!c.aiJourney.eyebrow) c.aiJourney.eyebrow = "03 / AI Journey";
   if (!Array.isArray(c.aiJourney.gitProjects)) c.aiJourney.gitProjects = [];
+  if (!Array.isArray(c.aiJourney.featuredBuilds)) {
+    const legacy = Array.isArray(c.aiJourney.projects) ? c.aiJourney.projects : [];
+    c.aiJourney.featuredBuilds = legacy.map(p => {
+      const raw = p.summary || p.description || "";
+      const summary = String(raw).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+      return {
+        name: p.name || "",
+        summary,
+        image: p.image || "",
+        liveUrl: p.liveUrl || ""
+      };
+    });
+  }
   if (!Array.isArray(c.aiJourney.projects)) c.aiJourney.projects = [];
   if (!c.hiking.title) c.hiking.title = "On the Trail";
   if (!c.hiking.eyebrow) c.hiking.eyebrow = "07 / Hiking";
@@ -278,9 +291,9 @@ function renderAI() {
   const gitList = $("#ai-git-projects");
   gitList.innerHTML = "";
   (a.gitProjects || []).forEach((item, i) => gitList.appendChild(gitProjectCard(item, i)));
-  const list = $("#ai-projects");
-  list.innerHTML = "";
-  (a.projects || []).forEach((item, i) => list.appendChild(projectCard(item, i)));
+  const buildsList = $("#ai-featured-builds");
+  buildsList.innerHTML = "";
+  (a.featuredBuilds || []).forEach((item, i) => buildsList.appendChild(featuredBuildCard(item, i)));
 }
 
 function gitProjectCard(item, i) {
@@ -304,23 +317,24 @@ function gitProjectCard(item, i) {
   return el;
 }
 
-function projectCard(item, i) {
+function featuredBuildCard(item, i) {
   const el = document.createElement("div");
   el.className = "item-card";
   el.innerHTML = `
     <div class="item-card-head">
-      <strong>Featured ${i + 1}</strong>
-      <button type="button" class="btn btn-danger btn-small" data-remove="project">Remove</button>
+      <strong>Featured build ${i + 1}</strong>
+      <button type="button" class="btn btn-danger btn-small" data-remove="featuredBuild">Remove</button>
     </div>
-    <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name)}"></div>
-    <div class="field"><label>Description</label><div data-rte-mount="description"></div></div>
-    <div class="row-2">
-      <div class="field"><label>Live URL (optional)</label><input data-k="liveUrl" value="${escapeHtml(item.liveUrl || "")}"></div>
-      <div class="field"><label>Repo URL</label><input data-k="repoUrl" value="${escapeHtml(item.repoUrl || "")}"></div>
+    <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name || "")}"></div>
+    <div class="field"><label>Summary</label><textarea data-k="summary" rows="3">${escapeHtml(item.summary || "")}</textarea></div>
+    <div class="field"><label>Cover image path</label><input data-k="image" value="${escapeHtml(item.image || "")}"></div>
+    <div class="upload-row">
+      <input type="file" accept="image/*" data-upload-folder="builds">
+      <button type="button" class="btn btn-ghost btn-small" data-upload-into="image">Upload cover</button>
     </div>
-    <div class="field"><label>Tags (comma-separated)</label><input data-k="tags" value="${escapeHtml((item.tags || []).join(", "))}"></div>
+    ${item.image ? `<img class="thumb" src="${escapeHtml(item.image)}" alt="">` : `<div class="thumb empty">No cover yet</div>`}
+    <div class="field"><label>Public live URL (Railway)</label><input data-k="liveUrl" placeholder="https://….up.railway.app" value="${escapeHtml(item.liveUrl || "")}"></div>
   `;
-  mountRte(el, "description", item.description || "");
   return el;
 }
 
@@ -544,12 +558,11 @@ function gatherContent() {
     repoUrl: $("[data-k=repoUrl]", card).value.trim()
   }));
 
-  const projects = collectFromCards($("#ai-projects"), card => ({
+  const featuredBuilds = collectFromCards($("#ai-featured-builds"), card => ({
     name: $("[data-k=name]", card).value.trim(),
-    description: getRteHtml(card, "description"),
-    liveUrl: $("[data-k=liveUrl]", card).value.trim(),
-    repoUrl: $("[data-k=repoUrl]", card).value.trim(),
-    tags: $("[data-k=tags]", card).value.split(",").map(s => s.trim()).filter(Boolean)
+    summary: $("[data-k=summary]", card).value.trim(),
+    image: $("[data-k=image]", card).value.trim(),
+    liveUrl: $("[data-k=liveUrl]", card).value.trim()
   }));
 
   const books = collectFromCards($("#books-list"), (card, idx) => {
@@ -631,7 +644,8 @@ function gatherContent() {
       story: getStaticRte("ai-story"),
       githubUsername: $("#ai-github").value.trim(),
       gitProjects,
-      projects
+      featuredBuilds,
+      projects: content.aiJourney.projects || []
     },
     books: {
       eyebrow: $("#books-eyebrow").value.trim(),
@@ -735,8 +749,9 @@ function bindActions() {
     content.aiJourney.gitProjects.push({ name: "New Git project", summary: "", image: "", repoUrl: "" });
     renderAI();
   });
-  $("#add-project").addEventListener("click", () => {
-    content.aiJourney.projects.push({ name: "New project", description: "", liveUrl: "", repoUrl: "", tags: [] });
+  $("#add-featured-build").addEventListener("click", () => {
+    content.aiJourney.featuredBuilds = content.aiJourney.featuredBuilds || [];
+    content.aiJourney.featuredBuilds.push({ name: "New featured build", summary: "", image: "", liveUrl: "" });
     renderAI();
   });
   $("#add-book").addEventListener("click", () => {
@@ -867,6 +882,7 @@ function bindActions() {
         callout: () => content.biography.callouts.splice(idx, 1),
         school: () => content.education.schools.splice(idx, 1),
         gitProject: () => content.aiJourney.gitProjects.splice(idx, 1),
+        featuredBuild: () => content.aiJourney.featuredBuilds.splice(idx, 1),
         project: () => content.aiJourney.projects.splice(idx, 1),
         book: () => content.books.items.splice(idx, 1),
         musing: () => content.musings.items.splice(idx, 1),
