@@ -163,7 +163,7 @@
     "eyebrow": "03 / AI Journey",
     "title": "Building With AI",
     "lede": "<p>How I got into this, what I've shipped, and where you can go poke at the code.</p>",
-    "story": "<p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles — and that hands-on technical depth is what now shapes how I lead. It started at Huawei's Central Research Institute, shaping the architecture for next-gen, context-aware AI systems, and it became personal when I co-founded a startup building a human-powered, AI platform at the intersection of health, data, and AI — a care support platform for families with special needs.</p><p>Today, as Chief Data and AI Officer, I lead global data and AI strategy — building trusted, intelligent systems and championing a culture of data literacy and ethical AI adoption. I still stay in the build, not just above it: using AI tools directly for product design, rapid prototyping, and QA, the same way I did as a co-founder.</p>",
+    "story": "<p>I am a creator at heart. I like rolling up my sleeves, testing new tools, and building ideas into reality. The first few tries were laborious but with the help of some excellent workshops and You Tube free classes, I learned how to explore, experiment and get better.</p><p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles. No matter what my role is, I still stay in the build and I stay grounded in what's real. And this gives me the inspiration to mentor and inspire other first time builders.</p>",
     "githubUsername": "imajumd1",
     "gitProjects": [
       {
@@ -269,21 +269,55 @@
         "repoUrl": "https://github.com/imajumd1/Personal-website"
       }
     ],
-    "projects": [
+    "featuredBuilds": [
       {
-        "name": "Claude AI Summarizer",
-        "description": "<p>An AI summarization tool built with Claude CLI — hands-on practice turning language models into something useful.</p>",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer",
-        "tags": [
-          "AI",
-          "Python"
-        ]
+        "name": "Skills Intelligence HR App",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "image": "images/projects/skills-hr.jpg",
+        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
       },
+      {
+        "name": "Racing Car Summary",
+        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
+        "image": "images/projects/racing-car-summary.jpg",
+        "liveUrl": "https://racing-car-summary-production.up.railway.app/"
+      },
+      {
+        "name": "Aurora Health Agent",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "image": "images/projects/aurora-health.jpg",
+        "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
+      },
+      {
+        "name": "AI News Agent",
+        "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
+        "image": "images/projects/ai-news-agent.jpg",
+        "liveUrl": "https://ai-news-agent.up.railway.app/"
+      },
+      {
+        "name": "Audiobook",
+        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
+        "image": "images/projects/audiobook.jpg",
+        "liveUrl": "https://audiobook-production.up.railway.app/"
+      },
+      {
+        "name": "Instagram Post (Cursor)",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
+        "image": "images/projects/instagram-post.jpg",
+        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/"
+      },
+      {
+        "name": "Personal Website",
+        "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
+        "image": "images/projects/personal-website.jpg",
+        "liveUrl": "https://web-production-28d7c.up.railway.app/"
+      }
+    ],
+    "projects": [
       {
         "name": "Skills Intelligence HR App",
         "description": "<p>A skills-based workforce management system — applying data and AI thinking to how organizations understand talent.</p>",
-        "liveUrl": "",
+        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
         "tags": [
           "AI",
@@ -293,7 +327,7 @@
       {
         "name": "Racing Car Summary",
         "description": "<p>An AI news agent with a twist — shipping a working agent that digests and summarizes what matters.</p>",
-        "liveUrl": "",
+        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
         "tags": [
           "AI",

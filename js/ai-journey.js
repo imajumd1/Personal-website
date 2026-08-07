@@ -40,29 +40,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const buildsEl = document.getElementById("featured-builds");
     if (buildsEl) {
-      const builds = Array.isArray(a.featuredBuilds)
+      const rawBuilds = Array.isArray(a.featuredBuilds)
         ? a.featuredBuilds
         : Array.isArray(a.projects)
           ? a.projects.map(legacyProjectToBuild)
           : [];
+      // Featured Builds promise a public URL — skip cards without a live link.
+      const builds = rawBuilds.filter(p => p && String(p.liveUrl || "").trim());
       buildsEl.innerHTML = builds.length
-        ? builds.map(p => `
+        ? builds.map(p => {
+            const img = String(p.image || "").trim();
+            const mediaStyle = img
+              ? `background-image:url('${escapeHtml(img)}');background-size:cover;background-position:center`
+              : `background:linear-gradient(155deg, var(--accent), var(--accent-deep))`;
+            return `
           <article class="git-project-card">
-            <div class="git-project-media" style="${
-              p.image
-                ? `background-image:url('${escapeHtml(p.image)}')`
-                : `background:linear-gradient(155deg, var(--accent), var(--accent-deep))`
-            }"></div>
+            <div class="git-project-media" style="${mediaStyle}"></div>
             <div class="git-project-body">
               <h3>${escapeHtml(p.name || "Build")}</h3>
               <p>${escapeHtml(p.summary || "")}</p>
-              ${p.liveUrl
-                ? `<a class="btn btn-primary git-project-link" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Open live →</a>`
-                : ""}
+              <a class="btn btn-primary git-project-link" href="${escapeHtml(String(p.liveUrl).trim())}" target="_blank" rel="noopener">Open live →</a>
             </div>
-          </article>
-        `).join("")
-        : `<p style="color:var(--ink-soft);">No featured builds yet — add them in the admin editor.</p>`;
+          </article>`;
+          }).join("")
+        : `<p style="color:var(--ink-soft);">No featured builds with a public Railway URL yet — add live URLs in the admin editor.</p>`;
     }
   } catch (err) {
     console.error(err);
