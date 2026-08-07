@@ -5,15 +5,15 @@
   },
   "home": {
     "eyebrow": "Elevator Pitch",
-    "headline": "A learner and builder at heart, I lead by staying close to the work and paying forward everything it's taught me.",
-    "pitch": "<p>I'm Ishita Majumdar. I move fluidly between leading high-impact teams and building hands-on, most recently spending three years deep in AI development. Staying close to the actual work is how I ensure we deliver real value at every level.</p>",
+    "headline": "A learner and builder at heart, I lead by staying close to the work and paying forward everything it has taught me.",
+    "pitch": "<p>I'm Ishita Majumdar. I move fluidly between leading high-impact teams and building hands-on, most recently spending three years building with AI. Staying close to the actual work is how I ensure I learn the very fast evolving AI landscape and deliver real value both for personal and enterprise productivity.</p>",
     "heroImage": "images/hero/PXL_20250819_201111143.jpg",
     "heroLabel": "Ishita Majumdar",
     "highlights": [
       {
-        "num": "25",
+        "num": "01",
         "title": "Years in Tech",
-        "text": "<p data-path-to-node=\"2,0\">My career spans from Principal Engineer at Motorola to Chief Data and AI Officer today, evolving through cellular technology, IP networks, and modern AI. Throughout this journey, my focus has always been on applying technology to solve complex problems for both consumers and enterprises.</p><p data-path-to-node=\"2,1\">I believe this is the most exciting time to be a technologist. We have the unique opportunity to build solutions from scratch, lead large-scale transformations, and tackle key challenges like optimizing costs, driving adoption, and boosting productivity.</p>",
+        "text": "<p data-path-to-node=\"2\">My journey spans from engineering cellular infrastructure at Motorola to driving enterprise intelligence as Chief Data and AI Officer today—evolving through every major shift from IP networks to modern AI. Across every decade and technology cycle, my north star has remained unchanged: applying cutting-edge engineering to solve complex, real-world problems for people and enterprises.</p><p data-path-to-node=\"3\">We are living through the most extraordinary era in technology history. For builders and leaders, the canvas has never been broader. We have a rare, historic opportunity to build solutions from first principles, lead defining transformations, and solve the fundamental challenges of our time; reimagining productivity, scaling human potential, and building a more intelligent future.</p>",
         "image": "images/pillars/years-in-tech.jpg",
         "slides": [
           "images/pillars/years-in-tech.jpg"
@@ -22,7 +22,7 @@
       {
         "num": "02",
         "title": "Product Thinking",
-        "text": "<p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">I think in terms of products. I start with a problem statement or a customer pain point, then deepen my understanding through discovery and targeted questions. From there, I usually build a functional prototype with AI and synthetic data to show value and get feedback. I keep iterating and testing based on customer input, working closely with design. Eventually I hand it off to engineering to optimize the code and build in scale, resiliency, and reliability.</p><p>\n</p><p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">Honestly, AI has changed how far I take this myself. My role used to stop at understanding requirements and scoping the product. Now I go further, actually building and testing a prototype on my own machine before pushing it to git and hosting it on the cloud.</p>",
+        "text": "<p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">I think in terms of products. I start with a problem statement or a customer pain point, then deepen my understanding through discovery and targeted questions. From there, I usually build a functional prototype with AI and synthetic data to show value and get feedback. I keep iterating and testing based on customer input, working closely with design. Eventually I hand it off to engineering to optimize the code and build in scale, resiliency, and reliability.</p><p>\n</p><p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">Honestly, AI has changed how far I take this myself. My role used to stop at understanding requirements and scoping the product. Now I go further, actually building and testing a prototype on my own machine before pushing it to git and hosting it on the cloud.</p><p class=\"font-claude-response-body break-words whitespace-normal\" dir=\"ltr\">Having spent years as a PM, scaling and leading a PMO and driving many cross functional initiatives teams, and then leading engineering teams brings my leadership full circle. It taught me that while frameworks, governance, and team alignment are essential for scaling, true product empathy comes from staying directly connected to the build. By pairing hands-on prototyping with strategic oversight, I can mentor teams with greater clarity, compress discovery cycles, and ensure we build products that solve real problems at enterprise scale.</p>",
         "image": "images/pillars/product-thinking.jpg",
         "slides": [
           "images/pillars/product-thinking.jpg"
@@ -31,7 +31,7 @@
       {
         "num": "03",
         "title": "Data - What can it tell?",
-        "text": "<p>I haveb s</p>",
+        "text": "<p data-path-to-node=\"2\">To me, data is not just a measure of past performance, it is the bedrock of enterprise strategy and decision intelligence. Ultimately, data-driven insights are not meant for an elite few—they must be democratized across the organization, accessible to every employee through whichever interface or conduit they choose. Any enterprise workers should able to answer...</p><ul data-path-to-node=\"3\"><li><p data-path-to-node=\"3,0,0\"><span data-path-to-node=\"3,0,0\" data-index-in-node=\"0\"><u>What is happening?</u></span> Establishing real-time visibility and a single source of truth across complex, cross-functional ecosystems</p></li><li><p data-path-to-node=\"3,1,0\"><span data-path-to-node=\"3,1,0\" data-index-in-node=\"0\"><u>Why is it happening?</u></span> Uncovering operational friction, systemic root causes, and hidden vulnerabilities before they impact business performance</p></li><li><p data-path-to-node=\"3,2,0\"><span data-path-to-node=\"3,2,0\" data-index-in-node=\"0\"><u style=\"\">What comes next?</u></span> Unlocking predictive power—leveraging clean datasets, custom LLMs and Gen AI models to automate decisions, optimize capital allocation and drive proactive strategy</p></li></ul><p data-path-to-node=\"4\">Turning data into business impact requires more than algorithms; it demands rigorous governance, data quality frameworks, and product-focused execution to transform operational data into a primary driver of enterprise value.</p>",
         "image": "images/pillars/data-insights.jpg",
         "slides": [
           "images/pillars/data-insights.jpg"
@@ -39,8 +39,8 @@
       },
       {
         "num": "04",
-        "title": "Learning AI",
-        "text": "<p>From first-principles building to leading AI in production — prototypes, governance, and the habit of staying in the build while scaling impact.</p>",
+        "title": "Learning AI from first principals",
+        "text": "<p data-path-to-node=\"3\">To me, AI leadership isn’t about sitting at a 30,000-foot level and looking at status reports. Iit’s about knowing how things actually work under the hood so you can lead with clarity.&nbsp;</p><p data-path-to-node=\"3\">My own journey with modern AI started with the fundamentals: downloading Ollama, running open-source models locally, and experimenting in the OpenAI sandbox and plugins to get a feel for capabilities and prompt dynamics.</p><p data-path-to-node=\"3\">As the tooling evolved, so did my workflow. I moved into hands-on agentic development with Cursor, Windsurf, and ultimately Claude Code, embracing the shift toward \"vibe coding\" to turn complex product ideas into working software faster than ever before. For me, staying close to the build means going all the way to production; writing code, pushing to Git, and hosting live apps on Railway so I can share fully functional Web URLs directly with stakeholders for early feedback and user testing.</p><p data-path-to-node=\"4\">By actively building at every stage of the technical evolution, I can bridge the gap between early experimentation and real enterprise impact, ensuring our high-level strategy stays firmly anchored in technical reality.</p>",
         "image": "images/pillars/learning-ai.jpg",
         "slides": [
           "images/pillars/learning-ai.jpg"
@@ -49,24 +49,31 @@
       {
         "num": "05",
         "title": "Leading Transformation",
-        "text": "<p>Cross-functional programs that change how the enterprise works — new platforms, new ways of deciding, and measurable gains in speed and efficiency.</p>",
+        "text": "<p data-path-to-node=\"0\">Leading enterprise transformation isn’t just about rolling out new technology, it’s about changing how an organization operates.&nbsp;</p><p data-path-to-node=\"0\">Whether it was aggressively retiring legacy infrastructure to eliminate technical debt, modernizing core platforms to run on open-source frameworks, or agentifying end-to-end workflows to bring real-time intelligence into daily operations, the goal has always been the same: building systems that are resilient, scalable, and fast. For transformations to be a success both adoption and adaption need to occur simultaneously. My job was not done after build, test, deploy. It continued with training, governance, support and increase adoption.</p><p data-path-to-node=\"1\">True transformation happens at the intersection of architecture and behavior. It means shifting from rigid, siloed processes to flexible platforms and data-driven decisioning. By establishing unified governance and staying close to the execution, I’ve helped organizations dismantle operational friction, accelerate cycle times, and unlock measurable gains in speed, efficiency, and enterprise agility.</p>",
         "image": "images/pillars/leading-transformation.jpg",
         "slides": [
           "images/pillars/leading-transformation.jpg"
         ]
+      },
+      {
+        "num": "06",
+        "title": "Lessons learned",
+        "text": "Over a 25-year career, our defining insights rarely come from standard resume highlights. I believe true leadership maturity is shaped as much by failures and hard-won learnings as by high-profile wins. Here are the core experiences that have most deeply defined my executive approach.<br><div><ol><li><p data-path-to-node=\"0\">Early in my leadership career, I spearheaded a critical initiative to achieve six-nines system availability. Fully immersed in technical execution, I went into a C-level review status meeting, confident, until asked about parallel vendor negotiations for our core database infrastructure. I didn't have the answers.</p><p data-path-to-node=\"1\">It was a pivotal wake-up call. I learned, true end-to-end ownership requires total visibility across technical, operational, and commercial workstream. Given a second chance, I unified governance across all streams, delivered the initiative successfully, and fundamentally redefined what complete executive accountability meant for my leadership going forward.</p></li><li>While leading a CEO-prioritized technology transformation, execution was running smoothly under strong PMO governance and rigorous risk frameworks. Then the unexpected happened: a competitor aggressively poached dozens of key engineers from a critical team. It was a classic \"unknown unknown\" that threatened our entire timeline. We immediately pivoted, built and activated a contingency plan, and protected both our target delivery date and budget. The core takeaway was clear: no matter how airtight your plan is, macro surprises will happen, and true program leadership is defined by how fast you adapt. Keep calm and carry on!</li><li><p data-path-to-node=\"2\">Perhaps the hardest-earned insight of my career is that technical excellence and flawless strategy mean very little without strong organizational trust. Early on, it’s easy to believe that compelling data and execution speed alone will win the day. But real impact is ultimately gated by the strength of your relationships—upward, downward, and across peer networks.</p><p data-path-to-node=\"3\">Building trust and respect at every level takes distinct leadership muscles. Because there’s no universal playbook, navigating these dynamics requires learning how to initiate, cultivate, and maintain authentic relationships on the ground.</p></li></ol></div>",
+        "image": "",
+        "slides": []
       }
     ]
   },
   "biography": {
     "eyebrow": "01 / Biography",
     "title": "Who I Am",
-    "lede": "<p>The LinkedIn version, minus the corporate filter — with a few callouts that never made it onto a resume.</p>",
-    "summary": "<p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles, and that hands-on technical depth now shapes how I lead. Today, I run high-impact product and engineering teams, leading complex, cross-functional initiatives that deliver on time, on budget, and against business objectives.</p><p>I've built and scaled Product organizations, led data engineering and analytics platforms, and co-founded a startup to build an AI-powered health assistant.</p><p>I bring a combination most leaders don't: executive credibility paired with hands-on build experience. I stay in the build, not just above it, applying that depth to introduce stronger operating rhythms and new ways of working. Everything I drive starts with customer obsession and ends in outcomes that grow revenue and efficiency, not just plans.</p>",
+    "lede": "<p>The LinkedIn version, minus the corporate filter, with a few callouts that never made it onto a resume.</p>",
+    "summary": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and that hands-on technical depth is what shapes how I lead today. It started at Huawei’s Central Research Institute, where I worked on the architecture for next-generation, context-aware AI systems. It extended at eBay where we continuously strived for engineering excellence in modernizing data tech stack to be current with new technologies which are not bounded by vendor contracts. It became deeply personal when I co-founded a startup building a human-powered AI platform at the intersection of health, data, and care support for families with special needs.&nbsp;</p><p data-path-to-node=\"1\">As Chief AI officer, I lead global data and AI strategy, building trusted, intelligent systems while driving a culture of data literacy and ethical AI adoption across the enterprise. But I still stay active in the build, not just above it. I regularly use modern AI tools for product design, rapid prototyping, and QA, bringing the same hands-on builder mindset to enterprise leadership that I relied on as a founder.</p>",
     "career": [
       {
         "title": "Chief Data and AI Officer — Relanto",
         "meta": "Nov 2025 – Present · Fremont, CA",
-        "text": "<p>Leading global data and AI strategy — building trusted, intelligent systems that transform how the enterprise makes decisions, automates workflows, and delivers customer value, while championing data literacy and ethical AI adoption.</p>",
+        "text": "<p>Leading global data and AI strategy, building trusted, intelligent systems that transform how the enterprise makes decisions, automates workflows, and delivers customer value, while championing data literacy and ethical AI adoption.</p>",
         "attachments": []
       },
       {
@@ -113,7 +120,7 @@
       },
       {
         "title": "Recognized Data & Tech Leader",
-        "text": "<p>Named a Top 10 Data Innovator (2024), a CDO Magazine Global Data Power Woman (2023), and one of the Top 100 Women of Influence in Silicon Valley (2020).</p>"
+        "text": "<p>Named a&nbsp;</p><p>Top 10 Data Innovator (2024),&nbsp;</p><p>CDO Magazine Global Data Power Woman (2023),&nbsp;</p><p>Top 100 Women of Influence in Silicon Valley (2020).</p>"
       },
       {
         "title": "Built Community, Not Just Products",
@@ -297,8 +304,8 @@
   },
   "books": {
     "eyebrow": "04 / Books",
-    "title": "What I'm Reading",
-    "lede": "<p>Click a cover to flip it over for the summary.</p>",
+    "title": "My favorite reads",
+    "lede": "<p>Reading is a constant for me, usually a book every month across fiction and non-fiction. Here are a few favorites that have stayed with me over time and that I continually return to for inspiration.</p>",
     "items": [
       {
         "title": "Think Again",
@@ -342,7 +349,7 @@
           "#25152f"
         ],
         "rating": 4,
-        "summary": "<p>Operating rhythm as a craft. Grove's framing of leverage, meetings, and one-on-ones still shapes how I run product, data, and engineering teams.</p>"
+        "summary": "<p>I am not a runner, married to one, yes but running is not something I like. Yet this book is so much about life through running. It talks bout grit and endurance through some excellent narration on the human story. It was hard to stop reading, as if I was in a reading race myself.</p>"
       }
     ]
   },
