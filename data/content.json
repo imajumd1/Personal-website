@@ -291,10 +291,10 @@
         "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
       },
       {
-        "name": "AI News Agent",
-        "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
+        "name": "AI news summarizer",
+        "summary": "An intelligent agent that scrapes the latest AI developments from sources like Hacker News, arXiv, TechCrunch, and VentureBeat, then generates OpenAI-powered summaries across infrastructure and frontier models.",
         "image": "images/projects/ai-news-agent.jpg",
-        "liveUrl": "https://ai-news-agent.up.railway.app/"
+        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/"
       },
       {
         "name": "Audiobook",
