@@ -53,6 +53,26 @@ def load_secret_key() -> bytes:
 
 
 SECRET_KEY = load_secret_key()
+SECURE_COOKIES = bool(
+    os.environ.get("RAILWAY_ENVIRONMENT")
+    or os.environ.get("FORCE_SECURE_COOKIE")
+)
+
+
+def cookie_flags(max_age: int) -> str:
+    """Build Set-Cookie attribute suffix (Path/HttpOnly/SameSite/Max-Age[/Secure])."""
+    flags = f"Path=/; HttpOnly; SameSite=Lax; Max-Age={max_age}"
+    if SECURE_COOKIES:
+        flags += "; Secure"
+    return flags
+
+
+def password_matches(provided: str, expected: str) -> bool:
+    """Constant-time compare that tolerates unequal lengths (hmac.compare_digest raises)."""
+    try:
+        return hmac.compare_digest(provided, expected)
+    except (TypeError, ValueError):
+        return False
 
 
 def safe_filename(name: str) -> str:
@@ -123,6 +143,34 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.end_headers()
 
+    def _gate_admin_ui(self, path: str) -> bool:
+        """Redirect unauthenticated admin routes. Returns True if response was sent."""
+        if path in ("/admin.html", "/admin", "/admin/", "/Admin", "/Admin/", "/edit", "/edit/", "/editor"):
+            if not self._is_admin():
+                self.send_response(302)
+                self.send_header("Location", "/login.html?next=admin.html")
+                self.end_headers()
+                return True
+            if path != "/admin.html":
+                self.send_response(302)
+                self.send_header("Location", "/admin.html")
+                self.end_headers()
+                return True
+        # Common typo: trailing punctuation on admin URL
+        if path.rstrip(".") in ("/admin.html", "/admin") and path != path.rstrip("."):
+            self.send_response(302)
+            self.send_header("Location", "/admin.html")
+            self.end_headers()
+            return True
+        return False
+
+    def do_HEAD(self):
+        # SimpleHTTPRequestHandler.do_HEAD bypasses do_GET — gate admin the same way.
+        path = urllib.parse.urlparse(self.path).path
+        if self._gate_admin_ui(path):
+            return
+        return super().do_HEAD()
+
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path
@@ -137,24 +185,7 @@ class Handler(SimpleHTTPRequestHandler):
         if path == "/api/content":
             return self._send_json(self._read_content())
 
-        # Gate admin UI
-        if path in ("/admin.html", "/admin", "/admin/", "/Admin", "/Admin/", "/edit", "/edit/", "/editor"):
-            if not self._is_admin():
-                self.send_response(302)
-                self.send_header("Location", "/login.html?next=admin.html")
-                self.end_headers()
-                return
-            if path != "/admin.html":
-                self.send_response(302)
-                self.send_header("Location", "/admin.html")
-                self.end_headers()
-                return
-
-        # Common typo: trailing punctuation on admin URL
-        if path.rstrip(".") in ("/admin.html", "/admin") and path != path.rstrip("."):
-            self.send_response(302)
-            self.send_header("Location", "/admin.html")
-            self.end_headers()
+        if self._gate_admin_ui(path):
             return
 
         return super().do_GET()
@@ -190,7 +221,7 @@ class Handler(SimpleHTTPRequestHandler):
         email = str(data.get("email", "")).strip().lower()
         password = str(data.get("password", ""))
 
-        if email != ADMIN_EMAIL or not hmac.compare_digest(password, ADMIN_PASSWORD):
+        if email != ADMIN_EMAIL or not password_matches(password, ADMIN_PASSWORD):
             # Constant-ish delay
             time.sleep(0.4)
             return self._send_json({"ok": False, "error": "Access denied for that email."}, 403)
@@ -201,10 +232,9 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
-        secure = " Secure;" if os.environ.get("RAILWAY_ENVIRONMENT") or os.environ.get("FORCE_SECURE_COOKIE") else ""
         self.send_header(
             "Set-Cookie",
-            f"{COOKIE_NAME}={token}; Path=/; HttpOnly; SameSite=Lax; Max-Age={SESSION_DAYS * 86400};{secure}",
+            f"{COOKIE_NAME}={token}; {cookie_flags(SESSION_DAYS * 86400)}",
         )
         self.end_headers()
         self.wfile.write(body)
@@ -214,9 +244,10 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
+        # Must match Secure flag used at login or browsers keep the session cookie.
         self.send_header(
             "Set-Cookie",
-            f"{COOKIE_NAME}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0",
+            f"{COOKIE_NAME}=; {cookie_flags(0)}",
         )
         self.end_headers()
         self.wfile.write(body)
