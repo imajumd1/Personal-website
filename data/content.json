@@ -154,7 +154,7 @@
   },
   "aiJourney": {
     "eyebrow": "03 / AI Journey",
-    "title": "Building With AI",
+    "title": "Building with AI",
     "lede": "<p>How I got into this, what I've shipped, and where you can go poke at the code.</p>",
     "story": "<p>I am a creator at heart. I like rolling up my sleeves, testing new tools, and building ideas into reality. The first few tries were laborious but with the help of some excellent workshops and You Tube free classes, I learned how to explore, experiment and get better.</p><p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles. No matter what my role is, I still stay in the build and I stay grounded in what's real. And this gives me the inspiration to mentor and inspire other first time builders.</p>",
     "githubUsername": "imajumd1",
@@ -565,11 +565,11 @@
     "lede": "<p>Adventures, summits, and the routes that stuck with me.</p>",
     "stats": [
       {
-        "num": 42,
+        "num": 48,
         "label": "Trails Hiked"
       },
       {
-        "num": 310,
+        "num": 380,
         "label": "Miles Logged"
       },
       {
@@ -583,34 +583,74 @@
     ],
     "trips": [
       {
+        "name": "Grand Canyon — Descent to Arizona River",
+        "meta": "South Rim, AZ · Bright Angel / South Kaibab to Colorado River · Strenuous",
+        "photo": "images/hiking/grand-canyon-river.jpg",
+        "colors": [
+          "#b5651d",
+          "#5a2e0d"
+        ],
+        "story": "<p>A full descent from the South Rim toward the canyon floor — the river everyone means is the Colorado, even when we casually say \"Arizona River.\" Switchbacks, heat, and a scale that resets your sense of distance.</p><p>Starter note for a personal blurb later: the moment the green ribbon of water finally appears below the red walls.</p>"
+      },
+      {
+        "name": "Grand Canyon Rim to Rim Hike",
+        "meta": "North Rim ↔ South Rim, AZ · ~21–24 mi · Strenuous / multi-day option",
+        "photo": "images/hiking/grand-canyon-rim-to-rim.jpg",
+        "colors": [
+          "#8b4513",
+          "#2c1810"
+        ],
+        "story": "<p>Crossing the canyon from rim to rim is less a single hike than a negotiation with elevation, water, and daylight. North Rim forests give way to desert inner canyon, then the long climb out the other side.</p><p>Placeholder for the day-by-day story — logistics, pace, and what the corridor looked like when the walls closed in.</p>"
+      },
+      {
+        "name": "Machu Picchu Hike",
+        "meta": "Cusco Region, Peru · Inca Trail / classic approach · High altitude",
+        "photo": "images/hiking/machu-picchu.jpg",
+        "colors": [
+          "#2f5d50",
+          "#1a332c"
+        ],
+        "story": "<p>The approach to Machu Picchu — stones, mist, and the sudden reveal of the citadel on the ridge. Altitude does half the talking; the Andes do the rest.</p><p>Starter description until the personal travel notes land: the first clear view of the terraces after the final climb.</p>"
+      },
+      {
+        "name": "Half Dome Hike",
+        "meta": "Yosemite National Park, CA · ~14–16 mi · Strenuous (cables)",
+        "photo": "images/hiking/half-dome.jpg",
+        "colors": [
+          "#2f4f6f",
+          "#274b3e"
+        ],
+        "story": "<p>Cables, granite, and a summit that makes every prior training hike feel like rehearsal. The Mist Trail or John Muir approach, then the exposed final pitch that defines the day.</p><p>Worth every early alarm — personal highlights to fill in later.</p>"
+      },
+      {
         "name": "Mission Peak",
-        "meta": "Fremont, CA · 6.4 mi · Hard",
-        "photo": "",
+        "meta": "Fremont, CA · ~6 mi round trip · Hard",
+        "photo": "images/hiking/mission-peak.jpg",
         "colors": [
           "#274b3e",
           "#6f8f45"
         ],
-        "story": "<p>The local proving ground. Steep, crowded on weekends, and still the climb that resets a week of meetings into something simpler: one foot, then the next.</p>"
+        "story": "<p>The local proving ground. Steep, crowded on weekends, and still the climb that resets a week of meetings into something simpler: one foot, then the next.</p><p>The iconic summit pole and East Bay views — more personal notes to come.</p>"
+      },
+      {
+        "name": "Yosemite Hikes",
+        "meta": "Yosemite National Park, CA · Valley & high country classics · Mixed difficulty",
+        "photo": "images/hiking/yosemite-hikes.jpg",
+        "colors": [
+          "#3d5a80",
+          "#1b2838"
+        ],
+        "story": "<p>A catch-all for Yosemite days beyond Half Dome — valley floor walks, waterfall trails, and granite overlooks that make the park feel endless.</p><p>Starter card for the trip collage; individual route notes can be split out later if needed.</p>"
       },
       {
         "name": "Dipsea Trail",
-        "meta": "Marin County, CA · 7.4 mi · Hard",
-        "photo": "",
+        "meta": "Marin County, CA · ~7.4 mi · Hard",
+        "photo": "images/hiking/dipsea-trail.jpg",
         "colors": [
           "#1f5f52",
           "#b5651d"
         ],
         "story": "<p>Stairs, redwoods, and the sudden reveal of the Pacific. A reminder that the best routes refuse to stay at one elevation — literal or otherwise.</p>"
-      },
-      {
-        "name": "Half Dome",
-        "meta": "Yosemite, CA · 14+ mi · Strenuous",
-        "photo": "",
-        "colors": [
-          "#2f4f6f",
-          "#274b3e"
-        ],
-        "story": "<p>Cables, granite, and a summit that makes every prior training hike feel like rehearsal. Worth every early alarm and every blister.</p>"
       }
     ]
   }

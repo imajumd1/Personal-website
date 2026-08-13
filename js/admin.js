@@ -66,7 +66,7 @@ function normalizeContent(raw) {
   if (!c.biography.eyebrow) c.biography.eyebrow = "01 / Biography";
   if (!c.education.title) c.education.title = "How I Learned";
   if (!c.education.eyebrow) c.education.eyebrow = "02 / Education";
-  if (!c.aiJourney.title) c.aiJourney.title = "Building With AI";
+  if (!c.aiJourney.title) c.aiJourney.title = "Building with AI";
   if (!c.aiJourney.eyebrow) c.aiJourney.eyebrow = "03 / AI Journey";
   if (!Array.isArray(c.aiJourney.gitProjects)) c.aiJourney.gitProjects = [];
   if (!Array.isArray(c.aiJourney.featuredBuilds)) {
