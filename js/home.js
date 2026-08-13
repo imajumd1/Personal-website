@@ -55,7 +55,7 @@ function renderProof(items) {
   const el = document.getElementById("proof-metrics");
   if (!el) return;
   el.innerHTML = items.map(m => `
-    <div class="proof-item reveal">
+    <div class="proof-item reveal in">
       <span class="proof-value">${escapeHtml(m.value || "")}</span>
       <span class="proof-label">${escapeHtml(m.label || "")}</span>
     </div>
@@ -65,8 +65,10 @@ function renderProof(items) {
 function renderWhatIDo(items) {
   const el = document.getElementById("what-i-do-grid");
   if (!el) return;
+  // Always keep the leverage section as a 3-column row (stacks on mobile via CSS).
+  el.classList.remove("pillars-5");
   el.innerHTML = items.map((p, i) => `
-    <article class="pillar-card reveal">
+    <article class="pillar-card reveal in">
       <span class="num">${String(i + 1).padStart(2, "0")}</span>
       <h3>${escapeHtml(p.title || "")}</h3>
       <p>${escapeHtml(p.text || "")}</p>
@@ -78,7 +80,7 @@ function renderImpact(items) {
   const el = document.getElementById("impact-grid");
   if (!el) return;
   el.innerHTML = items.map(item => `
-    <article class="impact-card reveal">
+    <article class="impact-card reveal in">
       <span class="tag">${escapeHtml(item.org || "")}</span>
       <h3>${escapeHtml(item.title || "")}</h3>
       <dl class="impact-dl">
@@ -94,7 +96,7 @@ function renderCareerArc(items) {
   const el = document.getElementById("career-arc-list");
   if (!el) return;
   el.innerHTML = items.map(s => `
-    <li class="career-arc-item reveal">
+    <li class="career-arc-item reveal in">
       <span class="career-stage">${escapeHtml(s.stage || "")}</span>
       <span class="career-detail">${escapeHtml(s.detail || "")}</span>
     </li>
@@ -105,7 +107,7 @@ function renderBeliefs(items) {
   const el = document.getElementById("beliefs-grid");
   if (!el) return;
   el.innerHTML = items.map(b => `
-    <article class="belief-card reveal">
+    <article class="belief-card reveal in">
       <h3>${escapeHtml(b.title || "")}</h3>
       <p>${escapeHtml(b.text || "")}</p>
       ${b.link ? `<a class="go" href="${escapeHtml(b.link)}">${escapeHtml(b.linkLabel || "Read more")} →</a>` : ""}
@@ -125,7 +127,7 @@ function renderLab(items) {
       p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
     ].filter(Boolean).join("");
     return `
-      <article class="lab-card reveal">
+      <article class="lab-card reveal in">
         <div class="lab-media" ${media} role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
         <div class="lab-body">
           <h3>${escapeHtml(p.name || "")}</h3>
@@ -144,7 +146,7 @@ function renderPerspectives(items) {
   const el = document.getElementById("perspective-grid");
   if (!el) return;
   el.innerHTML = items.map(m => `
-    <a class="perspective-card reveal" href="${escapeHtml(m.href || "musings.html")}">
+    <a class="perspective-card reveal in" href="${escapeHtml(m.href || "musings.html")}">
       <span class="tag">${escapeHtml(m.category || "")}</span>
       <h3>${escapeHtml(m.title || "")}</h3>
       <p>${escapeHtml(m.thesis || "")}</p>
@@ -160,7 +162,7 @@ function renderSpeaking(items) {
   const el = document.getElementById("speaking-list");
   if (!el) return;
   el.innerHTML = items.map(s => `
-    <article class="speaking-card reveal">
+    <article class="speaking-card reveal in">
       <h3>${escapeHtml(s.title || "")}</h3>
       <div class="meta">${escapeHtml([s.event, s.meta].filter(Boolean).join(" · "))}</div>
       <p>${escapeHtml(s.blurb || "")}</p>
