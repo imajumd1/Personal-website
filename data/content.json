@@ -49,16 +49,16 @@
     ],
     "whatIDo": [
       {
-        "title": "Enterprise AI Transformation",
-        "text": "Lead organizations from AI experimentation to production systems that change how work gets done—governance, literacy, and measurable outcomes included."
+        "title": "Enterprise AI",
+        "text": "Turning AI strategy into practical systems, products, and workflows that improve decision-making and operating efficiency."
       },
       {
-        "title": "Data & Platform Strategy",
-        "text": "Design trusted data platforms and product systems so every function can access clean signals, run experiments, and decide with confidence."
+        "title": "Trusted Platforms",
+        "text": "Building secure, scalable technology foundations that teams and customers can rely on as the business grows."
       },
       {
-        "title": "Technology & Product Leadership",
-        "text": "Build and scale engineering and product organizations that ship platforms, not slideware—staying close enough to the build to lead with judgment."
+        "title": "Technology Leadership",
+        "text": "Connecting business strategy, product, engineering, and AI so technology becomes a growth driver rather than a support function."
       }
     ],
     "selectedImpact": [
