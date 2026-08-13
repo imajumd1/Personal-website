@@ -390,15 +390,15 @@
         "summary": "<p>I honestly did not understand the meaning of GRIT till I read the book. I always thought, one is born talented. You are exceptional at Math, you are a born tennis player, you are ahead of your age group in piano. You are a natural genius. This book taught me, even with teh natural credentials, what sustains you throughout life is your perseverance and your efforts. You have to relentless. You have to be passionate. You have to be patient. I also used a lot of GRIT examples as a parent and introduced \"deliberate practice\" in the vocabulary of the family.</p>"
       },
       {
-        "title": "New book",
-        "author": "",
-        "cover": "images/books/new-book-01.jpg",
+        "title": "Shoe Dog",
+        "author": "Phil Knight",
+        "cover": "images/books/shoe-dog.jpg",
         "colors": [
-          "#1f5f52",
-          "#0a1f1a"
+          "#2a2118",
+          "#c47a2c"
         ],
         "rating": 4,
-        "summary": "<p>Placeholder entry for a title still taking shape on this shelf. I am holding space here for a book that earned a spot in conversation before it earned a finished card—cover art, author, and a real reflection will follow once I decide what belongs.</p><p>For now, treat this as a reminder that reading lists are living documents: some books arrive fully formed, and some sit as intentions until the right week finds them.</p>"
+        "summary": "<p>Phil Knight's memoir of building Nike is less a victory lap than a restless account of betting on instinct, surviving near-collapse, and learning what it costs to turn a side hustle into a global brand. The early Japan trips, thin margins, and constant improvisation make entrepreneurship feel physical—closer to endurance sport than tidy strategy decks.</p><p>I keep it as a reminder that momentum often arrives before certainty: ship, adjust, stay loyal to the craft, and accept that the path will look messier than the brand story that comes later.</p>"
       },
       {
         "title": "The Audacity of Hope",
@@ -412,15 +412,15 @@
         "summary": "<p>Obama's meditation on politics as a moral and practical craft still reads less like campaign literature and more like a field guide for holding competing truths at once. It is about hope as discipline: the hard work of listening across difference without abandoning conviction.</p><p>I keep returning to how he frames responsibility—to community, to institutions, and to the unfinished American story. Even when the policy landscape has shifted, the underlying invitation remains useful for anyone leading through ambiguity: argue in good faith, stay curious about people who disagree with you, and refuse the cheap comfort of cynicism.</p>"
       },
       {
-        "title": "New book",
-        "author": "",
-        "cover": "images/books/new-book-02.jpg",
+        "title": "Radical Candor",
+        "author": "Kim Scott",
+        "cover": "images/books/radical-candor.jpg",
         "colors": [
-          "#2f4f6f",
-          "#101c2b"
+          "#1a2744",
+          "#c45c48"
         ],
         "rating": 4,
-        "summary": "<p>Another reserved slot on the shelf—named simply \"New book\" until I replace it with the title that actually shaped a recent decision or conversation.</p><p>I leave these starter notes so the page stays honest about work in progress. When the real book lands, this blurb will become a personal takeaway in the same voice as the rest of this list.</p>"
+        "summary": "<p>Kim Scott's framework for caring personally while challenging directly is a practical antidote to both sugarcoated praise and blunt cruelty at work. The book is strongest when it treats feedback as a relationship skill—something you practice in real conversations, not a performance-review ritual.</p><p>I return to it when coaching or being coached: say the hard thing early, stay on the person's side, and notice when silence is actually the unkind option.</p>"
       },
       {
         "title": "Sapiens a Brief History of Mankind",
@@ -432,6 +432,17 @@
         ],
         "rating": 4,
         "summary": "<p>Harari's sweep from cognitive revolution to data-driven empires is less a history textbook than a provocation about the stories humans invent to cooperate at scale. Money, nations, corporations, and gods all appear as shared fictions with real consequences.</p><p>Reading it sharpened how I think about technology leadership: tools do not merely optimize; they rewrite the myths organizations live by. It is a useful companion when you are building systems that will outlast a quarter's roadmap and reshape how people trust information, institutions, and each other.</p>"
+      },
+      {
+        "title": "Hit Refresh",
+        "author": "Satya Nadella",
+        "cover": "images/books/hit-refresh.jpg",
+        "colors": [
+          "#0d3d4a",
+          "#1f7a8c"
+        ],
+        "rating": 4,
+        "summary": "<p>Nadella's account of Microsoft's cultural reset is a case study in leading through empathy, learning, and partnering rather than defending the old playbook. It connects personal story to enterprise transformation—growth mindset as an operating system for a company that had to reinvent how it competes.</p><p>Useful anytime an organization needs to refresh identity without discarding what still works: listen harder, ship cloud-first bets, and measure culture by how people treat curiosity and collaboration.</p>"
       }
     ]
   },
