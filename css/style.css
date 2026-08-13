@@ -1387,7 +1387,7 @@ a { color: inherit; text-decoration: none; }
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  gap: 28px 22px;
 }
 @media (max-width: 760px) {
   .impact-grid { grid-template-columns: 1fr; }
@@ -1395,9 +1395,26 @@ a { color: inherit; text-decoration: none; }
 .impact-card {
   border-top: 1px solid var(--line);
   padding: 22px 0 8px;
+  display: grid;
+  gap: 14px;
 }
 .impact-card-compact {
   padding: 16px 0 10px;
+  gap: 12px;
+}
+.impact-media {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--accent-soft);
+  border-radius: calc(var(--radius) - 4px);
+}
+.impact-card-compact .impact-media {
+  aspect-ratio: 16 / 10;
+}
+.impact-body {
+  min-width: 0;
 }
 .impact-card h3 {
   font-family: var(--serif);

@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parent
 CONTENT_PATH = ROOT / "data" / "content.json"
 UPLOAD_ROOT = ROOT / "images"
 DOCS_ROOT = ROOT / "uploads"
-ALLOWED_FOLDERS = {"hero", "books", "art", "hiking", "pillars", "roles", "projects", "builds"}
+ALLOWED_FOLDERS = {"hero", "books", "art", "hiking", "pillars", "roles", "projects", "builds", "impact"}
 ALLOWED_EXT = {
     ".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg",
     ".pdf", ".ppt", ".pptx", ".key",

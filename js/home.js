@@ -82,20 +82,26 @@ function renderImpact(items) {
   el.innerHTML = items.map((item, i) => {
     const teaser = impactTeaser(item);
     const id = `impact-detail-${i}`;
+    const media = item.image
+      ? `<div class="impact-media" style="background-image:url('${escapeHtml(item.image)}')" role="img" aria-label="${escapeHtml(item.title || item.org || "Case study")}"></div>`
+      : "";
     return `
     <article class="impact-card impact-card-compact reveal in">
-      <span class="tag">${escapeHtml(item.org || "")}</span>
-      <h3>${escapeHtml(item.title || "")}</h3>
-      <p class="impact-teaser">${escapeHtml(teaser.preview)}</p>
-      <button type="button" class="btn btn-ghost btn-small impact-read-more" aria-expanded="false" aria-controls="${id}">
-        Read More
-      </button>
-      <div class="impact-detail" id="${id}" hidden>
-        <dl class="impact-dl">
-          <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge || "")}</dd></div>
-          <div><dt>Built</dt><dd>${escapeHtml(item.action || "")}</dd></div>
-          <div><dt>Impact</dt><dd>${escapeHtml(item.impact || "")}</dd></div>
-        </dl>
+      ${media}
+      <div class="impact-body">
+        <span class="tag">${escapeHtml(item.org || "")}</span>
+        <h3>${escapeHtml(item.title || "")}</h3>
+        <p class="impact-teaser">${escapeHtml(teaser.preview)}</p>
+        <button type="button" class="btn btn-ghost btn-small impact-read-more" aria-expanded="false" aria-controls="${id}">
+          Read More
+        </button>
+        <div class="impact-detail" id="${id}" hidden>
+          <dl class="impact-dl">
+            <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge || "")}</dd></div>
+            <div><dt>Built</dt><dd>${escapeHtml(item.action || "")}</dd></div>
+            <div><dt>Impact</dt><dd>${escapeHtml(item.impact || "")}</dd></div>
+          </dl>
+        </div>
       </div>
     </article>
   `;

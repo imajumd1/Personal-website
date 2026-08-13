@@ -448,6 +448,12 @@ function renderImpact() {
         <div class="field"><label>Org</label><input data-k="org" value="${escapeHtml(item.org || "")}"></div>
         <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title || "")}"></div>
       </div>
+      <div class="field"><label>Cover image path</label><input data-k="image" value="${escapeHtml(item.image || "")}" placeholder="images/impact/..."></div>
+      <div class="upload-row">
+        <input type="file" accept="image/jpeg,image/jpg,image/png,image/webp,image/gif" data-upload-folder="impact">
+        <button type="button" class="btn btn-ghost btn-small" data-upload-into="image">Upload cover</button>
+      </div>
+      ${item.image ? `<img class="thumb" src="${escapeHtml(item.image)}" alt="">` : `<div class="thumb empty">No cover yet</div>`}
       <div class="field"><label>Challenge</label><textarea data-k="challenge" rows="3">${escapeHtml(item.challenge || "")}</textarea></div>
       <div class="field"><label>Built / Action</label><textarea data-k="action" rows="3">${escapeHtml(item.action || "")}</textarea></div>
       <div class="field"><label>Impact</label><textarea data-k="impact" rows="3">${escapeHtml(item.impact || "")}</textarea></div>`;
@@ -835,7 +841,8 @@ function gatherContent() {
         title: $("[data-k=title]", card).value.trim(),
         challenge: $("[data-k=challenge]", card).value.trim(),
         action: $("[data-k=action]", card).value.trim(),
-        impact: $("[data-k=impact]", card).value.trim()
+        impact: $("[data-k=impact]", card).value.trim(),
+        image: $("[data-k=image]", card).value.trim()
       }))
     : (content.home.selectedImpact || content.impact?.items || []);
 
@@ -1060,7 +1067,7 @@ function bindActions() {
   $("#add-impact")?.addEventListener("click", () => {
     content.impact = content.impact || { items: [] };
     content.impact.items = content.impact.items || [];
-    content.impact.items.push({ org: "", title: "New case study", challenge: "", action: "", impact: "" });
+    content.impact.items.push({ org: "", title: "New case study", challenge: "", action: "", impact: "", image: "" });
     content.home.selectedImpact = content.impact.items;
     renderImpact();
   });

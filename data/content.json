@@ -66,42 +66,48 @@
         "title": "Making enterprise data usable at scale",
         "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
         "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
-        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership."
+        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership.",
+        "image": "images/impact/enterprise-data-scale.jpg"
       },
       {
         "org": "eBay",
         "title": "Tech stack powering ebay.com",
         "challenge": "No complete product ownership of the Tech stack from metal to applications.",
         "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter, networks, cloud, dev platform, experimentation and personalization, to ML platform—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
-        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability."
+        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability.",
+        "image": "images/impact/tech-stack-ebay.jpg"
       },
       {
         "org": "Relanto",
         "title": "Enterprise intelligence as an operating system",
         "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
         "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
-        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes."
+        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes.",
+        "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
         "org": "Huawei",
         "title": "Spark-era data & context-aware AI",
         "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
         "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
-        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave."
+        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave.",
+        "image": "images/impact/spark-data-ai.jpg"
       },
       {
         "org": "Patents & invention",
         "title": "Three U.S. patents in mobile intelligence",
         "challenge": "Mobile systems needed better compression, security trust models, and behavior-aware companions, problems that required invention, not incremental features.",
         "action": "Invented across text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.",
-        "impact": "3 U.S. patents; a track record of turning systems insight into durable IP."
+        "impact": "3 U.S. patents; a track record of turning systems insight into durable IP.",
+        "image": "images/impact/mobile-patents.jpg"
       },
       {
         "org": "Stealth startup",
         "title": "Human-powered AI for special-needs families",
         "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about behavioral challenges, therapy access, and public support.",
         "action": "Co-founded and built an LLM-powered care platform as agentic advice grounded in trusted experience, community, and access pathways.",
-        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership."
+        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership.",
+        "image": "images/impact/human-powered-ai.jpg"
       }
     ],
     "careerArc": [
@@ -236,42 +242,48 @@
         "title": "Making enterprise data usable at scale",
         "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
         "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
-        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership."
+        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership.",
+        "image": "images/impact/enterprise-data-scale.jpg"
       },
       {
         "org": "eBay",
         "title": "Tech stack powering ebay.com",
         "challenge": "No complete product ownership of the Tech stack from metal to applications.",
         "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter, networks, cloud, dev platform, experimentation and personalization, to ML platform—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
-        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability."
+        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability.",
+        "image": "images/impact/tech-stack-ebay.jpg"
       },
       {
         "org": "Relanto",
         "title": "Enterprise intelligence as an operating system",
         "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
         "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
-        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes."
+        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes.",
+        "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
         "org": "Huawei",
         "title": "Spark-era data & context-aware AI",
         "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
         "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
-        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave."
+        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave.",
+        "image": "images/impact/spark-data-ai.jpg"
       },
       {
         "org": "Patents & invention",
         "title": "Three U.S. patents in mobile intelligence",
         "challenge": "Mobile systems needed better compression, security trust models, and behavior-aware companions, problems that required invention, not incremental features.",
         "action": "Invented across text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.",
-        "impact": "3 U.S. patents; a track record of turning systems insight into durable IP."
+        "impact": "3 U.S. patents; a track record of turning systems insight into durable IP.",
+        "image": "images/impact/mobile-patents.jpg"
       },
       {
         "org": "Stealth startup",
         "title": "Human-powered AI for special-needs families",
         "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about behavioral challenges, therapy access, and public support.",
         "action": "Co-founded and built an LLM-powered care platform as agentic advice grounded in trusted experience, community, and access pathways.",
-        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership."
+        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership.",
+        "image": "images/impact/human-powered-ai.jpg"
       }
     ]
   },
