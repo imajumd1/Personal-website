@@ -207,25 +207,25 @@
       },
       {
         "title": "Operating rhythm is a product",
-        "thesis": "Stronger ways of working — reviews, decision rights, experiment loops — compound faster than any single feature.",
+        "thesis": "Reviews, decision rights, and experiment loops compound faster than any single feature. Treat the cadence like something you design and ship.",
         "category": "Leadership & Organizations",
-        "readingTime": "1 min read",
+        "readingTime": "2 min read",
         "date": "",
         "href": "musings.html"
       },
       {
         "title": "First principles beat borrowed frameworks",
-        "thesis": "Stepping away from the org chart to build with AI from scratch reset how I lead.",
+        "thesis": "Stepping away from the org chart to build with AI from scratch reset how I lead. You cannot govern what you do not understand at the level of the actual system.",
         "category": "AI & Enterprise Transformation",
-        "readingTime": "1 min read",
+        "readingTime": "2 min read",
         "date": "",
         "href": "musings.html"
       },
       {
         "title": "Customer obsession is a discipline, not a slogan",
-        "thesis": "Every initiative I drive starts with who feels the result and ends in revenue or efficiency — not in a polished plan that never leaves the slide deck.",
+        "thesis": "Every initiative I drive starts with who feels the result and ends in revenue or efficiency, not in a polished plan that never leaves the slide deck.",
         "category": "Leadership & Organizations",
-        "readingTime": "1 min read",
+        "readingTime": "2 min read",
         "date": "",
         "href": "musings.html"
       }
@@ -835,28 +835,28 @@
       {
         "tag": "life",
         "title": "Customer obsession is a discipline, not a slogan",
-        "body": "<p>Every initiative I drive starts with who feels the result and ends in revenue or efficiency — not in a polished plan that never leaves the slide deck.</p>",
+        "body": "<p>Every initiative I drive starts with who feels the result and ends in revenue or efficiency, not in a polished plan that never leaves the slide deck. \"Customer obsession\" is easy to put on a wall. It is harder to put into the weekly operating system.</p><p>At eBay, and now as CDAO at Relanto, I have watched teams confuse proximity to customers with accountability to them. Listening tours, journey maps, and NPS dashboards can coexist with roadmaps that still optimize for internal convenience. The discipline is simpler and stricter: name the human who will trust, use, and act on what you ship, then refuse to call the work done until that person's outcome moves.</p><p>That standard changes how you prioritize. A platform that is \"architecturally elegant\" but opaque to the analyst who needs it is not finished. An AI pilot that impresses in a demo but never changes how a seller prices, a buyer decides, or an operator escalates is theater. Customer obsession means you design for the moment of use, not the moment of applause.</p><p>Practically, I force three questions into reviews. Who is the customer of this initiative (external buyer, internal operator, partner, or regulated user)? What decision or action becomes better if we succeed? How will we know within a defined window, with a metric that is not vanity? If those answers are vague, the initiative is not ready for funding, no matter how good the slide narrative looks.</p><p>This is also why I stay close to the build. You cannot be customer-obsessed through status alone. You have to see where friction lives: missing lineage, unclear ownership, a workflow that requires three handoffs before someone can act. Technology creates value only when people can trust it, use it, and act on it. Customer obsession is the habit of organizing the entire stack around that sentence.</p><p>Slogans fade. Cadence does not. Put the customer into decision rights, experiment design, and definition of done, and the organization starts shipping differently. That is the work.</p>",
         "category": "Leadership & Organizations",
-        "thesis": "Every initiative I drive starts with who feels the result and ends in revenue or efficiency — not in a polished plan that never leaves the slide deck.",
-        "readingTime": "1 min read",
+        "thesis": "Every initiative I drive starts with who feels the result and ends in revenue or efficiency, not in a polished plan that never leaves the slide deck.",
+        "readingTime": "2 min read",
         "date": ""
       },
       {
         "tag": "tech",
         "title": "First principles beat borrowed frameworks",
-        "body": "<p>Stepping away from the org chart to build with AI from scratch reset how I lead. You can't govern what you don't understand at the level of the actual system.</p>",
+        "body": "<p>Stepping away from the org chart to build with AI from scratch reset how I lead. You cannot govern what you do not understand at the level of the actual system.</p><p>Borrowed frameworks are seductive because they travel well in executive rooms. Operating model templates, maturity scores, and \"AI transformation\" playbooks create the feeling of progress before anyone has touched a prompt, a dataset, or a production constraint. I have used frameworks. I still do. The failure mode is treating them as substitutes for first-principles reasoning about the problem in front of you.</p><p>When I built as a founder and as a hands-on executive, the useful questions were concrete. What decision are we trying to improve? What data must be trusted for that decision? Where does the human still need judgment? What breaks if latency, cost, or quality drifts? Those questions do not come from a slide library. They come from building enough to feel the seams.</p><p>First principles do not mean reinventing everything. They mean refusing to import assumptions that were true in someone else's org chart. A retail marketplace, a telecom stack, and an enterprise services firm do not share the same failure modes, incentives, or data gravity. Copying a peer's AI center of excellence without that context is how you get pilots that never leave the lab.</p><p>This is also how I mentor first-time builders. Start with the smallest system that can earn trust: a narrow workflow, clear provenance, a feedback loop you can inspect. Scale the pattern only after people can use it and act on it. Frameworks are useful after that, as a way to communicate and govern. They are dangerous before that, because they let leaders manage vocabulary instead of reality.</p><p>My job as CDAO is not to collect frameworks. It is to keep the organization honest about what the system actually does under load, with real users and real consequences. Stay in the build long enough to lead with judgment, not just strategy.</p>",
         "category": "AI & Enterprise Transformation",
-        "thesis": "Stepping away from the org chart to build with AI from scratch reset how I lead.",
-        "readingTime": "1 min read",
+        "thesis": "Stepping away from the org chart to build with AI from scratch reset how I lead. You cannot govern what you do not understand at the level of the actual system.",
+        "readingTime": "2 min read",
         "date": ""
       },
       {
         "tag": "leadership",
         "title": "Operating rhythm is a product",
-        "body": "<p>Stronger ways of working — reviews, decision rights, experiment loops — compound faster than any single feature. Treat the cadence like something you design and ship.</p>",
+        "body": "<p>Reviews, decision rights, and experiment loops compound faster than any single feature. Treat the cadence like something you design and ship.</p><p>Most organizations over-invest in the artifact and under-invest in the rhythm that turns artifacts into outcomes. They launch a platform, an agent, a dashboard, then wonder why adoption stalls. The missing product is often the operating rhythm: who meets, what gets decided, what evidence is required, and how fast a bad idea dies.</p><p>At eBay, when we centralized product ownership across a wide technology portfolio, the unlock was not only roadmap clarity. It was a biweekly delivery cadence, clearer escalation paths, and stakeholder accountability that made progress visible and excuses expensive. The same lesson applies to enterprise AI. Models drift. Prompts change. Data quality slips. Without a designed loop for review and intervention, \"production\" is just a hopeful label.</p><p>I treat operating rhythm as a product with users, interfaces, and quality bars. The users are leaders, builders, and operators who need to trust, use, and act on shared signals. The interface is the review itself: agenda, decision rights, and the artifacts that enter the room. The quality bar is whether the meeting produces a decision, an experiment, or an explicit kill, not another polite update.</p><p>Design the cadence deliberately. Separate discovery reviews from delivery reviews so neither collapses into status theater. Make decision rights explicit so debate has an owner. Instrument experiment loops so learning compounds instead of resetting every quarter. If your AI program cannot say what it learned last cycle and what it will change next cycle, you do not have a transformation. You have a calendar.</p><p>Features get copied. Rhythm compounds. Boards and CDOs should ask for the cadence the same way they ask for the architecture. Ship the way of working with the same seriousness you ship the stack, and the organization gets faster without getting sloppy.</p>",
         "category": "Leadership & Organizations",
-        "thesis": "Stronger ways of working — reviews, decision rights, experiment loops — compound faster than any single feature.",
-        "readingTime": "1 min read",
+        "thesis": "Reviews, decision rights, and experiment loops compound faster than any single feature. Treat the cadence like something you design and ship.",
+        "readingTime": "2 min read",
         "date": ""
       },
       {
