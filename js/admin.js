@@ -61,6 +61,13 @@ function normalizeContent(raw) {
   });
   c.biography = c.biography || {};
   c.biography.bios = c.biography.bios || { short: "", medium: "", full: "" };
+  if (!Array.isArray(c.biography.career)) c.biography.career = [];
+  if (!Array.isArray(c.biography.callouts)) c.biography.callouts = [];
+  if (!Array.isArray(c.biography.recognition)) c.biography.recognition = c.biography.callouts.slice();
+  if (c.biography.quote == null) {
+    c.biography.quote = "Technology creates value only when people can trust it, use it, and act on it";
+  }
+  if (c.biography.builder == null) c.biography.builder = "";
   c.education = c.education || {};
   c.aiJourney = c.aiJourney || {};
   c.aiLab = c.aiLab || { eyebrow: "AI Lab", title: "Recent builds", lede: "", items: [] };
@@ -291,9 +298,11 @@ function renderBiography() {
   $("#bio-eyebrow").value = b.eyebrow || "";
   $("#bio-title").value = b.title || "";
   setStaticRte("bio-lede", b.lede || "");
+  if ($("#bio-quote")) $("#bio-quote").value = b.quote || "";
   if ($("#bio-short")) $("#bio-short").value = b.bios?.short || "";
   if ($("#bio-medium")) $("#bio-medium").value = b.bios?.medium || "";
-  setStaticRte("bio-summary", paragraphsToHtml(b.bios?.full || b.summary), { minHeight: "160px" });
+  setStaticRte("bio-summary", paragraphsToHtml(b.summary || b.bios?.full || ""), { minHeight: "160px" });
+  setStaticRte("bio-builder", paragraphsToHtml(b.builder || ""), { minHeight: "120px" });
   if ($("#bio-headshot")) $("#bio-headshot").value = b.headshot || "";
   if ($("#bio-download")) $("#bio-download").value = b.bioDownload || "";
   const career = $("#bio-career");
@@ -301,7 +310,10 @@ function renderBiography() {
   (b.career || []).forEach((item, i) => career.appendChild(careerCard(item, i)));
   const callouts = $("#bio-callouts");
   callouts.innerHTML = "";
-  (b.callouts || []).forEach((item, i) => callouts.appendChild(calloutCard(item, i)));
+  const recognition = Array.isArray(b.recognition) && b.recognition.length
+    ? b.recognition
+    : (b.callouts || []);
+  recognition.forEach((item, i) => callouts.appendChild(calloutCard(item, i)));
 }
 
 function careerCard(item, i) {
@@ -342,7 +354,7 @@ function calloutCard(item, i) {
   el.className = "item-card";
   el.innerHTML = `
     <div class="item-card-head">
-      <strong>Callout ${i + 1}</strong>
+      <strong>Recognition ${i + 1}</strong>
       <button type="button" class="btn btn-danger btn-small" data-remove="callout">Remove</button>
     </div>
     <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title)}"></div>
@@ -888,7 +900,9 @@ function gatherContent() {
       eyebrow: $("#bio-eyebrow").value.trim(),
       title: $("#bio-title").value.trim(),
       lede: getStaticRte("bio-lede"),
+      quote: ($("#bio-quote")?.value || content.biography?.quote || "").trim(),
       summary: fullBio,
+      builder: getStaticRte("bio-builder") || content.biography?.builder || "",
       bios: {
         short: ($("#bio-short")?.value || content.biography?.bios?.short || "").trim(),
         medium: ($("#bio-medium")?.value || content.biography?.bios?.medium || "").trim(),
@@ -897,7 +911,8 @@ function gatherContent() {
       headshot: ($("#bio-headshot")?.value || content.biography?.headshot || "").trim(),
       bioDownload: ($("#bio-download")?.value || content.biography?.bioDownload || "").trim(),
       career,
-      callouts
+      callouts,
+      recognition: callouts
     },
     education: {
       eyebrow: $("#edu-eyebrow").value.trim(),
@@ -1054,7 +1069,8 @@ function bindActions() {
     renderBiography();
   });
   $("#add-callout").addEventListener("click", () => {
-    content.biography.callouts.push({ title: "New callout", text: "" });
+    content.biography.callouts.push({ title: "New recognition", text: "" });
+    content.biography.recognition = content.biography.callouts;
     renderBiography();
   });
   $("#add-school").addEventListener("click", () => {
@@ -1239,7 +1255,10 @@ function bindActions() {
           content.home.selectedImpact = content.impact.items;
         },
         career: () => content.biography.career.splice(idx, 1),
-        callout: () => content.biography.callouts.splice(idx, 1),
+        callout: () => {
+          content.biography.callouts.splice(idx, 1);
+          content.biography.recognition = content.biography.callouts;
+        },
         school: () => content.education.schools.splice(idx, 1),
         gitProject: () => content.aiJourney.gitProjects.splice(idx, 1),
         featuredBuild: () => content.aiJourney.featuredBuilds.splice(idx, 1),

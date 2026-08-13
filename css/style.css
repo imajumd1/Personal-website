@@ -1668,6 +1668,121 @@ a { color: inherit; text-decoration: none; }
   margin: 0 0 36px;
 }
 
+/* ---------- About page ---------- */
+.bio-subnav {
+  position: sticky;
+  top: 64px;
+  z-index: 40;
+  background: rgba(246, 245, 242, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.bio-subnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 2px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+.bio-subnav a {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.bio-subnav a:hover,
+.bio-subnav a.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+.bio-page .bio-section {
+  scroll-margin-top: 140px;
+  margin-bottom: 64px;
+  padding-top: 8px;
+}
+.bio-quote {
+  margin: 0 0 48px;
+  padding: 28px 0 32px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-width: 46rem;
+}
+.bio-quote p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 3.2vw, 2.05rem);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--accent-deep);
+}
+.bio-quote p::before {
+  content: "“";
+}
+.bio-quote p::after {
+  content: "”";
+}
+.bio-prose {
+  max-width: 68ch;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
+.bio-prose p {
+  margin: 0 0 1.05em;
+}
+.bio-prose p:last-child {
+  margin-bottom: 0;
+}
+.bio-page .timeline .rich-text {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+.bio-page .timeline .rich-text p {
+  margin: 0 0 0.85em;
+}
+.bio-page .timeline .rich-text p:last-child {
+  margin-bottom: 0;
+}
+.bio-page .timeline .rich-text ul {
+  margin: 0.4em 0 0.85em;
+  padding-left: 1.2em;
+}
+.bio-page .timeline .rich-text li {
+  margin-bottom: 0.35em;
+}
+.recognition-list {
+  display: grid;
+  gap: 28px;
+  max-width: 52rem;
+}
+.recognition-item {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.recognition-item h3 {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+.recognition-item .rich-text {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+.recognition-item .rich-text p {
+  margin: 0;
+}
+.bio-page .bio-beliefs {
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+.bio-page .section-more {
+  margin-top: 48px;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--line);

@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ishita Majumdar — About</title>
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -17,7 +16,7 @@
       <li><a href="impact.html">Impact</a></li>
       <li><a href="ai-journey.html">AI Lab</a></li>
       <li><a href="musings.html">Perspectives</a></li>
-      <li><a href="biography.html">About</a></li>
+      <li><a href="biography.html" class="active">About</a></li>
       <li class="nav-more">
         <button type="button" class="nav-more-btn" aria-expanded="false" aria-haspopup="true">More</button>
         <ul class="nav-dropdown">
@@ -37,19 +36,62 @@
   <div class="wrap">
     <span class="eyebrow">About</span>
     <h1>Ishita Majumdar</h1>
-    <p class="lede">Builder-executive. Three lengths of the same story—for introductions, press, and the full arc.</p>
+    <p class="lede">Technology executive and builder — engineering, product, data platforms, and enterprise AI.</p>
   </div>
 </header>
-<main class="page-body">
-  <div class="wrap">
-    <div class="bio-actions" id="bio-actions"></div>
-    <div class="bio-lengths" id="bio-lengths"></div>
-    <h2 style="font-family:var(--serif); margin-bottom:18px;">Career so far</h2>
-    <div class="timeline reveal" id="bio-career" style="margin-bottom:56px;"></div>
-    <h2 style="font-family:var(--serif); margin-bottom:18px;">Special callouts</h2>
-    <div class="cards-grid reveal" id="bio-callouts"></div>
 
-    <section class="bio-beliefs" id="how-i-think" style="margin-top:56px;">
+<nav class="bio-subnav" aria-label="About page sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#builder">Builder at Heart</a></li>
+      <li><a href="#recognition">Recognition</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page-body bio-page">
+  <div class="wrap">
+    <blockquote class="bio-quote reveal" id="bio-quote">
+      <p>Technology creates value only when people can trust it, use it, and act on it</p>
+    </blockquote>
+
+    <div class="bio-actions" id="bio-actions"></div>
+
+    <section class="bio-section reveal" id="about">
+      <div class="section-head">
+        <span class="eyebrow">About</span>
+        <h2>The throughline</h2>
+      </div>
+      <div class="bio-prose rich-text" id="bio-about"></div>
+    </section>
+
+    <section class="bio-section reveal" id="career">
+      <div class="section-head">
+        <span class="eyebrow">Career</span>
+        <h2>Where the work happened</h2>
+      </div>
+      <div class="timeline" id="bio-career"></div>
+    </section>
+
+    <section class="bio-section reveal" id="builder">
+      <div class="section-head">
+        <span class="eyebrow">Builder at Heart</span>
+        <h2>Never far from the build</h2>
+      </div>
+      <div class="bio-prose rich-text" id="bio-builder"></div>
+    </section>
+
+    <section class="bio-section reveal" id="recognition">
+      <div class="section-head">
+        <span class="eyebrow">Selected Recognition</span>
+        <h2>Patents, leadership, community</h2>
+      </div>
+      <div class="recognition-list" id="bio-callouts"></div>
+    </section>
+
+    <section class="bio-beliefs" id="how-i-think">
       <div class="section-head reveal">
         <span class="eyebrow">How I Think</span>
         <h2>Beliefs that shape my work</h2>
@@ -58,7 +100,7 @@
       <div class="beliefs-grid" id="beliefs-grid"></div>
     </section>
 
-    <p class="section-more" style="margin-top:40px;"><a href="education.html">Education →</a></p>
+    <p class="section-more"><a href="education.html">Education →</a></p>
   </div>
 </main>
 

@@ -278,71 +278,87 @@
   "biography": {
     "eyebrow": "About",
     "title": "Ishita Majumdar",
-    "lede": "<p>Builder-executive. Three lengths of the same story—for introductions, press, and the full arc.</p>",
-    "summary": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and my innate curiosity and exploration is what continues to shape how I lead today.&nbsp;</p><p data-path-to-node=\"0\">Early in my career, I focused on architecting context-aware systems and later moved into modernizing data platforms to keep them agile, cutting-edge, and open source based. The work became deeply personal when I co-founded a startup centered on human-powered AI—building a support and care platform for families navigating special needs. Today, I lead global data and AI strategies, creating trusted, intelligent systems and inspiring a culture of data literacy and ethical AI adoption across enterprise teams. Yet I remain an active builder at heart, using modern AI tools every day for design, rapid prototyping, and QA, bringing that same authentic founder’s mindset to every level of leadership.</p>",
+    "lede": "<p>Technology executive and builder — engineering, product, data platforms, and enterprise AI.</p>",
+    "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>",
     "bios": {
       "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She builds the systems, platforms, and organizations that turn Data + AI into measurable business outcomes—and stays close enough to the technical work to lead with judgment, not slideware.",
       "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents—she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her throughline is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
-      "full": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and my innate curiosity and exploration is what continues to shape how I lead today.&nbsp;</p><p data-path-to-node=\"0\">Early in my career, I focused on architecting context-aware systems and later moved into modernizing data platforms to keep them agile, cutting-edge, and open source based. The work became deeply personal when I co-founded a startup centered on human-powered AI—building a support and care platform for families navigating special needs. Today, I lead global data and AI strategies, creating trusted, intelligent systems and inspiring a culture of data literacy and ethical AI adoption across enterprise teams. Yet I remain an active builder at heart, using modern AI tools every day for design, rapid prototyping, and QA, bringing that same authentic founder’s mindset to every level of leadership.</p>"
+      "full": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>"
     },
     "headshot": "images/hero/PXL_20250819_201111143.jpg",
     "bioDownload": "",
     "career": [
       {
         "title": "Chief Data and AI Officer — Relanto",
-        "meta": "Nov 2025 – Present · Fremont, CA",
-        "text": "<p>Leading global data and AI strategy, building trusted, intelligent systems that transform how the enterprise makes decisions, automates workflows, and delivers customer value, while championing data literacy and ethical AI adoption.</p>",
+        "meta": "2025 – Present",
+        "text": "<p>Leading global Data + AI strategy, building trusted intelligent systems that improve decision-making, automate workflows, and create customer value.</p>",
         "attachments": []
       },
       {
-        "title": "Co-Founder / CPTO — Stealth Startup",
-        "meta": "Apr 2024 – Oct 2025 · 1 yr 7 mos",
-        "text": "<p>We started this company as three co-founders, inspired by our common experiences as care givers to children/young adults who have neuro-developmental conditions. With the advent of generative AI, we decided to build a prototype using LLM and see if we can build an agent focused on answering questions from families who are struggling to get advice on....&nbsp;</p><p>What to do when your child has a meltdown and we know she is on the spectrum?</p><p>Can I see a private behavioral therapist and not have to wait for 2 months, if I am willing to spend money from my pocket?</p><p>Can the government help? How?</p><p>Information was fragmented and un trusted. What if we can build a healthcare platform that is an integrated source of information, community, access to medical help and most importantly getting advice from folks who are trusted and experienced?</p><p>Product wise, it was great! GTM was it was not too great. It seemed after 2 years, that it should be a non profit</p>",
+        "title": "Co-Founder & CPTO — AI Startup",
+        "meta": "2024 – 2025",
+        "text": "<p>Co-founded a human-centered AI platform inspired by the challenges families face navigating neurodevelopmental care.</p><p>We built an AI-powered experience bringing together trusted information, community knowledge, and access to support.</p><p>The experience reinforced something I carry into enterprise AI today: great technology is not enough. Trust, distribution, behavior, and business model matter just as much.</p>",
         "attachments": []
       },
       {
         "title": "Vice President, Data Analytics Platforms — eBay",
-        "meta": "Jan 2020 – Mar 2024 · San Francisco Bay Area",
-        "text": "<h3 style=\"margin: 0px; font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);\"><br></h3><h3 style=\"margin: 0px; font-style: normal; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &quot;Helvetica Neue&quot;; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: normal;\">By this time, I have spent many years in the data space. Enabling big data stack, using open source technology, for customer use cases in the telecom space. Defining and managing data products from Site DB, Data Analytics platforms, Data tools, Data preparation for ML algorithms. Realizing the massive importance of data from ingest to insights for better buyer and seller experience. Acknowledging how hard it is to maintain clean, compliant and trusted data for all consumers. The SQL savvy users: the Developers, the Analysts. The non SQL savvy users like the product managers, sales, business development managers. Increasingly, I believed that Data in any form should be accessible by any enterprise worker - with the right controls and access of course. It should be the Data org's responsibility to make this possible.&nbsp; Hence it was a natural career transition for me to lead the data organization including data engineers, data scientists and data product managers on this journey to make data and data derivatives - accessible by everyone independently. For this, I added my three steel threads on how to achieve this.</span></h3><ol><li>Build an A+ team. I pursued external and internal candidates with equal gusto so that can complement each other in their passion for getting the best out of data. My golden rule: hire no-ego, smart people who can work as a team.</li><li>Be accountable for making data work for others. Data consumers should trust the data for any use case</li><li>Be transparent with Data measures. That means sit with our customers to jointly determine KPIs and then keep on measuring them and publish the dashboards for all to see. No hiding!</li></ol><p></p>",
+        "meta": "2020 – 2024",
+        "text": "<p>Led teams across data engineering, data science, and data product management with a mission to make trusted data accessible across the enterprise.</p><p>My operating principles were simple:</p><ul><li>Build exceptional, low-ego teams.</li><li>Make the data organization accountable to its consumers.</li><li>Measure outcomes transparently.</li></ul>",
         "attachments": []
       },
       {
         "title": "Global Head of Technology Products — eBay",
-        "meta": "Jul 2014 – Dec 2019 · San Jose, CA",
-        "text": "<h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">I joined eBay to manage the Data Products from infrastructure to analytics to data tools. My technical expertise was in the data analytics space and very soon extended I learned to understand how experiment platforms work for decision making and how personalization platforms collect behavior signals and deliver \"next best action\".</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\"><br></span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How do we build the right platform to collect the true signals and separate from noise?&nbsp;</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How can we conduct faster experiments and better hypothesis testing?</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How do we deliver in biweekly sprints and have better output and adoption?</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">How do we set up the right process for customer escalations?</span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\"><br></span></h3><h3 style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; margin: 0px; font-variant: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; line-height: normal; color: rgb(0, 0, 0);\"><span style=\"color: rgb(23, 25, 31); font-family: &quot;Avenir Next&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: medium; font-weight: 400;\">My portfolio extended over time to include the entire tech stack from metal to ML. Datacenter &amp; Network, Cloud and Security, AI/ML Platform, Developer tools. As I built the team, I realized this will be a unique combination of technical product managers and technical program managers alike. The Product managers were responsible for product vision, strategy, roadmap, customer engagement and stakeholder management. These folks transitioned from engineering careers to become dedicated product managers so they understood the technology, had the domain knowledge to challenge</span></h3>",
+        "meta": "2014 – 2019",
+        "text": "<p>Led technology product strategy across data, analytics, experimentation, personalization, cloud, infrastructure, security, developer platforms, and AI/ML.</p><p>Built and scaled technical product and program teams responsible for turning complex infrastructure into products developers and businesses could actually use.</p>",
         "attachments": []
       },
       {
         "title": "Sr. Director, Technology Strategy & Innovation — Huawei",
-        "meta": "Jun 2011 – Jul 2014 · Santa Clara, CA",
-        "text": "<p>Led global strategy for Big Data and AI product innovation across the U.S. and China. Defined the vision for Spark-based data infrastructure and shaped the architecture for next-gen, context-aware AI systems.</p>",
+        "meta": "2011 – 2014",
+        "text": "<p>Led global strategy for Big Data and AI innovation across the U.S. and China, including Spark-based data infrastructure and context-aware intelligent systems.</p>",
         "attachments": []
       },
       {
         "title": "Executive in Residence — Plug and Play Tech Center",
-        "meta": "Aug 2008 – Jun 2011 · Sunnyvale / Palo Alto / Redwood City, CA",
-        "text": "<p>Advisor and collaborator across a community of 200+ startups, VCs, and angel investors — product development, fundraising, partnerships, and executive team management.</p>",
+        "meta": "2008 – 2011",
+        "text": "<p>Worked with startups, investors, and founders across product strategy, fundraising, partnerships, and company building.</p>",
         "attachments": []
       },
       {
-        "title": "Director; Principal Engineer — Motorola",
-        "meta": "Aug 1997 – May 2008 · 10 yrs 10 mos",
-        "text": "<p>Directed commercialization of emerging technologies within Motorola's Internal Ventures group, securing seed funding for 10 internal startups and delivering 3 revenue-generating ventures. Earlier, architected VoIP systems for all-IP networks (SIP, CDMA, GSM, iDEN) and built capacity-planning tools used by telecom customers worldwide.</p>",
+        "title": "Director / Principal Engineer — Motorola",
+        "meta": "1997 – 2008",
+        "text": "<p>Started my career as an engineer building telecommunications systems before moving into technology commercialization and internal ventures.</p><p>Helped secure funding for 10 internal startups and bring three ventures to revenue.</p>",
         "attachments": []
       }
     ],
     "callouts": [
       {
-        "title": "3 US Patents",
-        "text": "<p>Inventor on patents spanning text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.</p>"
+        "title": "3 U.S. Patents",
+        "text": "<p>Across communications, security architectures, and intelligent user behavior systems.</p>"
       },
       {
-        "title": "Recognized Data & Tech Leader",
-        "text": "<p>Named a&nbsp;</p><p>Top 10 Data Innovator (2024),&nbsp;</p><p>CDO Magazine Global Data Power Woman (2023),&nbsp;</p><p>Top 100 Women of Influence in Silicon Valley (2020).</p>"
+        "title": "Data & Technology Leadership",
+        "text": "<p>Top 10 Data Innovator · CDO Magazine Global Data Power Woman · Top 100 Women of Influence in Silicon Valley</p>"
       },
       {
-        "title": "Built Community, Not Just Products",
-        "text": "<p>I am a community builder across my entire career.</p><p>@Motorola - I</p><p>San Francisco chapter of Chief, served 5 years on the board of Nerdy Girl Success, and grew eBay's Women in Technology community to 2,000 volunteers worldwide as its Global President.</p>"
+        "title": "Community Builder",
+        "text": "<p>Led eBay’s global Women in Technology community of 2,000 volunteers and have spent much of my career mentoring and supporting the next generation of technology leaders.</p>"
+      }
+    ],
+    "quote": "Technology creates value only when people can trust it, use it, and act on it",
+    "builder": "<p>My roles have changed, but I have never moved far from the build.</p><p>I still use modern AI tools to prototype, design, test ideas, and understand what technology can actually do—not just what a presentation says it can do.</p><p>That builder mindset shapes how I lead teams, evaluate technology, and approach transformation.</p>",
+    "recognition": [
+      {
+        "title": "3 U.S. Patents",
+        "text": "<p>Across communications, security architectures, and intelligent user behavior systems.</p>"
+      },
+      {
+        "title": "Data & Technology Leadership",
+        "text": "<p>Top 10 Data Innovator · CDO Magazine Global Data Power Woman · Top 100 Women of Influence in Silicon Valley</p>"
+      },
+      {
+        "title": "Community Builder",
+        "text": "<p>Led eBay’s global Women in Technology community of 2,000 volunteers and have spent much of my career mentoring and supporting the next generation of technology leaders.</p>"
       }
     ]
   },
@@ -378,9 +394,9 @@
     ]
   },
   "aiJourney": {
-    "eyebrow": "AI Lab",
-    "title": "Building in public",
-    "lede": "<p>Recent builds from the lab—what they do, why I made them, and what I learned shipping them.</p>",
+    "eyebrow": "Building with AI",
+    "title": "From Idea to Prototype",
+    "lede": "<p>Recent AI builds. What they do, why I made them, and what I learned from them.</p>",
     "story": "<p>I am a creator at heart. I like rolling up my sleeves, testing new tools, and building ideas into reality. The first few tries were laborious but with the help of some excellent workshops and You Tube free classes, I learned how to explore, experiment and get better.</p><p>I'm a rare executive who stepped away from organizational leadership to build with AI from first principles. No matter what my role is, I still stay in the build and I stay grounded in what's real. And this gives me the inspiration to mentor and inspire other first time builders.</p>",
     "githubUsername": "imajumd1",
     "gitProjects": [
@@ -713,7 +729,7 @@
           "#2a2118",
           "#c47a2c"
         ],
-        "rating": 4,
+        "rating": 5,
         "summary": "<p>Listening to Phil Knight's memoir on Audiobooks was like watching \"Oceans Eleven\". It was non stop adrenaline of executing improbable bets, surviving near collapse and working on your instincts to create a market which you are betting on to begin with. Most importantly I learned how to turn a side hustle into a global brand. There is no bluebook for this type of conviction and madness. At no step, was their assurance and certainty except in Knight's mind.</p><p>I keep it as a reminder that momentum often arrives before certainty: ship, adjust, stay loyal to the craft, and accept that the path will look messier than the brand story that comes later.</p>"
       },
       {
@@ -724,8 +740,8 @@
           "#1a365d",
           "#0a1628"
         ],
-        "rating": 4,
-        "summary": "<p>I read this in 2008 a year, when my entire team was let go in a matter of one 20 minute team meeting. We were considered the elite if the elites, we were building the business in new and disruptive ways, we had this sense of invulnerability. Suddenly, we didn't exist. So I desperately needed Hope. This book was like a field guide for holding competing truths at once. It is about hope as discipline the hard work of listening and experiencing something you don't agree with, without abandoning conviction.</p><p>I keep returning to how he frames responsibility, to community, to institutions, and to the unfinished American story. Even when the policy landscape has shifted, the underlying invitation remains useful for anyone leading through ambiguity: argue in good faith, stay curious about people who disagree with you, and refuse the cheap comfort of cynicism. I lean on this book when I have to build consensus to achieve something Or I have to resolve conflicts without showing bias.</p>"
+        "rating": 5,
+        "summary": "<p>I read this in 2008 a year, when my entire team was let go in a matter of one 20 minute team meeting. We were considered the elite if the elites, we were building the business in new and disruptive ways, we had this sense of invulnerability. Suddenly, we didn't exist. So I desperately needed Hope. This book was like a field guide for holding competing truths at once. It is about hope as discipline the hard work of listening and experiencing something you don't agree with, without abandoning conviction.</p><p>I keep returning to how he frames responsibility, to community, to institutions, and to the unfinished American story. Even when the policy landscape has shifted, the underlying invitation remains useful for anyone leading through ambiguity: argue in good faith, stay curious about people who disagree with you, and refuse the cheap comfort of cynicism. I lean on this book when I have to build consensus to achieve something or I have to resolve conflicts without showing bias.</p>"
       },
       {
         "title": "Radical Candor",
@@ -735,7 +751,7 @@
           "#1a2744",
           "#c45c48"
         ],
-        "rating": 4,
+        "rating": 5,
         "summary": "<p>As a manager. one of the hardest things I learned was to how to give honest feedback with a belief that this actually helps in the development of people a nd teams. Kim Scott's framework for caring personally while challenging directly is a practical antidote to both sugarcoated praise and blunt cruelty at work. I learned to treat feedback as a relationship skill, something you practice in real conversations, not a performance-review ritual.</p><p>I return to it when coaching or being coached: say the hard thing early, stay on the person's side, and notice when silence is actually the unkind option.</p>"
       },
       {
@@ -746,8 +762,8 @@
           "#b5651d",
           "#5a2e0d"
         ],
-        "rating": 4,
-        "summary": "<p>Harari's sweep from cognitive revolution to data-driven empires is less a history textbook than a provocation about the stories humans invent to cooperate at scale. Money, nations, corporations, and gods all appear as shared fictions with real consequences.</p><p>Reading it sharpened how I think about technology leadership: tools do not merely optimize; they rewrite the myths organizations live by. It is a useful companion when you are building systems that will outlast a quarter's roadmap and reshape how people trust information, institutions, and each other.</p>"
+        "rating": 5,
+        "summary": "<p class=\"isSelectedEnd\">What I took most from <em>Sapiens</em> is how much of society is built on shared belief. Money, companies, governments, and institutions only work because large groups of people collectively trust the systems and stories behind them.</p><p>That changed how I think about entrepreneurship and technology. Building something successful is not only about creating a better product or making a process more efficient; it is also about earning trust, shaping behavior, and giving people a reason to believe in what you are building. The book made me think more carefully about the systems I want to create and the responsibility that comes with building technology or organizations that can influence how people make decisions, connect with one another, and understand the world.</p>"
       },
       {
         "title": "Hit Refresh",
@@ -757,8 +773,8 @@
           "#0d3d4a",
           "#1f7a8c"
         ],
-        "rating": 4,
-        "summary": "<p>Nadella's account of Microsoft's cultural reset is a case study in leading through empathy, learning, and partnering rather than defending the old playbook. It connects personal story to enterprise transformation—growth mindset as an operating system for a company that had to reinvent how it competes.</p><p>Useful anytime an organization needs to refresh identity without discarding what still works: listen harder, ship cloud-first bets, and measure culture by how people treat curiosity and collaboration.</p>"
+        "rating": 5,
+        "summary": "<p class=\"isSelectedEnd\">Hit Refresh showed me that strong leadership is not about protecting what worked in the past, but about staying curious, listening closely, and being willing to change how a company thinks and operates. To me personally, I learned on how to lead with empathy: listening, learning and partnering all the time. I liked the connection from his personal story to a large scale cultural transformation that he accomplished.</p><p>The book also changed how I think about leadership in my own work. Growth comes from creating an environment where people are comfortable learning, collaborating, and challenging old assumptions. It reinforced for me that the best leaders do not need to have every answer—they need to build teams and cultures that can keep adapting as technology, markets, and people change.&nbsp;</p><p><br></p>"
       }
     ]
   },

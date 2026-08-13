@@ -5,30 +5,26 @@ document.addEventListener("DOMContentLoaded", async () => {
     const b = content.biography || {};
     applyPageHero(b);
 
-    const bios = b.bios || {};
-    const lengths = document.getElementById("bio-lengths");
-    if (lengths) {
-      const blocks = [
-        { key: "short", label: "50-word bio", text: bios.short },
-        { key: "medium", label: "150-word bio", text: bios.medium },
-        { key: "full", label: "Full executive biography", text: bios.full || b.summary }
-      ].filter(x => x.text);
-      lengths.innerHTML = blocks.map(block => {
-        const isHtml = /<[a-z][\s\S]*>/i.test(String(block.text));
-        const body = isHtml
-          ? `<div class="rich-text">${richHtml(block.text)}</div>`
-          : `<p>${escapeHtml(block.text)}</p>`;
-        const words = htmlToPlainText(isHtml ? block.text : `<p>${block.text}</p>`).split(/\s+/).filter(Boolean).length;
-        return `
-          <section class="bio-length reveal in" id="bio-${block.key}">
-            <div class="meta">${escapeHtml(block.label)} · ~${words} words</div>
-            <h2>${escapeHtml(block.label)}</h2>
-            ${body}
-          </section>
-        `;
-      }).join("");
+    const quoteEl = document.getElementById("bio-quote");
+    if (quoteEl) {
+      const quote = (b.quote || "").trim()
+        || "Technology creates value only when people can trust it, use it, and act on it";
+      quoteEl.innerHTML = `<p>${escapeHtml(quote)}</p>`;
     }
 
+    const about = document.getElementById("bio-about");
+    if (about) {
+      const html = b.summary || b.bios?.full || "";
+      about.innerHTML = richHtml(html) || `<p style="color:var(--ink-soft);">About coming soon.</p>`;
+    }
+
+    const builder = document.getElementById("bio-builder");
+    if (builder) {
+      builder.innerHTML = richHtml(b.builder || "")
+        || `<p style="color:var(--ink-soft);">Builder notes coming soon.</p>`;
+    }
+
+    const bios = b.bios || {};
     const actions = document.getElementById("bio-actions");
     if (actions) {
       const parts = [];
@@ -38,12 +34,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (b.bioDownload) {
         parts.push(`<a class="btn btn-ghost btn-small" href="${escapeHtml(b.bioDownload)}" target="_blank" rel="noopener">Download bio</a>`);
       }
-      parts.push(`<button type="button" class="btn btn-ghost btn-small" id="copy-short-bio">Copy 50-word bio</button>`);
+      if (bios.short) {
+        parts.push(`<button type="button" class="btn btn-ghost btn-small" id="copy-short-bio">Copy 50-word bio</button>`);
+      }
       actions.innerHTML = parts.join("");
       document.getElementById("copy-short-bio")?.addEventListener("click", async () => {
-        const text = bios.short || "";
         try {
-          await navigator.clipboard.writeText(text);
+          await navigator.clipboard.writeText(bios.short || "");
           const btn = document.getElementById("copy-short-bio");
           if (btn) btn.textContent = "Copied";
         } catch (_) {}
@@ -72,18 +69,20 @@ document.addEventListener("DOMContentLoaded", async () => {
             ${files}
           </div>
         `;
-      }).join("");
+      }).join("") || `<p style="color:var(--ink-soft);">Career timeline coming soon.</p>`;
     }
 
     const callouts = document.getElementById("bio-callouts");
     if (callouts) {
-      callouts.innerHTML = (b.callouts || []).map(item => `
-        <div class="highlight-card">
-          <span class="num">★</span>
+      const items = Array.isArray(b.recognition) && b.recognition.length
+        ? b.recognition
+        : (b.callouts || []);
+      callouts.innerHTML = items.map(item => `
+        <article class="recognition-item">
           <h3>${escapeHtml(item.title)}</h3>
           <div class="rich-text">${richHtml(item.text)}</div>
-        </div>
-      `).join("");
+        </article>
+      `).join("") || `<p style="color:var(--ink-soft);">Recognition coming soon.</p>`;
     }
 
     const beliefs = document.getElementById("beliefs-grid");
@@ -96,6 +95,27 @@ document.addEventListener("DOMContentLoaded", async () => {
           ${item.link ? `<a class="go" href="${escapeHtml(item.link)}">${escapeHtml(item.linkLabel || "Read more")} →</a>` : ""}
         </article>
       `).join("") || `<p style="color:var(--ink-soft);">Beliefs coming soon.</p>`;
+    }
+
+    const subnav = document.querySelector(".bio-subnav");
+    if (subnav) {
+      const links = [...subnav.querySelectorAll("a[href^='#']")];
+      const sections = links
+        .map(a => document.querySelector(a.getAttribute("href")))
+        .filter(Boolean);
+
+      const setActive = () => {
+        const y = window.scrollY + 120;
+        let current = sections[0];
+        for (const section of sections) {
+          if (section.offsetTop <= y) current = section;
+        }
+        links.forEach(a => {
+          a.classList.toggle("active", current && a.getAttribute("href") === `#${current.id}`);
+        });
+      };
+      setActive();
+      window.addEventListener("scroll", setActive, { passive: true });
     }
   } catch (err) {
     console.error(err);
