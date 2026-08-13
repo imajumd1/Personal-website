@@ -519,43 +519,43 @@
       {
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
-        "image": "images/projects/skills-hr.jpg",
+        "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
       },
       {
         "name": "Racing Car Summary",
         "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
-        "image": "images/projects/racing-car-summary.jpg",
+        "image": "images/builds/racing-car-summary.jpg",
         "liveUrl": "https://racing-car-summary-production.up.railway.app/"
       },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
-        "image": "images/projects/aurora-health.jpg",
+        "image": "images/builds/aurora-health.jpg",
         "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
       },
       {
         "name": "AI news summarizer",
         "summary": "An intelligent agent that scrapes the latest AI developments from sources like Hacker News, arXiv, TechCrunch, and VentureBeat, then generates OpenAI-powered summaries across infrastructure and frontier models.",
-        "image": "images/projects/ai-news-agent.jpg",
+        "image": "images/builds/ai-news-agent.jpg",
         "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/"
       },
       {
         "name": "Audiobook",
         "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
-        "image": "images/projects/audiobook.jpg",
+        "image": "images/builds/audiobook.jpg",
         "liveUrl": ""
       },
       {
         "name": "Instagram Post (Cursor)",
         "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
-        "image": "images/projects/instagram-post.jpg",
+        "image": "images/builds/instagram-post.jpg",
         "liveUrl": "https://instagrampost-cursor-production.up.railway.app/"
       },
       {
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
-        "image": "images/projects/personal-website.jpg",
+        "image": "images/builds/personal-website.jpg",
         "liveUrl": "https://web-production-4381.up.railway.app/"
       }
     ],
@@ -593,7 +593,7 @@
         "why": "Explore how AI agents can reason over workforce skills supply and demand.",
         "tech": "Claude agent, web app, skills catalog",
         "learned": "Conversational analysts need clean domain models—not just a chat box.",
-        "image": "images/projects/skills-hr.jpg",
+        "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
       },
@@ -603,7 +603,7 @@
         "why": "Give families navigating ASD a calmer, evidence-aware first stop for questions.",
         "tech": "LLM agent, health information UX",
         "learned": "Graceful handling of messy human input matters as much as model quality.",
-        "image": "images/projects/aurora-health.jpg",
+        "image": "images/builds/aurora-health.jpg",
         "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
       },
@@ -613,7 +613,7 @@
         "why": "Keep a weekly pulse on infrastructure and frontier-model news without drowning in feeds.",
         "tech": "Scraping, OpenAI summaries, Railway",
         "learned": "Curation beats volume; the product is the filter.",
-        "image": "images/projects/ai-news-agent.jpg",
+        "image": "images/builds/ai-news-agent.jpg",
         "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
       },
@@ -623,7 +623,7 @@
         "why": "Ship a playful news agent end-to-end to practice agent packaging and hosting.",
         "tech": "Python agent, Railway",
         "learned": "Shipping fast teaches more than another architecture diagram.",
-        "image": "images/projects/racing-car-summary.jpg",
+        "image": "images/builds/racing-car-summary.jpg",
         "liveUrl": "https://racing-car-summary-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
       },
@@ -633,7 +633,7 @@
         "why": "Ship a fast creative tool for square social posts without opening a design suite.",
         "tech": "Mobile-first web, canvas export, Cursor",
         "learned": "Tight creative constraints make the product feel finished sooner.",
-        "image": "images/projects/instagram-post.jpg",
+        "image": "images/builds/instagram-post.jpg",
         "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
       },
@@ -643,7 +643,7 @@
         "why": "Learn Model Context Protocol by giving Claude live Wikipedia tools.",
         "tech": "MCP server, Claude",
         "learned": "Tool design is product design for agents.",
-        "image": "images/projects/wiki-mcp.jpg",
+        "image": "images/builds/wiki-mcp.jpg",
         "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
       },
@@ -653,7 +653,7 @@
         "why": "Track high-impact AI trends with a full-stack research loop.",
         "tech": "Next.js, FastAPI, MongoDB, OpenAI",
         "learned": "Trend products fail without disciplined ingestion and ranking.",
-        "image": "images/projects/lighthouse.jpg",
+        "image": "images/builds/lighthouse.jpg",
         "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/Lighthouse"
       },
@@ -663,7 +663,7 @@
         "why": "Turn arbitrary text into listen-able audio for accessibility and speed.",
         "tech": "React, Express, OpenAI TTS",
         "learned": "Simple APIs still need careful UX around latency and voice quality.",
-        "image": "images/projects/audiobook.jpg",
+        "image": "images/builds/audiobook.jpg",
         "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/audiobook"
       }
