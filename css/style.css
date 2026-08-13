@@ -1379,11 +1379,33 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid var(--line);
   padding: 22px 0 8px;
 }
+.impact-card-compact {
+  padding: 16px 0 10px;
+}
 .impact-card h3 {
   font-family: var(--serif);
   font-size: 1.25rem;
   margin: 8px 0 14px;
   line-height: 1.25;
+}
+.impact-card-compact h3 {
+  font-size: 1.1rem;
+  margin: 6px 0 8px;
+}
+.impact-teaser {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.impact-card-compact.is-expanded .impact-teaser {
+  display: none;
+}
+.impact-read-more {
+  margin-bottom: 8px;
+}
+.impact-detail {
+  margin-top: 8px;
 }
 .impact-dl {
   margin: 0;
@@ -1403,6 +1425,12 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink-soft);
   font-size: 0.92rem;
   line-height: 1.55;
+}
+.bio-beliefs {
+  scroll-margin-top: 88px;
+}
+.bio-beliefs .section-head {
+  margin-bottom: 28px;
 }
 
 .career-arc {

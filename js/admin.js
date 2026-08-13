@@ -175,7 +175,13 @@ function renderHome() {
         <div class="item-card-head"><strong>Pillar ${i + 1}</strong>
           <button type="button" class="btn btn-danger btn-small" data-remove="whatido">Remove</button></div>
         <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title || "")}"></div>
-        <div class="field"><label>Text</label><textarea data-k="text" rows="3">${escapeHtml(item.text || "")}</textarea></div>`;
+        <div class="field"><label>Text</label><textarea data-k="text" rows="3">${escapeHtml(item.text || "")}</textarea></div>
+        <div class="field"><label>Image path</label><input data-k="image" value="${escapeHtml(item.image || "")}" placeholder="images/pillars/..."></div>
+        <div class="upload-row">
+          <input type="file" accept="image/jpeg,image/jpg,image/png,image/webp,image/gif" data-upload-folder="pillars">
+          <button type="button" class="btn btn-ghost btn-small" data-upload-whatido-image>Upload image</button>
+        </div>
+        ${item.image ? `<img class="thumb" src="${escapeHtml(item.image)}" alt="">` : `<div class="thumb empty">No image</div>`}`;
       what.appendChild(el);
     });
   }
@@ -790,7 +796,8 @@ function gatherContent() {
   const whatIDo = $("#home-whatido")
     ? collectFromCards($("#home-whatido"), card => ({
         title: $("[data-k=title]", card).value.trim(),
-        text: $("[data-k=text]", card).value.trim()
+        text: $("[data-k=text]", card).value.trim(),
+        image: $("[data-k=image]", card)?.value.trim() || ""
       }))
     : (content.home.whatIDo || []);
 
@@ -860,8 +867,8 @@ function gatherContent() {
       pitch: getStaticRte("home-pitch"),
       heroImage: $("#home-heroImage").value.trim(),
       heroLabel: $("#home-heroLabel").value.trim(),
-      ctaPrimary: content.home.ctaPrimary || { label: "Explore my work", href: "#impact" },
-      ctaSecondary: content.home.ctaSecondary || { label: "Read my perspective", href: "musings.html" },
+      ctaPrimary: content.home.ctaPrimary || { label: "Beliefs that shape my work", href: "biography.html#how-i-think" },
+      ctaSecondary: content.home.ctaSecondary || { label: "Building with AI", href: "ai-journey.html" },
       ctaLinkedIn: content.home.ctaLinkedIn || {},
       proofMetrics,
       whatIDo,
@@ -1022,7 +1029,7 @@ function bindActions() {
   });
   $("#add-whatido")?.addEventListener("click", () => {
     content.home.whatIDo = content.home.whatIDo || [];
-    content.home.whatIDo.push({ title: "New pillar", text: "" });
+    content.home.whatIDo.push({ title: "New pillar", text: "", image: "" });
     renderHome();
   });
   $("#add-career-arc")?.addEventListener("click", () => {
@@ -1157,6 +1164,29 @@ function bindActions() {
         }
         renderAll();
         setStatus(`Uploaded ${files.length} file(s) — click Save`, "ok");
+      } catch (err) {
+        setStatus(err.message, "error");
+      }
+      return;
+    }
+
+    const uploadWhatIdo = e.target.closest("[data-upload-whatido-image]");
+    if (uploadWhatIdo) {
+      const card = uploadWhatIdo.closest(".item-card");
+      const fileInput = $("input[type=file]", card);
+      const file = fileInput?.files?.[0];
+      if (!file) return setStatus("Choose an image first", "error");
+      try {
+        setStatus("Uploading image…");
+        content = gatherContent();
+        const parent = card.parentElement;
+        const idx = [...parent.children].indexOf(card);
+        const pillar = content.home.whatIDo[idx];
+        if (!pillar) throw new Error("Pillar not found");
+        const uploaded = await uploadFile(file, "pillars");
+        pillar.image = uploaded.path || uploaded;
+        renderAll();
+        setStatus("Image uploaded — click Save", "ok");
       } catch (err) {
         setStatus(err.message, "error");
       }

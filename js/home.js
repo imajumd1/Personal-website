@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    const primary = document.querySelector('.hero .btn-primary');
-    const secondary = document.querySelector('.hero .btn-ghost');
+    const primary = document.querySelector(".hero .btn-primary");
+    const secondary = document.querySelector(".hero .btn-ghost");
     if (primary && h.ctaPrimary) {
       primary.textContent = h.ctaPrimary.label || primary.textContent;
       primary.href = h.ctaPrimary.href || primary.href;
@@ -41,11 +41,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderProof(h.proofMetrics || []);
     renderWhatIDo(h.whatIDo || []);
     renderImpact((h.selectedImpact || []).slice(0, 6));
-    renderCareerArc(h.careerArc || []);
-    renderBeliefs(h.beliefs || []);
-    renderLab((content.aiLab?.items || []).slice(0, 6));
-    renderPerspectives(h.featuredPerspectives || []);
-    renderSpeaking((content.speaking?.items || []).slice(0, 3));
   } catch (err) {
     console.error(err);
   }
@@ -76,96 +71,52 @@ function renderWhatIDo(items) {
   `).join("");
 }
 
+function impactTeaser(item) {
+  const raw = item.teaser || item.challenge || item.impact || "";
+  return truncateWords(raw, 18);
+}
+
 function renderImpact(items) {
   const el = document.getElementById("impact-grid");
   if (!el) return;
-  el.innerHTML = items.map(item => `
-    <article class="impact-card reveal in">
+  el.innerHTML = items.map((item, i) => {
+    const teaser = impactTeaser(item);
+    const id = `impact-detail-${i}`;
+    return `
+    <article class="impact-card impact-card-compact reveal in">
       <span class="tag">${escapeHtml(item.org || "")}</span>
       <h3>${escapeHtml(item.title || "")}</h3>
-      <dl class="impact-dl">
-        <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge || "")}</dd></div>
-        <div><dt>Built</dt><dd>${escapeHtml(item.action || "")}</dd></div>
-        <div><dt>Impact</dt><dd>${escapeHtml(item.impact || "")}</dd></div>
-      </dl>
-    </article>
-  `).join("");
-}
-
-function renderCareerArc(items) {
-  const el = document.getElementById("career-arc-list");
-  if (!el) return;
-  el.innerHTML = items.map(s => `
-    <li class="career-arc-item reveal in">
-      <span class="career-stage">${escapeHtml(s.stage || "")}</span>
-      <span class="career-detail">${escapeHtml(s.detail || "")}</span>
-    </li>
-  `).join("");
-}
-
-function renderBeliefs(items) {
-  const el = document.getElementById("beliefs-grid");
-  if (!el) return;
-  el.innerHTML = items.map(b => `
-    <article class="belief-card reveal in">
-      <h3>${escapeHtml(b.title || "")}</h3>
-      <p>${escapeHtml(b.text || "")}</p>
-      ${b.link ? `<a class="go" href="${escapeHtml(b.link)}">${escapeHtml(b.linkLabel || "Read more")} →</a>` : ""}
-    </article>
-  `).join("");
-}
-
-function renderLab(items) {
-  const el = document.getElementById("lab-grid");
-  if (!el) return;
-  el.innerHTML = items.map(p => {
-    const media = p.image
-      ? `style="background-image:url('${escapeHtml(p.image)}')"`
-      : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
-    const links = [
-      p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live demo</a>` : "",
-      p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
-    ].filter(Boolean).join("");
-    return `
-      <article class="lab-card reveal in">
-        <div class="lab-media" ${media} role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
-        <div class="lab-body">
-          <h3>${escapeHtml(p.name || "")}</h3>
-          <p class="lab-summary">${escapeHtml(p.summary || "")}</p>
-          ${p.why ? `<p><strong>Why</strong> — ${escapeHtml(p.why)}</p>` : ""}
-          ${p.tech ? `<p class="lab-meta"><strong>Tech</strong> — ${escapeHtml(p.tech)}</p>` : ""}
-          ${p.learned ? `<p><strong>Learned</strong> — ${escapeHtml(p.learned)}</p>` : ""}
-          <div class="btn-row">${links}</div>
-        </div>
-      </article>
-    `;
-  }).join("") || `<p style="color:var(--ink-soft);">Builds coming soon.</p>`;
-}
-
-function renderPerspectives(items) {
-  const el = document.getElementById("perspective-grid");
-  if (!el) return;
-  el.innerHTML = items.map(m => `
-    <a class="perspective-card reveal in" href="${escapeHtml(m.href || "musings.html")}">
-      <span class="tag">${escapeHtml(m.category || "")}</span>
-      <h3>${escapeHtml(m.title || "")}</h3>
-      <p>${escapeHtml(m.thesis || "")}</p>
-      <div class="perspective-meta">
-        <span>${escapeHtml(m.readingTime || "")}</span>
-        ${m.date ? `<span>${escapeHtml(m.date)}</span>` : ""}
+      <p class="impact-teaser">${escapeHtml(teaser.preview)}</p>
+      <button type="button" class="btn btn-ghost btn-small impact-read-more" aria-expanded="false" aria-controls="${id}">
+        Read More
+      </button>
+      <div class="impact-detail" id="${id}" hidden>
+        <dl class="impact-dl">
+          <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge || "")}</dd></div>
+          <div><dt>Built</dt><dd>${escapeHtml(item.action || "")}</dd></div>
+          <div><dt>Impact</dt><dd>${escapeHtml(item.impact || "")}</dd></div>
+        </dl>
       </div>
-    </a>
-  `).join("");
-}
-
-function renderSpeaking(items) {
-  const el = document.getElementById("speaking-list");
-  if (!el) return;
-  el.innerHTML = items.map(s => `
-    <article class="speaking-card reveal in">
-      <h3>${escapeHtml(s.title || "")}</h3>
-      <div class="meta">${escapeHtml([s.event, s.meta].filter(Boolean).join(" · "))}</div>
-      <p>${escapeHtml(s.blurb || "")}</p>
     </article>
-  `).join("") || `<p style="color:var(--ink-soft);">Speaking calendar expanding — check back soon.</p>`;
+  `;
+  }).join("");
+
+  el.querySelectorAll(".impact-read-more").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const detail = document.getElementById(btn.getAttribute("aria-controls"));
+      if (!detail) return;
+      const open = detail.hasAttribute("hidden");
+      if (open) {
+        detail.removeAttribute("hidden");
+        btn.setAttribute("aria-expanded", "true");
+        btn.textContent = "Show less";
+        btn.closest(".impact-card")?.classList.add("is-expanded");
+      } else {
+        detail.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", "false");
+        btn.textContent = "Read More";
+        btn.closest(".impact-card")?.classList.remove("is-expanded");
+      }
+    });
+  });
 }

@@ -85,6 +85,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>
       `).join("");
     }
+
+    const beliefs = document.getElementById("beliefs-grid");
+    if (beliefs) {
+      const items = content.home?.beliefs || [];
+      beliefs.innerHTML = items.map(item => `
+        <article class="belief-card reveal in">
+          <h3>${escapeHtml(item.title || "")}</h3>
+          <p>${escapeHtml(item.text || "")}</p>
+          ${item.link ? `<a class="go" href="${escapeHtml(item.link)}">${escapeHtml(item.linkLabel || "Read more")} →</a>` : ""}
+        </article>
+      `).join("") || `<p style="color:var(--ink-soft);">Beliefs coming soon.</p>`;
+    }
   } catch (err) {
     console.error(err);
   }

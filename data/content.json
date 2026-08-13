@@ -2,9 +2,9 @@
   "site": {
     "brand": "Ishita Majumdar",
     "email": "imajumd1@gmail.com",
+    "tagline": "Technology • Data • AI • Transformation",
     "linkedin": "https://www.linkedin.com/in/ishitamajumdar",
-    "github": "imajumd1",
-    "tagline": "Technology • Data • AI • Transformation"
+    "github": "imajumd1"
   },
   "home": {
     "eyebrow": "Builder-Executive",
@@ -14,12 +14,12 @@
     "heroImage": "images/hero/PXL_20250819_201111143.jpg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
-      "label": "Explore my work",
-      "href": "#impact"
+      "label": "Beliefs that shape my work",
+      "href": "biography.html#how-i-think"
     },
     "ctaSecondary": {
-      "label": "Read my perspective",
-      "href": "musings.html"
+      "label": "Building with AI",
+      "href": "ai-journey.html"
     },
     "ctaLinkedIn": {
       "label": "LinkedIn",
@@ -35,10 +35,6 @@
         "label": "Data platforms led"
       },
       {
-        "value": "3",
-        "label": "U.S. patents"
-      },
-      {
         "value": "Global",
         "label": "Teams & transformations"
       },
@@ -50,15 +46,18 @@
     "whatIDo": [
       {
         "title": "Enterprise AI",
-        "text": "Turning AI strategy into practical systems, products, and workflows that improve decision-making and operating efficiency."
+        "text": "Turning AI strategy into practical systems, products, and workflows that improve decision-making and operating efficiency.",
+        "image": ""
       },
       {
         "title": "Trusted Platforms",
-        "text": "Building secure, scalable technology foundations that teams and customers can rely on as the business grows."
+        "text": "Building secure, scalable technology foundations that teams and customers can rely on as the business grows.",
+        "image": ""
       },
       {
         "title": "Technology Leadership",
-        "text": "Connecting business strategy, product, engineering, and AI so technology becomes a growth driver rather than a support function."
+        "text": "Connecting business strategy, product, engineering, and AI so technology becomes a growth driver rather than a support function.",
+        "image": ""
       }
     ],
     "selectedImpact": [
@@ -71,10 +70,10 @@
       },
       {
         "org": "eBay",
-        "title": "From data products to full-stack tech platforms",
-        "challenge": "Fragmented ownership across experiment platforms, personalization, and infrastructure slowed delivery and diluted product accountability.",
-        "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter to ML—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
-        "impact": "Unified product systems for experimentation and personalization; biweekly delivery rhythm with clearer escalation paths and stakeholder engagement."
+        "title": "Tech stack powering ebay.com",
+        "challenge": "No complete product ownership of the Tech stack from metal to applications.",
+        "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter, networks, cloud, dev platform, experimentation and personalization, to ML platform—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
+        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability."
       },
       {
         "org": "Relanto",
@@ -93,34 +92,34 @@
       {
         "org": "Patents & invention",
         "title": "Three U.S. patents in mobile intelligence",
-        "challenge": "Mobile systems needed better compression, security trust models, and behavior-aware companions—problems that required invention, not incremental features.",
+        "challenge": "Mobile systems needed better compression, security trust models, and behavior-aware companions, problems that required invention, not incremental features.",
         "action": "Invented across text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.",
         "impact": "3 U.S. patents; a track record of turning systems insight into durable IP."
       },
       {
         "org": "Stealth startup",
         "title": "Human-powered AI for special-needs families",
-        "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about meltdowns, therapy access, and public support.",
-        "action": "Co-founded and built an LLM-powered care platform as CPTO—agentic advice grounded in trusted experience, community, and access pathways.",
+        "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about behavioral challenges, therapy access, and public support.",
+        "action": "Co-founded and built an LLM-powered care platform as agentic advice grounded in trusted experience, community, and access pathways.",
         "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership."
       }
     ],
     "careerArc": [
       {
         "stage": "Engineer",
-        "detail": "Motorola — systems, VoIP, ventures"
+        "detail": "Motorola: Network Infrastructure, VoIP, ventures"
       },
       {
         "stage": "Platform Builder",
-        "detail": "Huawei — Big Data & AI strategy"
+        "detail": "Huawei: Big Data & AI strategy"
       },
       {
         "stage": "Product Leader",
-        "detail": "eBay — tech products end-to-end"
+        "detail": "eBay: Tech products end-to-end"
       },
       {
         "stage": "Data Executive",
-        "detail": "eBay — analytics platforms at scale"
+        "detail": "eBay: Data analytics platforms at scale"
       },
       {
         "stage": "AI Transformation Leader",
@@ -224,6 +223,56 @@
         "date": "",
         "href": "musings.html"
       }
+    ],
+    "highlights": []
+  },
+  "impact": {
+    "eyebrow": "Impact",
+    "title": "Selected impact",
+    "lede": "<p>Case studies, not job descriptions—challenge, what was built, and the outcome.</p>",
+    "items": [
+      {
+        "org": "eBay",
+        "title": "Making enterprise data usable at scale",
+        "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
+        "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
+        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership."
+      },
+      {
+        "org": "eBay",
+        "title": "Tech stack powering ebay.com",
+        "challenge": "No complete product ownership of the Tech stack from metal to applications.",
+        "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter, networks, cloud, dev platform, experimentation and personalization, to ML platform—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
+        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability."
+      },
+      {
+        "org": "Relanto",
+        "title": "Enterprise intelligence as an operating system",
+        "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
+        "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
+        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes."
+      },
+      {
+        "org": "Huawei",
+        "title": "Spark-era data & context-aware AI",
+        "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
+        "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
+        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave."
+      },
+      {
+        "org": "Patents & invention",
+        "title": "Three U.S. patents in mobile intelligence",
+        "challenge": "Mobile systems needed better compression, security trust models, and behavior-aware companions, problems that required invention, not incremental features.",
+        "action": "Invented across text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.",
+        "impact": "3 U.S. patents; a track record of turning systems insight into durable IP."
+      },
+      {
+        "org": "Stealth startup",
+        "title": "Human-powered AI for special-needs families",
+        "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about behavioral challenges, therapy access, and public support.",
+        "action": "Co-founded and built an LLM-powered care platform as agentic advice grounded in trusted experience, community, and access pathways.",
+        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership."
+      }
     ]
   },
   "biography": {
@@ -231,6 +280,13 @@
     "title": "Ishita Majumdar",
     "lede": "<p>Builder-executive. Three lengths of the same story—for introductions, press, and the full arc.</p>",
     "summary": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and my innate curiosity and exploration is what continues to shape how I lead today.&nbsp;</p><p data-path-to-node=\"0\">Early in my career, I focused on architecting context-aware systems and later moved into modernizing data platforms to keep them agile, cutting-edge, and open source based. The work became deeply personal when I co-founded a startup centered on human-powered AI—building a support and care platform for families navigating special needs. Today, I lead global data and AI strategies, creating trusted, intelligent systems and inspiring a culture of data literacy and ethical AI adoption across enterprise teams. Yet I remain an active builder at heart, using modern AI tools every day for design, rapid prototyping, and QA, bringing that same authentic founder’s mindset to every level of leadership.</p>",
+    "bios": {
+      "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She builds the systems, platforms, and organizations that turn Data + AI into measurable business outcomes—and stays close enough to the technical work to lead with judgment, not slideware.",
+      "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents—she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her throughline is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
+      "full": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and my innate curiosity and exploration is what continues to shape how I lead today.&nbsp;</p><p data-path-to-node=\"0\">Early in my career, I focused on architecting context-aware systems and later moved into modernizing data platforms to keep them agile, cutting-edge, and open source based. The work became deeply personal when I co-founded a startup centered on human-powered AI—building a support and care platform for families navigating special needs. Today, I lead global data and AI strategies, creating trusted, intelligent systems and inspiring a culture of data literacy and ethical AI adoption across enterprise teams. Yet I remain an active builder at heart, using modern AI tools every day for design, rapid prototyping, and QA, bringing that same authentic founder’s mindset to every level of leadership.</p>"
+    },
+    "headshot": "images/hero/PXL_20250819_201111143.jpg",
+    "bioDownload": "",
     "career": [
       {
         "title": "Chief Data and AI Officer — Relanto",
@@ -288,14 +344,7 @@
         "title": "Built Community, Not Just Products",
         "text": "<p>I am a community builder across my entire career.</p><p>@Motorola - I</p><p>San Francisco chapter of Chief, served 5 years on the board of Nerdy Girl Success, and grew eBay's Women in Technology community to 2,000 volunteers worldwide as its Global President.</p>"
       }
-    ],
-    "bios": {
-      "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She builds the systems, platforms, and organizations that turn Data + AI into measurable business outcomes—and stays close enough to the technical work to lead with judgment, not slideware.",
-      "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents—she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her throughline is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
-      "full": "<p data-path-to-node=\"0\">I’m a rare executive who stepped away from traditional organizational leadership to build with AI from first principles, and my innate curiosity and exploration is what continues to shape how I lead today.&nbsp;</p><p data-path-to-node=\"0\">Early in my career, I focused on architecting context-aware systems and later moved into modernizing data platforms to keep them agile, cutting-edge, and open source based. The work became deeply personal when I co-founded a startup centered on human-powered AI—building a support and care platform for families navigating special needs. Today, I lead global data and AI strategies, creating trusted, intelligent systems and inspiring a culture of data literacy and ethical AI adoption across enterprise teams. Yet I remain an active builder at heart, using modern AI tools every day for design, rapid prototyping, and QA, bringing that same authentic founder’s mindset to every level of leadership.</p>"
-    },
-    "headshot": "images/hero/PXL_20250819_201111143.jpg",
-    "bioDownload": ""
+    ]
   },
   "education": {
     "eyebrow": "02 / Education",
@@ -502,6 +551,97 @@
           "AI",
           "Python"
         ]
+      }
+    ]
+  },
+  "aiLab": {
+    "eyebrow": "AI Lab",
+    "title": "Recent builds",
+    "lede": "<p>Hands-on systems I ship to stay fluent in the stack—and to keep strategy grounded in what actually works in production.</p>",
+    "items": [
+      {
+        "name": "Skills Intelligence HR App",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "why": "Explore how AI agents can reason over workforce skills supply and demand.",
+        "tech": "Claude agent, web app, skills catalog",
+        "learned": "Conversational analysts need clean domain models—not just a chat box.",
+        "image": "images/projects/skills-hr.jpg",
+        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
+      },
+      {
+        "name": "Aurora Health Agent",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "why": "Give families navigating ASD a calmer, evidence-aware first stop for questions.",
+        "tech": "LLM agent, health information UX",
+        "learned": "Graceful handling of messy human input matters as much as model quality.",
+        "image": "images/projects/aurora-health.jpg",
+        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
+      },
+      {
+        "name": "AI News Agent",
+        "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
+        "why": "Keep a weekly pulse on infrastructure and frontier-model news without drowning in feeds.",
+        "tech": "Scraping, OpenAI summaries, Railway",
+        "learned": "Curation beats volume; the product is the filter.",
+        "image": "images/projects/ai-news-agent.jpg",
+        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
+      },
+      {
+        "name": "Racing Car Summary",
+        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
+        "why": "Ship a playful news agent end-to-end to practice agent packaging and hosting.",
+        "tech": "Python agent, Railway",
+        "learned": "Shipping fast teaches more than another architecture diagram.",
+        "image": "images/projects/racing-car-summary.jpg",
+        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
+      },
+      {
+        "name": "Wiki MCP",
+        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access — search, fetch, and research tools built to learn core MCP concepts.",
+        "why": "Learn Model Context Protocol by giving Claude live Wikipedia tools.",
+        "tech": "MCP server, Claude",
+        "learned": "Tool design is product design for agents.",
+        "image": "images/projects/wiki-mcp.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
+      },
+      {
+        "name": "Lighthouse",
+        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
+        "why": "Track high-impact AI trends with a full-stack research loop.",
+        "tech": "Next.js, FastAPI, MongoDB, OpenAI",
+        "learned": "Trend products fail without disciplined ingestion and ranking.",
+        "image": "images/projects/lighthouse.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Lighthouse"
+      },
+      {
+        "name": "Audiobook",
+        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
+        "why": "Turn arbitrary text into listen-able audio for accessibility and speed.",
+        "tech": "React, Express, OpenAI TTS",
+        "learned": "Simple APIs still need careful UX around latency and voice quality.",
+        "image": "images/projects/audiobook.jpg",
+        "liveUrl": "https://audiobook-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/audiobook"
+      }
+    ]
+  },
+  "speaking": {
+    "eyebrow": "Speaking",
+    "title": "Speaking & conversations",
+    "lede": "<p>Selected talks and conversations on data, AI, and transformation. More coming soon.</p>",
+    "items": [
+      {
+        "title": "Data & AI leadership in the enterprise",
+        "event": "Industry forums & executive communities",
+        "meta": "Ongoing",
+        "blurb": "Conversations on trusted data platforms, ethical AI adoption, and leading transformation without losing the builder’s edge.",
+        "link": ""
       }
     ]
   },
@@ -870,146 +1010,6 @@
           "#b5651d"
         ],
         "story": "<p>Stairs, redwoods, and the sudden reveal of the Pacific. A reminder that the best routes refuse to stay at one elevation — literal or otherwise.</p>"
-      }
-    ]
-  },
-  "aiLab": {
-    "eyebrow": "AI Lab",
-    "title": "Recent builds",
-    "lede": "<p>Hands-on systems I ship to stay fluent in the stack—and to keep strategy grounded in what actually works in production.</p>",
-    "items": [
-      {
-        "name": "Skills Intelligence HR App",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
-        "why": "Explore how AI agents can reason over workforce skills supply and demand.",
-        "tech": "Claude agent, web app, skills catalog",
-        "learned": "Conversational analysts need clean domain models—not just a chat box.",
-        "image": "images/projects/skills-hr.jpg",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
-      },
-      {
-        "name": "Aurora Health Agent",
-        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
-        "why": "Give families navigating ASD a calmer, evidence-aware first stop for questions.",
-        "tech": "LLM agent, health information UX",
-        "learned": "Graceful handling of messy human input matters as much as model quality.",
-        "image": "images/projects/aurora-health.jpg",
-        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
-      },
-      {
-        "name": "AI News Agent",
-        "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
-        "why": "Keep a weekly pulse on infrastructure and frontier-model news without drowning in feeds.",
-        "tech": "Scraping, OpenAI summaries, Railway",
-        "learned": "Curation beats volume; the product is the filter.",
-        "image": "images/projects/ai-news-agent.jpg",
-        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
-      },
-      {
-        "name": "Racing Car Summary",
-        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
-        "why": "Ship a playful news agent end-to-end to practice agent packaging and hosting.",
-        "tech": "Python agent, Railway",
-        "learned": "Shipping fast teaches more than another architecture diagram.",
-        "image": "images/projects/racing-car-summary.jpg",
-        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
-      },
-      {
-        "name": "Wiki MCP",
-        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access — search, fetch, and research tools built to learn core MCP concepts.",
-        "why": "Learn Model Context Protocol by giving Claude live Wikipedia tools.",
-        "tech": "MCP server, Claude",
-        "learned": "Tool design is product design for agents.",
-        "image": "images/projects/wiki-mcp.jpg",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
-      },
-      {
-        "name": "Lighthouse",
-        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
-        "why": "Track high-impact AI trends with a full-stack research loop.",
-        "tech": "Next.js, FastAPI, MongoDB, OpenAI",
-        "learned": "Trend products fail without disciplined ingestion and ranking.",
-        "image": "images/projects/lighthouse.jpg",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse"
-      },
-      {
-        "name": "Audiobook",
-        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
-        "why": "Turn arbitrary text into listen-able audio for accessibility and speed.",
-        "tech": "React, Express, OpenAI TTS",
-        "learned": "Simple APIs still need careful UX around latency and voice quality.",
-        "image": "images/projects/audiobook.jpg",
-        "liveUrl": "https://audiobook-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/audiobook"
-      }
-    ]
-  },
-  "speaking": {
-    "eyebrow": "Speaking",
-    "title": "Speaking & conversations",
-    "lede": "<p>Selected talks and conversations on data, AI, and transformation. More coming soon.</p>",
-    "items": [
-      {
-        "title": "Data & AI leadership in the enterprise",
-        "event": "Industry forums & executive communities",
-        "meta": "Ongoing",
-        "blurb": "Conversations on trusted data platforms, ethical AI adoption, and leading transformation without losing the builder’s edge.",
-        "link": ""
-      }
-    ]
-  },
-  "impact": {
-    "eyebrow": "Impact",
-    "title": "Selected impact",
-    "lede": "<p>Case studies, not job descriptions—challenge, what was built, and the outcome.</p>",
-    "items": [
-      {
-        "org": "eBay",
-        "title": "Making enterprise data usable at scale",
-        "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
-        "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
-        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership."
-      },
-      {
-        "org": "eBay",
-        "title": "From data products to full-stack tech platforms",
-        "challenge": "Fragmented ownership across experiment platforms, personalization, and infrastructure slowed delivery and diluted product accountability.",
-        "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter to ML—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
-        "impact": "Unified product systems for experimentation and personalization; biweekly delivery rhythm with clearer escalation paths and stakeholder engagement."
-      },
-      {
-        "org": "Relanto",
-        "title": "Enterprise intelligence as an operating system",
-        "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
-        "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
-        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes."
-      },
-      {
-        "org": "Huawei",
-        "title": "Spark-era data & context-aware AI",
-        "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
-        "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
-        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave."
-      },
-      {
-        "org": "Patents & invention",
-        "title": "Three U.S. patents in mobile intelligence",
-        "challenge": "Mobile systems needed better compression, security trust models, and behavior-aware companions—problems that required invention, not incremental features.",
-        "action": "Invented across text-based message compression, trust-blueprint security architectures, and user behavior modeling for intelligent mobile companions.",
-        "impact": "3 U.S. patents; a track record of turning systems insight into durable IP."
-      },
-      {
-        "org": "Stealth startup",
-        "title": "Human-powered AI for special-needs families",
-        "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about meltdowns, therapy access, and public support.",
-        "action": "Co-founded and built an LLM-powered care platform as CPTO—agentic advice grounded in trusted experience, community, and access pathways.",
-        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership."
       }
     ]
   }
