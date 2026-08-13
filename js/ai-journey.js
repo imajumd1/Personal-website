@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           ? `style="background-image:url('${escapeHtml(p.image)}')"`
           : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
         const links = [
+          p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live demo</a>` : "",
           p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
         ].filter(Boolean).join("");
         return `
@@ -74,9 +75,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             <div class="git-project-body">
               <h3>${escapeHtml(p.name || "Project")}</h3>
               <p>${escapeHtml(p.summary || "")}</p>
-              ${p.repoUrl
-                ? `<a class="btn btn-ghost git-project-link" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">View repo →</a>`
-                : ""}
+              <div class="btn-row">
+                ${p.liveUrl
+                  ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live demo</a>`
+                  : ""}
+                ${p.repoUrl
+                  ? `<a class="btn btn-ghost btn-small git-project-link" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">View repo →</a>`
+                  : ""}
+              </div>
             </div>
           </article>
         `).join("")

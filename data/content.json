@@ -544,7 +544,7 @@
         "name": "Audiobook",
         "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
         "image": "images/projects/audiobook.jpg",
-        "liveUrl": "https://audiobook-production.up.railway.app/"
+        "liveUrl": ""
       },
       {
         "name": "Instagram Post (Cursor)",
@@ -628,6 +628,16 @@
         "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
       },
       {
+        "name": "Instagram Post (Cursor)",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
+        "why": "Ship a fast creative tool for square social posts without opening a design suite.",
+        "tech": "Mobile-first web, canvas export, Cursor",
+        "learned": "Tight creative constraints make the product feel finished sooner.",
+        "image": "images/projects/instagram-post.jpg",
+        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
+      },
+      {
         "name": "Wiki MCP",
         "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access — search, fetch, and research tools built to learn core MCP concepts.",
         "why": "Learn Model Context Protocol by giving Claude live Wikipedia tools.",
@@ -654,7 +664,7 @@
         "tech": "React, Express, OpenAI TTS",
         "learned": "Simple APIs still need careful UX around latency and voice quality.",
         "image": "images/projects/audiobook.jpg",
-        "liveUrl": "https://audiobook-production.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/audiobook"
       }
     ]
