@@ -82,12 +82,15 @@ function renderImpact(items) {
   el.innerHTML = items.map((item, i) => {
     const teaser = impactTeaser(item);
     const id = `impact-detail-${i}`;
-    const media = item.image
-      ? `<div class="impact-media" style="background-image:url('${escapeHtml(item.image)}')" role="img" aria-label="${escapeHtml(item.title || item.org || "Case study")}"></div>`
+    const mediaStyle = item.image
+      ? ` style="background-image:url('${escapeHtml(item.image)}')"`
       : "";
+    const mediaAttrs = item.image
+      ? ` role="img" aria-label="${escapeHtml(item.title || item.org || "Case study")}"`
+      : ` aria-hidden="true"`;
     return `
     <article class="impact-card impact-card-compact reveal in">
-      ${media}
+      <div class="impact-media"${mediaStyle}${mediaAttrs}></div>
       <div class="impact-body">
         <span class="tag">${escapeHtml(item.org || "")}</span>
         <h3>${escapeHtml(item.title || "")}</h3>

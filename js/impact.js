@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     const el = document.getElementById("impact-grid");
     if (!el) return;
     el.innerHTML = items.map(item => {
-      const media = item.image
-        ? `<div class="impact-media" style="background-image:url('${escapeHtml(item.image)}')" role="img" aria-label="${escapeHtml(item.title || item.org || "Case study")}"></div>`
+      const mediaStyle = item.image
+        ? ` style="background-image:url('${escapeHtml(item.image)}')"`
         : "";
+      const mediaAttrs = item.image
+        ? ` role="img" aria-label="${escapeHtml(item.title || item.org || "Case study")}"`
+        : ` aria-hidden="true"`;
       return `
       <article class="impact-card reveal in">
-        ${media}
+        <div class="impact-media"${mediaStyle}${mediaAttrs}></div>
         <div class="impact-body">
           <span class="tag">${escapeHtml(item.org || "")}</span>
           <h3>${escapeHtml(item.title || "")}</h3>
