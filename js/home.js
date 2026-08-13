@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const content = await loadContent();
     await bootChrome(content);
-    const h = content.home;
+    const h = content.home || {};
+    const site = content.site || {};
 
     const eyebrow = document.querySelector(".hero .eyebrow");
+    const nameEl = document.querySelector(".hero-name");
     const headline = document.querySelector(".hero h1");
     const pitch = document.querySelector(".hero .pitch");
-    if (eyebrow) eyebrow.textContent = h.eyebrow || "";
+    if (eyebrow) eyebrow.textContent = h.eyebrow || "Builder-Executive";
+    if (nameEl) nameEl.textContent = h.name || site.brand || "Ishita Majumdar";
     if (headline) headline.textContent = h.headline || "";
     if (pitch) {
       pitch.classList.add("rich-text");
@@ -20,193 +23,147 @@ document.addEventListener("DOMContentLoaded", async () => {
         hero.style.backgroundImage = `url('${h.heroImage}')`;
         hero.style.backgroundSize = "cover";
         hero.style.backgroundPosition = "center";
-        hero.innerHTML = "";
-      } else {
-        hero.innerHTML = `<span>${escapeHtml(h.heroLabel || "")}</span>`;
+        hero.setAttribute("aria-label", h.heroLabel || "Portrait of Ishita Majumdar");
       }
     }
 
-    renderPillars(h.highlights || []);
+    const primary = document.querySelector('.hero .btn-primary');
+    const secondary = document.querySelector('.hero .btn-ghost');
+    if (primary && h.ctaPrimary) {
+      primary.textContent = h.ctaPrimary.label || primary.textContent;
+      primary.href = h.ctaPrimary.href || primary.href;
+    }
+    if (secondary && h.ctaSecondary) {
+      secondary.textContent = h.ctaSecondary.label || secondary.textContent;
+      secondary.href = h.ctaSecondary.href || secondary.href;
+    }
+
+    renderProof(h.proofMetrics || []);
+    renderWhatIDo(h.whatIDo || []);
+    renderImpact((h.selectedImpact || []).slice(0, 6));
+    renderCareerArc(h.careerArc || []);
+    renderBeliefs(h.beliefs || []);
+    renderLab((content.aiLab?.items || []).slice(0, 6));
+    renderPerspectives(h.featuredPerspectives || []);
+    renderSpeaking((content.speaking?.items || []).slice(0, 3));
   } catch (err) {
     console.error(err);
   }
 });
 
-function renderPillars(items) {
-  const section = document.querySelector(".highlights");
-  if (!section || !items.length) return;
-
-  const wrap = section.querySelector(".wrap") || section.appendChild(Object.assign(document.createElement("div"), { className: "wrap" }));
-  wrap.innerHTML = `
-    <div class="pillars-intro reveal in">
-      <span class="eyebrow">Pillars</span>
-      <h2>What defines the work</h2>
-      <p>Scan the throughlines, then open one to read.</p>
+function renderProof(items) {
+  const el = document.getElementById("proof-metrics");
+  if (!el) return;
+  el.innerHTML = items.map(m => `
+    <div class="proof-item reveal">
+      <span class="proof-value">${escapeHtml(m.value || "")}</span>
+      <span class="proof-label">${escapeHtml(m.label || "")}</span>
     </div>
-    <div class="pillar-stage reveal in" id="pillar-stage" aria-live="polite"></div>
-    <div class="pillars-rail reveal in" role="tablist" aria-label="Pillars" id="pillars-rail"></div>
-  `;
+  `).join("");
+}
 
-  const stage = wrap.querySelector("#pillar-stage");
-  const rail = wrap.querySelector("#pillars-rail");
+function renderWhatIDo(items) {
+  const el = document.getElementById("what-i-do-grid");
+  if (!el) return;
+  el.innerHTML = items.map((p, i) => `
+    <article class="pillar-card reveal">
+      <span class="num">${String(i + 1).padStart(2, "0")}</span>
+      <h3>${escapeHtml(p.title || "")}</h3>
+      <p>${escapeHtml(p.text || "")}</p>
+    </article>
+  `).join("");
+}
 
-  rail.innerHTML = items.map((item, idx) => {
-    const cut = truncateRich(item.text, 12);
-    const title = escapeHtml(item.title || "Pillar");
-    const cover = pillarCover(item);
+function renderImpact(items) {
+  const el = document.getElementById("impact-grid");
+  if (!el) return;
+  el.innerHTML = items.map(item => `
+    <article class="impact-card reveal">
+      <span class="tag">${escapeHtml(item.org || "")}</span>
+      <h3>${escapeHtml(item.title || "")}</h3>
+      <dl class="impact-dl">
+        <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge || "")}</dd></div>
+        <div><dt>Built</dt><dd>${escapeHtml(item.action || "")}</dd></div>
+        <div><dt>Impact</dt><dd>${escapeHtml(item.impact || "")}</dd></div>
+      </dl>
+    </article>
+  `).join("");
+}
+
+function renderCareerArc(items) {
+  const el = document.getElementById("career-arc-list");
+  if (!el) return;
+  el.innerHTML = items.map(s => `
+    <li class="career-arc-item reveal">
+      <span class="career-stage">${escapeHtml(s.stage || "")}</span>
+      <span class="career-detail">${escapeHtml(s.detail || "")}</span>
+    </li>
+  `).join("");
+}
+
+function renderBeliefs(items) {
+  const el = document.getElementById("beliefs-grid");
+  if (!el) return;
+  el.innerHTML = items.map(b => `
+    <article class="belief-card reveal">
+      <h3>${escapeHtml(b.title || "")}</h3>
+      <p>${escapeHtml(b.text || "")}</p>
+      ${b.link ? `<a class="go" href="${escapeHtml(b.link)}">${escapeHtml(b.linkLabel || "Read more")} →</a>` : ""}
+    </article>
+  `).join("");
+}
+
+function renderLab(items) {
+  const el = document.getElementById("lab-grid");
+  if (!el) return;
+  el.innerHTML = items.map(p => {
+    const media = p.image
+      ? `style="background-image:url('${escapeHtml(p.image)}')"`
+      : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
+    const links = [
+      p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live demo</a>` : "",
+      p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
+    ].filter(Boolean).join("");
     return `
-      <button
-        type="button"
-        class="pillar-tab"
-        role="tab"
-        id="pillar-tab-${idx}"
-        aria-selected="false"
-        aria-controls="pillar-stage"
-        data-pillar-index="${idx}"
-      >
-        <span class="pillar-tab-media" ${cover ? `style="background-image:url('${escapeHtml(cover)}')"` : ""}></span>
-        <span class="pillar-tab-body">
-          <span class="num">${escapeHtml(item.num || "")}</span>
-          <span class="pillar-tab-title">${title}</span>
-          <span class="pillar-tab-preview">${escapeHtml(htmlToPlainText(cut.previewHtml))}</span>
-        </span>
-        <span class="pillar-tab-arrow" aria-hidden="true">→</span>
-      </button>
+      <article class="lab-card reveal">
+        <div class="lab-media" ${media} role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
+        <div class="lab-body">
+          <h3>${escapeHtml(p.name || "")}</h3>
+          <p class="lab-summary">${escapeHtml(p.summary || "")}</p>
+          ${p.why ? `<p><strong>Why</strong> — ${escapeHtml(p.why)}</p>` : ""}
+          ${p.tech ? `<p class="lab-meta"><strong>Tech</strong> — ${escapeHtml(p.tech)}</p>` : ""}
+          ${p.learned ? `<p><strong>Learned</strong> — ${escapeHtml(p.learned)}</p>` : ""}
+          <div class="btn-row">${links}</div>
+        </div>
+      </article>
     `;
-  }).join("");
-
-  let active = 0;
-  let primed = false;
-
-  const select = (idx, { focusTab = false } = {}) => {
-    active = (idx + items.length) % items.length;
-    rail.querySelectorAll(".pillar-tab").forEach((tab, i) => {
-      const on = i === active;
-      tab.classList.toggle("is-active", on);
-      tab.setAttribute("aria-selected", on ? "true" : "false");
-      tab.tabIndex = on ? 0 : -1;
-    });
-    paintStage(stage, items[active], active, items.length);
-    initStageSlideshow(stage);
-    if (primed) {
-      stage.classList.remove("is-swapping");
-      void stage.offsetWidth;
-      stage.classList.add("is-swapping");
-    }
-    primed = true;
-    if (focusTab) {
-      const tab = rail.querySelector(`.pillar-tab[data-pillar-index="${active}"]`);
-      if (tab) tab.focus();
-    }
-  };
-
-  rail.querySelectorAll(".pillar-tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      select(parseInt(tab.dataset.pillarIndex, 10) || 0);
-    });
-  });
-
-  rail.addEventListener("keydown", e => {
-    const tabs = [...rail.querySelectorAll(".pillar-tab")];
-    if (!tabs.length) return;
-    let next = active;
-    if (e.key === "ArrowRight" || e.key === "ArrowDown") next = active + 1;
-    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = active - 1;
-    else if (e.key === "Home") next = 0;
-    else if (e.key === "End") next = items.length - 1;
-    else return;
-    e.preventDefault();
-    select(next, { focusTab: true });
-  });
-
-  stage.addEventListener("click", e => {
-    const btn = e.target.closest("[data-pillar-step]");
-    if (!btn) return;
-    const step = parseInt(btn.dataset.pillarStep, 10) || 0;
-    select(active + step);
-  });
-
-  select(0);
+  }).join("") || `<p style="color:var(--ink-soft);">Builds coming soon.</p>`;
 }
 
-function pillarSlides(item) {
-  const slides = Array.isArray(item.slides) ? item.slides.filter(Boolean) : [];
-  if (slides.length) return slides;
-  return item.image ? [item.image] : [];
-}
-
-function pillarCover(item) {
-  const slides = pillarSlides(item);
-  return slides[0] || "";
-}
-
-function paintStage(stage, item, index, total) {
-  const slides = pillarSlides(item);
-  const title = escapeHtml(item.title || "Pillar");
-  const media = slides.length
-    ? `
-      <div class="pillar-stage-media" data-pillar-slides>
-        ${slides.map((src, s) => `
-          <div class="slide${s === 0 ? " active" : ""}" style="background-image:url('${escapeHtml(src)}')"></div>
-        `).join("")}
-        ${slides.length > 1 ? `
-          <div class="highlight-dots">
-            ${slides.map((_, s) => `<button type="button" aria-label="Slide ${s + 1}" class="${s === 0 ? "active" : ""}" data-slide="${s}"></button>`).join("")}
-          </div>
-        ` : ""}
-      </div>`
-    : `
-      <div class="pillar-stage-media is-fallback">
-        <div class="slide-fallback">${title}</div>
-      </div>`;
-
-  stage.innerHTML = `
-    ${media}
-    <div class="pillar-stage-copy">
-      <div class="pillar-stage-meta">
-        <span class="num">${escapeHtml(item.num || "")}</span>
-        <span class="pillar-stage-count">${index + 1} / ${total}</span>
+function renderPerspectives(items) {
+  const el = document.getElementById("perspective-grid");
+  if (!el) return;
+  el.innerHTML = items.map(m => `
+    <a class="perspective-card reveal" href="${escapeHtml(m.href || "musings.html")}">
+      <span class="tag">${escapeHtml(m.category || "")}</span>
+      <h3>${escapeHtml(m.title || "")}</h3>
+      <p>${escapeHtml(m.thesis || "")}</p>
+      <div class="perspective-meta">
+        <span>${escapeHtml(m.readingTime || "")}</span>
+        ${m.date ? `<span>${escapeHtml(m.date)}</span>` : ""}
       </div>
-      <h3>${title}</h3>
-      <div class="pillar-stage-text rich-text">${richHtml(item.text || "")}</div>
-      <div class="pillar-stage-nav">
-        <button type="button" class="pillar-nav-btn" data-pillar-step="-1" aria-label="Previous pillar">
-          <span aria-hidden="true">←</span>
-        </button>
-        <button type="button" class="pillar-nav-btn" data-pillar-step="1" aria-label="Next pillar">
-          <span aria-hidden="true">→</span>
-        </button>
-      </div>
-    </div>
-  `;
+    </a>
+  `).join("");
 }
 
-function initStageSlideshow(stage) {
-  const media = stage.querySelector("[data-pillar-slides]");
-  if (!media) return;
-  const slides = [...media.querySelectorAll(".slide")];
-  const dots = [...media.querySelectorAll(".highlight-dots button")];
-  if (slides.length < 2) return;
-
-  let i = 0;
-  const show = next => {
-    i = (next + slides.length) % slides.length;
-    slides.forEach((s, n) => s.classList.toggle("active", n === i));
-    dots.forEach((d, n) => d.classList.toggle("active", n === i));
-  };
-
-  dots.forEach(dot => {
-    dot.addEventListener("click", e => {
-      e.preventDefault();
-      e.stopPropagation();
-      show(parseInt(dot.dataset.slide, 10) || 0);
-    });
-  });
-
-  let timer = setInterval(() => show(i + 1), 4200);
-  media.addEventListener("mouseenter", () => clearInterval(timer));
-  media.addEventListener("mouseleave", () => {
-    clearInterval(timer);
-    timer = setInterval(() => show(i + 1), 4200);
-  });
+function renderSpeaking(items) {
+  const el = document.getElementById("speaking-list");
+  if (!el) return;
+  el.innerHTML = items.map(s => `
+    <article class="speaking-card reveal">
+      <h3>${escapeHtml(s.title || "")}</h3>
+      <div class="meta">${escapeHtml([s.event, s.meta].filter(Boolean).join(" · "))}</div>
+      <p>${escapeHtml(s.blurb || "")}</p>
+    </article>
+  `).join("") || `<p style="color:var(--ink-soft);">Speaking calendar expanding — check back soon.</p>`;
 }

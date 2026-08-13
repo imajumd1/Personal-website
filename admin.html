@@ -27,11 +27,13 @@
 <main class="wrap admin-shell">
   <nav class="admin-nav" id="admin-nav">
     <button type="button" data-panel="home" class="active">Home</button>
-    <button type="button" data-panel="biography">Biography</button>
+    <button type="button" data-panel="impact">Impact</button>
+    <button type="button" data-panel="biography">About / Bio</button>
     <button type="button" data-panel="education">Education</button>
-    <button type="button" data-panel="ai">AI Journey</button>
+    <button type="button" data-panel="ai">AI Lab</button>
     <button type="button" data-panel="books">Books</button>
-    <button type="button" data-panel="musings">Musings</button>
+    <button type="button" data-panel="musings">Perspectives</button>
+    <button type="button" data-panel="speaking">Speaking</button>
     <button type="button" data-panel="art">Art</button>
     <button type="button" data-panel="hiking">Hiking</button>
     <button type="button" data-panel="site">Site settings</button>
@@ -41,10 +43,11 @@
     <!-- Home -->
     <section class="panel active" id="panel-home">
       <h2>Home</h2>
-      <p class="panel-lede">Hero copy, photo, and the four pillar cards — each can have a cover image plus extra JPEG slides.</p>
+      <p class="panel-lede">Hero positioning, proof metrics, What I Do pillars, career arc, and beliefs.</p>
       <div class="field"><label>Eyebrow</label><input id="home-eyebrow"></div>
+      <div class="field"><label>Name (hero)</label><input id="home-name"></div>
       <div class="field"><label>Headline</label><textarea id="home-headline"></textarea></div>
-      <div class="field"><label>Pitch</label><div id="home-pitch"></div></div>
+      <div class="field"><label>Supporting pitch</label><div id="home-pitch"></div></div>
       <div class="field">
         <label>Hero photo</label>
         <input id="home-heroImage" placeholder="images/hero/your-photo.jpg">
@@ -55,22 +58,46 @@
         <img class="thumb" id="home-hero-preview" alt="Hero preview" hidden>
         <div class="thumb empty" id="home-hero-empty">No photo yet</div>
       </div>
-      <div class="field"><label>Hero label (shown if no photo)</label><input id="home-heroLabel"></div>
-      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Pillars</h3>
+      <div class="field"><label>Hero label (alt text)</label><input id="home-heroLabel"></div>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Proof metrics</h3>
+      <div id="home-proof"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-proof">+ Add metric</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">What I Do (3 pillars)</h3>
+      <div id="home-whatido"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-whatido">+ Add pillar</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Career arc</h3>
+      <div id="home-career-arc"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-career-arc">+ Add stage</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Beliefs</h3>
+      <div id="home-beliefs"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-belief">+ Add belief</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Legacy highlight slides (optional)</h3>
       <div id="home-highlights"></div>
-      <button type="button" class="btn btn-ghost add-btn" id="add-highlight">+ Add pillar</button>
+      <button type="button" class="btn btn-ghost add-btn" id="add-highlight">+ Add legacy pillar</button>
+    </section>
+
+    <!-- Impact -->
+    <section class="panel" id="panel-impact">
+      <h2>Selected Impact</h2>
+      <p class="panel-lede">Case-study cards: Challenge / Built / Impact.</p>
+      <div id="impact-list"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-impact">+ Add case study</button>
     </section>
 
     <!-- Biography -->
     <section class="panel" id="panel-biography">
-      <h2>Biography</h2>
-      <p class="panel-lede">Page heading, summary, career timeline, and callouts.</p>
+      <h2>About / Biography</h2>
+      <p class="panel-lede">Three bio lengths, career timeline, and callouts.</p>
       <div class="row-2">
-        <div class="field"><label>Eyebrow</label><input id="bio-eyebrow" placeholder="01 / Biography"></div>
-        <div class="field"><label>Page title</label><input id="bio-title" placeholder="Who I Am"></div>
+        <div class="field"><label>Eyebrow</label><input id="bio-eyebrow" placeholder="About"></div>
+        <div class="field"><label>Page title</label><input id="bio-title" placeholder="Ishita Majumdar"></div>
       </div>
       <div class="field"><label>Page intro</label><div id="bio-lede"></div></div>
-      <div class="field"><label>Summary</label><div id="bio-summary"></div></div>
+      <div class="field"><label>~50-word bio</label><textarea id="bio-short" rows="4"></textarea></div>
+      <div class="field"><label>~150-word bio</label><textarea id="bio-medium" rows="7"></textarea></div>
+      <div class="field"><label>Full executive biography</label><div id="bio-summary"></div></div>
+      <div class="field"><label>Headshot path</label><input id="bio-headshot" placeholder="images/hero/…"></div>
+      <div class="field"><label>Bio download URL (optional)</label><input id="bio-download"></div>
       <h3 style="font-family:var(--serif); margin:28px 0 12px;">Career</h3>
       <div id="bio-career"></div>
       <button type="button" class="btn btn-ghost add-btn" id="add-career">+ Add role</button>
@@ -107,10 +134,27 @@
       <p class="hint">Each card needs a cover image, summary, and repo link.</p>
       <div id="ai-git-projects"></div>
       <button type="button" class="btn btn-ghost add-btn" id="add-git-project">+ Add Git project</button>
-      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Featured Builds</h3>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">Featured Builds (legacy live URLs)</h3>
       <p class="hint">Same card layout as Git projects: cover image, summary, and public live URL (Railway domain).</p>
       <div id="ai-featured-builds"></div>
       <button type="button" class="btn btn-ghost add-btn" id="add-featured-build">+ Add featured build</button>
+      <h3 style="font-family:var(--serif); margin:28px 0 12px;">AI Lab featured items</h3>
+      <p class="hint">Homepage + AI Lab cards with why / tech / learned.</p>
+      <div id="ai-lab-items"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-lab-item">+ Add lab item</button>
+    </section>
+
+    <!-- Speaking -->
+    <section class="panel" id="panel-speaking">
+      <h2>Speaking</h2>
+      <p class="panel-lede">Talks and conversations. Sparse is OK.</p>
+      <div class="row-2">
+        <div class="field"><label>Eyebrow</label><input id="speaking-eyebrow"></div>
+        <div class="field"><label>Page title</label><input id="speaking-title"></div>
+      </div>
+      <div class="field"><label>Page intro</label><div id="speaking-lede"></div></div>
+      <div id="speaking-list"></div>
+      <button type="button" class="btn btn-ghost add-btn" id="add-speaking">+ Add talk</button>
     </section>
 
     <!-- Books -->
@@ -172,9 +216,12 @@
     <!-- Site -->
     <section class="panel" id="panel-site">
       <h2>Site settings</h2>
-      <p class="panel-lede">Change the display name shown in the nav and footer, plus your contact email.</p>
-      <div class="field"><label>Display name</label><input id="site-brand" placeholder="Ishita"><p class="hint">Appears in the top-left nav, footer copyright, and browser tab titles.</p></div>
+      <p class="panel-lede">Brand, contact, and social links for the footer.</p>
+      <div class="field"><label>Display name</label><input id="site-brand" placeholder="Ishita Majumdar"><p class="hint">Appears in the top-left nav, footer, and browser tab titles.</p></div>
+      <div class="field"><label>Tagline</label><input id="site-tagline" placeholder="Technology • Data • AI • Transformation"></div>
       <div class="field"><label>Email</label><input id="site-email" type="email"></div>
+      <div class="field"><label>LinkedIn URL</label><input id="site-linkedin"></div>
+      <div class="field"><label>GitHub username</label><input id="site-github" placeholder="imajumd1"></div>
     </section>
   </div>
 </main>

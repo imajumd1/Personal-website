@@ -8,18 +8,25 @@
 </head>
 <body>
 
-<nav class="site-nav">
+<nav class="site-nav" data-nav>
   <div class="wrap">
-    <a class="brand" href="index.html">Ishita</a>
+    <a class="brand" href="index.html">Ishita Majumdar</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="biography.html">Biography</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="ai-journey.html">AI Journey</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="musings.html">Musings</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="hiking.html">Hiking</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="ai-journey.html">AI Lab</a></li>
+      <li><a href="musings.html">Perspectives</a></li>
+      <li><a href="biography.html">About</a></li>
+      <li class="nav-more">
+        <button type="button" class="nav-more-btn" aria-expanded="false" aria-haspopup="true">More</button>
+        <ul class="nav-dropdown">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+      </li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
   </div>
@@ -42,8 +49,18 @@
 </main>
 
 <footer class="site-footer">
-  <span>© <span id="year"></span> <span class="brand-text">Ishita</span></span>
-  <a href="mailto:imajumd1@gmail.com">imajumd1@gmail.com</a>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <strong class="brand-text">Ishita Majumdar</strong>
+      <span class="footer-tagline">Technology • Data • AI • Transformation</span>
+    </div>
+    <div class="footer-links">
+      <a id="footer-linkedin" href="https://www.linkedin.com/in/ishitamajumdar" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="footer-github" href="https://github.com/imajumd1" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:imajumd1@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© <span id="year"></span></span>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

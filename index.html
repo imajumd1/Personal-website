@@ -3,173 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ishita — Home</title>
+<title>Ishita Majumdar — Builder-Executive</title>
+<meta name="description" content="Ishita Majumdar builds the systems, platforms, and organizations that turn Data + AI into business outcomes.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="site-nav">
+<nav class="site-nav" data-nav>
   <div class="wrap">
-    <a class="brand" href="index.html">Ishita</a>
+    <a class="brand" href="index.html">Ishita Majumdar</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="biography.html">Biography</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="ai-journey.html">AI Journey</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="musings.html">Musings</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="hiking.html">Hiking</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="ai-journey.html">AI Lab</a></li>
+      <li><a href="musings.html">Perspectives</a></li>
+      <li><a href="biography.html">About</a></li>
+      <li class="nav-more">
+        <button type="button" class="nav-more-btn" aria-expanded="false" aria-haspopup="true">More</button>
+        <ul class="nav-dropdown">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+      </li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
   </div>
 </nav>
 
-<header class="hero">
+<header class="hero hero-exec">
   <div class="wrap hero-columns">
     <div class="hero-copy reveal in">
-      <span class="eyebrow">Elevator Pitch</span>
-      <h1 class="pitch-headline">A learner and builder at heart, I lead by staying close to the work and paying forward everything it's taught me.</h1>
+      <span class="eyebrow">Builder-Executive</span>
+      <p class="hero-name">Ishita Majumdar</p>
+      <h1 class="pitch-headline">Building the systems, platforms, and organizations that turn Data + AI into business outcomes.</h1>
       <div class="pitch">
-        I drive large-scale, tech-enabled transformations by bringing people, platforms, and
-        strategy into alignment. Having led global product, data, and engineering organizations, I
-        combine executive credibility with a builder's mindset, staying close to the technical
-        architecture while guiding teams toward a unified purpose.
+        <p>Technology executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation.</p>
       </div>
       <div class="btn-row">
-        <a class="btn btn-primary" href="biography.html">Read my story</a>
-        <a class="btn btn-ghost" href="ai-journey.html">See my AI work</a>
+        <a class="btn btn-primary" href="#impact">Explore my work</a>
+        <a class="btn btn-ghost" href="musings.html">Read my perspective</a>
       </div>
     </div>
-    <div class="hero-image reveal in">
-      <span>Ishita Majumdar</span>
-    </div>
+    <div class="hero-image reveal in" role="img" aria-label="Portrait of Ishita Majumdar"></div>
   </div>
 </header>
 
-<section class="highlights">
+<section class="proof-bar" aria-label="Executive proof points">
   <div class="wrap">
-    <div class="pillars-intro">
-      <span class="eyebrow">Pillars</span>
-      <h2>What defines the work</h2>
-      <p>Scan the throughlines, then open one to read.</p>
+    <div class="proof-grid" id="proof-metrics"></div>
+  </div>
+</section>
+
+<section class="home-section" id="what-i-do">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What I Do</span>
+      <h2>Three ways I create leverage</h2>
+      <p>Enterprise AI, trusted platforms, and technology leadership—connected, not siloed.</p>
     </div>
-    <div class="pillar-stage" id="pillar-stage">
-      <div class="pillar-stage-media">
-        <div class="slide active" style="background-image:url('images/pillars/years-in-tech.jpg')"></div>
-      </div>
-      <div class="pillar-stage-copy">
-        <div class="pillar-stage-meta">
-          <span class="num">25</span>
-          <span class="pillar-stage-count">1 / 5</span>
-        </div>
-        <h3>Years in Tech</h3>
-        <div class="pillar-stage-text">
-          <p>From Principal Engineer at Motorola to Chief Data and AI Officer today — applying technology to solve complex problems for consumers and enterprises.</p>
-        </div>
-      </div>
+    <div class="pillars-3" id="what-i-do-grid"></div>
+  </div>
+</section>
+
+<section class="home-section home-section-alt" id="impact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected Impact</span>
+      <h2>Challenge · Built · Outcome</h2>
+      <p>Case studies drawn from eBay, Relanto, Huawei, patents, and building as a founder.</p>
     </div>
-    <div class="pillars-rail" role="tablist" aria-label="Pillars">
-      <button type="button" class="pillar-tab is-active" role="tab" aria-selected="true">
-        <span class="pillar-tab-media" style="background-image:url('images/pillars/years-in-tech.jpg')"></span>
-        <span class="pillar-tab-body">
-          <span class="num">25</span>
-          <span class="pillar-tab-title">Years in Tech</span>
-          <span class="pillar-tab-preview">From Principal Engineer at Motorola to Chief Data and AI Officer today</span>
-        </span>
-        <span class="pillar-tab-arrow" aria-hidden="true">→</span>
-      </button>
-      <button type="button" class="pillar-tab" role="tab" aria-selected="false">
-        <span class="pillar-tab-media" style="background-image:url('images/pillars/product-thinking.jpg')"></span>
-        <span class="pillar-tab-body">
-          <span class="num">02</span>
-          <span class="pillar-tab-title">Product Thinking</span>
-          <span class="pillar-tab-preview">Customer pain points, prototypes, and product systems that scale</span>
-        </span>
-        <span class="pillar-tab-arrow" aria-hidden="true">→</span>
-      </button>
-      <button type="button" class="pillar-tab" role="tab" aria-selected="false">
-        <span class="pillar-tab-media" style="background-image:url('images/pillars/data-insights.jpg')"></span>
-        <span class="pillar-tab-body">
-          <span class="num">03</span>
-          <span class="pillar-tab-title">Data - What can it tell?</span>
-          <span class="pillar-tab-preview">Trusted platforms and literacy so teams ask better questions</span>
-        </span>
-        <span class="pillar-tab-arrow" aria-hidden="true">→</span>
-      </button>
-      <button type="button" class="pillar-tab" role="tab" aria-selected="false">
-        <span class="pillar-tab-media" style="background-image:url('images/pillars/learning-ai.jpg')"></span>
-        <span class="pillar-tab-body">
-          <span class="num">04</span>
-          <span class="pillar-tab-title">Learning AI</span>
-          <span class="pillar-tab-preview">From first-principles building to leading AI in production</span>
-        </span>
-        <span class="pillar-tab-arrow" aria-hidden="true">→</span>
-      </button>
-      <button type="button" class="pillar-tab" role="tab" aria-selected="false">
-        <span class="pillar-tab-media" style="background-image:url('images/pillars/leading-transformation.jpg')"></span>
-        <span class="pillar-tab-body">
-          <span class="num">05</span>
-          <span class="pillar-tab-title">Leading Transformation</span>
-          <span class="pillar-tab-preview">Cross-functional programs that change how the enterprise works</span>
-        </span>
-        <span class="pillar-tab-arrow" aria-hidden="true">→</span>
-      </button>
+    <div class="impact-grid" id="impact-grid"></div>
+    <p class="section-more"><a href="impact.html">View all impact →</a></p>
+  </div>
+</section>
+
+<section class="home-section" id="career-arc">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Career Arc</span>
+      <h2>How the work evolved</h2>
+      <p>Engineer → Platform Builder → Product Leader → Data Executive → AI Transformation Leader.</p>
+    </div>
+    <ol class="career-arc" id="career-arc-list"></ol>
+  </div>
+</section>
+
+<section class="home-section home-section-alt" id="how-i-think">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How I Think</span>
+      <h2>Beliefs that shape the work</h2>
+      <p>Short theses—each one tested in real organizations.</p>
+    </div>
+    <div class="beliefs-grid" id="beliefs-grid"></div>
+  </div>
+</section>
+
+<section class="home-section" id="ai-lab">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">AI Lab</span>
+      <h2>Recent builds</h2>
+      <p>Quality over quantity—systems I ship to stay fluent and keep strategy honest.</p>
+    </div>
+    <div class="lab-grid" id="lab-grid"></div>
+    <p class="section-more"><a href="ai-journey.html">Open the AI Lab →</a></p>
+  </div>
+</section>
+
+<section class="home-section home-section-alt" id="perspectives">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured Perspectives</span>
+      <h2>Ideas worth sitting with</h2>
+      <p>AI &amp; enterprise transformation, data &amp; platforms, leadership &amp; organizations.</p>
+    </div>
+    <div class="perspective-grid" id="perspective-grid"></div>
+    <p class="section-more"><a href="musings.html">All perspectives →</a></p>
+  </div>
+</section>
+
+<section class="home-section" id="speaking">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Speaking &amp; Conversations</span>
+      <h2>Rooms where the ideas travel</h2>
+      <p>Talks and dialogues on data, AI, and transformation.</p>
+    </div>
+    <div class="speaking-list" id="speaking-list"></div>
+    <p class="section-more"><a href="speaking.html">Speaking page →</a></p>
+  </div>
+</section>
+
+<section class="home-section home-section-alt" id="beyond">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Beyond Technology</span>
+      <h2>Books, art, trails</h2>
+      <p>The practices that keep judgment sharp when the calendar is full.</p>
+    </div>
+    <div class="beyond-grid">
+      <a class="beyond-card reveal" href="books.html">
+        <span class="tag">Books</span>
+        <h3>What stays with me</h3>
+        <p>Favorites that shaped how I lead, build, and rethink.</p>
+        <span class="go">Browse books →</span>
+      </a>
+      <a class="beyond-card reveal" href="art.html">
+        <span class="tag">Art</span>
+        <h3>Making without a brief</h3>
+        <p>Acrylics, lines, and experiments for the joy of it.</p>
+        <span class="go">View gallery →</span>
+      </a>
+      <a class="beyond-card reveal" href="hiking.html">
+        <span class="tag">Trails</span>
+        <h3>On the trail</h3>
+        <p>Summits and routes that reset perspective.</p>
+        <span class="go">See trips →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="wrap">
-  <div class="section-grid">
-    <a class="section-card reveal" href="biography.html">
-      <span class="tag">01 / Biography</span>
-      <h3>Who I Am</h3>
-      <p>A LinkedIn-style summary of my career, with a few special callouts you won't find on a resume.</p>
-      <span class="go">Read the story →</span>
-    </a>
-    <a class="section-card reveal" href="education.html">
-      <span class="tag">02 / Education</span>
-      <h3>How I Learned</h3>
-      <p>Where I studied, and — more importantly — what each place actually taught me.</p>
-      <span class="go">See the timeline →</span>
-    </a>
-    <a class="section-card reveal" href="ai-journey.html">
-      <span class="tag">03 / AI Journey</span>
-      <h3>Building with AI</h3>
-      <p>My path into AI, my GitHub, and the projects I've shipped and hosted on Railway.</p>
-      <span class="go">Explore the projects →</span>
-    </a>
-    <a class="section-card reveal" href="books.html">
-      <span class="tag">04 / Books</span>
-      <h3>What I'm Reading</h3>
-      <p>Covers and honest summaries of the books that shaped how I think.</p>
-      <span class="go">Flip through →</span>
-    </a>
-    <a class="section-card reveal" href="musings.html">
-      <span class="tag">05 / Musings</span>
-      <h3>My $0.02</h3>
-      <p>Takes on tech, leadership, and everything in between — timeless on purpose.</p>
-      <span class="go">Read a musing →</span>
-    </a>
-    <a class="section-card reveal" href="art.html">
-      <span class="tag">06 / Art</span>
-      <h3>My Art</h3>
-      <p>A portfolio of pieces I've made, with the story behind each one.</p>
-      <span class="go">View the gallery →</span>
-    </a>
-    <a class="section-card reveal" href="hiking.html">
-      <span class="tag">07 / Hiking</span>
-      <h3>On the Trail</h3>
-      <p>Adventures, summits, and the routes that stuck with me.</p>
-      <span class="go">See the trips →</span>
-    </a>
+<section class="home-section contact-band" id="contact">
+  <div class="wrap contact-band-inner reveal">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2>Let’s talk outcomes</h2>
+      <p>Open to conversations on enterprise AI, data platforms, and transformation leadership.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:imajumd1@gmail.com">Email</a>
+      <a class="btn btn-ghost" id="contact-linkedin" href="https://www.linkedin.com/in/ishitamajumdar" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" id="contact-github" href="https://github.com/imajumd1" target="_blank" rel="noopener">GitHub</a>
+    </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
-    <span>© <span id="year"></span> <span class="brand-text">Ishita</span> — built in lieu of a LinkedIn profile.</span>
-    <a href="mailto:imajumd1@gmail.com">imajumd1@gmail.com</a>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <strong class="brand-text">Ishita Majumdar</strong>
+      <span class="footer-tagline">Technology • Data • AI • Transformation</span>
+    </div>
+    <div class="footer-links">
+      <a id="footer-linkedin" href="https://www.linkedin.com/in/ishitamajumdar" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="footer-github" href="https://github.com/imajumd1" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:imajumd1@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© <span id="year"></span></span>
   </div>
 </footer>
 

@@ -3,23 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ishita — Musings</title>
+<title>Ishita Majumdar — Perspectives</title>
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-<nav class="site-nav">
+<nav class="site-nav" data-nav>
   <div class="wrap">
-    <a class="brand" href="index.html">Ishita</a>
+    <a class="brand" href="index.html">Ishita Majumdar</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="biography.html">Biography</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="ai-journey.html">AI Journey</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="musings.html">Musings</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="hiking.html">Hiking</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="ai-journey.html">AI Lab</a></li>
+      <li><a href="musings.html">Perspectives</a></li>
+      <li><a href="biography.html">About</a></li>
+      <li class="nav-more">
+        <button type="button" class="nav-more-btn" aria-expanded="false" aria-haspopup="true">More</button>
+        <ul class="nav-dropdown">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+      </li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
   </div>
@@ -27,30 +35,36 @@
 
 <header class="page-hero">
   <div class="wrap">
-    <span class="eyebrow">05 / Musings</span>
-    <h1>My $0.02</h1>
-    <p class="lede">
-      No timestamps on purpose — an idea here should read the same whether you find it today or in five years.
-    </p>
+    <span class="eyebrow">Perspectives</span>
+    <h1>Featured perspectives</h1>
+    <p class="lede">Short theses on AI transformation, data platforms, and how organizations actually change.</p>
   </div>
 </header>
-
 <main class="page-body">
   <div class="wrap">
     <div class="musing-controls">
       <button class="tag-filter active" data-tag="all">All</button>
-      <button class="tag-filter" data-tag="tech">Tech</button>
-      <button class="tag-filter" data-tag="leadership">Leadership</button>
-      <button class="tag-filter" data-tag="life">Life</button>
-      <button class="btn btn-ghost" style="margin-left:auto; padding:7px 16px; font-size:0.85rem;" id="shuffle-btn">🔀 Shuffle</button>
+      <button class="tag-filter" data-tag="AI & Enterprise Transformation">AI &amp; Enterprise</button>
+      <button class="tag-filter" data-tag="Data & Platforms">Data &amp; Platforms</button>
+      <button class="tag-filter" data-tag="Leadership & Organizations">Leadership</button>
     </div>
     <div id="musings-list"></div>
   </div>
 </main>
 
 <footer class="site-footer">
-  <span>© <span id="year"></span> <span class="brand-text">Ishita</span></span>
-  <a href="mailto:imajumd1@gmail.com">imajumd1@gmail.com</a>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <strong class="brand-text">Ishita Majumdar</strong>
+      <span class="footer-tagline">Technology • Data • AI • Transformation</span>
+    </div>
+    <div class="footer-links">
+      <a id="footer-linkedin" href="https://www.linkedin.com/in/ishitamajumdar" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="footer-github" href="https://github.com/imajumd1" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:imajumd1@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© <span id="year"></span></span>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

@@ -43,31 +43,47 @@ function normalizeListPage(section, defaults = {}) {
 
 function normalizeContent(raw) {
   const c = raw || {};
+  c.site = c.site || {};
   c.books = normalizeListPage(c.books, {
-    eyebrow: "04 / Books",
+    eyebrow: "Beyond Technology / Books",
     title: "What I'm Reading",
     lede: "<p>Click a cover to flip it over for the summary.</p>"
   });
   c.musings = normalizeListPage(c.musings, {
-    eyebrow: "05 / Musings",
-    title: "My $0.02",
-    lede: "<p>No timestamps on purpose — an idea here should read the same whether you find it today or in five years.</p>"
+    eyebrow: "Perspectives",
+    title: "Featured perspectives",
+    lede: "<p>Short theses on AI transformation, data platforms, and leadership.</p>"
   });
   c.art = normalizeListPage(c.art, {
-    eyebrow: "06 / Art",
+    eyebrow: "Beyond Technology / Art",
     title: "My Art",
     lede: "<p>A portfolio in progress. Click any piece for the full story behind it.</p>"
   });
   c.biography = c.biography || {};
+  c.biography.bios = c.biography.bios || { short: "", medium: "", full: "" };
   c.education = c.education || {};
   c.aiJourney = c.aiJourney || {};
+  c.aiLab = c.aiLab || { eyebrow: "AI Lab", title: "Recent builds", lede: "", items: [] };
+  if (!Array.isArray(c.aiLab.items)) c.aiLab.items = [];
   c.hiking = c.hiking || {};
-  if (!c.biography.title) c.biography.title = "Who I Am";
-  if (!c.biography.eyebrow) c.biography.eyebrow = "01 / Biography";
+  c.speaking = c.speaking || { eyebrow: "Speaking", title: "Speaking & conversations", lede: "", items: [] };
+  if (!Array.isArray(c.speaking.items)) c.speaking.items = [];
+  c.impact = c.impact || { eyebrow: "Impact", title: "Selected impact", lede: "", items: [] };
+  if (!Array.isArray(c.impact.items)) c.impact.items = c.home?.selectedImpact || [];
+  c.home = c.home || {};
+  if (!Array.isArray(c.home.proofMetrics)) c.home.proofMetrics = [];
+  if (!Array.isArray(c.home.whatIDo)) c.home.whatIDo = [];
+  if (!Array.isArray(c.home.selectedImpact)) c.home.selectedImpact = c.impact.items || [];
+  if (!Array.isArray(c.home.careerArc)) c.home.careerArc = [];
+  if (!Array.isArray(c.home.beliefs)) c.home.beliefs = [];
+  if (!Array.isArray(c.home.featuredPerspectives)) c.home.featuredPerspectives = [];
+  if (!Array.isArray(c.home.highlights)) c.home.highlights = [];
+  if (!c.biography.title) c.biography.title = "Ishita Majumdar";
+  if (!c.biography.eyebrow) c.biography.eyebrow = "About";
   if (!c.education.title) c.education.title = "How I Learned";
   if (!c.education.eyebrow) c.education.eyebrow = "02 / Education";
-  if (!c.aiJourney.title) c.aiJourney.title = "Building with AI";
-  if (!c.aiJourney.eyebrow) c.aiJourney.eyebrow = "03 / AI Journey";
+  if (!c.aiJourney.title) c.aiJourney.title = "Building in public";
+  if (!c.aiJourney.eyebrow) c.aiJourney.eyebrow = "AI Lab";
   if (!Array.isArray(c.aiJourney.gitProjects)) c.aiJourney.gitProjects = [];
   if (!Array.isArray(c.aiJourney.featuredBuilds)) {
     const legacy = Array.isArray(c.aiJourney.projects) ? c.aiJourney.projects : [];
@@ -84,7 +100,7 @@ function normalizeContent(raw) {
   }
   if (!Array.isArray(c.aiJourney.projects)) c.aiJourney.projects = [];
   if (!c.hiking.title) c.hiking.title = "On the Trail";
-  if (!c.hiking.eyebrow) c.hiking.eyebrow = "07 / Hiking";
+  if (!c.hiking.eyebrow) c.hiking.eyebrow = "Beyond Technology / Trails";
   return c;
 }
 
@@ -125,16 +141,88 @@ function bindNav() {
 function renderHome() {
   const h = content.home;
   $("#home-eyebrow").value = h.eyebrow || "";
+  if ($("#home-name")) $("#home-name").value = h.name || "";
   $("#home-headline").value = h.headline || "";
   setStaticRte("home-pitch", h.pitch || "", { minHeight: "120px" });
   $("#home-heroImage").value = h.heroImage || "";
   $("#home-heroLabel").value = h.heroLabel || "";
   updateHeroPreview();
+
+  const proof = $("#home-proof");
+  if (proof) {
+    proof.innerHTML = "";
+    (h.proofMetrics || []).forEach((item, i) => {
+      const el = document.createElement("div");
+      el.className = "item-card";
+      el.innerHTML = `
+        <div class="item-card-head"><strong>Metric ${i + 1}</strong>
+          <button type="button" class="btn btn-danger btn-small" data-remove="proof">Remove</button></div>
+        <div class="row-2">
+          <div class="field"><label>Value</label><input data-k="value" value="${escapeHtml(item.value || "")}"></div>
+          <div class="field"><label>Label</label><input data-k="label" value="${escapeHtml(item.label || "")}"></div>
+        </div>`;
+      proof.appendChild(el);
+    });
+  }
+
+  const what = $("#home-whatido");
+  if (what) {
+    what.innerHTML = "";
+    (h.whatIDo || []).forEach((item, i) => {
+      const el = document.createElement("div");
+      el.className = "item-card";
+      el.innerHTML = `
+        <div class="item-card-head"><strong>Pillar ${i + 1}</strong>
+          <button type="button" class="btn btn-danger btn-small" data-remove="whatido">Remove</button></div>
+        <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title || "")}"></div>
+        <div class="field"><label>Text</label><textarea data-k="text" rows="3">${escapeHtml(item.text || "")}</textarea></div>`;
+      what.appendChild(el);
+    });
+  }
+
+  const arc = $("#home-career-arc");
+  if (arc) {
+    arc.innerHTML = "";
+    (h.careerArc || []).forEach((item, i) => {
+      const el = document.createElement("div");
+      el.className = "item-card";
+      el.innerHTML = `
+        <div class="item-card-head"><strong>Stage ${i + 1}</strong>
+          <button type="button" class="btn btn-danger btn-small" data-remove="careerArc">Remove</button></div>
+        <div class="row-2">
+          <div class="field"><label>Stage</label><input data-k="stage" value="${escapeHtml(item.stage || "")}"></div>
+          <div class="field"><label>Detail</label><input data-k="detail" value="${escapeHtml(item.detail || "")}"></div>
+        </div>`;
+      arc.appendChild(el);
+    });
+  }
+
+  const beliefs = $("#home-beliefs");
+  if (beliefs) {
+    beliefs.innerHTML = "";
+    (h.beliefs || []).forEach((item, i) => {
+      const el = document.createElement("div");
+      el.className = "item-card";
+      el.innerHTML = `
+        <div class="item-card-head"><strong>Belief ${i + 1}</strong>
+          <button type="button" class="btn btn-danger btn-small" data-remove="belief">Remove</button></div>
+        <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title || "")}"></div>
+        <div class="field"><label>Text</label><textarea data-k="text" rows="3">${escapeHtml(item.text || "")}</textarea></div>
+        <div class="row-2">
+          <div class="field"><label>Link</label><input data-k="link" value="${escapeHtml(item.link || "")}"></div>
+          <div class="field"><label>Link label</label><input data-k="linkLabel" value="${escapeHtml(item.linkLabel || "")}"></div>
+        </div>`;
+      beliefs.appendChild(el);
+    });
+  }
+
   const list = $("#home-highlights");
-  list.innerHTML = "";
-  (h.highlights || []).forEach((item, i) => {
-    list.appendChild(highlightCard(item, i));
-  });
+  if (list) {
+    list.innerHTML = "";
+    (h.highlights || []).forEach((item, i) => {
+      list.appendChild(highlightCard(item, i));
+    });
+  }
 }
 
 function updateHeroPreview() {
@@ -197,7 +285,11 @@ function renderBiography() {
   $("#bio-eyebrow").value = b.eyebrow || "";
   $("#bio-title").value = b.title || "";
   setStaticRte("bio-lede", b.lede || "");
-  setStaticRte("bio-summary", paragraphsToHtml(b.summary), { minHeight: "160px" });
+  if ($("#bio-short")) $("#bio-short").value = b.bios?.short || "";
+  if ($("#bio-medium")) $("#bio-medium").value = b.bios?.medium || "";
+  setStaticRte("bio-summary", paragraphsToHtml(b.bios?.full || b.summary), { minHeight: "160px" });
+  if ($("#bio-headshot")) $("#bio-headshot").value = b.headshot || "";
+  if ($("#bio-download")) $("#bio-download").value = b.bioDownload || "";
   const career = $("#bio-career");
   career.innerHTML = "";
   (b.career || []).forEach((item, i) => career.appendChild(careerCard(item, i)));
@@ -294,6 +386,79 @@ function renderAI() {
   const buildsList = $("#ai-featured-builds");
   buildsList.innerHTML = "";
   (a.featuredBuilds || []).forEach((item, i) => buildsList.appendChild(featuredBuildCard(item, i)));
+  const labList = $("#ai-lab-items");
+  if (labList) {
+    labList.innerHTML = "";
+    (content.aiLab?.items || []).forEach((item, i) => labList.appendChild(labItemCard(item, i)));
+  }
+}
+
+function labItemCard(item, i) {
+  const el = document.createElement("div");
+  el.className = "item-card";
+  el.innerHTML = `
+    <div class="item-card-head">
+      <strong>Lab item ${i + 1}</strong>
+      <button type="button" class="btn btn-danger btn-small" data-remove="labItem">Remove</button>
+    </div>
+    <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name || "")}"></div>
+    <div class="field"><label>Summary</label><textarea data-k="summary" rows="2">${escapeHtml(item.summary || "")}</textarea></div>
+    <div class="field"><label>Why built</label><textarea data-k="why" rows="2">${escapeHtml(item.why || "")}</textarea></div>
+    <div class="field"><label>Tech</label><input data-k="tech" value="${escapeHtml(item.tech || "")}"></div>
+    <div class="field"><label>Learned</label><textarea data-k="learned" rows="2">${escapeHtml(item.learned || "")}</textarea></div>
+    <div class="field"><label>Image</label><input data-k="image" value="${escapeHtml(item.image || "")}"></div>
+    <div class="row-2">
+      <div class="field"><label>Live URL</label><input data-k="liveUrl" value="${escapeHtml(item.liveUrl || "")}"></div>
+      <div class="field"><label>Repo URL</label><input data-k="repoUrl" value="${escapeHtml(item.repoUrl || "")}"></div>
+    </div>
+  `;
+  return el;
+}
+
+function renderImpact() {
+  const list = $("#impact-list");
+  if (!list) return;
+  list.innerHTML = "";
+  const items = content.impact?.items || content.home?.selectedImpact || [];
+  items.forEach((item, i) => {
+    const el = document.createElement("div");
+    el.className = "item-card";
+    el.innerHTML = `
+      <div class="item-card-head"><strong>Case ${i + 1}</strong>
+        <button type="button" class="btn btn-danger btn-small" data-remove="impact">Remove</button></div>
+      <div class="row-2">
+        <div class="field"><label>Org</label><input data-k="org" value="${escapeHtml(item.org || "")}"></div>
+        <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title || "")}"></div>
+      </div>
+      <div class="field"><label>Challenge</label><textarea data-k="challenge" rows="3">${escapeHtml(item.challenge || "")}</textarea></div>
+      <div class="field"><label>Built / Action</label><textarea data-k="action" rows="3">${escapeHtml(item.action || "")}</textarea></div>
+      <div class="field"><label>Impact</label><textarea data-k="impact" rows="3">${escapeHtml(item.impact || "")}</textarea></div>`;
+    list.appendChild(el);
+  });
+}
+
+function renderSpeaking() {
+  if ($("#speaking-eyebrow")) $("#speaking-eyebrow").value = content.speaking?.eyebrow || "";
+  if ($("#speaking-title")) $("#speaking-title").value = content.speaking?.title || "";
+  if ($("#speaking-lede")) setStaticRte("speaking-lede", content.speaking?.lede || "");
+  const list = $("#speaking-list");
+  if (!list) return;
+  list.innerHTML = "";
+  (content.speaking?.items || []).forEach((item, i) => {
+    const el = document.createElement("div");
+    el.className = "item-card";
+    el.innerHTML = `
+      <div class="item-card-head"><strong>Talk ${i + 1}</strong>
+        <button type="button" class="btn btn-danger btn-small" data-remove="speaking">Remove</button></div>
+      <div class="field"><label>Title</label><input data-k="title" value="${escapeHtml(item.title || "")}"></div>
+      <div class="row-2">
+        <div class="field"><label>Event</label><input data-k="event" value="${escapeHtml(item.event || "")}"></div>
+        <div class="field"><label>Meta</label><input data-k="meta" value="${escapeHtml(item.meta || "")}"></div>
+      </div>
+      <div class="field"><label>Blurb</label><textarea data-k="blurb" rows="3">${escapeHtml(item.blurb || "")}</textarea></div>
+      <div class="field"><label>Link</label><input data-k="link" value="${escapeHtml(item.link || "")}"></div>`;
+    list.appendChild(el);
+  });
 }
 
 function gitProjectCard(item, i) {
@@ -498,15 +663,20 @@ function tripCard(item, i) {
 function renderSite() {
   $("#site-brand").value = content.site?.brand || "";
   $("#site-email").value = content.site?.email || "";
+  if ($("#site-tagline")) $("#site-tagline").value = content.site?.tagline || "";
+  if ($("#site-linkedin")) $("#site-linkedin").value = content.site?.linkedin || "";
+  if ($("#site-github")) $("#site-github").value = content.site?.github || "";
 }
 
 function renderAll() {
   renderHome();
+  renderImpact();
   renderBiography();
   renderEducation();
   renderAI();
   renderBooks();
   renderMusings();
+  renderSpeaking();
   renderArt();
   renderHiking();
   renderSite();
@@ -610,24 +780,115 @@ function gatherContent() {
     };
   });
 
+  const proofMetrics = $("#home-proof")
+    ? collectFromCards($("#home-proof"), card => ({
+        value: $("[data-k=value]", card).value.trim(),
+        label: $("[data-k=label]", card).value.trim()
+      }))
+    : (content.home.proofMetrics || []);
+
+  const whatIDo = $("#home-whatido")
+    ? collectFromCards($("#home-whatido"), card => ({
+        title: $("[data-k=title]", card).value.trim(),
+        text: $("[data-k=text]", card).value.trim()
+      }))
+    : (content.home.whatIDo || []);
+
+  const careerArc = $("#home-career-arc")
+    ? collectFromCards($("#home-career-arc"), card => ({
+        stage: $("[data-k=stage]", card).value.trim(),
+        detail: $("[data-k=detail]", card).value.trim()
+      }))
+    : (content.home.careerArc || []);
+
+  const beliefs = $("#home-beliefs")
+    ? collectFromCards($("#home-beliefs"), card => ({
+        title: $("[data-k=title]", card).value.trim(),
+        text: $("[data-k=text]", card).value.trim(),
+        link: $("[data-k=link]", card).value.trim(),
+        linkLabel: $("[data-k=linkLabel]", card).value.trim()
+      }))
+    : (content.home.beliefs || []);
+
+  const selectedImpact = $("#impact-list")
+    ? collectFromCards($("#impact-list"), card => ({
+        org: $("[data-k=org]", card).value.trim(),
+        title: $("[data-k=title]", card).value.trim(),
+        challenge: $("[data-k=challenge]", card).value.trim(),
+        action: $("[data-k=action]", card).value.trim(),
+        impact: $("[data-k=impact]", card).value.trim()
+      }))
+    : (content.home.selectedImpact || content.impact?.items || []);
+
+  const labItems = $("#ai-lab-items")
+    ? collectFromCards($("#ai-lab-items"), card => ({
+        name: $("[data-k=name]", card).value.trim(),
+        summary: $("[data-k=summary]", card).value.trim(),
+        why: $("[data-k=why]", card).value.trim(),
+        tech: $("[data-k=tech]", card).value.trim(),
+        learned: $("[data-k=learned]", card).value.trim(),
+        image: $("[data-k=image]", card).value.trim(),
+        liveUrl: $("[data-k=liveUrl]", card).value.trim(),
+        repoUrl: $("[data-k=repoUrl]", card).value.trim()
+      }))
+    : (content.aiLab?.items || []);
+
+  const speakingItems = $("#speaking-list")
+    ? collectFromCards($("#speaking-list"), card => ({
+        title: $("[data-k=title]", card).value.trim(),
+        event: $("[data-k=event]", card).value.trim(),
+        meta: $("[data-k=meta]", card).value.trim(),
+        blurb: $("[data-k=blurb]", card).value.trim(),
+        link: $("[data-k=link]", card).value.trim()
+      }))
+    : (content.speaking?.items || []);
+
+  const fullBio = getStaticRte("bio-summary");
+
   return {
     site: {
-      brand: $("#site-brand").value.trim() || "Ishita",
-      email: $("#site-email").value.trim()
+      brand: $("#site-brand").value.trim() || "Ishita Majumdar",
+      email: $("#site-email").value.trim(),
+      tagline: ($("#site-tagline")?.value || content.site?.tagline || "Technology • Data • AI • Transformation").trim(),
+      linkedin: ($("#site-linkedin")?.value || content.site?.linkedin || "").trim(),
+      github: ($("#site-github")?.value || content.site?.github || "imajumd1").trim()
     },
     home: {
       eyebrow: $("#home-eyebrow").value.trim(),
+      name: ($("#home-name")?.value || content.home.name || "Ishita Majumdar").trim(),
       headline: $("#home-headline").value.trim(),
       pitch: getStaticRte("home-pitch"),
       heroImage: $("#home-heroImage").value.trim(),
       heroLabel: $("#home-heroLabel").value.trim(),
+      ctaPrimary: content.home.ctaPrimary || { label: "Explore my work", href: "#impact" },
+      ctaSecondary: content.home.ctaSecondary || { label: "Read my perspective", href: "musings.html" },
+      ctaLinkedIn: content.home.ctaLinkedIn || {},
+      proofMetrics,
+      whatIDo,
+      selectedImpact,
+      careerArc,
+      beliefs,
+      featuredPerspectives: content.home.featuredPerspectives || [],
       highlights
+    },
+    impact: {
+      eyebrow: content.impact?.eyebrow || "Impact",
+      title: content.impact?.title || "Selected impact",
+      lede: content.impact?.lede || "",
+      items: selectedImpact
     },
     biography: {
       eyebrow: $("#bio-eyebrow").value.trim(),
       title: $("#bio-title").value.trim(),
       lede: getStaticRte("bio-lede"),
-      summary: getStaticRte("bio-summary"),
+      summary: fullBio,
+      bios: {
+        short: ($("#bio-short")?.value || content.biography?.bios?.short || "").trim(),
+        medium: ($("#bio-medium")?.value || content.biography?.bios?.medium || "").trim(),
+        full: fullBio
+      },
+      headshot: ($("#bio-headshot")?.value || content.biography?.headshot || "").trim(),
+      bioDownload: ($("#bio-download")?.value || content.biography?.bioDownload || "").trim(),
       career,
       callouts
     },
@@ -647,6 +908,18 @@ function gatherContent() {
       featuredBuilds,
       projects: content.aiJourney.projects || []
     },
+    aiLab: {
+      eyebrow: content.aiLab?.eyebrow || "AI Lab",
+      title: content.aiLab?.title || "Recent builds",
+      lede: content.aiLab?.lede || "",
+      items: labItems
+    },
+    speaking: {
+      eyebrow: ($("#speaking-eyebrow")?.value || content.speaking?.eyebrow || "Speaking").trim(),
+      title: ($("#speaking-title")?.value || content.speaking?.title || "Speaking & conversations").trim(),
+      lede: $("#speaking-lede") ? getStaticRte("speaking-lede") : (content.speaking?.lede || ""),
+      items: speakingItems
+    },
     books: {
       eyebrow: $("#books-eyebrow").value.trim(),
       title: $("#books-title").value.trim(),
@@ -657,7 +930,16 @@ function gatherContent() {
       eyebrow: $("#musings-eyebrow").value.trim(),
       title: $("#musings-title").value.trim(),
       lede: getStaticRte("musings-lede"),
-      items: musings
+      items: musings.map((m, idx) => {
+        const prev = (content.musings.items || [])[idx] || {};
+        return {
+          ...m,
+          category: prev.category || "",
+          thesis: prev.thesis || "",
+          readingTime: prev.readingTime || "",
+          date: prev.date || ""
+        };
+      })
     },
     art: {
       eyebrow: $("#art-eyebrow").value.trim(),
@@ -729,8 +1011,36 @@ function bindActions() {
   });
 
   $("#add-highlight").addEventListener("click", () => {
+    content.home.highlights = content.home.highlights || [];
     content.home.highlights.push({ num: "0", title: "New pillar", text: "", image: "", slides: [] });
     renderHome();
+  });
+  $("#add-proof")?.addEventListener("click", () => {
+    content.home.proofMetrics = content.home.proofMetrics || [];
+    content.home.proofMetrics.push({ value: "", label: "" });
+    renderHome();
+  });
+  $("#add-whatido")?.addEventListener("click", () => {
+    content.home.whatIDo = content.home.whatIDo || [];
+    content.home.whatIDo.push({ title: "New pillar", text: "" });
+    renderHome();
+  });
+  $("#add-career-arc")?.addEventListener("click", () => {
+    content.home.careerArc = content.home.careerArc || [];
+    content.home.careerArc.push({ stage: "New stage", detail: "" });
+    renderHome();
+  });
+  $("#add-belief")?.addEventListener("click", () => {
+    content.home.beliefs = content.home.beliefs || [];
+    content.home.beliefs.push({ title: "New belief", text: "", link: "", linkLabel: "" });
+    renderHome();
+  });
+  $("#add-impact")?.addEventListener("click", () => {
+    content.impact = content.impact || { items: [] };
+    content.impact.items = content.impact.items || [];
+    content.impact.items.push({ org: "", title: "New case study", challenge: "", action: "", impact: "" });
+    content.home.selectedImpact = content.impact.items;
+    renderImpact();
   });
   $("#add-career").addEventListener("click", () => {
     content.biography.career.push({ title: "New role", meta: "", text: "", attachments: [] });
@@ -754,12 +1064,24 @@ function bindActions() {
     content.aiJourney.featuredBuilds.push({ name: "New featured build", summary: "", image: "", liveUrl: "" });
     renderAI();
   });
+  $("#add-lab-item")?.addEventListener("click", () => {
+    content.aiLab = content.aiLab || { items: [] };
+    content.aiLab.items = content.aiLab.items || [];
+    content.aiLab.items.push({ name: "New build", summary: "", why: "", tech: "", learned: "", image: "", liveUrl: "", repoUrl: "" });
+    renderAI();
+  });
+  $("#add-speaking")?.addEventListener("click", () => {
+    content.speaking = content.speaking || { items: [] };
+    content.speaking.items = content.speaking.items || [];
+    content.speaking.items.push({ title: "New talk", event: "", meta: "", blurb: "", link: "" });
+    renderSpeaking();
+  });
   $("#add-book").addEventListener("click", () => {
     content.books.items.push({ title: "New book", author: "", cover: "", colors: ["#1f5f52", "#0a1f1a"], rating: 4, summary: "" });
     renderBooks();
   });
   $("#add-musing").addEventListener("click", () => {
-    content.musings.items.push({ tag: "tech", title: "New musing", body: "" });
+    content.musings.items.push({ tag: "tech", title: "New perspective", body: "", category: "AI & Enterprise Transformation" });
     renderMusings();
   });
   $("#add-art").addEventListener("click", () => {
@@ -878,11 +1200,21 @@ function bindActions() {
       const idx = [...parent.children].indexOf(card);
       const map = {
         highlight: () => content.home.highlights.splice(idx, 1),
+        proof: () => content.home.proofMetrics.splice(idx, 1),
+        whatido: () => content.home.whatIDo.splice(idx, 1),
+        careerArc: () => content.home.careerArc.splice(idx, 1),
+        belief: () => content.home.beliefs.splice(idx, 1),
+        impact: () => {
+          (content.impact.items || content.home.selectedImpact).splice(idx, 1);
+          content.home.selectedImpact = content.impact.items;
+        },
         career: () => content.biography.career.splice(idx, 1),
         callout: () => content.biography.callouts.splice(idx, 1),
         school: () => content.education.schools.splice(idx, 1),
         gitProject: () => content.aiJourney.gitProjects.splice(idx, 1),
         featuredBuild: () => content.aiJourney.featuredBuilds.splice(idx, 1),
+        labItem: () => content.aiLab.items.splice(idx, 1),
+        speaking: () => content.speaking.items.splice(idx, 1),
         project: () => content.aiJourney.projects.splice(idx, 1),
         book: () => content.books.items.splice(idx, 1),
         musing: () => content.musings.items.splice(idx, 1),

@@ -3,23 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ishita — AI Journey</title>
+<title>Ishita Majumdar — AI Lab</title>
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-<nav class="site-nav">
+<nav class="site-nav" data-nav>
   <div class="wrap">
-    <a class="brand" href="index.html">Ishita</a>
+    <a class="brand" href="index.html">Ishita Majumdar</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="biography.html">Biography</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="ai-journey.html">AI Journey</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="musings.html">Musings</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="hiking.html">Hiking</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="ai-journey.html">AI Lab</a></li>
+      <li><a href="musings.html">Perspectives</a></li>
+      <li><a href="biography.html">About</a></li>
+      <li class="nav-more">
+        <button type="button" class="nav-more-btn" aria-expanded="false" aria-haspopup="true">More</button>
+        <ul class="nav-dropdown">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="education.html">Education</a></li>
+        </ul>
+      </li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
   </div>
@@ -27,41 +35,38 @@
 
 <header class="page-hero">
   <div class="wrap">
-    <span class="eyebrow">03 / AI Journey</span>
-    <h1>Building with AI</h1>
-    <p class="lede">
-      How I got into this, what I've shipped, and where you can go poke at the code.
-    </p>
+    <span class="eyebrow">AI Lab</span>
+    <h1>Building in public</h1>
+    <p class="lede">Recent builds—what they do, why I made them, and what I learned shipping them.</p>
     <div class="btn-row" style="margin-top:18px;">
-      <a class="btn btn-primary" id="github-link" href="https://github.com/imajumd1" target="_blank" rel="noopener">View my GitHub →</a>
+      <a class="btn btn-primary" id="github-link" href="https://github.com/imajumd1" target="_blank" rel="noopener">View GitHub →</a>
     </div>
   </div>
 </header>
-
 <main class="page-body">
   <div class="wrap">
-
     <article class="reveal" id="ai-story" style="max-width:70ch; color:var(--ink-soft); font-size:1.05rem; margin-bottom:50px;"></article>
-
-    <h2 style="font-family:var(--serif); margin-bottom:8px;">My Git Projects</h2>
-    <p style="color:var(--ink-soft); margin-top:0; margin-bottom:22px;">
-      Every public repo on my GitHub — a short summary, a cover image, and a link to the code.
-    </p>
+    <h2 style="font-family:var(--serif); margin-bottom:8px;">Featured lab builds</h2>
+    <p style="color:var(--ink-soft); margin-top:0; margin-bottom:22px;">Quality over quantity—live demos and repos when available.</p>
+    <div class="lab-grid reveal" id="lab-grid" style="margin-bottom:56px;"></div>
+    <h2 style="font-family:var(--serif); margin-bottom:8px;">More Git projects</h2>
+    <p style="color:var(--ink-soft); margin-top:0; margin-bottom:22px;">Additional public experiments and practice builds.</p>
     <div class="git-projects-grid reveal" id="git-projects"></div>
-
-    <h2 style="font-family:var(--serif); margin:56px 0 8px;">Featured Builds</h2>
-    <p style="color:var(--ink-soft); margin-top:0; margin-bottom:22px;">
-      Railway apps with a public URL — cover image, short summary, and a live link.
-    </p>
-    <div class="git-projects-grid reveal" id="featured-builds"></div>
-
   </div>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
-    <span>© <span id="year"></span> <span class="brand-text">Ishita</span></span>
-    <a href="mailto:imajumd1@gmail.com">imajumd1@gmail.com</a>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <strong class="brand-text">Ishita Majumdar</strong>
+      <span class="footer-tagline">Technology • Data • AI • Transformation</span>
+    </div>
+    <div class="footer-links">
+      <a id="footer-linkedin" href="https://www.linkedin.com/in/ishitamajumdar" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="footer-github" href="https://github.com/imajumd1" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:imajumd1@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© <span id="year"></span></span>
   </div>
 </footer>
 

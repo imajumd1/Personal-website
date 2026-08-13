@@ -16,22 +16,38 @@ async function getSession() {
 }
 
 function applySiteChrome(content, session) {
-  const brand = content.site?.brand || "Ishita";
+  const brand = content.site?.brand || "Ishita Majumdar";
   const email = content.site?.email || "";
+  const linkedin = content.site?.linkedin || "";
+  const github = content.site?.github || "imajumd1";
+  const tagline = content.site?.tagline || "Technology • Data • AI • Transformation";
 
   document.querySelectorAll(".brand").forEach(el => { el.textContent = brand; });
   document.querySelectorAll(".brand-text").forEach(el => { el.textContent = brand; });
+  document.querySelectorAll(".footer-tagline").forEach(el => { el.textContent = tagline; });
 
   if (document.title.includes("—") || document.title.includes("–") || document.title.includes(" - ")) {
     document.title = document.title.replace(/^.*?(?=\s*[—–-]\s*)/, brand);
   }
 
-  document.querySelectorAll(".site-footer a[href^='mailto:']").forEach(el => {
+  document.querySelectorAll(".site-footer a[href^='mailto:'], a.btn[href^='mailto:']").forEach(el => {
     if (email) {
       el.href = `mailto:${email}`;
-      el.textContent = email;
+      if (el.classList.contains("btn")) el.textContent = el.textContent.includes("Email") ? "Email" : email;
+      else if (!el.closest(".footer-links")) el.textContent = email;
+      else el.textContent = "Email";
     }
   });
+
+  const ghUrl = `https://github.com/${github}`;
+  document.querySelectorAll("#footer-github, #contact-github").forEach(el => {
+    el.href = ghUrl;
+  });
+  if (linkedin) {
+    document.querySelectorAll("#footer-linkedin, #contact-linkedin").forEach(el => {
+      el.href = linkedin;
+    });
+  }
 
   // Remove any public edit links
   document.querySelectorAll(".edit-link").forEach(el => el.remove());

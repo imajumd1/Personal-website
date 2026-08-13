@@ -56,14 +56,35 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  // More dropdown
+  document.querySelectorAll(".nav-more").forEach(more => {
+    const btn = more.querySelector(".nav-more-btn");
+    if (!btn) return;
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      const open = more.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".nav-more.open").forEach(m => {
+      m.classList.remove("open");
+      m.querySelector(".nav-more-btn")?.setAttribute("aria-expanded", "false");
+    });
+  });
+
   // Highlight active nav link based on current page
   const current = location.pathname.split("/").pop() || "index.html";
+  const morePages = new Set(["books.html", "art.html", "hiking.html", "speaking.html", "education.html"]);
   document.querySelectorAll(".nav-links a").forEach(a => {
     const href = a.getAttribute("href");
     if (href === current || (current === "" && href === "index.html")) {
       a.classList.add("active");
     }
   });
+  if (morePages.has(current)) {
+    document.querySelector(".nav-more-btn")?.classList.add("active");
+  }
 
   // Reveal-on-scroll
   const revealEls = document.querySelectorAll(".reveal");
