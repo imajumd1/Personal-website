@@ -71,10 +71,10 @@
       },
       {
         "org": "eBay",
-        "title": "Tech stack powering ebay.com",
-        "challenge": "No complete product ownership of the Tech stack from metal to applications.",
-        "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter, networks, cloud, dev platform, experimentation and personalization, to ML platform—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
-        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability.",
+        "title": "Customer data platform without vendor lock-in",
+        "challenge": "Customer data was fragmented across analytics platforms and vendor warehouses, so teams lacked a real-time single view of customer signals while vendor costs scaled rapidly.",
+        "action": "Architected and deployed a modular CDP on open source to replace proprietary vendor systems. Decoupled ingestion, real-time stream processing, open-source storage, and governance APIs so integrations could evolve without vendor lock-in.",
+        "impact": "Migrated multi-petabyte analytics onto an open-source stack and lowered TCO. Established a trusted real-time source of truth for profiles and behavioral signals that powers personalized buyer and seller experiences. Teams can plug in pipelines, AI models, and apps without disrupting core operations.",
         "image": "images/impact/tech-stack-ebay.jpg"
       },
       {
@@ -247,10 +247,10 @@
       },
       {
         "org": "eBay",
-        "title": "Tech stack powering ebay.com",
-        "challenge": "No complete product ownership of the Tech stack from metal to applications.",
-        "action": "Grew Global Head of Technology Products from data products into a portfolio spanning datacenter, networks, cloud, dev platform, experimentation and personalization, to ML platform—pairing technical PMs with TPMs for vision, roadmap, and adoption.",
-        "impact": "Centralized product ownership and PMO governance to drive product transformation and enterprise initiatives, establishing a biweekly delivery cadence, clearer escalation paths, and stronger stakeholder accountability.",
+        "title": "Customer data platform without vendor lock-in",
+        "challenge": "Customer data was fragmented across analytics platforms and vendor warehouses, so teams lacked a real-time single view of customer signals while vendor costs scaled rapidly.",
+        "action": "Architected and deployed a modular CDP on open source to replace proprietary vendor systems. Decoupled ingestion, real-time stream processing, open-source storage, and governance APIs so integrations could evolve without vendor lock-in.",
+        "impact": "Migrated multi-petabyte analytics onto an open-source stack and lowered TCO. Established a trusted real-time source of truth for profiles and behavioral signals that powers personalized buyer and seller experiences. Teams can plug in pipelines, AI models, and apps without disrupting core operations.",
         "image": "images/impact/tech-stack-ebay.jpg"
       },
       {
