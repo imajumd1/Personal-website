@@ -491,22 +491,10 @@
         "repoUrl": "https://github.com/imajumd1/Lighthouse"
       },
       {
-        "name": "Contact Form App",
-        "summary": "A clean contact form web application — practice shipping a simple, usable interface end to end.",
-        "image": "images/projects/contact.jpg",
-        "repoUrl": "https://github.com/imajumd1/contact-form-app"
-      },
-      {
         "name": "Contact Me App",
         "summary": "A professional contact form with rich text editing, file uploads, and email notifications in a modern black-and-white UI.",
         "image": "images/projects/contact.jpg",
         "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26"
-      },
-      {
-        "name": "Copilot Contact Me",
-        "summary": "A contact-me page built with GitHub Copilot — exploring AI-assisted coding while shipping a working contact experience.",
-        "image": "images/projects/contact.jpg",
-        "repoUrl": "https://github.com/imajumd1/Copilot-Contact-me-"
       },
       {
         "name": "Personal Website",
