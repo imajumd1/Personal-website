@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           ${thesis ? `<p class="perspective-thesis musing-teaser">${escapeHtml(thesis)}${thesisSuffix}</p>` : ""}
           <div class="perspective-meta" style="margin:0 0 12px;">
             ${m.readingTime ? `<span>${escapeHtml(m.readingTime)}</span>` : ""}
-            ${m.date ? `<span>${escapeHtml(m.date)}</span>` : ""}
           </div>
           <button type="button" class="btn btn-ghost btn-small musing-read-more" aria-expanded="false" aria-controls="${id}">
             Read more
