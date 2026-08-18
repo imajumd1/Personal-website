@@ -52,7 +52,7 @@ function normalizeContent(raw) {
   c.musings = normalizeListPage(c.musings, {
     eyebrow: "Perspectives",
     title: "Featured perspectives",
-    lede: "<p>Short theses on AI transformation, data platforms, and leadership.</p>"
+    lede: "<p>What I think about AI transformation, data platforms, and how organizations actually change.</p>"
   });
   c.art = normalizeListPage(c.art, {
     eyebrow: "Beyond Technology / Art",
