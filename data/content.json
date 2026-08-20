@@ -576,6 +576,16 @@
     "lede": "<p>I build with AI to turn ideas into functional prototypes</p>",
     "items": [
       {
+        "name": "HR Resume Matching Agent",
+        "summary": "Ranks the same resume pool against different job descriptions by seat — folder-based JDs and resumes, keyword-overlap scores, and fit notes (Advance, Stretch, Wrong seat, Pass).",
+        "why": "Show that matching is by seat, not generic seniority — the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
+        "tech": "Python 3.9, folder-based JD/resume pipeline, keyword scoring, markdown/CSV reports",
+        "learned": "Automating matching capabilities to optimize matching of JD with resumes, reduces manual processes, human bias and enables faster decisionmaking",
+        "image": "images/builds/hr-resume-matching.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker"
+      },
+      {
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
         "why": "Explore how AI agents can reason over workforce skills supply and demand.",
