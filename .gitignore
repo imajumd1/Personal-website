@@ -20,3 +20,6 @@ Thumbs.db
 # Uploads that shouldn't be versioned by default (content.json still tracks paths)
 # Keep uploaded site assets under images/; ignore scratch uploads if needed
 uploads/.tmp/
+
+# Roma's observed-fare history is local runtime data
+data/roma_history.db
