@@ -1,0 +1,17 @@
+# Roma's local state. The price-history database is generated at runtime and is
+# not part of the source; committing it would ship one machine's simulated
+# history to everyone else.
+data/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+
+# Local environment overrides (Amadeus and LLM credentials).
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+.DS_Store
