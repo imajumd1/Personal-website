@@ -12,12 +12,22 @@ import re
 import secrets
 import sys
 import time
+import traceback
 import urllib.parse
 from http.cookies import SimpleCookie
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+try:
+    from roma import get_service as roma_get_service
+except Exception as exc:  # noqa: BLE001 - the rest of the site must still serve
+    roma_get_service = None
+    print(f"Roma agent unavailable: {exc}", file=sys.stderr)
+
 CONTENT_PATH = ROOT / "data" / "content.json"
 UPLOAD_ROOT = ROOT / "images"
 DOCS_ROOT = ROOT / "uploads"
@@ -109,6 +119,13 @@ def verify_session(token: str | None) -> str | None:
 
 
 class Handler(SimpleHTTPRequestHandler):
+    # Explicit so vector assets (e.g. the Roma avatar) never fall back to octet-stream.
+    extensions_map = {
+        **SimpleHTTPRequestHandler.extensions_map,
+        ".svg": "image/svg+xml",
+        ".webp": "image/webp",
+    }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
@@ -185,6 +202,9 @@ class Handler(SimpleHTTPRequestHandler):
         if path == "/api/content":
             return self._send_json(self._read_content())
 
+        if path.startswith("/api/roma/"):
+            return self._roma_get(path, urllib.parse.parse_qs(parsed.query))
+
         if self._gate_admin_ui(path):
             return
 
@@ -208,6 +228,69 @@ class Handler(SimpleHTTPRequestHandler):
             if not self._require_admin():
                 return
             return self._upload()
+        if parsed.path.startswith("/api/roma/"):
+            return self._roma_post(parsed.path)
+        self.send_error(404, "Not found")
+
+    # ---------- Roma flight agent ----------
+
+    def _roma(self):
+        """Return the Roma service, or None after sending the error response."""
+        if roma_get_service is None:
+            self._send_json({"ok": False, "error": "Roma is not available on this server."}, 503)
+            return None
+        try:
+            return roma_get_service(ROOT)
+        except Exception as exc:  # noqa: BLE001 - report instead of a bare 500
+            self._send_json({"ok": False, "error": f"Roma failed to start: {exc}"}, 503)
+            return None
+
+    def _roma_get(self, path: str, params: dict):
+        service = self._roma()
+        if service is None:
+            return
+        try:
+            if path == "/api/roma/airports":
+                query = (params.get("q") or [""])[0]
+                limit = min(20, max(1, int((params.get("limit") or ["8"])[0] or 8)))
+                return self._send_json({"ok": True, "airports": service.airports(query, limit)})
+            if path == "/api/roma/airlines":
+                return self._send_json({"ok": True, "airlines": service.airlines()})
+            if path == "/api/roma/status":
+                return self._send_json({"ok": True, "status": service.status()})
+        except ValueError:
+            return self._send_json({"ok": False, "error": "Invalid query parameter"}, 400)
+        except Exception:  # noqa: BLE001 - never leak a traceback to the page
+            sys.stderr.write(f"Roma error on {path}:\n{traceback.format_exc()}")
+            return self._send_json({"ok": False, "error": "Roma hit an internal error."}, 500)
+        self.send_error(404, "Not found")
+
+    def _roma_post(self, path: str):
+        service = self._roma()
+        if service is None:
+            return
+        length = int(self.headers.get("Content-Length", 0) or 0)
+        raw = self.rfile.read(length) if length else b"{}"
+        try:
+            data = json.loads(raw.decode("utf-8") or "{}")
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            return self._send_json({"ok": False, "error": "Invalid JSON"}, 400)
+        if not isinstance(data, dict):
+            return self._send_json({"ok": False, "error": "Expected a JSON object"}, 400)
+
+        try:
+            if path == "/api/roma/search":
+                result = service.search(data)
+                return self._send_json(result, 200 if result.get("ok") else 400)
+            if path == "/api/roma/chat":
+                result = service.chat(
+                    str(data.get("message", "")),
+                    str(data.get("conversation_id") or "") or None,
+                )
+                return self._send_json(result)
+        except Exception:  # noqa: BLE001 - never leak a traceback to the page
+            sys.stderr.write(f"Roma error on {path}:\n{traceback.format_exc()}")
+            return self._send_json({"ok": False, "error": "Roma hit an internal error."}, 500)
         self.send_error(404, "Not found")
 
     def _login(self):
@@ -352,6 +435,8 @@ def main():
     server = ThreadingHTTPServer((HOST, PORT), Handler)
     print(f"Site running at http://127.0.0.1:{PORT}/")
     print(f"Admin login:  http://127.0.0.1:{PORT}/login.html")
+    if roma_get_service is not None:
+        print(f"Roma agent:   http://127.0.0.1:{PORT}/roma.html")
     print(f"Admin email:  {ADMIN_EMAIL}")
     if ADMIN_PASSWORD == "local-dev-only":
         print("Admin password: local-dev-only  (set ADMIN_PASSWORD on Railway)")
