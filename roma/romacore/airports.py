@@ -286,12 +286,20 @@ def is_known(code: str | None) -> bool:
 
 
 def resolve(text: str | None) -> str | None:
-    """Turn free text ("MIA", "miami", "the big apple") into one IATA code."""
+    """Turn free text into one IATA code.
+
+    Accepts a bare code ("MIA"), a city or alias ("miami", "the big apple"), an
+    airport name, and the ``City (CODE)`` shape the typeahead writes back into
+    the form.
+    """
     if not text:
         return None
     raw = text.strip()
     if len(raw) == 3 and raw.upper() in AIRPORTS:
         return raw.upper()
+    parenthesised = re.search(r"\(\s*([A-Za-z]{3})\s*\)", raw)
+    if parenthesised and parenthesised.group(1).upper() in AIRPORTS:
+        return parenthesised.group(1).upper()
     folded = _fold(raw)
     if not folded:
         return None
@@ -300,6 +308,12 @@ def resolve(text: str | None) -> str | None:
     codes = _CITY_INDEX.get(folded)
     if codes:
         return _primary_of(codes)
+    # "boston bos" — a city phrase followed by its own code.
+    trailing = folded.rsplit(" ", 1)
+    if len(trailing) == 2 and trailing[1].upper() in AIRPORTS:
+        head_codes = _CITY_INDEX.get(trailing[0])
+        if head_codes is None or trailing[1].upper() in head_codes:
+            return trailing[1].upper()
     # "miami international", "london heathrow" and friends
     for code, airport in AIRPORTS.items():
         if _fold(airport.name) == folded or _fold(f"{airport.city} {airport.name}") == folded:
