@@ -595,7 +595,7 @@ function musingCard(item, i) {
     </div>
     <div class="field"><label>Body</label><div data-rte-mount="body"></div></div>
   `;
-  mountRte(el, "body", item.body || "", { minHeight: "120px" });
+  mountRte(el, "body", item.body || "", { minHeight: "280px", tall: true });
   return el;
 }
 

@@ -263,12 +263,15 @@
   background: #fff;
 }
 
-/* Rich text editor */
+/* Rich text editor — toolbar stays reachable while editing */
 .rte {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--line);
   border-radius: 12px;
-  overflow: hidden;
   background: #fff;
+  /* overflow must not be hidden or sticky toolbar fails */
+  overflow: visible;
 }
 .rte-toolbar {
   display: flex;
@@ -277,6 +280,12 @@
   padding: 8px;
   border-bottom: 1px solid var(--line);
   background: #f7f7f4;
+  position: sticky;
+  /* Sit just under .admin-top while the page scrolls */
+  top: 64px;
+  z-index: 6;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 1px 0 var(--line);
 }
 .rte-toolbar button {
   border: 1px solid transparent;
@@ -303,6 +312,21 @@
   outline: none;
   line-height: 1.55;
   color: var(--ink);
+  border-radius: 0 0 12px 12px;
+}
+/* Tall body fields: scroll inside the editor so the toolbar stays pinned above */
+.rte.rte-tall .rte-toolbar {
+  top: 0;
+  position: sticky;
+}
+.rte.rte-tall {
+  max-height: min(70vh, 640px);
+  overflow: hidden;
+}
+.rte.rte-tall .rte-editor {
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 220px;
 }
 .rte-editor:focus {
   box-shadow: inset 0 0 0 2px rgba(31, 95, 82, 0.12);

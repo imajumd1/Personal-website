@@ -106,7 +106,7 @@
         "title": "Human-powered AI for special-needs families",
         "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about behavioral challenges, therapy access, and public support.",
         "action": "Co-founded and built an LLM-powered care platform as agentic advice grounded in trusted experience, community, and access pathways.",
-        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership.",
+        "impact": "Shipped a working product; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership.",
         "image": "images/impact/human-powered-ai.jpg"
       }
     ],
@@ -282,7 +282,7 @@
         "title": "Human-powered AI for special-needs families",
         "challenge": "Caregivers of neurodiverse children faced fragmented, untrusted information about behavioral challenges, therapy access, and public support.",
         "action": "Co-founded and built an LLM-powered care platform as agentic advice grounded in trusted experience, community, and access pathways.",
-        "impact": "Shipped a working product prototype; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership.",
+        "impact": "Shipped a working product; learned hard GTM truths and carried a founder’s builder mindset back into executive AI leadership.",
         "image": "images/impact/human-powered-ai.jpg"
       }
     ]
@@ -290,8 +290,10 @@
   "biography": {
     "eyebrow": "About",
     "title": "Ishita Majumdar",
-    "lede": "<p>Technology executive and builder — engineering, product, data platforms, and enterprise AI.</p>",
+    "lede": "<p>Technology executive and builder: engineering, product, data platforms, and enterprise AI.</p>",
+    "quote": "Technology creates value only when people can trust it, use it, and act on it",
     "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>",
+    "builder": "<p>I am a creator at heart, someone who loves rolling up my sleeves, testing new tools, and turning ideas into reality. The journey wasn't overnight. It took stepping into the trenches at Bay Area hackathons, experimenting hands-on, and embracing the dynamic AI learning curve to sharpen my edge.</p><p>As a C-suite executive, I made the deliberate choice to step away from organizational leadership to build with AI from first principles. If a senior executive can get back in the weeds, code alongside emerging builders, and master modern AI tools from scratch, anyone can. No matter the title, staying grounded in the build keeps me real and inspires me to mentor and empower the next generation of first-time builders.</p>",
     "bios": {
       "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She builds the systems, platforms, and organizations that turn Data + AI into measurable business outcomes—and stays close enough to the technical work to lead with judgment, not slideware.",
       "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents—she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her throughline is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
@@ -357,8 +359,6 @@
         "text": "<p>Led eBay’s global Women in Technology community of 2,000 volunteers and have spent much of my career mentoring and supporting the next generation of technology leaders.</p>"
       }
     ],
-    "quote": "Technology creates value only when people can trust it, use it, and act on it",
-    "builder": "<p>I am a creator at heart, someone who loves rolling up my sleeves, testing new tools, and turning ideas into reality. The journey wasn't overnight. It took stepping into the trenches at Bay Area hackathons, experimenting hands-on, and embracing the dynamic AI learning curve to sharpen my edge.</p><p>As a C-suite executive, I made the deliberate choice to step away from organizational leadership to build with AI from first principles. If a senior executive can get back in the weeds, code alongside emerging builders, and master modern AI tools from scratch, anyone can. No matter the title, staying grounded in the build keeps me real and inspires me to mentor and empower the next generation of first-time builders.</p>",
     "recognition": [
       {
         "title": "3 U.S. Patents",
@@ -407,7 +407,7 @@
   },
   "aiJourney": {
     "eyebrow": "Building with AI",
-    "title": "From Idea to Prototype",
+    "title": "From Idea to Product",
     "lede": "<p>Recent AI builds. What they do, why I made them, and what I learned from them.</p>",
     "story": "<p>I am a creator at heart, someone who loves rolling up my sleeves, testing new tools, and turning ideas into reality. The journey wasn't overnight. It took stepping into the trenches at Bay Area hackathons, experimenting hands-on, and embracing the dynamic AI learning curve to sharpen my edge.</p><p>As a C-suite executive, I made the deliberate choice to step away from organizational leadership to build with AI from first principles. If a senior executive can get back in the weeds, code alongside emerging builders, and master modern AI tools from scratch, anyone can. No matter the title, staying grounded in the build keeps me real and inspires me to mentor and empower the next generation of first-time builders.</p>",
     "githubUsername": "imajumd1",
@@ -420,61 +420,61 @@
       },
       {
         "name": "Aurora Health Agent",
-        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/projects/aurora-health.jpg",
         "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
       },
       {
         "name": "Claude AI Summarizer",
-        "summary": "Hands-on practice turning language models into something useful — an AI summarization tool built with Claude CLI.",
+        "summary": "Hands-on practice turning language models into something useful such as an AI summarization tool built with Claude CLI.",
         "image": "images/projects/claude-summarizer.jpg",
         "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
       },
       {
         "name": "Racing Car Summary",
-        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
+        "summary": "An AI news agent with a twist, shipping a working agent that digests and summarizes what matters, race-day energy included.",
         "image": "images/projects/racing-car-summary.jpg",
         "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
       },
       {
         "name": "Skills Intelligence HR App",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent that allows you to review skill catalog, supply inventory, demand forecasting on the same pane and a conversational analyst to spar with..",
         "image": "images/projects/skills-hr.jpg",
         "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
       },
       {
         "name": "Wiki MCP",
-        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access — search, fetch, and research tools built to learn core MCP concepts.",
+        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools built to learn core MCP concepts.",
         "image": "images/projects/wiki-mcp.jpg",
         "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
       },
       {
         "name": "Spelling Bee",
-        "summary": "Ishita's spelling bee creation — a playful React game for practicing spelling with a clean, modern interface.",
+        "summary": "I am a huge Spelling Bee addict. So I decided to build one for myself, when I am bored. This is a React game for practicing spelling with a clean, modern interface.",
         "image": "images/projects/spelling-bee.jpg",
         "repoUrl": "https://github.com/imajumd1/spelling-bee"
       },
       {
         "name": "Evite Twin",
-        "summary": "An event invitation app with backend support, email invites, and RSVP tracking — a twin of the classic Evite experience.",
+        "summary": "An event invitation app with backend support, email invites, and RSVP tracking. Think of it as a twin of the classic Evite experience.",
         "image": "images/projects/evitetwin.jpg",
         "repoUrl": "https://github.com/imajumd1/evitetwin"
       },
       {
         "name": "Dream Garage",
-        "summary": "A personal collection app for adding and showcasing dream cars — a fun build focused on product feel and interaction.",
+        "summary": "A personal collection app for adding and showcasing dream cars a fun build focused on product feel and interaction. (This was built by my kid to be honest)",
         "image": "images/projects/dreamgarage.jpg",
         "repoUrl": "https://github.com/imajumd1/dreamgarage"
       },
       {
         "name": "Instagram Post (Cursor)",
-        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds with templates, canvas export, and quick creative flow. One of my first fun projects",
         "image": "images/projects/instagram-post.jpg",
         "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
       },
       {
         "name": "Audiobook",
-        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
+        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API, React frontend with an Express backend.",
         "image": "images/projects/audiobook.jpg",
         "repoUrl": "https://github.com/imajumd1/audiobook"
       },
@@ -506,19 +506,19 @@
     "featuredBuilds": [
       {
         "name": "Skills Intelligence HR App",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent with skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
         "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
       },
       {
         "name": "Racing Car Summary",
-        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
+        "summary": "An AI news agent with a twist a shipping a working agent that digests and summarizes what matters, race-day energy included.",
         "image": "images/builds/racing-car-summary.jpg",
         "liveUrl": "https://racing-car-summary-production.up.railway.app/"
       },
       {
         "name": "Aurora Health Agent",
-        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/builds/aurora-health.jpg",
         "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
       },
@@ -801,8 +801,17 @@
   "musings": {
     "eyebrow": "Perspectives",
     "title": "Featured perspectives",
-    "lede": "<p>What I think about AI transformation, data platforms, and how organizations actually change.</p>",
+    "lede": "<p>What I think about AI transformation, data platforms, my own learning journey and various musings on tech, leadership, life.</p>",
     "items": [
+      {
+        "tag": "tech",
+        "title": "Learning to build with AI",
+        "body": "<p>I build agents with AI in two lanes. For enterprise clients, I shape a working product they can beta-test and critique. Then I hand it to the dev team, who reuse the design, requirements, and code where it fits. Often the code cannot be forked as-is; the agents have to live inside their larger system and environments.</p>\n<p>I also build apps for my own professional use: an AI summarizer for daily trends, a virtual health assistant on the neurodiversity spectrum, an HR skill matchmaker, a team skills dashboard. The sequence is the same: think of a use case, scope it, build in Cursor with a model that fits the job, test locally, push to Git, productionize on Railway. The public URL is the finish line. The learning is everything before that.</p>\n<p>Over time I got better at the craft around the model, not just the prompt. Scope so v1 has a real job. Design the flow before asking for five features at once. Build module by module. Be careful with <code>.env</code> variables. Start from open source when I can, then add what I actually need. Add skills. Use loop engineering so the agent improves through a designed cycle. Test edge cases before a stranger finds them.</p>\n\n<h3>The loop I run</h3>\n<p>It looks simple on paper. In practice it is where judgment compounds.</p>\n<ol>\n<li>Give the thought-out idea to Cursor; ask for scope.md, design.md, and MVP.md. It scaffolds the app.</li>\n<li>Improve it locally: features, UX, review, until I trust the core flow.</li>\n<li>Push to a new git repo. I often run the commands myself; Cursor can push too. Ownership of the repo matters more than who typed the command.</li>\n<li>Git connects to Railway; a deployment starts.</li>\n<li>Watch the Railway build. Fix what I can; ask the Railway agent when I am stuck.</li>\n<li>Get a public URL.</li>\n<li>Before I share it, run Agent Preflight.</li>\n</ol>\n<p>That last step is non-negotiable. A public agent with my API key on the backend is not a localhost experiment. It can burn money, leak secrets, or break in ways a local session never shows.</p>\n\n<h3>Agent Preflight</h3>\n<p>You pick up the \"not to do\" list fast. Mine became a 27-checkpoint run-through for agent apps I build in Cursor, push to Git, and deploy on Railway with my own backend key. I work top to bottom before I share a link. Not bureaucracy: catching the failure modes that turn a useful demo into an expensive or embarrassing one.</p>\n\n<h3>01. Secrets &amp; cost exposure</h3>\n<p>Your key, your bill. Do this first, every time.</p>\n<ul>\n<li><u>Secrets never touch git history</u>. <code>.env</code> in <code>.gitignore</code>; no key ever committed. If a public repo predates that habit, scan history and rotate anything that leaked.</li>\n<li><u>Hard spend cap at the provider.</u> Monthly budget limit or alert in OpenAI or Anthropic billing. Backstop if everything else fails.</li>\n<li><u>Rate limit per visitor.</u> Cap requests per IP or session (10 to 20/hour is plenty for a demo).</li>\n<li><u>Max output tokens capped.</u> Unbounded responses get expensive fast.</li>\n<li><u>Request timeout in place.</u> A hung call should not sit open indefinitely.</li>\n<li><u>Kill switch identified and tested.</u> Know how to pause the Railway deploy or flip an env toggle before you need it.</li>\n</ul>\n\n<h3>02. Abuse &amp; input handling</h3>\n<p>Anyone can hit a public URL. Assume they will.</p>\n<ul>\n<li><u>Validate input before it reaches the agent</u> or any tool it can trigger (writes, files, shell).</li>\n<li><u>Sandbox tool-calling and file access.</u> Unexpected input should not enable destructive actions.</li>\n<li><u>Light friction if sharing broadly.</u> Passcode or email gate filters bots; optional for a one-off share.</li>\n</ul>\n\n<h3>03. Error handling</h3>\n<p>What a stranger sees when something breaks.</p>\n<ul>\n<li><u>No raw errors in the UI.</u> No stack traces, paths, or library versions on failure.</li>\n<li><u>Graceful fallback message.</u> A plain human sentence, not a blank screen.</li>\n<li><u>Empty or garbage input handled cleanly.</u> Nonsense should not crash the flow.</li>\n</ul>\n\n<h3>04. Monitoring &amp; visibility</h3>\n<p>How you find out something is wrong without a stranger telling you.</p>\n<ul>\n<li><u>Uptime monitor on the public URL</u> (e.g. UptimeRobot every few minutes).</li>\n<li><u>Error tracking or logs you will actually check</u> (Sentry free tier, or Railway logs after sharing).</li>\n<li><u>Check spend daily for the first few days</u> after you share.</li>\n</ul>\n\n<h3>05. Real-world testing pass</h3>\n<p>A few minutes catching what local sessions hide.</p>\n<ul>\n<li><u>Incognito window</u> (no local cookies or logged-in session).</li>\n<li><u>Mobile, if plausible.</u></li>\n<li><u>Refresh and back-button mid-flow.</u></li>\n<li><u>Empty and weird input</u> (emoji, huge pastes, other languages, nothing).</li>\n</ul>\n\n<h3>06. User-facing expectations</h3>\n<p>Short copy that prevents awkward messages later.</p>\n<ul>\n<li><u>What it does, and does not</u>, in one or two sentences in the UI.</li>\n<li><u>Note if anything is stored or logged.</u></li>\n<li><u>\"This is a demo\" framing</u> when appropriate, so feedback targets the idea, not a finished product.</li>\n</ul>\n\n<h3>07. Deployment safety</h3>\n<p>Last look on the deployed thing, not localhost.</p>\n<ul>\n<li><u>Secrets only in Railway env vars</u>, confirmed in the project variables tab.</li>\n<li><u>Rollback procedure confirmed</u> before you need it under pressure.</li>\n<li><u>Smoke-test the public URL</u> end to end once before sharing.</li>\n</ul>\n\n<h3>What this taught me</h3>\n<p>Learning to build with AI is not mainly about a prettier first draft from a model. It is tightening a loop you can repeat: idea, local proof, git, deploy, preflight, share. Prompting matters. So does scoping. So does refusing to ship secrets in history, and refusing to share a URL until the boring checks are done.</p>\n<p>The agents I ship publicly are better because the checklist exists. The builder I am becoming is better because I run the loop every day.</p>",
+        "category": "AI & Enterprise Transformation",
+        "thesis": "I build agents with AI every day: Cursor to local to Git to Railway. The craft is the loop, and Agent Preflight before any public URL.",
+        "readingTime": "5 min read",
+        "date": "August 23, 2026"
+      },
       {
         "tag": "leadership",
         "title": "The new CIO in the AI era",

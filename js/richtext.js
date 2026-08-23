@@ -21,7 +21,7 @@ function plainToHtml(text) {
 function createRte(initialHtml, opts = {}) {
   const minHeight = opts.minHeight || "110px";
   const wrap = document.createElement("div");
-  wrap.className = "rte";
+  wrap.className = opts.tall ? "rte rte-tall" : "rte";
   wrap.innerHTML = `
     <div class="rte-toolbar" role="toolbar" aria-label="Formatting">
       <button type="button" data-cmd="bold" title="Bold"><b>B</b></button>
