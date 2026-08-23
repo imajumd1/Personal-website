@@ -338,15 +338,8 @@ function renderVerdict(payload) {
       element("p", "roma-caps", `Confidence capped at low: ${rec.confidence_notes.join(" ")}`)
     );
   }
-  if (rec.explanation) {
-    const explanation = element("div", "roma-explanation");
-    explanation.appendChild(element("span", "roma-explanation-label", "In plain words"));
-    String(rec.explanation)
-      .split("\n")
-      .filter(line => line.trim())
-      .forEach(line => explanation.appendChild(element("p", "", line)));
-    container.appendChild(explanation);
-  }
+  // The phrased explanation is Roma's spoken version of these same fields; it belongs
+  // in the transcript, not repeated under the card.
 }
 
 function renderSources(links) {

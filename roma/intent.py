@@ -131,6 +131,14 @@ class HeuristicIntentParser(IntentParser):
         m = re.search(r"\b(one|two|three|four|five|six|seven|eight|nine)\s+(?:adults?|passengers?|people|persons?|of us|travel(?:l)?ers?|tickets?|seats?)\b", text)
         if m:
             return _clamp_passengers(PASSENGER_WORDS[m.group(1)])
+        # "for two" — but not "for two weeks", which is a trip length
+        m = re.search(
+            r"\bfor\s+(one|two|three|four|five|six|seven|eight|nine)\b"
+            r"(?!\s+(?:hours?|days?|weeks?|nights?|months?|years?))",
+            text,
+        )
+        if m:
+            return _clamp_passengers(PASSENGER_WORDS[m.group(1)])
         m = re.search(r"\b(?:for|get|take|book|fly)\s+(\d{1,2})\b(?!\s*(?:st|nd|rd|th|:|/|-))", text)
         if m and int(m.group(1)) <= 9 and not re.search(r"\b(?:for|get|take|book|fly)\s+\d{1,2}\s*(?:am|pm)", text):
             return _clamp_passengers(int(m.group(1)))

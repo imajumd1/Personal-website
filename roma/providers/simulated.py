@@ -18,7 +18,7 @@ from ..airports import distance_km, lookup_airport
 from ..models import FareOffer, SearchQuery, parse_iso_date
 from .base import FareProvider
 
-CABIN_MULTIPLIER = {"economy": 1.0, "premium_economy": 1.75, "business": 3.4, "first": 5.6}
+CABIN_MULTIPLIER = {"economy": 1.0, "premium_economy": 1.95, "business": 4.3, "first": 7.5}
 
 REGION_BY_COUNTRY = {
     "United States": "americas", "Canada": "americas", "Mexico": "americas",
