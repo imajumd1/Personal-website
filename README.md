@@ -16,6 +16,7 @@ Personal site for **Ishita Majumdar** (brand: **Ishita**). Multi-page static HTM
 | My $0.02 | `musings.html` | Evergreen opinions (no dates by design) |
 | Art | `art.html` | Artwork gallery |
 | Hiking | `hiking.html` | Trails and trip log |
+| Roma | `roma.html` | Flight-search agent: chat or form, buy/wait recommendation |
 | Admin | `admin.html` | CMS (login required) |
 | Login | `login.html` | Email + password gate |
 
@@ -26,6 +27,7 @@ Personal site for **Ishita Majumdar** (brand: **Ishita**). Multi-page static HTM
   - `GET/POST /api/content` — read/write `data/content.json`
   - `POST /api/login`, `POST /api/logout`, `GET /api/session`
   - `POST /api/upload` — images/docs into `images/{folder}/`
+  - `/api/roma/*` — the Roma flight agent (search, chat, airports, airlines, status)
 - No Node build step; Python 3 stdlib only
 
 ## Run locally
@@ -65,6 +67,21 @@ You can also edit `data/content.json` by hand while the server is stopped (or ca
 
 On AI Journey, curated cards (`aiJourney.gitProjects`) show image, summary, and repo URL. Manage them in Admin → AI Journey. Thumbnails live under `images/projects/`.
 
+## Roma — flight search agent
+
+`roma.html` is a flight-search agent you can talk to or fill in a form for. It returns
+fares, explains whether to buy now or wait (with the rule that produced the verdict, the
+dollars at stake, and a revisit date), and deep-links the same search to Kayak, Google
+Flights, Expedia, and Priceline rather than scraping them.
+
+**Fares are simulated demonstration data, not live quotes** — labelled on the page, on every
+result, and in the API response. Optional environment variables turn on a real Amadeus
+source (`AMADEUS_CLIENT_ID` / `AMADEUS_CLIENT_SECRET`) and an LLM for parsing and phrasing
+(`ROMA_LLM_PROVIDER` plus a provider key); with none set, Roma runs fully offline on local
+heuristics, and a model can never author a price or a verdict.
+
+Details, API shapes, and the guarantees: [`roma/README.md`](roma/README.md).
+
 ## Theme
 
 Visitors can switch palettes (default slate, ink, copper, forest) via the theme control; preference is stored in the browser. See `design.md`.
@@ -99,6 +116,7 @@ Other hosts that can run a Python web process work the same way. Pure static hos
 ├── js/                    # page + admin + richtext scripts
 ├── images/                # media (hero, pillars, projects, …)
 ├── data/content.json      # CMS source of truth
+├── roma/                  # Roma flight agent (stdlib only) — see roma/README.md
 ├── server.py              # static + API + auth
 ├── Procfile               # Railway
 ├── railway.env.example
