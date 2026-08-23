@@ -54,6 +54,19 @@ python3 run.py search --from SFO --to LHR --depart 2026-10-12 \
 `--adults 2`, or `--json` for the raw API payload. Leave `--return` off for a
 one-way. It exits non-zero if the query fails validation.
 
+### Tests
+
+```bash
+cd roma && python3 -m unittest discover
+```
+
+89 tests, standard library only, no network. They cover the three validation
+rules, airport and airline resolution, fare-model determinism, each buy/wait
+rule, price-history bucketing and de-duplication, the guard that stops a
+language model authoring numbers, sentence parsing, multi-turn slot filling,
+deep-link construction, and the HTTP surface including its refusal to serve
+files outside its own directory.
+
 ---
 
 ## The two ways in
@@ -257,6 +270,7 @@ roma/
     config.py         environment
     providers/        the fare seam: simulated (default) and Amadeus
   static/             Roma's own interface: HTML, CSS, JS, avatar
+  tests/              python3 -m unittest discover
 ```
 
 ---
