@@ -208,21 +208,21 @@ def _apply_rules(
     if days_ahead <= 6:
         return (
             "buy_now", "cold_start_departure_imminent", "low",
-            [f"Departure is {days_ahead} day{'' if days_ahead == 1 else 's'} out. With no history for this route, the reliable pattern is that fares inside a week rise, not fall."],
+            [f"Departure is {days_ahead} day{'' if days_ahead == 1 else 's'} out. Roma does not have enough history for this route to place the fare, and the reliable pattern is that fares inside a week rise, not fall."],
             spread_dollars, spread_basis, 1,
             "There is effectively no time left for prices to improve.",
         )
     if days_ahead <= 13:
         return (
             "buy_now", "cold_start_inside_two_weeks", "low",
-            [f"Departure is {days_ahead} days out. Roma has no history for this route yet, and the last two weeks before departure is where fares typically climb."],
+            [f"Departure is {days_ahead} days out. Roma cannot place this fare against history yet, and the last two weeks before departure is where fares typically climb."],
             spread_dollars, spread_basis, 2,
             "Booking soon avoids the usual last-fortnight increase.",
         )
     if days_ahead <= 89:
         return (
             "watch_closely", "cold_start_in_booking_window", "low",
-            [f"Departure is {days_ahead} days out, inside the window where fares normally move most. Roma has no history for this route yet, so it will not guess a direction."],
+            [f"Departure is {days_ahead} days out, inside the window where fares normally move most. Roma does not have enough history for this route to read a direction, so it will not guess one."],
             spread_dollars, spread_basis, 5,
             "Roma records every search: five days from now it will have real history for this route.",
         )
