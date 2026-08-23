@@ -48,13 +48,26 @@ class SearchRequest:
     def days_until_departure(self, today: date) -> int:
         return (self.depart_date - today).days
 
+    @property
+    def airline_key(self) -> str:
+        """Stable identity for the carrier filter.
+
+        A carrier Roma cannot resolve still has to be its own bucket, otherwise
+        its prices would land in the history of an unfiltered search.
+        """
+        if self.airline:
+            return self.airline.upper()
+        if self.airline_label:
+            return "named:" + self.airline_label.strip().lower()
+        return ""
+
     def cache_key(self) -> str:
         parts = [
             self.origin,
             self.destination,
             self.depart_date.isoformat(),
             self.return_date.isoformat() if self.return_date else "oneway",
-            (self.airline or "any").upper(),
+            self.airline_key or "any",
             self.cabin,
             str(self.adults),
         ]

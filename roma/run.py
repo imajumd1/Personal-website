@@ -67,7 +67,8 @@ def _print_result(result: dict) -> int:
     print()
     print("  Fares")
     for offer in result["offers"]:
-        stops = "nonstop" if offer["stops"] == 0 else f"{offer['stops']} stop(s)"
+        count = offer["stops"]
+        stops = "nonstop" if count == 0 else f"{count} stop" if count == 1 else f"{count} stops"
         hours, minutes = divmod(offer["outbound_duration_minutes"], 60)
         print(
             f"    {offer['currency']} {offer['price']:>9,.2f}  {offer['airline_name']:<24} "

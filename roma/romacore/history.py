@@ -85,6 +85,26 @@ class PriceHistory:
         quoted_on: date,
     ) -> None:
         with self._connect() as conn:
+            # One point per query per day. Searching the same thing five times
+            # in a minute must not move the median.
+            conn.execute(
+                """
+                DELETE FROM price_points
+                 WHERE route = ? AND depart_date = ? AND IFNULL(return_date,'') = ?
+                   AND cabin = ? AND IFNULL(airline,'') = ? AND adults = ?
+                   AND quoted_on = ? AND point_kind = ?
+                """,
+                (
+                    request.route,
+                    request.depart_date.isoformat(),
+                    request.return_date.isoformat() if request.return_date else "",
+                    request.cabin,
+                    request.airline_key,
+                    request.adults,
+                    quoted_on.isoformat(),
+                    point_kind,
+                ),
+            )
             conn.execute(
                 """
                 INSERT INTO price_points (
@@ -99,7 +119,7 @@ class PriceHistory:
                     request.destination,
                     request.depart_date.isoformat(),
                     request.return_date.isoformat() if request.return_date else None,
-                    request.airline,
+                    request.airline_key,
                     request.cabin,
                     request.adults,
                     float(price),
@@ -145,7 +165,7 @@ class PriceHistory:
                         request.destination,
                         request.depart_date.isoformat(),
                         request.return_date.isoformat() if request.return_date else None,
-                        request.airline,
+                        request.airline_key,
                         request.cabin,
                         request.adults,
                         float(price_fn(as_of)),
@@ -195,7 +215,7 @@ class PriceHistory:
                     request.depart_date.isoformat(),
                     request.return_date.isoformat() if request.return_date else "",
                     request.cabin,
-                    request.airline or "",
+                    request.airline_key,
                     request.adults,
                 ),
             ).fetchall()

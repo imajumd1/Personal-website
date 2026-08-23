@@ -97,7 +97,7 @@ def evaluate(
 
     provenance = (
         f"History for this query holds {points} price points "
-        f"({observed} observed from real searches, {modeled} modelled by Roma)."
+        f"({observed} recorded when a search actually ran, {modeled} backfilled by Roma's model)."
     )
 
     if not stats.get("has_trend") or floor is None or mid is None:
