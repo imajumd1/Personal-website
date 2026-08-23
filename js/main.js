@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Highlight active nav link based on current page
   const current = location.pathname.split("/").pop() || "index.html";
-  const morePages = new Set(["roma.html", "books.html", "art.html", "hiking.html", "education.html"]);
+  const morePages = new Set(["books.html", "art.html", "hiking.html", "education.html"]);
   document.querySelectorAll(".nav-links a").forEach(a => {
     const href = a.getAttribute("href");
     if (href === current || (current === "" && href === "index.html")) {
