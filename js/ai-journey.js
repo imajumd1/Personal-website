@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const media = p.image
           ? `style="background-image:url('${escapeHtml(p.image)}')"`
           : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
-        // liveUrl kept in content; Live demo CTA hidden on public pages
         const links = [
+          p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Open live system</a>` : "",
           p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
         ].filter(Boolean).join("");
         return `
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             </div>
           </article>
         `;
-      }).join("") || `<p style="color:var(--ink-soft);">No lab builds yet.</p>`;
+      }).join("") || `<p style="color:var(--ink-soft);">No shipped systems yet.</p>`;
     }
 
     const featuredNames = new Set(labItems.map(p => (p.name || "").toLowerCase()));

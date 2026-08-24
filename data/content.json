@@ -9,8 +9,8 @@
   "home": {
     "eyebrow": "Builder-Executive",
     "name": "Ishita Majumdar",
-    "headline": "Building the systems, platforms, and organizations that turn Data + AI into business outcomes.",
-    "pitch": "<p>Technology executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation.</p>",
+    "headline": "I build the systems, platforms, and organizations that turn Data + AI into business outcomes.",
+    "pitch": "<p>I still write the code. 25+ years leading engineering, product, and data platforms — and I ship working Data + AI systems myself, from enterprise platforms to production agents.</p>",
     "heroImage": "images/hero/PXL_20250819_201111143.jpg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
@@ -18,7 +18,7 @@
       "href": "biography.html#how-i-think"
     },
     "ctaSecondary": {
-      "label": "Building with AI",
+      "label": "See shipped systems",
       "href": "ai-journey.html"
     },
     "ctaLinkedIn": {
@@ -46,23 +46,23 @@
     "whatIDo": [
       {
         "title": "Enterprise AI",
-        "text": "Turning AI strategy into practical systems, products, and workflows that improve decision-making and operating efficiency.",
+        "text": "I ship enterprise AI as working systems — products and workflows in production, not slides or isolated pilots.",
         "image": ""
       },
       {
         "title": "Trusted Platforms",
-        "text": "Building secure, scalable technology foundations that teams and customers can rely on as the business grows.",
+        "text": "I build secure, scalable platforms that teams and customers run the business on as they grow.",
         "image": ""
       },
       {
         "title": "Technology Leadership",
-        "text": "Connecting business strategy, product, engineering, and AI so technology becomes a growth driver rather than a support function.",
+        "text": "I lead from the build: strategy, product, and engineering connected so technology actually ships and creates leverage.",
         "image": ""
       }
     ],
     "selectedImpact": [
       {
-        "org": "eBay",
+        "org": "Marketplace",
         "title": "Making enterprise data usable at scale",
         "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
         "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
@@ -70,7 +70,7 @@
         "image": "images/impact/enterprise-data-scale.jpg"
       },
       {
-        "org": "eBay",
+        "org": "Marketplace",
         "title": "Customer data platform without vendor lock-in",
         "challenge": "Customer data was fragmented across analytics platforms and vendor warehouses, so teams lacked a real-time single view of customer signals while vendor costs scaled rapidly.",
         "action": "Architected and deployed a modular CDP on open source to replace proprietary vendor systems. Decoupled ingestion, real-time stream processing, open-source storage, and governance APIs so integrations could evolve without vendor lock-in.",
@@ -78,7 +78,7 @@
         "image": "images/impact/tech-stack-ebay.jpg"
       },
       {
-        "org": "Relanto",
+        "org": "Enterprise AI",
         "title": "Enterprise intelligence as an operating system",
         "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
         "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
@@ -86,7 +86,7 @@
         "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
-        "org": "Huawei",
+        "org": "Telecom & infrastructure",
         "title": "Spark-era data & context-aware AI",
         "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
         "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
@@ -137,7 +137,7 @@
         "title": "Stay close to the build",
         "text": "AI leadership is not status reports from 30,000 feet. You cannot govern what you do not understand at the level of the actual system.",
         "link": "ai-journey.html",
-        "linkLabel": "See the AI Lab"
+        "linkLabel": "See shipped systems"
       },
       {
         "title": "Data access is an org responsibility",
@@ -153,7 +153,7 @@
       },
       {
         "title": "Judgment does not commoditize",
-        "text": "AI compresses the gap from idea to prototype. What remains scarce is knowing which prototype to scale and which tradeoff the business can live with.",
+        "text": "AI compresses the time from idea to a working product. What remains scarce is knowing which system to put in production and which tradeoff the business can live with.",
         "link": "musings.html",
         "linkLabel": "On PMs, engineers & AI"
       },
@@ -238,7 +238,7 @@
     "lede": "<p>I focus on the challenge, what I built, and the results</p>",
     "items": [
       {
-        "org": "eBay",
+        "org": "Marketplace",
         "title": "Making enterprise data usable at scale",
         "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
         "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
@@ -246,7 +246,7 @@
         "image": "images/impact/enterprise-data-scale.jpg"
       },
       {
-        "org": "eBay",
+        "org": "Marketplace",
         "title": "Customer data platform without vendor lock-in",
         "challenge": "Customer data was fragmented across analytics platforms and vendor warehouses, so teams lacked a real-time single view of customer signals while vendor costs scaled rapidly.",
         "action": "Architected and deployed a modular CDP on open source to replace proprietary vendor systems. Decoupled ingestion, real-time stream processing, open-source storage, and governance APIs so integrations could evolve without vendor lock-in.",
@@ -254,7 +254,7 @@
         "image": "images/impact/tech-stack-ebay.jpg"
       },
       {
-        "org": "Relanto",
+        "org": "Enterprise AI",
         "title": "Enterprise intelligence as an operating system",
         "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
         "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
@@ -262,7 +262,7 @@
         "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
-        "org": "Huawei",
+        "org": "Telecom & infrastructure",
         "title": "Spark-era data & context-aware AI",
         "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
         "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
@@ -290,10 +290,10 @@
   "biography": {
     "eyebrow": "About",
     "title": "Ishita Majumdar",
-    "lede": "<p>Technology executive and builder: engineering, product, data platforms, and enterprise AI.</p>",
+    "lede": "<p>Builder-executive: I architect, code, and ship engineering, product, data platforms, and enterprise AI.</p>",
     "quote": "Technology creates value only when people can trust it, use it, and act on it",
     "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>",
-    "builder": "<p>I am a creator at heart, someone who loves rolling up my sleeves, testing new tools, and turning ideas into reality. The journey wasn't overnight. It took stepping into the trenches at Bay Area hackathons, experimenting hands-on, and embracing the dynamic AI learning curve to sharpen my edge.</p><p>As a C-suite executive, I made the deliberate choice to step away from organizational leadership to build with AI from first principles. If a senior executive can get back in the weeds, code alongside emerging builders, and master modern AI tools from scratch, anyone can. No matter the title, staying grounded in the build keeps me real and inspires me to mentor and empower the next generation of first-time builders.</p>",
+    "builder": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a public URL. The path was not overnight. It took years of shipping platforms at scale, then getting back into the weeds with modern AI tooling until I could go from use case to production myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and productionize. The live system is the finish line. Mentoring other builders starts from that same standard — shipped work, not prototypes that never leave the lab.</p>",
     "bios": {
       "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She builds the systems, platforms, and organizations that turn Data + AI into measurable business outcomes—and stays close enough to the technical work to lead with judgment, not slideware.",
       "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents—she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her throughline is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
@@ -406,101 +406,116 @@
     ]
   },
   "aiJourney": {
-    "eyebrow": "Building with AI",
-    "title": "From Idea to Product",
-    "lede": "<p>Recent AI builds. What they do, why I made them, and what I learned from them.</p>",
-    "story": "<p>I am a creator at heart, someone who loves rolling up my sleeves, testing new tools, and turning ideas into reality. The journey wasn't overnight. It took stepping into the trenches at Bay Area hackathons, experimenting hands-on, and embracing the dynamic AI learning curve to sharpen my edge.</p><p>As a C-suite executive, I made the deliberate choice to step away from organizational leadership to build with AI from first principles. If a senior executive can get back in the weeds, code alongside emerging builders, and master modern AI tools from scratch, anyone can. No matter the title, staying grounded in the build keeps me real and inspires me to mentor and empower the next generation of first-time builders.</p>",
+    "eyebrow": "Builds",
+    "title": "I ship what I build",
+    "lede": "<p>Recent AI systems I designed, coded, deployed, and run in production. What they do, why I built them, and what I learned shipping them.</p>",
+    "story": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a public URL. The path was not overnight. It took years of shipping platforms at scale, then getting back into the weeds with modern AI tooling until I could go from use case to production myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and productionize. The live system is the finish line. Mentoring other builders starts from that same standard — shipped work, not prototypes that never leave the lab.</p>",
     "githubUsername": "imajumd1",
     "gitProjects": [
       {
         "name": "AI News Agent",
         "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
         "image": "images/projects/ai-news-agent.jpg",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent",
+        "category": "personal"
       },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/projects/aurora-health.jpg",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent",
+        "category": "personal"
       },
       {
         "name": "Claude AI Summarizer",
-        "summary": "Hands-on practice turning language models into something useful such as an AI summarization tool built with Claude CLI.",
+        "summary": "A summarization system I built and run, turning language models into a daily production tool.",
         "image": "images/projects/claude-summarizer.jpg",
-        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
+        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer",
+        "category": "personal"
       },
       {
         "name": "Racing Car Summary",
         "summary": "An AI news agent with a twist, shipping a working agent that digests and summarizes what matters, race-day energy included.",
         "image": "images/projects/racing-car-summary.jpg",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
+        "category": "personal"
       },
       {
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent that allows you to review skill catalog, supply inventory, demand forecasting on the same pane and a conversational analyst to spar with..",
         "image": "images/projects/skills-hr.jpg",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
+        "category": "enterprise"
       },
       {
         "name": "Wiki MCP",
-        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools built to learn core MCP concepts.",
+        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools in production use with Claude — search, fetch, and research over Wikipedia.",
         "image": "images/projects/wiki-mcp.jpg",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
+        "repoUrl": "https://github.com/imajumd1/Wiki-MCP",
+        "category": "personal"
       },
       {
         "name": "Spelling Bee",
         "summary": "I am a huge Spelling Bee addict. So I decided to build one for myself, when I am bored. This is a React game for practicing spelling with a clean, modern interface.",
         "image": "images/projects/spelling-bee.jpg",
-        "repoUrl": "https://github.com/imajumd1/spelling-bee"
+        "repoUrl": "https://github.com/imajumd1/spelling-bee",
+        "category": "personal"
       },
       {
         "name": "Evite Twin",
         "summary": "An event invitation app with backend support, email invites, and RSVP tracking. Think of it as a twin of the classic Evite experience.",
         "image": "images/projects/evitetwin.jpg",
-        "repoUrl": "https://github.com/imajumd1/evitetwin"
+        "repoUrl": "https://github.com/imajumd1/evitetwin",
+        "category": "personal"
       },
       {
         "name": "Dream Garage",
         "summary": "A personal collection app for adding and showcasing dream cars a fun build focused on product feel and interaction. (This was built by my kid to be honest)",
         "image": "images/projects/dreamgarage.jpg",
-        "repoUrl": "https://github.com/imajumd1/dreamgarage"
+        "repoUrl": "https://github.com/imajumd1/dreamgarage",
+        "category": "personal"
       },
       {
         "name": "Instagram Post (Cursor)",
-        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds with templates, canvas export, and quick creative flow. One of my first fun projects",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds with templates, canvas export, and quick creative flow.",
         "image": "images/projects/instagram-post.jpg",
-        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor",
+        "category": "personal"
       },
       {
         "name": "Audiobook",
         "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API, React frontend with an Express backend.",
         "image": "images/projects/audiobook.jpg",
-        "repoUrl": "https://github.com/imajumd1/audiobook"
+        "repoUrl": "https://github.com/imajumd1/audiobook",
+        "category": "personal"
       },
       {
         "name": "LinkedIn-Validated Ecommerce",
         "summary": "A scraping and analysis agent that identifies eBay's top competitors and pulls CEO/CFO details from LinkedIn into competitive reports.",
         "image": "images/projects/ecommerce.jpg",
-        "repoUrl": "https://github.com/imajumd1/linkedin-validated-ecommerce"
+        "repoUrl": "https://github.com/imajumd1/linkedin-validated-ecommerce",
+        "category": "enterprise"
       },
       {
         "name": "Lighthouse",
         "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
         "image": "images/projects/lighthouse.jpg",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse"
+        "repoUrl": "https://github.com/imajumd1/Lighthouse",
+        "category": "enterprise"
       },
       {
         "name": "Contact Me App",
         "summary": "A professional contact form with rich text editing, file uploads, and email notifications in a modern black-and-white UI.",
         "image": "images/projects/contact.jpg",
-        "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26"
+        "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26",
+        "category": "personal"
       },
       {
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/projects/personal-website.jpg",
-        "repoUrl": "https://github.com/imajumd1/Personal-website"
+        "repoUrl": "https://github.com/imajumd1/Personal-website",
+        "category": "personal"
       }
     ],
     "featuredBuilds": [
@@ -508,43 +523,50 @@
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent with skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
         "image": "images/builds/skills-hr.jpg",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
+        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
+        "category": "enterprise"
       },
       {
         "name": "Racing Car Summary",
         "summary": "An AI news agent with a twist a shipping a working agent that digests and summarizes what matters, race-day energy included.",
         "image": "images/builds/racing-car-summary.jpg",
-        "liveUrl": "https://racing-car-summary-production.up.railway.app/"
+        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
+        "category": "personal"
       },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/builds/aurora-health.jpg",
-        "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
+        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
+        "category": "personal"
       },
       {
         "name": "AI news summarizer",
         "summary": "An intelligent agent that scrapes the latest AI developments from sources like Hacker News, arXiv, TechCrunch, and VentureBeat, then generates OpenAI-powered summaries across infrastructure and frontier models.",
         "image": "images/builds/ai-news-agent.jpg",
-        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/"
+        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
+        "category": "personal"
       },
       {
         "name": "Audiobook",
         "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
         "image": "images/builds/audiobook.jpg",
-        "liveUrl": ""
+        "liveUrl": "",
+        "category": "personal"
       },
       {
         "name": "Instagram Post (Cursor)",
         "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
         "image": "images/builds/instagram-post.jpg",
-        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/"
+        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
+        "category": "personal"
       },
       {
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/builds/personal-website.jpg",
-        "liveUrl": "https://web-production-4381.up.railway.app/"
+        "liveUrl": "https://web-production-4381.up.railway.app/",
+        "category": "personal"
       }
     ],
     "projects": [
@@ -556,7 +578,8 @@
         "tags": [
           "AI",
           "HTML"
-        ]
+        ],
+        "category": "enterprise"
       },
       {
         "name": "Racing Car Summary",
@@ -566,34 +589,37 @@
         "tags": [
           "AI",
           "Python"
-        ]
+        ],
+        "category": "personal"
       }
     ]
   },
   "aiLab": {
-    "eyebrow": "AI Lab",
-    "title": "Recent builds",
-    "lede": "<p>I build with AI to turn ideas into functional prototypes</p>",
+    "eyebrow": "Builds",
+    "title": "Shipped systems",
+    "lede": "<p>I take ideas all the way to production: live URLs, real users, working agents — not prototypes that stop at a demo.</p>",
     "items": [
       {
         "name": "HR Resume Matching Agent",
         "summary": "Ranks the same resume pool against different job descriptions by seat — folder-based JDs and resumes, keyword-overlap scores, and fit notes (Advance, Stretch, Wrong seat, Pass).",
-        "why": "Show that matching is by seat, not generic seniority — the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
+        "why": "A production matcher that matching is by seat, not generic seniority — the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
         "tech": "Python 3.9, folder-based JD/resume pipeline, keyword scoring, markdown/CSV reports",
         "learned": "Automating matching capabilities to optimize matching of JD with resumes, reduces manual processes, human bias and enables faster decisionmaking",
         "image": "images/builds/hr-resume-matching.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker"
+        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker",
+        "category": "enterprise"
       },
       {
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
-        "why": "Explore how AI agents can reason over workforce skills supply and demand.",
+        "why": "Ship how AI agents can reason over workforce skills supply and demand.",
         "tech": "Claude agent, web app, skills catalog",
         "learned": "Conversational analysts need clean domain models—not just a chat box.",
         "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
+        "category": "enterprise"
       },
       {
         "name": "Aurora Health Agent",
@@ -603,7 +629,8 @@
         "learned": "Graceful handling of messy human input matters as much as model quality.",
         "image": "images/builds/aurora-health.jpg",
         "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent",
+        "category": "personal"
       },
       {
         "name": "AI News Agent",
@@ -613,7 +640,8 @@
         "learned": "Curation beats volume; the product is the filter.",
         "image": "images/builds/ai-news-agent.jpg",
         "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent",
+        "category": "personal"
       },
       {
         "name": "Racing Car Summary",
@@ -623,7 +651,8 @@
         "learned": "Shipping fast teaches more than another architecture diagram.",
         "image": "images/builds/racing-car-summary.jpg",
         "liveUrl": "https://racing-car-summary-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
+        "category": "personal"
       },
       {
         "name": "Instagram Post (Cursor)",
@@ -633,7 +662,8 @@
         "learned": "Tight creative constraints make the product feel finished sooner.",
         "image": "images/builds/instagram-post.jpg",
         "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor",
+        "category": "personal"
       },
       {
         "name": "Wiki MCP",
@@ -643,7 +673,8 @@
         "learned": "Tool design is product design for agents.",
         "image": "images/builds/wiki-mcp.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
+        "repoUrl": "https://github.com/imajumd1/Wiki-MCP",
+        "category": "personal"
       },
       {
         "name": "Lighthouse",
@@ -653,7 +684,8 @@
         "learned": "Trend products fail without disciplined ingestion and ranking.",
         "image": "images/builds/lighthouse.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse"
+        "repoUrl": "https://github.com/imajumd1/Lighthouse",
+        "category": "enterprise"
       },
       {
         "name": "Audiobook",
@@ -663,7 +695,8 @@
         "learned": "Simple APIs still need careful UX around latency and voice quality.",
         "image": "images/builds/audiobook.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/audiobook"
+        "repoUrl": "https://github.com/imajumd1/audiobook",
+        "category": "personal"
       }
     ]
   },
@@ -806,9 +839,9 @@
       {
         "tag": "tech",
         "title": "Learning to build with AI",
-        "body": "<p>I build agents with AI in two lanes. For enterprise clients, I shape a working product they can beta-test and critique. Then I hand it to the dev team, who reuse the design, requirements, and code where it fits. Often the code cannot be forked as-is; the agents have to live inside their larger system and environments.</p>\n<p>I also build apps for my own professional use: an AI summarizer for daily trends, a virtual health assistant on the neurodiversity spectrum, an HR skill matchmaker, a team skills dashboard. The sequence is the same: think of a use case, scope it, build in Cursor with a model that fits the job, test locally, push to Git, productionize on Railway. The public URL is the finish line. The learning is everything before that.</p>\n<p>Over time I got better at the craft around the model, not just the prompt. Scope so v1 has a real job. Design the flow before asking for five features at once. Build module by module. Be careful with <code>.env</code> variables. Start from open source when I can, then add what I actually need. Add skills. Use loop engineering so the agent improves through a designed cycle. Test edge cases before a stranger finds them.</p>\n\n<h3>The loop I run</h3>\n<p>It looks simple on paper. In practice it is where judgment compounds.</p>\n<ol>\n<li>Give the thought-out idea to Cursor; ask for scope.md, design.md, and MVP.md. It scaffolds the app.</li>\n<li>Improve it locally: features, UX, review, until I trust the core flow.</li>\n<li>Push to a new git repo. I often run the commands myself; Cursor can push too. Ownership of the repo matters more than who typed the command.</li>\n<li>Git connects to Railway; a deployment starts.</li>\n<li>Watch the Railway build. Fix what I can; ask the Railway agent when I am stuck.</li>\n<li>Get a public URL.</li>\n<li>Before I share it, run Agent Preflight.</li>\n</ol>\n<p>That last step is non-negotiable. A public agent with my API key on the backend is not a localhost experiment. It can burn money, leak secrets, or break in ways a local session never shows.</p>\n\n<h3>Agent Preflight</h3>\n<p>You pick up the \"not to do\" list fast. Mine became a 27-checkpoint run-through for agent apps I build in Cursor, push to Git, and deploy on Railway with my own backend key. I work top to bottom before I share a link. Not bureaucracy: catching the failure modes that turn a useful demo into an expensive or embarrassing one.</p>\n\n<h3>01. Secrets &amp; cost exposure</h3>\n<p>Your key, your bill. Do this first, every time.</p>\n<ul>\n<li><u>Secrets never touch git history</u>. <code>.env</code> in <code>.gitignore</code>; no key ever committed. If a public repo predates that habit, scan history and rotate anything that leaked.</li>\n<li><u>Hard spend cap at the provider.</u> Monthly budget limit or alert in OpenAI or Anthropic billing. Backstop if everything else fails.</li>\n<li><u>Rate limit per visitor.</u> Cap requests per IP or session (10 to 20/hour is plenty for a demo).</li>\n<li><u>Max output tokens capped.</u> Unbounded responses get expensive fast.</li>\n<li><u>Request timeout in place.</u> A hung call should not sit open indefinitely.</li>\n<li><u>Kill switch identified and tested.</u> Know how to pause the Railway deploy or flip an env toggle before you need it.</li>\n</ul>\n\n<h3>02. Abuse &amp; input handling</h3>\n<p>Anyone can hit a public URL. Assume they will.</p>\n<ul>\n<li><u>Validate input before it reaches the agent</u> or any tool it can trigger (writes, files, shell).</li>\n<li><u>Sandbox tool-calling and file access.</u> Unexpected input should not enable destructive actions.</li>\n<li><u>Light friction if sharing broadly.</u> Passcode or email gate filters bots; optional for a one-off share.</li>\n</ul>\n\n<h3>03. Error handling</h3>\n<p>What a stranger sees when something breaks.</p>\n<ul>\n<li><u>No raw errors in the UI.</u> No stack traces, paths, or library versions on failure.</li>\n<li><u>Graceful fallback message.</u> A plain human sentence, not a blank screen.</li>\n<li><u>Empty or garbage input handled cleanly.</u> Nonsense should not crash the flow.</li>\n</ul>\n\n<h3>04. Monitoring &amp; visibility</h3>\n<p>How you find out something is wrong without a stranger telling you.</p>\n<ul>\n<li><u>Uptime monitor on the public URL</u> (e.g. UptimeRobot every few minutes).</li>\n<li><u>Error tracking or logs you will actually check</u> (Sentry free tier, or Railway logs after sharing).</li>\n<li><u>Check spend daily for the first few days</u> after you share.</li>\n</ul>\n\n<h3>05. Real-world testing pass</h3>\n<p>A few minutes catching what local sessions hide.</p>\n<ul>\n<li><u>Incognito window</u> (no local cookies or logged-in session).</li>\n<li><u>Mobile, if plausible.</u></li>\n<li><u>Refresh and back-button mid-flow.</u></li>\n<li><u>Empty and weird input</u> (emoji, huge pastes, other languages, nothing).</li>\n</ul>\n\n<h3>06. User-facing expectations</h3>\n<p>Short copy that prevents awkward messages later.</p>\n<ul>\n<li><u>What it does, and does not</u>, in one or two sentences in the UI.</li>\n<li><u>Note if anything is stored or logged.</u></li>\n<li><u>\"This is a demo\" framing</u> when appropriate, so feedback targets the idea, not a finished product.</li>\n</ul>\n\n<h3>07. Deployment safety</h3>\n<p>Last look on the deployed thing, not localhost.</p>\n<ul>\n<li><u>Secrets only in Railway env vars</u>, confirmed in the project variables tab.</li>\n<li><u>Rollback procedure confirmed</u> before you need it under pressure.</li>\n<li><u>Smoke-test the public URL</u> end to end once before sharing.</li>\n</ul>\n\n<h3>What this taught me</h3>\n<p>Learning to build with AI is not mainly about a prettier first draft from a model. It is tightening a loop you can repeat: idea, local proof, git, deploy, preflight, share. Prompting matters. So does scoping. So does refusing to ship secrets in history, and refusing to share a URL until the boring checks are done.</p>\n<p>The agents I ship publicly are better because the checklist exists. The builder I am becoming is better because I run the loop every day.</p>",
+        "body": "<p>I build agents with AI in two lanes. For enterprise clients, I ship a working product they can put in front of users and run inside their environment. Then I hand it to the dev team, who reuse the design, requirements, and code where it fits. Often the code cannot be forked as-is; the agents have to live inside their larger system and environments.</p>\n<p>I also build apps for my own professional use: an AI summarizer for daily trends, a virtual health assistant on the neurodiversity spectrum, an HR skill matchmaker, a team skills dashboard. The sequence is the same: think of a use case, scope it, build in Cursor with a model that fits the job, test locally, push to Git, productionize on Railway. The public URL is the finish line. The learning is everything before that.</p>\n<p>Over time I got better at the craft around the model, not just the prompt. Scope so v1 has a real job. Design the flow before asking for five features at once. Build module by module. Be careful with <code>.env</code> variables. Start from open source when I can, then add what I actually need. Add skills. Use loop engineering so the agent improves through a designed cycle. Test edge cases before a stranger finds them.</p>\n\n<h3>The loop I run</h3>\n<p>It looks simple on paper. In practice it is where judgment compounds.</p>\n<ol>\n<li>Give the thought-out idea to Cursor; ask for scope.md, design.md, and MVP.md. It scaffolds the app.</li>\n<li>Improve it locally: features, UX, review, until I trust the core flow.</li>\n<li>Push to a new git repo. I often run the commands myself; Cursor can push too. Ownership of the repo matters more than who typed the command.</li>\n<li>Git connects to Railway; a deployment starts.</li>\n<li>Watch the Railway build. Fix what I can; ask the Railway agent when I am stuck.</li>\n<li>Get a public URL.</li>\n<li>Before I share it, run Agent Preflight.</li>\n</ol>\n<p>That last step is non-negotiable. A public agent with my API key on the backend is not a local sketch. It is a live system. It can burn money, leak secrets, or break in ways a local session never shows.</p>\n\n<h3>Agent Preflight</h3>\n<p>You pick up the \"not to do\" list fast. Mine became a 27-checkpoint run-through for agent apps I build in Cursor, push to Git, and deploy on Railway with my own backend key. I work top to bottom before I share a link. Not bureaucracy: catching the failure modes that turn a live system into an expensive or embarrassing one.</p>\n\n<h3>01. Secrets &amp; cost exposure</h3>\n<p>Your key, your bill. Do this first, every time.</p>\n<ul>\n<li><u>Secrets never touch git history</u>. <code>.env</code> in <code>.gitignore</code>; no key ever committed. If a public repo predates that habit, scan history and rotate anything that leaked.</li>\n<li><u>Hard spend cap at the provider.</u> Monthly budget limit or alert in OpenAI or Anthropic billing. Backstop if everything else fails.</li>\n<li><u>Rate limit per visitor.</u> Cap requests per IP or session (10 to 20/hour is plenty for a public system).</li>\n<li><u>Max output tokens capped.</u> Unbounded responses get expensive fast.</li>\n<li><u>Request timeout in place.</u> A hung call should not sit open indefinitely.</li>\n<li><u>Kill switch identified and tested.</u> Know how to pause the Railway deploy or flip an env toggle before you need it.</li>\n</ul>\n\n<h3>02. Abuse &amp; input handling</h3>\n<p>Anyone can hit a public URL. Assume they will.</p>\n<ul>\n<li><u>Validate input before it reaches the agent</u> or any tool it can trigger (writes, files, shell).</li>\n<li><u>Sandbox tool-calling and file access.</u> Unexpected input should not enable destructive actions.</li>\n<li><u>Light friction if sharing broadly.</u> Passcode or email gate filters bots; optional for a one-off share.</li>\n</ul>\n\n<h3>03. Error handling</h3>\n<p>What a stranger sees when something breaks.</p>\n<ul>\n<li><u>No raw errors in the UI.</u> No stack traces, paths, or library versions on failure.</li>\n<li><u>Graceful fallback message.</u> A plain human sentence, not a blank screen.</li>\n<li><u>Empty or garbage input handled cleanly.</u> Nonsense should not crash the flow.</li>\n</ul>\n\n<h3>04. Monitoring &amp; visibility</h3>\n<p>How you find out something is wrong without a stranger telling you.</p>\n<ul>\n<li><u>Uptime monitor on the public URL</u> (e.g. UptimeRobot every few minutes).</li>\n<li><u>Error tracking or logs you will actually check</u> (Sentry free tier, or Railway logs after sharing).</li>\n<li><u>Check spend daily for the first few days</u> after you share.</li>\n</ul>\n\n<h3>05. Real-world testing pass</h3>\n<p>A few minutes catching what local sessions hide.</p>\n<ul>\n<li><u>Incognito window</u> (no local cookies or logged-in session).</li>\n<li><u>Mobile, if plausible.</u></li>\n<li><u>Refresh and back-button mid-flow.</u></li>\n<li><u>Empty and weird input</u> (emoji, huge pastes, other languages, nothing).</li>\n</ul>\n\n<h3>06. User-facing expectations</h3>\n<p>Short copy that prevents awkward messages later.</p>\n<ul>\n<li><u>What it does, and does not</u>, in one or two sentences in the UI.</li>\n<li><u>Note if anything is stored or logged.</u></li>\n<li><u>Name the v1 job in the UI</u> so feedback targets the real workflow, not a toy.</li>\n</ul>\n\n<h3>07. Deployment safety</h3>\n<p>Last look on the deployed thing, not localhost.</p>\n<ul>\n<li><u>Secrets only in Railway env vars</u>, confirmed in the project variables tab.</li>\n<li><u>Rollback procedure confirmed</u> before you need it under pressure.</li>\n<li><u>Smoke-test the public URL</u> end to end once before sharing.</li>\n</ul>\n\n<h3>What this taught me</h3>\n<p>Learning to build with AI is not mainly about a prettier first draft from a model. It is tightening a loop you can repeat: idea, local proof, git, deploy, preflight, share. Prompting matters. So does scoping. So does refusing to ship secrets in history, and refusing to share a URL until the boring checks are done.</p>\n<p>The agents I ship publicly are better because the checklist exists. The builder I am becoming is better because I run the loop every day.</p>",
         "category": "AI & Enterprise Transformation",
-        "thesis": "I build agents with AI every day: Cursor to local to Git to Railway. The craft is the loop, and Agent Preflight before any public URL.",
+        "thesis": "I build and ship agents with AI every day: Cursor to local to Git to Railway. The craft is the loop, and production preflight before any public URL.",
         "readingTime": "5 min read",
         "date": "August 23, 2026"
       },
