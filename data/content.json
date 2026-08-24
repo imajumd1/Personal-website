@@ -65,7 +65,7 @@
         "org": "Marketplace",
         "title": "Making enterprise data usable at scale",
         "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
-        "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
+        "action": "Built and led the Data Analytics Platforms org: engineers, scientists, and product managers around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
         "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership.",
         "image": "images/impact/enterprise-data-scale.jpg"
       },
@@ -75,14 +75,14 @@
         "challenge": "Customer data was fragmented across analytics platforms and vendor warehouses, so teams lacked a real-time single view of customer signals while vendor costs scaled rapidly.",
         "action": "Architected and deployed a modular CDP on open source to replace proprietary vendor systems. Decoupled ingestion, real-time stream processing, open-source storage, and governance APIs so integrations could evolve without vendor lock-in.",
         "impact": "Migrated multi-petabyte analytics onto an open-source stack and lowered TCO. Established a trusted real-time source of truth for profiles and behavioral signals that powers personalized buyer and seller experiences. Teams can plug in pipelines, AI models, and apps without disrupting core operations.",
-        "image": "images/impact/tech-stack-ebay.jpg"
+        "image": "images/impact/tech-stack-cdp.jpg"
       },
       {
         "org": "Enterprise AI",
         "title": "Enterprise intelligence as an operating system",
-        "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
+        "challenge": "Enterprises need AI that transforms decisions and workflows, not isolated pilots that never leave the lab.",
         "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
-        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes.",
+        "impact": "Standing up the operating model for enterprise AI: platforms, people, and governance designed for durable business outcomes.",
         "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
@@ -241,7 +241,7 @@
         "org": "Marketplace",
         "title": "Making enterprise data usable at scale",
         "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
-        "action": "Built and led the Data Analytics Platforms org—engineers, scientists, and product managers—around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
+        "action": "Built and led the Data Analytics Platforms org: engineers, scientists, and product managers around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
         "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership.",
         "image": "images/impact/enterprise-data-scale.jpg"
       },
@@ -251,14 +251,14 @@
         "challenge": "Customer data was fragmented across analytics platforms and vendor warehouses, so teams lacked a real-time single view of customer signals while vendor costs scaled rapidly.",
         "action": "Architected and deployed a modular CDP on open source to replace proprietary vendor systems. Decoupled ingestion, real-time stream processing, open-source storage, and governance APIs so integrations could evolve without vendor lock-in.",
         "impact": "Migrated multi-petabyte analytics onto an open-source stack and lowered TCO. Established a trusted real-time source of truth for profiles and behavioral signals that powers personalized buyer and seller experiences. Teams can plug in pipelines, AI models, and apps without disrupting core operations.",
-        "image": "images/impact/tech-stack-ebay.jpg"
+        "image": "images/impact/tech-stack-cdp.jpg"
       },
       {
         "org": "Enterprise AI",
         "title": "Enterprise intelligence as an operating system",
-        "challenge": "Enterprises need AI that transforms decisions and workflows—not isolated pilots that never leave the lab.",
+        "challenge": "Enterprises need AI that transforms decisions and workflows, not isolated pilots that never leave the lab.",
         "action": "As Chief Data and AI Officer, leading global data and AI strategy: trusted systems, ethical adoption, and literacy so teams can automate and decide with confidence.",
-        "impact": "Standing up the operating model for enterprise AI—platforms, people, and governance designed for durable business outcomes.",
+        "impact": "Standing up the operating model for enterprise AI: platforms, people, and governance designed for durable business outcomes.",
         "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
