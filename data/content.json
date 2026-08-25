@@ -18,7 +18,7 @@
       "href": "biography.html#how-i-think"
     },
     "ctaSecondary": {
-      "label": "See shipped systems",
+      "label": "Building with AI",
       "href": "ai-journey.html"
     },
     "ctaLinkedIn": {
@@ -64,7 +64,7 @@
       {
         "org": "Marketplace",
         "title": "Conversational analytics without the IT queue",
-        "challenge": "Data was fragmented across silos, so teams could not get holistic, data-driven insights, and every question still had to route through IT or an analyst.",
+        "challenge": "Data discovery was nearly impossible for business users without SQL skills, forcing every question to route through IT or an analyst.",
         "action": "Built an AI-powered analytics platform where users ask questions in natural language and get automated insights, interactive dashboards, and predictive analytics with no query language or ticket required.",
         "impact": "Business users, buyers, and sellers get real-time insights and reports on demand, removing dependency on IT and analyst teams and closing the gap between a question and a decision.",
         "image": "images/impact/conversational-analytics.jpg"
@@ -137,7 +137,7 @@
         "title": "Stay close to the build",
         "text": "AI leadership is not status reports from 30,000 feet. You cannot govern what you do not understand at the level of the actual system.",
         "link": "ai-journey.html",
-        "linkLabel": "See shipped systems"
+        "linkLabel": "Building with AI"
       },
       {
         "title": "Data access is an org responsibility",
@@ -240,7 +240,7 @@
       {
         "org": "Marketplace",
         "title": "Conversational analytics without the IT queue",
-        "challenge": "Data was fragmented across silos, so teams could not get holistic, data-driven insights, and every question still had to route through IT or an analyst.",
+        "challenge": "Data discovery was nearly impossible for business users without SQL skills, forcing every question to route through IT or an analyst.",
         "action": "Built an AI-powered analytics platform where users ask questions in natural language and get automated insights, interactive dashboards, and predictive analytics with no query language or ticket required.",
         "impact": "Business users, buyers, and sellers get real-time insights and reports on demand, removing dependency on IT and analyst teams and closing the gap between a question and a decision.",
         "image": "images/impact/conversational-analytics.jpg"
@@ -596,7 +596,7 @@
   },
   "aiLab": {
     "eyebrow": "Builds",
-    "title": "Shipped systems",
+    "title": "Building with AI",
     "lede": "<p>I build with AI to turn ideas into products: live URLs, real users, working agents.</p>",
     "items": [
       {

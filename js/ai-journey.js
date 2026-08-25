@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             </div>
           </article>
         `;
-      }).join("") || `<p style="color:var(--ink-soft);">No shipped systems yet.</p>`;
+      }).join("") || `<p style="color:var(--ink-soft);">No Building with AI items yet.</p>`;
     }
 
     const featuredNames = new Set(labItems.map(p => (p.name || "").toLowerCase()));
