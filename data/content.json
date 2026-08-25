@@ -62,12 +62,12 @@
     ],
     "selectedImpact": [
       {
-        "org": "Marketplace",
-        "title": "Making enterprise data usable at scale",
-        "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
-        "action": "Built and led the Data Analytics Platforms org: engineers, scientists, and product managers around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
-        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership.",
-        "image": "images/impact/enterprise-data-scale.jpg"
+        "org": "Analytics",
+        "title": "Conversational analytics without the IT queue",
+        "challenge": "Data was fragmented across silos, so teams could not get holistic, data-driven insights, and every question still had to route through IT or an analyst.",
+        "action": "Built an AI-powered analytics platform where users ask questions in natural language and get automated insights, interactive dashboards, and predictive analytics with no query language or ticket required.",
+        "impact": "Business users, buyers, and sellers get real-time insights and reports on demand, removing dependency on IT and analyst teams and closing the gap between a question and a decision.",
+        "image": "images/impact/conversational-analytics.jpg"
       },
       {
         "org": "Marketplace",
@@ -238,12 +238,12 @@
     "lede": "<p>I focus on the challenge, what I built, and the results</p>",
     "items": [
       {
-        "org": "Marketplace",
-        "title": "Making enterprise data usable at scale",
-        "challenge": "Data lived in silos; analysts and non-SQL users could not independently trust or access the signals they needed for buyer and seller decisions.",
-        "action": "Built and led the Data Analytics Platforms org: engineers, scientists, and product managers around three steel threads: A+ teams, accountable data quality, and transparent KPIs.",
-        "impact": "Scaled trusted analytics platforms serving the marketplace; made data and derivatives accessible across technical and business consumers with clear ownership.",
-        "image": "images/impact/enterprise-data-scale.jpg"
+        "org": "Analytics",
+        "title": "Conversational analytics without the IT queue",
+        "challenge": "Data was fragmented across silos, so teams could not get holistic, data-driven insights, and every question still had to route through IT or an analyst.",
+        "action": "Built an AI-powered analytics platform where users ask questions in natural language and get automated insights, interactive dashboards, and predictive analytics with no query language or ticket required.",
+        "impact": "Business users, buyers, and sellers get real-time insights and reports on demand, removing dependency on IT and analyst teams and closing the gap between a question and a decision.",
+        "image": "images/impact/conversational-analytics.jpg"
       },
       {
         "org": "Marketplace",
@@ -290,7 +290,7 @@
   "biography": {
     "eyebrow": "About",
     "title": "Ishita Majumdar",
-    "lede": "<p>Builder-executive: I architect, code, and ship engineering, product, data platforms, and enterprise AI.</p>",
+    "lede": "<p>I combine analytical problem-solving with AI-powered development to build high-impact, interactive solutions.</p>",
     "quote": "Technology creates value only when people can trust it, use it, and act on it",
     "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>",
     "builder": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a public URL. The path was not overnight. It took years of shipping platforms at scale, then getting back into the weeds with modern AI tooling until I could go from use case to production myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and productionize. The live system is the finish line. Mentoring other builders starts from that same standard: shipped products, not demos that never leave the lab.</p>",
