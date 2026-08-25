@@ -62,7 +62,7 @@
     ],
     "selectedImpact": [
       {
-        "org": "Analytics",
+        "org": "Marketplace",
         "title": "Conversational analytics without the IT queue",
         "challenge": "Data was fragmented across silos, so teams could not get holistic, data-driven insights, and every question still had to route through IT or an analyst.",
         "action": "Built an AI-powered analytics platform where users ask questions in natural language and get automated insights, interactive dashboards, and predictive analytics with no query language or ticket required.",
@@ -86,11 +86,11 @@
         "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
-        "org": "Telecom & infrastructure",
-        "title": "Spark-era data & context-aware AI",
-        "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
-        "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
-        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave.",
+        "org": "Telecom",
+        "title": "Real-time network health & churn prevention on Spark",
+        "challenge": "Telcos sat on petabytes of network telemetry and subscriber data but could not analyze either fast enough to catch outages or save at-risk customers.",
+        "action": "Architected an enterprise Spark platform: Structured Streaming scored 4G/5G telemetry for anomalies in near real-time, while MLlib generated live churn-risk scores from usage and service data.",
+        "impact": "Anomalies now trigger self-healing routines or maintenance alerts before regional outages, and high-value subscribers get instant retention offers the moment risk spikes.",
         "image": "images/impact/spark-data-ai.jpg"
       },
       {
@@ -238,7 +238,7 @@
     "lede": "<p>I focus on the challenge, what I built, and the results</p>",
     "items": [
       {
-        "org": "Analytics",
+        "org": "Marketplace",
         "title": "Conversational analytics without the IT queue",
         "challenge": "Data was fragmented across silos, so teams could not get holistic, data-driven insights, and every question still had to route through IT or an analyst.",
         "action": "Built an AI-powered analytics platform where users ask questions in natural language and get automated insights, interactive dashboards, and predictive analytics with no query language or ticket required.",
@@ -262,11 +262,11 @@
         "image": "images/impact/enterprise-intelligence.jpg"
       },
       {
-        "org": "Telecom & infrastructure",
-        "title": "Spark-era data & context-aware AI",
-        "challenge": "Next-generation telecom and enterprise products needed a coherent Big Data and AI strategy across U.S. and China teams.",
-        "action": "Led global technology strategy for Big Data and AI product innovation; defined Spark-based infrastructure vision and context-aware AI system architecture.",
-        "impact": "Shaped product direction for modern data infrastructure and intelligent systems ahead of the mainstream enterprise wave.",
+        "org": "Telecom",
+        "title": "Real-time network health & churn prevention on Spark",
+        "challenge": "Telcos sat on petabytes of network telemetry and subscriber data but could not analyze either fast enough to catch outages or save at-risk customers.",
+        "action": "Architected an enterprise Spark platform: Structured Streaming scored 4G/5G telemetry for anomalies in near real-time, while MLlib generated live churn-risk scores from usage and service data.",
+        "impact": "Anomalies now trigger self-healing routines or maintenance alerts before regional outages, and high-value subscribers get instant retention offers the moment risk spikes.",
         "image": "images/impact/spark-data-ai.jpg"
       },
       {
