@@ -11,7 +11,7 @@
     "name": "Ishita Majumdar",
     "headline": "I build the systems, platforms, and organizations that turn Data + AI into business outcomes.",
     "pitch": "<p>I still write the code. 25+ years leading engineering, product, and data platforms — and I ship working Data + AI systems myself, from enterprise platforms to production agents.</p>",
-    "heroImage": "images/hero/PXL_20250819_201111143.jpg",
+    "heroImage": "images/hero/ishita-head-pic-3.jpeg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
       "label": "Beliefs that shape my work",
@@ -49,7 +49,7 @@
     "whatIDo": [
       {
         "title": "Enterprise AI",
-        "text": "I ship enterprise AI as working systems — products and workflows in production, not slides or isolated pilots.",
+        "text": "I ship enterprise AI as working systems; products and workflows not in slides or isolated pilots.",
         "image": ""
       },
       {
@@ -144,7 +144,7 @@
       },
       {
         "title": "Data access is an org responsibility",
-        "text": "Every worker should reach trusted information with the right controls—SQL-savvy or not. Platforms exist to remove that friction.",
+        "text": "Every enterprise worker should reach trusted information with the right controls, SQL-savvy or not. Platforms exist to remove that friction.",
         "link": "musings.html",
         "linkLabel": "Read perspectives"
       },
@@ -419,106 +419,91 @@
         "name": "AI News Agent",
         "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
         "image": "images/projects/ai-news-agent.jpg",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
       },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/projects/aurora-health.jpg",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
       },
       {
         "name": "Claude AI Summarizer",
         "summary": "A summarization system I built and run, turning language models into a daily production tool.",
         "image": "images/projects/claude-summarizer.jpg",
-        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
       },
       {
         "name": "Racing Car Summary",
         "summary": "An AI news agent with a twist, shipping a working agent that digests and summarizes what matters, race-day energy included.",
         "image": "images/projects/racing-car-summary.jpg",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
       },
       {
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent that allows you to review skill catalog, supply inventory, demand forecasting on the same pane and a conversational analyst to spar with..",
         "image": "images/projects/skills-hr.jpg",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
-        "category": "enterprise"
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
       },
       {
         "name": "Wiki MCP",
         "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools in production use with Claude — search, fetch, and research over Wikipedia.",
         "image": "images/projects/wiki-mcp.jpg",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
       },
       {
         "name": "Spelling Bee",
         "summary": "I am a huge Spelling Bee addict. So I decided to build one for myself, when I am bored. This is a React game for practicing spelling with a clean, modern interface.",
         "image": "images/projects/spelling-bee.jpg",
-        "repoUrl": "https://github.com/imajumd1/spelling-bee",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/spelling-bee"
       },
       {
         "name": "Evite Twin",
         "summary": "An event invitation app with backend support, email invites, and RSVP tracking. Think of it as a twin of the classic Evite experience.",
         "image": "images/projects/evitetwin.jpg",
-        "repoUrl": "https://github.com/imajumd1/evitetwin",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/evitetwin"
       },
       {
         "name": "Dream Garage",
         "summary": "A personal collection app for adding and showcasing dream cars a fun build focused on product feel and interaction. (This was built by my kid to be honest)",
         "image": "images/projects/dreamgarage.jpg",
-        "repoUrl": "https://github.com/imajumd1/dreamgarage",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/dreamgarage"
       },
       {
         "name": "Instagram Post (Cursor)",
         "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds with templates, canvas export, and quick creative flow.",
         "image": "images/projects/instagram-post.jpg",
-        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
       },
       {
         "name": "Audiobook",
         "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API, React frontend with an Express backend.",
         "image": "images/projects/audiobook.jpg",
-        "repoUrl": "https://github.com/imajumd1/audiobook",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/audiobook"
       },
       {
         "name": "LinkedIn-Validated Ecommerce",
         "summary": "A scraping and analysis agent that identifies eBay's top competitors and pulls CEO/CFO details from LinkedIn into competitive reports.",
         "image": "images/projects/ecommerce.jpg",
-        "repoUrl": "https://github.com/imajumd1/linkedin-validated-ecommerce",
-        "category": "enterprise"
+        "repoUrl": "https://github.com/imajumd1/linkedin-validated-ecommerce"
       },
       {
         "name": "Lighthouse",
         "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
         "image": "images/projects/lighthouse.jpg",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse",
-        "category": "enterprise"
+        "repoUrl": "https://github.com/imajumd1/Lighthouse"
       },
       {
         "name": "Contact Me App",
         "summary": "A professional contact form with rich text editing, file uploads, and email notifications in a modern black-and-white UI.",
         "image": "images/projects/contact.jpg",
-        "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26"
       },
       {
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/projects/personal-website.jpg",
-        "repoUrl": "https://github.com/imajumd1/Personal-website",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Personal-website"
       }
     ],
     "featuredBuilds": [
@@ -526,50 +511,43 @@
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent with skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
         "image": "images/builds/skills-hr.jpg",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
-        "category": "enterprise"
+        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
       },
       {
         "name": "Racing Car Summary",
         "summary": "An AI news agent with a twist a shipping a working agent that digests and summarizes what matters, race-day energy included.",
         "image": "images/builds/racing-car-summary.jpg",
-        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
-        "category": "personal"
+        "liveUrl": "https://racing-car-summary-production.up.railway.app/"
       },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/builds/aurora-health.jpg",
-        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
-        "category": "personal"
+        "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
       },
       {
         "name": "AI news summarizer",
         "summary": "An intelligent agent that scrapes the latest AI developments from sources like Hacker News, arXiv, TechCrunch, and VentureBeat, then generates OpenAI-powered summaries across infrastructure and frontier models.",
         "image": "images/builds/ai-news-agent.jpg",
-        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
-        "category": "personal"
+        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/"
       },
       {
         "name": "Audiobook",
         "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
         "image": "images/builds/audiobook.jpg",
-        "liveUrl": "",
-        "category": "personal"
+        "liveUrl": ""
       },
       {
         "name": "Instagram Post (Cursor)",
         "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
         "image": "images/builds/instagram-post.jpg",
-        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
-        "category": "personal"
+        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/"
       },
       {
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/builds/personal-website.jpg",
-        "liveUrl": "https://web-production-4381.up.railway.app/",
-        "category": "personal"
+        "liveUrl": "https://web-production-4381.up.railway.app/"
       }
     ],
     "projects": [
@@ -610,8 +588,7 @@
         "learned": "Automating matching capabilities to optimize matching of JD with resumes, reduces manual processes, human bias and enables faster decisionmaking",
         "image": "images/builds/hr-resume-matching.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker",
-        "category": "enterprise"
+        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker"
       },
       {
         "name": "Skills Intelligence HR App",
@@ -621,8 +598,7 @@
         "learned": "Conversational analysts need clean domain models—not just a chat box.",
         "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
-        "category": "enterprise"
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
       },
       {
         "name": "Aurora Health Agent",
@@ -632,8 +608,7 @@
         "learned": "Graceful handling of messy human input matters as much as model quality.",
         "image": "images/builds/aurora-health.jpg",
         "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
       },
       {
         "name": "AI News Agent",
@@ -643,8 +618,7 @@
         "learned": "Curation beats volume; the product is the filter.",
         "image": "images/builds/ai-news-agent.jpg",
         "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
       },
       {
         "name": "Racing Car Summary",
@@ -654,8 +628,7 @@
         "learned": "Shipping fast teaches more than another architecture diagram.",
         "image": "images/builds/racing-car-summary.jpg",
         "liveUrl": "https://racing-car-summary-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
       },
       {
         "name": "Instagram Post (Cursor)",
@@ -665,8 +638,7 @@
         "learned": "Tight creative constraints make the product feel finished sooner.",
         "image": "images/builds/instagram-post.jpg",
         "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
       },
       {
         "name": "Wiki MCP",
@@ -676,8 +648,7 @@
         "learned": "Tool design is product design for agents.",
         "image": "images/builds/wiki-mcp.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
       },
       {
         "name": "Lighthouse",
@@ -687,8 +658,7 @@
         "learned": "Trend products fail without disciplined ingestion and ranking.",
         "image": "images/builds/lighthouse.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse",
-        "category": "enterprise"
+        "repoUrl": "https://github.com/imajumd1/Lighthouse"
       },
       {
         "name": "Audiobook",
@@ -698,8 +668,7 @@
         "learned": "Simple APIs still need careful UX around latency and voice quality.",
         "image": "images/builds/audiobook.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/audiobook",
-        "category": "personal"
+        "repoUrl": "https://github.com/imajumd1/audiobook"
       }
     ]
   },
