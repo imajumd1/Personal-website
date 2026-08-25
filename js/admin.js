@@ -892,7 +892,6 @@ function gatherContent() {
       proofMetrics,
       whatIDoEyebrow: content.home.whatIDoEyebrow || "What I Do",
       whatIDoTitle: content.home.whatIDoTitle || "Three ways I create leverage",
-      whatIDoLede: content.home.whatIDoLede || "I lead from the build: enterprise AI, trusted platforms, and technology leadership",
       whatIDo,
       selectedImpact,
       careerArc,
