@@ -38,6 +38,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       secondary.href = h.ctaSecondary.href || secondary.href;
     }
 
+    const whatHead = document.getElementById("what-i-do-head");
+    if (whatHead) {
+      const eyebrow = whatHead.querySelector(".eyebrow");
+      const title = whatHead.querySelector("h2");
+      const lede = whatHead.querySelector("p");
+      if (eyebrow && h.whatIDoEyebrow) eyebrow.textContent = h.whatIDoEyebrow;
+      if (title && h.whatIDoTitle) title.textContent = h.whatIDoTitle;
+      if (lede && h.whatIDoLede) lede.textContent = h.whatIDoLede;
+    }
+
     renderProof(h.proofMetrics || []);
     renderWhatIDo(h.whatIDo || []);
     renderImpact((h.selectedImpact || []).slice(0, 6));

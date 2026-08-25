@@ -1367,6 +1367,39 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.98rem;
   font-weight: 400;
 }
+
+/* Leverage section: title + lede on one row (stacks on narrow) */
+.section-head-split {
+  max-width: none;
+}
+.section-head-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 2.5rem;
+}
+.section-head-split .section-head-row h2 {
+  margin: 0;
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+.section-head-split .section-head-row p {
+  flex: 1 1 18rem;
+  min-width: 0;
+  max-width: 36rem;
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .section-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .section-head-split .section-head-row p {
+    max-width: none;
+  }
+}
 .section-more {
   margin: 28px 0 0;
   font-size: 0.95rem;
@@ -1417,14 +1450,20 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.35;
 }
 
-.pillars-3 {
+.pillars-3,
+#what-i-do-grid.pillars-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   align-items: start;
+  width: 100%;
 }
-@media (max-width: 800px) {
-  .pillars-3 { grid-template-columns: 1fr; gap: 22px; }
+@media (max-width: 700px) {
+  .pillars-3,
+  #what-i-do-grid.pillars-3 {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
 }
 .pillar-card {
   padding: 8px 0 0;

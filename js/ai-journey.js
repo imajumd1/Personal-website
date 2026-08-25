@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           ? `style="background-image:url('${escapeHtml(p.image)}')"`
           : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
         const links = [
-          p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Open live system</a>` : "",
           p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
         ].filter(Boolean).join("");
         return `
