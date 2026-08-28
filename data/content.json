@@ -10,7 +10,7 @@
     "eyebrow": "Enterprise Data and AI Leader",
     "name": "Ishita Majumdar",
     "headline": "I build the systems, platforms, and organizations that turn Data + AI into business outcomes.",
-    "pitch": "<p>Curiosity has shaped my 25+ years of technology leadership. From pioneering data and analytics platforms at scale, to advancing agentic AI, I thrive on solving what has not yet been solved, turning emerging technologies into scalable solutions and building teams that create enduring impact.</p>",
+    "pitch": "<p>Curiosity has shaped my two decades of technology leadership. From pioneering data and analytics platforms at scale, to advancing agentic AI, I thrive on solving what has not yet been solved, turning emerging technologies into scalable solutions and building teams that create enduring impact.</p>",
     "heroImage": "images/hero/ishita-head-pic-3.jpeg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
@@ -411,7 +411,7 @@
     "eyebrow": "Builds",
     "title": "I build MVP from an idea",
     "lede": "<p>Recent AI applications I designed, coded, deployed, and they run on cloud. What they do, why I built them, and what I learned. I cannot share Enterprise apps and solutions as part of my career. Instead I share some of my thoughts which led to personal productivity and effective time management.</p>",
-    "story": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to MVP hosted on cloud. The path was not overnight. It took some time to experimenting with different AI building tools and&nbsp; getting back into the weeds&nbsp; until I could go from use case to MVP myself. Cursor is the platform of my choice although I use Claude CLI a lot too and sometimes do a hybrid.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and host it on the cloud. This version is my MVP, which I can ask clients and potential customers to test and give feedback.&nbsp;</p>",
+    "story": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to MVP hosted on cloud. The path was not overnight. It took some time to experimenting with different AI building tools and&nbsp; getting back into the weeds&nbsp; until I could go from use case to MVP myself. Cursor is the platform of my choice although I use Claude CLI a lot too and sometimes do a hybrid.&nbsp;</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and host it on the cloud. This version is my MVP, which I can ask clients and potential customers to test and give feedback. After testing the MVP and getting feedback, I hand it to my dev team to take it all the way to ship!</p><p>My current role entails meeting with clients, understanding their pain points and designing, architecting the agentic framework to optimize the current workflow, process and experience. If the design is approved, I build the MVP with synthetic data to get their input. If MVP feedback is positive, my team then takes this all the way to rebuild on their systems, using client data, and integrating it to the existing tools that exist in the client's environment. We also accelerate adoption through training, hands on support, sometimes identifying the AI champions in the client's organization to continue the AI transformation.&nbsp;<br></p><p>I cannot share any of my professional work, but can share some of my personal productivity applications that I have built. Please check my git for more details.</p>",
     "githubUsername": "imajumd1",
     "gitProjects": [
       {
@@ -433,12 +433,6 @@
         "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
       },
       {
-        "name": "Racing Car Summary",
-        "summary": "An AI news agent with a twist, shipping a working agent that digests and summarizes what matters, race-day energy included.",
-        "image": "images/projects/racing-car-summary.jpg",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
-      },
-      {
         "name": "Skills Intelligence HR App",
         "summary": "An AI-powered workforce skills platform with a live Claude agent that allows you to review skill catalog, supply inventory, demand forecasting on the same pane and a conversational analyst to spar with..",
         "image": "images/projects/skills-hr.jpg",
@@ -446,7 +440,7 @@
       },
       {
         "name": "Wiki MCP",
-        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools in production use with Claude — search, fetch, and research over Wikipedia.",
+        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools in production use with Claude to search, fetch, and research over Wikipedia.",
         "image": "images/projects/wiki-mcp.jpg",
         "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
       },
@@ -463,12 +457,6 @@
         "repoUrl": "https://github.com/imajumd1/evitetwin"
       },
       {
-        "name": "Dream Garage",
-        "summary": "A personal collection app for adding and showcasing dream cars a fun build focused on product feel and interaction. (This was built by my kid to be honest)",
-        "image": "images/projects/dreamgarage.jpg",
-        "repoUrl": "https://github.com/imajumd1/dreamgarage"
-      },
-      {
         "name": "Instagram Post (Cursor)",
         "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds with templates, canvas export, and quick creative flow.",
         "image": "images/projects/instagram-post.jpg",
@@ -481,14 +469,8 @@
         "repoUrl": "https://github.com/imajumd1/audiobook"
       },
       {
-        "name": "LinkedIn-Validated Ecommerce",
-        "summary": "A scraping and analysis agent that identifies eBay's top competitors and pulls CEO/CFO details from LinkedIn into competitive reports.",
-        "image": "images/projects/ecommerce.jpg",
-        "repoUrl": "https://github.com/imajumd1/linkedin-validated-ecommerce"
-      },
-      {
         "name": "Lighthouse",
-        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
+        "summary": "A full-stack app for discovering and tracking high-impact AI trends using Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
         "image": "images/projects/lighthouse.jpg",
         "repoUrl": "https://github.com/imajumd1/Lighthouse"
       },
@@ -511,12 +493,6 @@
         "summary": "An AI-powered workforce skills platform with a live Claude agent with skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
         "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
-      },
-      {
-        "name": "Racing Car Summary",
-        "summary": "An AI news agent with a twist a shipping a working agent that digests and summarizes what matters, race-day energy included.",
-        "image": "images/builds/racing-car-summary.jpg",
-        "liveUrl": "https://racing-car-summary-production.up.railway.app/"
       },
       {
         "name": "Aurora Health Agent",
