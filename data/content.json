@@ -294,12 +294,12 @@
     "title": "Ishita Majumdar",
     "lede": "<p>I combine analytical problem-solving with AI-powered development to build high-impact, interactive solutions.</p>",
     "quote": "Technology creates value only when people can trust it, use it, and act on it",
-    "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>",
-    "builder": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a public URL. The path was not overnight. It took years of shipping platforms at scale, then getting back into the weeds with modern AI tooling until I could go from use case to production myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and productionize. The live system is the finish line. Mentoring other builders starts from that same standard: shipped products, not demos that never leave the lab.</p>",
+    "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes, while staying close enough to the technology to lead with judgment, not just strategy.</p>",
+    "builder": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a MVP. The path was not overnight. It took some time and experimentation, getting back into the weeds with modern AI tooling until I could go from use case to MVP myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and then host it on the cloud. The MVP is the finish line.&nbsp;</p>",
     "bios": {
-      "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She builds the systems, platforms, and organizations that turn Data + AI into measurable business outcomes—and stays close enough to the technical work to lead with judgment, not slideware.",
-      "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents—she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her throughline is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
-      "full": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes—while staying close enough to the technology to lead with judgment, not just strategy.</p>"
+      "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She shapes the systems, platforms, and organizations that turn Data + AI into measurable business outcomes and stays close enough to the technical work to lead with judgment, not slideware.",
+      "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents, she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her through line is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
+      "full": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes, while staying close enough to the technology to lead with judgment, not just strategy.</p>"
     },
     "headshot": "images/hero/PXL_20250819_201111143.jpg",
     "bioDownload": "",
@@ -319,13 +319,13 @@
       {
         "title": "Vice President, Data Analytics Platforms — eBay",
         "meta": "2020 – 2024",
-        "text": "<p>Led teams across data engineering, data science, and data product management with a mission to make trusted data accessible across the enterprise.</p><p>My operating principles were simple:</p><ul><li>Build exceptional, low-ego teams.</li><li>Make the data organization accountable to its consumers.</li><li>Measure outcomes transparently.</li></ul>",
+        "text": "<p>Led teams across data engineering, data science, and data product management with a mission to make trusted data accessible across the enterprise.</p><p>My operating principles were simple:</p><ul><li>Build exceptional, low-ego teams.</li><li>Build trusted data assets</li><li>Measure outcomes transparently.</li></ul>",
         "attachments": []
       },
       {
-        "title": "Global Head of Technology Products — eBay",
+        "title": "Global Head of Technology Products,  eBay",
         "meta": "2014 – 2019",
-        "text": "<p>Led technology product strategy across data, analytics, experimentation, personalization, cloud, infrastructure, security, developer platforms, and AI/ML.</p><p>Built and scaled technical product and program teams responsible for turning complex infrastructure into products developers and businesses could actually use.</p>",
+        "text": "<p>Built and scaled technical product and program organizations that turned complex infrastructure into intuitive, high-adoption platforms. Led end-to-end product strategy and execution across data, AI/ML, experimentation, personalization, cloud, and security.</p><p>Built and scaled technical product and program teams responsible for turning complex infrastructure into products, developers and businesses could actually use.</p>",
         "attachments": []
       },
       {
@@ -354,7 +354,7 @@
       },
       {
         "title": "Data & Technology Leadership",
-        "text": "<p>Top 10 Data Innovator · CDO Magazine Global Data Power Woman · Top 100 Women of Influence in Silicon Valley</p>"
+        "text": "<p>Top 10 Data Innovator · CDO Magazine&nbsp;</p><p>Global Data Power Woman · - Orbiton Group</p><p>Top 100 Women of Influence in Silicon Valley</p>"
       },
       {
         "title": "Community Builder",
@@ -368,7 +368,7 @@
       },
       {
         "title": "Data & Technology Leadership",
-        "text": "<p>Top 10 Data Innovator · CDO Magazine Global Data Power Woman · Top 100 Women of Influence in Silicon Valley</p>"
+        "text": "<p>Top 10 Data Innovator · CDO Magazine&nbsp;</p><p>Global Data Power Woman · - Orbiton Group</p><p>Top 100 Women of Influence in Silicon Valley</p>"
       },
       {
         "title": "Community Builder",
@@ -409,14 +409,14 @@
   },
   "aiJourney": {
     "eyebrow": "Builds",
-    "title": "I ship what I build",
-    "lede": "<p>Recent AI systems I designed, coded, deployed, and run in production. What they do, why I built them, and what I learned shipping them.</p>",
-    "story": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a public URL. The path was not overnight. It took years of shipping platforms at scale, then getting back into the weeds with modern AI tooling until I could go from use case to production myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and productionize. The live system is the finish line. Mentoring other builders starts from that same standard: shipped products, not demos that never leave the lab.</p>",
+    "title": "I build MVP from an idea",
+    "lede": "<p>Recent AI applications I designed, coded, deployed, and they run on cloud. What they do, why I built them, and what I learned. I cannot share Enterprise apps and solutions as part of my career. Instead I share some of my thoughts which led to personal productivity and effective time management.</p>",
+    "story": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to MVP hosted on cloud. The path was not overnight. It took some time to experimenting with different AI building tools and&nbsp; getting back into the weeds&nbsp; until I could go from use case to MVP myself. Cursor is the platform of my choice although I use Claude CLI a lot too and sometimes do a hybrid.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and host it on the cloud. This version is my MVP, which I can ask clients and potential customers to test and give feedback.&nbsp;</p>",
     "githubUsername": "imajumd1",
     "gitProjects": [
       {
         "name": "AI News Agent",
-        "summary": "An intelligent agent that scrapes the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
+        "summary": "An intelligent agent that collects the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
         "image": "images/projects/ai-news-agent.jpg",
         "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
       },
