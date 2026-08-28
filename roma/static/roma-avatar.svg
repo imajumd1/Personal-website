@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96"
+     role="img" aria-labelledby="roma-avatar-title">
+  <title id="roma-avatar-title">Roma</title>
+  <!-- A compass rose whose north point is a wing: an agent that reads the map
+       and tells you which way the price is going. Slate north, copper wing.
+       Weights are set to stay legible at 32px. -->
+  <circle cx="48" cy="48" r="44.5" fill="#f7f5f1"/>
+  <circle cx="48" cy="48" r="44.5" fill="none" stroke="#2f4a6a" stroke-width="3"/>
+  <circle cx="48" cy="48" r="34" fill="none" stroke="#2f4a6a" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- cardinal ticks -->
+  <g stroke="#2f4a6a" stroke-opacity="0.7" stroke-width="2.5" stroke-linecap="butt">
+    <line x1="48" y1="10.5" x2="48" y2="16"/>
+    <line x1="48" y1="80" x2="48" y2="85.5"/>
+    <line x1="10.5" y1="48" x2="16" y2="48"/>
+    <line x1="80" y1="48" x2="85.5" y2="48"/>
+  </g>
+
+  <!-- east / west / south points of the rose -->
+  <path d="M48 48 L72 48 L48 57 Z" fill="#2f4a6a" fill-opacity="0.42"/>
+  <path d="M48 48 L24 48 L48 57 Z" fill="#2f4a6a" fill-opacity="0.28"/>
+  <path d="M48 48 L43 72 L48 57 Z" fill="#2f4a6a" fill-opacity="0.6"/>
+
+  <!-- north point, split like a wing -->
+  <path d="M48 17 L56 52 L48 46 Z" fill="#2f4a6a"/>
+  <path d="M48 17 L40 52 L48 46 Z" fill="#9a6240"/>
+
+  <circle cx="48" cy="48" r="3.25" fill="#f7f5f1" stroke="#2f4a6a" stroke-width="2"/>
+</svg>
