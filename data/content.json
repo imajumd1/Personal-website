@@ -411,7 +411,7 @@
     "eyebrow": "Builds",
     "title": "I build MVP from an idea",
     "lede": "<p>Recent AI applications I designed, coded, deployed, and they run on cloud. What they do, why I built them, and what I learned. I cannot share Enterprise apps and solutions as part of my career. Instead I share some of my thoughts which led to personal productivity and effective time management.</p>",
-    "story": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to MVP hosted on cloud. The path was not overnight. It took some time to experimenting with different AI building tools and&nbsp; getting back into the weeds&nbsp; until I could go from use case to MVP myself. Cursor is the platform of my choice although I use Claude CLI a lot too and sometimes do a hybrid.&nbsp;</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and host it on the cloud. This version is my MVP, which I can ask clients and potential customers to test and give feedback. After testing the MVP and getting feedback, I hand it to my dev team to take it all the way to ship!</p><p>My current role entails meeting with clients, understanding their pain points and designing, architecting the agentic framework to optimize the current workflow, process and experience. If the design is approved, I build the MVP with synthetic data to get their input. If MVP feedback is positive, my team then takes this all the way to rebuild on their systems, using client data, and integrating it to the existing tools that exist in the client's environment. We also accelerate adoption through training, hands on support, sometimes identifying the AI champions in the client's organization to continue the AI transformation.&nbsp;<br></p><p>I cannot share any of my professional work, but can share some of my personal productivity applications that I have built. Please check my git for more details.</p>",
+    "story": "<p>I'm a senior technology executive who still builds. I set the enterprise data and AI vision, and I build enough myself to prove it before asking an organization to bet on it.</p><p>I help enterprises modernize fragmented data environments, strengthen governance, define modern architectures, and make the Buy-Build-Partner calls that determine whether a transformation lands. I work directly with business leaders to translate challenges into agentic architectures, then rapidly build MVPs on synthetic data to validate the opportunity.</p><p>Staying hands-on is deliberate: I work primarily in Cursor and Claude Code, often combining both, to take ideas from concept to cloud-hosted MVP myself. Once proven, my teams productionize on real client data, integrate it into the existing stack, and drive adoption through training and internal AI champions.</p><p>That's how I lead: set the vision, build enough to prove it, stay engaged through impact. My professional work is confidential, but my GitHub shows how I think and build.</p>",
     "githubUsername": "imajumd1",
     "gitProjects": [
       {
@@ -431,12 +431,6 @@
         "summary": "A summarization system I built and run, turning language models into a daily production tool.",
         "image": "images/projects/claude-summarizer.jpg",
         "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
-      },
-      {
-        "name": "Skills Intelligence HR App",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent that allows you to review skill catalog, supply inventory, demand forecasting on the same pane and a conversational analyst to spar with..",
-        "image": "images/projects/skills-hr.jpg",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
       },
       {
         "name": "Wiki MCP",
@@ -489,12 +483,6 @@
     ],
     "featuredBuilds": [
       {
-        "name": "Skills Intelligence HR App",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent with skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
-        "image": "images/builds/skills-hr.jpg",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/"
-      },
-      {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/builds/aurora-health.jpg",
@@ -522,21 +510,10 @@
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/builds/personal-website.jpg",
-        "liveUrl": "https://web-production-4381.up.railway.app/"
+        "liveUrl": "https://web-production-03519.up.railway.app/"
       }
     ],
     "projects": [
-      {
-        "name": "Skills Intelligence HR App",
-        "description": "<p>A skills-based workforce management system — applying data and AI thinking to how organizations understand talent.</p>",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app",
-        "tags": [
-          "AI",
-          "HTML"
-        ],
-        "category": "enterprise"
-      },
       {
         "name": "Racing Car Summary",
         "description": "<p>An AI news agent with a twist — shipping a working agent that digests and summarizes what matters.</p>",
@@ -555,26 +532,6 @@
     "title": "Building with AI",
     "lede": "<p>I build with AI to turn ideas into MVPs to test functionality and user experience</p>",
     "items": [
-      {
-        "name": "HR Resume Matching Agent",
-        "summary": "Ranks the same resume pool against different job descriptions by seat — folder-based JDs and resumes, keyword-overlap scores, and fit notes (Advance, Stretch, Wrong seat, Pass).",
-        "why": "A production matcher that matching is by seat, not generic seniority — the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
-        "tech": "Python 3.9, folder-based JD/resume pipeline, keyword scoring, markdown/CSV reports",
-        "learned": "Automating matching capabilities to optimize matching of JD with resumes, reduces manual processes, human bias and enables faster decisionmaking",
-        "image": "images/builds/hr-resume-matching.jpg",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker"
-      },
-      {
-        "name": "Skills Intelligence HR App",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
-        "why": "Ship how AI agents can reason over workforce skills supply and demand.",
-        "tech": "Claude agent, web app, skills catalog",
-        "learned": "Conversational analysts need clean domain models—not just a chat box.",
-        "image": "images/builds/skills-hr.jpg",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
-      },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
