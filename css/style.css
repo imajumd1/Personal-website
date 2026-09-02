@@ -313,6 +313,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   max-width: 380px;
   margin-left: auto;
+  border: 3px solid var(--ink);
   border-radius: 16px;
   background:
     radial-gradient(circle at 30% 20%, color-mix(in srgb, #fff 22%, transparent), transparent 55%),
