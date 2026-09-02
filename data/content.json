@@ -510,7 +510,7 @@
         "name": "Personal Website",
         "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/builds/personal-website.jpg",
-        "liveUrl": "https://web-production-03519.up.railway.app/"
+        "liveUrl": "https://mypersonalpage.up.railway.app/"
       }
     ],
     "projects": [
