@@ -530,7 +530,7 @@
   "aiLab": {
     "eyebrow": "Builds",
     "title": "Building with AI",
-    "lede": "<p>I build with AI to turn ideas into MVPs to test functionality and user experience</p>",
+    "lede": "<p>I build with AI to turn ideas to products</p>",
     "items": [
       {
         "name": "Aurora Health Agent",
