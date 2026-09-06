@@ -513,25 +513,23 @@
         "liveUrl": "https://mypersonalpage.up.railway.app/"
       }
     ],
-    "projects": [
-      {
-        "name": "Racing Car Summary",
-        "description": "<p>An AI news agent with a twist — shipping a working agent that digests and summarizes what matters.</p>",
-        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary",
-        "tags": [
-          "AI",
-          "Python"
-        ],
-        "category": "personal"
-      }
-    ]
+    "projects": []
   },
   "aiLab": {
     "eyebrow": "Builds",
     "title": "Building with AI",
     "lede": "<p>I build with AI to turn ideas to products</p>",
     "items": [
+      {
+        "name": "Travel Agent",
+        "summary": "A personalized travel shopping agent forked from Anthropic's Claude Commerce Agents: compare tickets across Expedia, Google Flights, and Travelocity in chat or a structured Search form, then save results or set in-app price watches.",
+        "why": "Learn commerce-agent patterns by adapting Anthropic's blueprint into a travel MVP I can demo end to end.",
+        "tech": "Claude Commerce Agents fork, FastAPI, Next.js, simulated OTA providers, Railway",
+        "learned": "Forking a reference agent is faster than starting blank, but the real work is the product seams: site adapters, dual UI modes, and deploy hardening.",
+        "image": "images/builds/travel-agent.jpg",
+        "liveUrl": "https://commerce-agents-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/commerce-agents"
+      },
       {
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
@@ -551,16 +549,6 @@
         "image": "images/builds/ai-news-agent.jpg",
         "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
-      },
-      {
-        "name": "Racing Car Summary",
-        "summary": "An AI news agent with a twist — shipping a working agent that digests and summarizes what matters, race-day energy included.",
-        "why": "Ship a playful news agent end-to-end to practice agent packaging and hosting.",
-        "tech": "Python agent, Railway",
-        "learned": "Shipping fast teaches more than another architecture diagram.",
-        "image": "images/builds/racing-car-summary.jpg",
-        "liveUrl": "https://racing-car-summary-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Racing-car-summary"
       },
       {
         "name": "Instagram Post (Cursor)",
@@ -740,6 +728,15 @@
     "title": "Featured perspectives",
     "lede": "<p>What I think about AI transformation, data platforms, my own learning journey and various musings on tech, leadership, life.</p>",
     "items": [
+      {
+        "tag": "tech",
+        "title": "Forking Anthropic Claude Commerce agents",
+        "body": "<p>I wanted a travel agent I could actually demo: search tickets, compare a few shopping sites, and save or watch prices. Instead of starting from a blank repo, I forked Anthropic's Claude Commerce Agents and personalized the travel vertical.</p>\n<p>First I cloned my fork of <code>anthropics/commerce-agents</code> and read how the blueprint is put together. There are two agent roles (shopping and merchant), shared packages, and runnable examples. Travel already had a mock catalog, chat storefront, and FastAPI host. That was the right place to build.</p>\n<p>Next I decided what \"shopping sites\" meant for v1. Real scraping of Expedia, Google Flights, and Travelocity was a ToS and reliability trap. So I built simulated provider adapters behind a clean interface: three sites, distinct offers, same search contract. Later I can swap in partner APIs without rewriting the UI.</p>\n<p>Then I wired the product loop. Chat can ask for tickets and get cross-site cards. A structured Search tab lets me enter origin, destination, dates, travelers, and budget, pick which sites to include, and see results immediately. From there I can save a shortlist or create an in-app price watch that alerts when a simulated fare drops under budget.</p>\n<p>The build workflow was Cursor and Claude Code against the fork: scope the personalization, implement providers and APIs, add the Search and Watches UI, write tests, then push to my GitHub fork. Deploy needed its own pass. Localhost host checks blocked Railway until I added env-based allowed hosts and CORS, Dockerfiles for the API and storefront, and docs for the two-service setup. The API is live on Railway as ACME Travel.</p>\n<p>What I learned is simple. A strong open reference gets you past plumbing fast. The judgment is still yours: where to simulate vs integrate, how dual UIs share one backend, and what must be true before a public URL is trustworthy. Forking was the start. Shipping the travel personalization was the point.</p>",
+        "category": "AI & Enterprise Transformation",
+        "thesis": "I built a Travel Agent by forking Anthropic's Claude Commerce Agents, adapting the travel vertical with multi-site search, dual UIs, and a Railway deploy.",
+        "readingTime": "2 min read",
+        "date": "September 5, 2026"
+      },
       {
         "tag": "tech",
         "title": "Learning to build with AI",
