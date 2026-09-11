@@ -521,6 +521,16 @@
     "lede": "<p>I build with AI to turn ideas to products</p>",
     "items": [
       {
+        "name": "WAC — WhatsApp Convo",
+        "summary": "Turns WhatsApp group chat exports into a searchable daily digest: thread summaries, action items, FAQ, curated media, and Ask WAC — a Q&A agent grounded only in the chat, with personal names redacted.",
+        "why": "Reclaim time from muted 100+ member WhatsApp groups without missing the valuable information buried in the noise.",
+        "tech": "Python pipeline, privacy redaction, local digest site, Ask WAC agent",
+        "learned": "Peace of mind is the product: extract facts and TODOs, redact PII first, then answer only from a grounded chat window.",
+        "image": "images/builds/wac.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/WAC"
+      },
+      {
         "name": "Travel Agent",
         "summary": "A personalized travel shopping agent forked from Anthropic's Claude Commerce Agents: compare tickets across Expedia, Google Flights, and Travelocity in chat or a structured Search form, then save results or set in-app price watches.",
         "why": "Learn commerce-agent patterns by adapting Anthropic's blueprint into a travel MVP I can demo end to end.",
