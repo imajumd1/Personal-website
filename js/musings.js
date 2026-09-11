@@ -16,7 +16,6 @@ function openMusing(i) {
   const meta = document.getElementById("musing-lightbox-meta");
   const bits = [];
   if (m.readingTime) bits.push(`<span>${escapeHtml(m.readingTime)}</span>`);
-  if (m.date) bits.push(`<span>${escapeHtml(m.date)}</span>`);
   meta.innerHTML = bits.join("");
   const body = document.getElementById("musing-lightbox-body");
   body.classList.add("rich-text");
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           ${teaser ? `<p class="musing-teaser">${escapeHtml(teaser)}</p>` : ""}
           <div class="perspective-meta musing-tile-meta">
             ${m.readingTime ? `<span>${escapeHtml(m.readingTime)}</span>` : ""}
-            ${m.date ? `<span>${escapeHtml(m.date)}</span>` : ""}
           </div>
           <span class="musing-tile-cta">Read more</span>
         </article>
