@@ -47,9 +47,21 @@
       <button class="tag-filter" data-tag="Data & Platforms">Data &amp; Platforms</button>
       <button class="tag-filter" data-tag="Leadership & Organizations">Leadership</button>
     </div>
-    <div id="musings-list"></div>
+    <div class="musing-grid reveal" id="musings-list"></div>
   </div>
 </main>
+
+<div class="lightbox musing-lightbox" id="musing-lightbox" role="dialog" aria-modal="true" aria-labelledby="musing-lightbox-title" hidden>
+  <button type="button" class="lightbox-close" id="musing-lightbox-close" aria-label="Close article">&times;</button>
+  <div class="lightbox-content musing-lightbox-content">
+    <div class="lightbox-body musing-lightbox-body">
+      <span class="tag" id="musing-lightbox-tag"></span>
+      <h3 id="musing-lightbox-title"></h3>
+      <div class="perspective-meta" id="musing-lightbox-meta"></div>
+      <div class="rich-text" id="musing-lightbox-body"></div>
+    </div>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="wrap footer-grid">
