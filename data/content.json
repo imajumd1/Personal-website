@@ -9,8 +9,8 @@
   "home": {
     "eyebrow": "Enterprise Data and AI Leader",
     "name": "Ishita Majumdar",
-    "headline": "I build the systems, platforms, and organizations that turn Data + AI into business outcomes.",
-    "pitch": "<p>Curiosity has shaped my two decades of technology leadership. From pioneering data and analytics platforms at scale, to advancing agentic AI, I thrive on solving what has not yet been solved, turning emerging technologies into scalable solutions and building teams that create enduring impact.</p>",
+    "headline": "I build the strategy, platforms and organizations that turn Data + AI into business outcomes.",
+    "pitch": "<p>Curiosity has shaped my two decades of technology leadership. From defining data strategy, developing&nbsp; platforms and tools at scale, to advancing agentic AI, I thrive on solving what has not yet been solved, turning emerging technologies into scalable solutions and building teams that create enduring impact.</p>",
     "heroImage": "images/hero/ishita-portrait.jpg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
@@ -844,6 +844,15 @@
         "thesis": "Generative AI can already draft the memo and the deck. Demand for good consultants has not evaporated, because the scarce product was never the artifact. It was judgment under political constraint.",
         "readingTime": "2 min read",
         "date": ""
+      },
+      {
+        "tag": "tech",
+        "title": "Why I built WAC?",
+        "body": "<div><p data-path-to-node=\"5,0\"><b data-path-to-node=\"5,0\" data-index-in-node=\"0\">WAC = WhatsApp Convo</b></p><p data-path-to-node=\"5,1\">I build agents to reclaim my time and organize my life, and my biggest battleground right now is WhatsApp. Between school alumni networks, professional workshops, university updates, and kid logistics, I'm tucked into dozens of massive 100+ member groups. Leaving isn't an option because the underlying information is genuinely valuable—so I mute them when the noise gets too loud.</p><p data-path-to-node=\"5,2\">WAC is my answer to WhatsApp fatigue: an agent designed to mine the noise for real diamonds and give me peace of mind.</p><p data-path-to-node=\"5,3\"><span data-path-to-node=\"5,3\" data-index-in-node=\"0\">Version 1 Flow:</span></p><ul data-path-to-node=\"5,4\"><li><p data-path-to-node=\"5,4,0,0\"><span data-path-to-node=\"5,4,0,0\" data-index-in-node=\"0\"><u>The Daily Input</u></span><b data-path-to-node=\"5,4,0,0\" data-index-in-node=\"0\">:</b> I export a morning snapshot of the chat logs.</p></li><li><p data-path-to-node=\"5,4,1,0\"><span data-path-to-node=\"5,4,1,0\" data-index-in-node=\"0\"><u>The Extraction</u></span><b data-path-to-node=\"5,4,1,0\" data-index-in-node=\"0\">:</b> WAC parses through media-heavy threads to generate concise facts, key action items, and a quick FAQ on hot topics.</p></li><li><p data-path-to-node=\"5,4,2,0\"><span data-path-to-node=\"5,4,2,0\" data-index-in-node=\"0\"><u>Privacy First:</u></span> It automatically redacts all PII—names, phone numbers, and IDs stay completely private—before archiving the summary into a clean daily journal.</p></li></ul><p data-path-to-node=\"5,5\">V1 keeps me sane, but V2 is where the real magic happens. Upcoming updates will bring total automation and tailored filtering that knows what <i><b>I&nbsp;</b></i>care about, skipping generic summaries to highlight only what's actionable for me.</p><br></div>",
+        "category": "AI & Enterprise Transformation",
+        "thesis": "",
+        "readingTime": "",
+        "date": ""
       }
     ]
   },
@@ -921,6 +930,36 @@
         ],
         "aspect": 1,
         "summary": "<p>Using leftover house paint on our concrete walkway, I decided to turn an ordinary side path into something that brings an instant smile. I layered white and red brush strokes with delicate, raindrop-style flourishes to capture the rich, intricate feel of a peacock’s feathers.</p>"
+      },
+      {
+        "title": "Colorsion",
+        "image": "images/art/Abstract-green.jpg",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "aspect": 1,
+        "summary": "<p>\"What if colors could collide and explode inside a forest?\" That was the question in my head when I painted this, my very first abstract and my first attempt with a palette knife. I hung a blank canvas on the wall and just let go, building the piece stroke by stroke with zero predefined plan. I kept slapping layer upon layer of paint, watching each color fight for visibility and try to peek through the surface. It was pure, unfiltered joy; so much so that I completely forgot my living room walls were catching their own splash of acrylic hue along the way and that took a whole new re-painting of the walls.But, I digress...</p>"
+      },
+      {
+        "title": "Linearity",
+        "image": "images/art/Art-3.jpg",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "aspect": 1,
+        "summary": "It’s no secret that I love lines, shapes, and pushing boundaries. <i data-path-to-node=\"4,0\" data-index-in-node=\"66\">Linearity</i> started out as a twin to a larger, deep-red piece of mine, but ended up as its smaller fraternal counterpart. I made it without touching a single ruler or pencil; instead, painter’s tape of varying widths formed the structural foundation in layers. Because of the complex angles, every step had to be deliberate. I opted for a quieter, more restrained color palette this time. Just subtle interruptions against the background so the richness of the red could take center stage. I wanted the red to stand out but not entirely on its own, it should have linear definitions and this was the outcome."
+      },
+      {
+        "title": "Line, flame and orb",
+        "image": "images/art/IMG_2658.jpg",
+        "colors": [
+          "#1f5f52",
+          "#b5651d"
+        ],
+        "aspect": 1,
+        "summary": "<blockquote data-path-to-node=\"4\"><p data-path-to-node=\"4,0\">I once saw a gallery painting that stayed with me, even though I never took a photo. All I had to go on were three core memories: a line, a flame, and an orb. Recreating it from imagination became my mission. This photo catches the artwork mid-evolution. You can even see a strip of white tape peeling back. In the completed piece, that white tape remains permanent, giving a sleek, glossy line that contrasts beautifully with the hand-painted white sections. There’s something special about documenting a work-in-progress;it catches the exact moment where raw ideas begin finding their footing and balance.</p></blockquote><div><div><p data-path-to-node=\"5\"></p></div></div><div><br></div>"
       }
     ]
   },
