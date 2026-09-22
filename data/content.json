@@ -519,6 +519,18 @@
     "eyebrow": "Builds",
     "title": "Building with AI",
     "lede": "<p>I build with AI to turn ideas to products</p>",
+    "buckets": [
+      {
+        "id": "personal",
+        "title": "Personal Productivity",
+        "blurb": "Agents I build for my own life — reclaiming time from noisy chats, shipping small tools I actually use, and learning by putting something live."
+      },
+      {
+        "id": "enterprise",
+        "title": "Enterprise Productivity",
+        "blurb": "Products I build for enterprise work — HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
+      }
+    ],
     "items": [
       {
         "name": "WAC — WhatsApp Convo",
@@ -528,7 +540,8 @@
         "learned": "Peace of mind is the product: extract facts and TODOs, redact PII first, then answer only from a grounded chat window.",
         "image": "images/builds/wac.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/WAC"
+        "repoUrl": "https://github.com/imajumd1/WAC",
+        "bucket": "personal"
       },
       {
         "name": "Travel Agent",
@@ -538,17 +551,8 @@
         "learned": "Forking a reference agent is faster than starting blank, but the real work is the product seams: site adapters, dual UI modes, and deploy hardening.",
         "image": "images/builds/travel-agent.jpg",
         "liveUrl": "https://commerce-agents-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/commerce-agents"
-      },
-      {
-        "name": "Aurora Health Agent",
-        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
-        "why": "Give families navigating ASD a calmer, evidence-aware first stop for questions.",
-        "tech": "LLM agent, health information UX",
-        "learned": "Graceful handling of messy human input matters as much as model quality.",
-        "image": "images/builds/aurora-health.jpg",
-        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
+        "repoUrl": "https://github.com/imajumd1/commerce-agents",
+        "bucket": "personal"
       },
       {
         "name": "AI News Agent",
@@ -558,7 +562,8 @@
         "learned": "Curation beats volume; the product is the filter.",
         "image": "images/builds/ai-news-agent.jpg",
         "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
+        "repoUrl": "https://github.com/imajumd1/AI-News-Agent",
+        "bucket": "personal"
       },
       {
         "name": "Instagram Post (Cursor)",
@@ -568,27 +573,8 @@
         "learned": "Tight creative constraints make the product feel finished sooner.",
         "image": "images/builds/instagram-post.jpg",
         "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
-        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
-      },
-      {
-        "name": "Wiki MCP",
-        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access — search, fetch, and research tools built to learn core MCP concepts.",
-        "why": "Learn Model Context Protocol by giving Claude live Wikipedia tools.",
-        "tech": "MCP server, Claude",
-        "learned": "Tool design is product design for agents.",
-        "image": "images/builds/wiki-mcp.jpg",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
-      },
-      {
-        "name": "Lighthouse",
-        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
-        "why": "Track high-impact AI trends with a full-stack research loop.",
-        "tech": "Next.js, FastAPI, MongoDB, OpenAI",
-        "learned": "Trend products fail without disciplined ingestion and ranking.",
-        "image": "images/builds/lighthouse.jpg",
-        "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse"
+        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor",
+        "bucket": "personal"
       },
       {
         "name": "Audiobook",
@@ -598,7 +584,149 @@
         "learned": "Simple APIs still need careful UX around latency and voice quality.",
         "image": "images/builds/audiobook.jpg",
         "liveUrl": "",
-        "repoUrl": "https://github.com/imajumd1/audiobook"
+        "repoUrl": "https://github.com/imajumd1/audiobook",
+        "bucket": "personal"
+      },
+      {
+        "name": "Lighthouse",
+        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
+        "why": "Track high-impact AI trends with a full-stack research loop.",
+        "tech": "Next.js, FastAPI, MongoDB, OpenAI",
+        "learned": "Trend products fail without disciplined ingestion and ranking.",
+        "image": "images/builds/lighthouse.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Lighthouse",
+        "bucket": "personal"
+      },
+      {
+        "bucket": "personal",
+        "name": "Personal Website",
+        "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI builds, perspectives, and life beyond work.",
+        "why": "Own the narrative beyond a résumé dump, with a CMS I can update myself.",
+        "tech": "Python server, content.json CMS, Railway",
+        "learned": "A personal site is a product: content model and admin matter as much as the public pages.",
+        "image": "images/builds/personal-website.jpg",
+        "liveUrl": "https://mypersonalpage.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/Personal-website"
+      },
+      {
+        "name": "Aurora",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "why": "Give families navigating ASD a calmer, evidence-aware first stop for questions.",
+        "tech": "LLM agent, health information UX",
+        "learned": "Graceful handling of messy human input matters as much as model quality.",
+        "image": "images/builds/aurora-health.jpg",
+        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent",
+        "bucket": "enterprise"
+      },
+      {
+        "bucket": "enterprise",
+        "name": "HR Matchmaker",
+        "summary": "Ranks the same resume pool against different job descriptions by seat — folder-based JDs and resumes, keyword-overlap scores, and fit notes (Advance, Stretch, Wrong seat, Pass).",
+        "why": "Matching is by seat, not generic seniority — the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
+        "tech": "Python 3.9, folder-based JD/resume pipeline, keyword scoring, markdown/CSV reports",
+        "learned": "Automating seat-aware matching reduces manual grind and bias, and makes the ranking explainable.",
+        "image": "images/builds/hr-resume-matching.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/HR-Matchmaker"
+      },
+      {
+        "bucket": "enterprise",
+        "name": "Nomad",
+        "summary": "Marketer-facing Next Best Action trigger console: author triggers in plain language, test against synthetic Customer 360 profiles, and run a governed decision layer with consent, quiet hours, and frequency caps.",
+        "why": "Show how marketing decisioning should choose whether to engage, what action, which channel — and when no action is the right call.",
+        "tech": "Python server, SPA console, OpenAI NL parser, decision/arbitration engine, Railway",
+        "learned": "Triggers create decision opportunities; consent and fatigue have to be hard gates, not afterthoughts.",
+        "image": "images/builds/nomad.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/NOMAD"
+      },
+      {
+        "bucket": "enterprise",
+        "name": "Skills Intelligence",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "why": "Ship how AI agents can reason over workforce skills supply and demand for HR and talent planning.",
+        "tech": "Node/Express, Claude agent, single-page skills dashboard, Railway",
+        "learned": "Conversational analysts need clean domain models — not just a chat box.",
+        "image": "images/builds/skills-hr.jpg",
+        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
+      },
+      {
+        "bucket": "enterprise",
+        "name": "Vulnerability scanner",
+        "summary": "An enterprise security review agent for apps I ship — scans for common holes (secrets in git, unauthenticated expensive endpoints, traceback leaks, path traversal) and flags what to fix before a public URL goes live.",
+        "why": "A public agent with my API key on the backend is a live system. I needed a repeatable scan before sharing links.",
+        "tech": "Agent security checklist, static review patterns, loop-style app stewardship",
+        "learned": "Preflight beats postmortems: catch spend, secrets, and abuse paths before strangers find them.",
+        "image": "images/builds/vulnerability-scanner.jpg",
+        "liveUrl": "",
+        "repoUrl": ""
+      },
+      {
+        "bucket": "enterprise",
+        "name": "Commerce agent",
+        "summary": "Claude Commerce Agents blueprint: shopping and merchant agents with shared packages, safety gates, and runnable verticals across retail, travel, telecom, and entertainment.",
+        "why": "Enterprise commerce needs a reference architecture — not a one-off chatbot — so teams can map backends, skills, and approval gates.",
+        "tech": "Claude Messages API / Agent SDK / Managed Agents, shopping + merchant packages, FastAPI + Next demos",
+        "learned": "The product judgment is mapping your systems to backend contracts and keeping provenance gates in front of every write.",
+        "image": "images/builds/commerce-agent.jpg",
+        "liveUrl": "https://claude.com/solutions/commerce",
+        "repoUrl": "https://github.com/imajumd1/commerce-agents"
+      },
+      {
+        "bucket": "enterprise",
+        "name": "Scope and Design",
+        "summary": "The scope, design, and decision docs behind the enterprise builds — PRDs, frameworks, and README contracts I start from before writing code.",
+        "why": "I ask Cursor for scope.md and design.md first. Shipping without that paper trail is how demos become unhand-offable.",
+        "tech": "Markdown scope/design docs, PRDs, decision frameworks in Git",
+        "learned": "Docs are the handoff: teams reuse the design and requirements even when the code has to live inside their stack.",
+        "image": "images/builds/scope-and-design.jpg",
+        "liveUrl": "",
+        "repoUrl": "",
+        "docs": [
+          {
+            "label": "NOMAD Decisioning Framework",
+            "url": "https://github.com/imajumd1/NOMAD/blob/main/docs/DECISIONING_FRAMEWORK.md"
+          },
+          {
+            "label": "NOMAD README",
+            "url": "https://github.com/imajumd1/NOMAD/blob/main/README.md"
+          },
+          {
+            "label": "HR Matchmaker README",
+            "url": "https://github.com/imajumd1/HR-Matchmaker/blob/main/README.md"
+          },
+          {
+            "label": "Skills Intelligence README",
+            "url": "https://github.com/imajumd1/skills-intelligence-HR-app/blob/main/README.md"
+          },
+          {
+            "label": "Aurora README (scope)",
+            "url": "https://github.com/imajumd1/Aurorahealthagent/blob/main/README.md"
+          },
+          {
+            "label": "Commerce safety.md",
+            "url": "https://github.com/imajumd1/commerce-agents/blob/main/docs/safety.md"
+          },
+          {
+            "label": "Commerce backends.md",
+            "url": "https://github.com/imajumd1/commerce-agents/blob/main/docs/backends.md"
+          },
+          {
+            "label": "Commerce deployment.md",
+            "url": "https://github.com/imajumd1/commerce-agents/blob/main/docs/deployment.md"
+          },
+          {
+            "label": "Personal site scope.md",
+            "url": "https://github.com/imajumd1/Personal-website/blob/main/scope.md"
+          },
+          {
+            "label": "Personal site design.md",
+            "url": "https://github.com/imajumd1/Personal-website/blob/main/design.md"
+          }
+        ]
       }
     ]
   },

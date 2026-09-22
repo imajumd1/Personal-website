@@ -30,20 +30,44 @@ document.addEventListener("DOMContentLoaded", async () => {
           repoUrl: "",
           why: "",
           tech: "",
-          learned: ""
+          learned: "",
+          bucket: "personal"
         }));
 
-    const labEl = document.getElementById("lab-grid");
+    const defaultBuckets = [
+      {
+        id: "personal",
+        title: "Personal Productivity",
+        blurb: "Agents I build for my own life."
+      },
+      {
+        id: "enterprise",
+        title: "Enterprise Productivity",
+        blurb: "Products I build for enterprise work."
+      }
+    ];
+    const buckets = Array.isArray(lab.buckets) && lab.buckets.length
+      ? lab.buckets
+      : defaultBuckets;
+
+    const labEl = document.getElementById("lab-buckets");
     if (labEl) {
-      labEl.innerHTML = labItems.map(p => {
+      const renderCard = (p) => {
         const media = p.image
           ? `style="background-image:url('${escapeHtml(p.image)}')"`
           : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
+        const docs = Array.isArray(p.docs) ? p.docs : [];
         const links = [
+          p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live →</a>` : "",
           p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
         ].filter(Boolean).join("");
+        const docLinks = docs.length
+          ? `<ul class="lab-docs">${docs.map(d =>
+              `<li><a href="${escapeHtml(d.url || "")}" target="_blank" rel="noopener">${escapeHtml(d.label || d.url || "Doc")}</a></li>`
+            ).join("")}</ul>`
+          : "";
         return `
-          <article class="lab-card">
+          <article class="lab-card${docs.length ? " lab-card-docs" : ""}">
             <div class="lab-media" ${media} role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
             <div class="lab-body">
               <h3>${escapeHtml(p.name || "")}</h3>
@@ -51,14 +75,42 @@ document.addEventListener("DOMContentLoaded", async () => {
               ${p.why ? `<p><strong>Why</strong> — ${escapeHtml(p.why)}</p>` : ""}
               ${p.tech ? `<p class="lab-meta"><strong>Tech</strong> — ${escapeHtml(p.tech)}</p>` : ""}
               ${p.learned ? `<p><strong>Learned</strong> — ${escapeHtml(p.learned)}</p>` : ""}
+              ${docLinks}
               <div class="btn-row">${links}</div>
             </div>
           </article>
         `;
-      }).join("") || `<p style="color:var(--ink-soft);">No Building with AI items yet.</p>`;
+      };
+
+      const usedIds = new Set();
+      labEl.innerHTML = buckets.map(bucket => {
+        usedIds.add(bucket.id);
+        const items = labItems.filter(p => (p.bucket || "personal") === bucket.id);
+        return `
+          <section class="lab-bucket reveal" id="bucket-${escapeHtml(bucket.id || "")}">
+            <h3 class="lab-bucket-title">${escapeHtml(bucket.title || "")}</h3>
+            <p class="lab-bucket-blurb">${escapeHtml(bucket.blurb || "")}</p>
+            <div class="lab-grid">
+              ${items.map(renderCard).join("") || `<p style="color:var(--ink-soft);">No builds in this section yet.</p>`}
+            </div>
+          </section>
+        `;
+      }).join("");
+
+      const orphan = labItems.filter(p => !usedIds.has(p.bucket || "personal"));
+      if (orphan.length) {
+        labEl.innerHTML += `
+          <section class="lab-bucket reveal">
+            <h3 class="lab-bucket-title">More builds</h3>
+            <div class="lab-grid">${orphan.map(renderCard).join("")}</div>
+          </section>
+        `;
+      }
     }
 
     const featuredNames = new Set(labItems.map(p => (p.name || "").toLowerCase()));
+    // Also hide aliases that moved into buckets
+    ["aurora health agent", "hr resume matching agent", "skills intelligence hr app"].forEach(n => featuredNames.add(n));
     const gitEl = document.getElementById("git-projects");
     if (gitEl) {
       const projects = (Array.isArray(a.gitProjects) ? a.gitProjects : [])

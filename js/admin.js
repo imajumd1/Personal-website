@@ -70,8 +70,18 @@ function normalizeContent(raw) {
   if (c.biography.builder == null) c.biography.builder = "";
   c.education = c.education || {};
   c.aiJourney = c.aiJourney || {};
-  c.aiLab = c.aiLab || { eyebrow: "AI Lab", title: "Recent builds", lede: "", items: [] };
+  c.aiLab = c.aiLab || { eyebrow: "AI Lab", title: "Recent builds", lede: "", items: [], buckets: [] };
   if (!Array.isArray(c.aiLab.items)) c.aiLab.items = [];
+  if (!Array.isArray(c.aiLab.buckets) || !c.aiLab.buckets.length) {
+    c.aiLab.buckets = [
+      { id: "personal", title: "Personal Productivity", blurb: "" },
+      { id: "enterprise", title: "Enterprise Productivity", blurb: "" }
+    ];
+  }
+  c.aiLab.items.forEach(item => {
+    if (!item.bucket) item.bucket = "personal";
+    if (!Array.isArray(item.docs)) item.docs = item.docs || [];
+  });
   c.hiking = c.hiking || {};
   c.speaking = c.speaking || { eyebrow: "Speaking", title: "Speaking & conversations", lede: "", items: [] };
   if (!Array.isArray(c.speaking.items)) c.speaking.items = [];
@@ -409,17 +419,35 @@ function renderAI() {
     labList.innerHTML = "";
     (content.aiLab?.items || []).forEach((item, i) => labList.appendChild(labItemCard(item, i)));
   }
+  const buckets = content.aiLab?.buckets || [];
+  const personal = buckets.find(b => b.id === "personal") || {};
+  const enterprise = buckets.find(b => b.id === "enterprise") || {};
+  if ($("#ai-bucket-personal-title")) $("#ai-bucket-personal-title").value = personal.title || "Personal Productivity";
+  if ($("#ai-bucket-personal-blurb")) $("#ai-bucket-personal-blurb").value = personal.blurb || "";
+  if ($("#ai-bucket-enterprise-title")) $("#ai-bucket-enterprise-title").value = enterprise.title || "Enterprise Productivity";
+  if ($("#ai-bucket-enterprise-blurb")) $("#ai-bucket-enterprise-blurb").value = enterprise.blurb || "";
 }
 
 function labItemCard(item, i) {
   const el = document.createElement("div");
   el.className = "item-card";
+  const docsText = Array.isArray(item.docs)
+    ? item.docs.map(d => `${d.label || ""} | ${d.url || ""}`).join("\n")
+    : "";
   el.innerHTML = `
     <div class="item-card-head">
       <strong>Lab item ${i + 1}</strong>
       <button type="button" class="btn btn-danger btn-small" data-remove="labItem">Remove</button>
     </div>
-    <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name || "")}"></div>
+    <div class="row-2">
+      <div class="field"><label>Name</label><input data-k="name" value="${escapeHtml(item.name || "")}"></div>
+      <div class="field"><label>Bucket</label>
+        <select data-k="bucket">
+          <option value="personal"${item.bucket === "personal" ? " selected" : ""}>Personal Productivity</option>
+          <option value="enterprise"${item.bucket === "enterprise" ? " selected" : ""}>Enterprise Productivity</option>
+        </select>
+      </div>
+    </div>
     <div class="field"><label>Summary</label><textarea data-k="summary" rows="2">${escapeHtml(item.summary || "")}</textarea></div>
     <div class="field"><label>Why built</label><textarea data-k="why" rows="2">${escapeHtml(item.why || "")}</textarea></div>
     <div class="field"><label>Tech</label><input data-k="tech" value="${escapeHtml(item.tech || "")}"></div>
@@ -429,6 +457,7 @@ function labItemCard(item, i) {
       <div class="field"><label>Live URL</label><input data-k="liveUrl" value="${escapeHtml(item.liveUrl || "")}"></div>
       <div class="field"><label>Repo URL</label><input data-k="repoUrl" value="${escapeHtml(item.repoUrl || "")}"></div>
     </div>
+    <div class="field"><label>Docs (one per line: Label | URL)</label><textarea data-k="docsText" rows="3">${escapeHtml(docsText)}</textarea></div>
   `;
   return el;
 }
@@ -847,16 +876,29 @@ function gatherContent() {
     : (content.home.selectedImpact || content.impact?.items || []);
 
   const labItems = $("#ai-lab-items")
-    ? collectFromCards($("#ai-lab-items"), card => ({
-        name: $("[data-k=name]", card).value.trim(),
-        summary: $("[data-k=summary]", card).value.trim(),
-        why: $("[data-k=why]", card).value.trim(),
-        tech: $("[data-k=tech]", card).value.trim(),
-        learned: $("[data-k=learned]", card).value.trim(),
-        image: $("[data-k=image]", card).value.trim(),
-        liveUrl: $("[data-k=liveUrl]", card).value.trim(),
-        repoUrl: $("[data-k=repoUrl]", card).value.trim()
-      }))
+    ? collectFromCards($("#ai-lab-items"), card => {
+        const docsText = ($("[data-k=docsText]", card)?.value || "").trim();
+        const docs = docsText
+          ? docsText.split("\n").map(line => {
+              const parts = line.split("|");
+              const label = (parts[0] || "").trim();
+              const url = (parts.slice(1).join("|") || "").trim();
+              return label || url ? { label, url } : null;
+            }).filter(Boolean)
+          : [];
+        return {
+          bucket: ($("[data-k=bucket]", card)?.value || "personal").trim(),
+          name: $("[data-k=name]", card).value.trim(),
+          summary: $("[data-k=summary]", card).value.trim(),
+          why: $("[data-k=why]", card).value.trim(),
+          tech: $("[data-k=tech]", card).value.trim(),
+          learned: $("[data-k=learned]", card).value.trim(),
+          image: $("[data-k=image]", card).value.trim(),
+          liveUrl: $("[data-k=liveUrl]", card).value.trim(),
+          repoUrl: $("[data-k=repoUrl]", card).value.trim(),
+          docs
+        };
+      })
     : (content.aiLab?.items || []);
 
   const speakingItems = $("#speaking-list")
@@ -870,6 +912,19 @@ function gatherContent() {
     : (content.speaking?.items || []);
 
   const fullBio = getStaticRte("bio-summary");
+
+  const aiLabBuckets = [
+    {
+      id: "personal",
+      title: ($("#ai-bucket-personal-title")?.value || "Personal Productivity").trim(),
+      blurb: ($("#ai-bucket-personal-blurb")?.value || "").trim()
+    },
+    {
+      id: "enterprise",
+      title: ($("#ai-bucket-enterprise-title")?.value || "Enterprise Productivity").trim(),
+      blurb: ($("#ai-bucket-enterprise-blurb")?.value || "").trim()
+    }
+  ];
 
   return {
     site: {
@@ -943,6 +998,7 @@ function gatherContent() {
       eyebrow: content.aiLab?.eyebrow || "AI Lab",
       title: content.aiLab?.title || "Recent builds",
       lede: content.aiLab?.lede || "",
+      buckets: aiLabBuckets,
       items: labItems
     },
     speaking: {
@@ -1097,9 +1153,20 @@ function bindActions() {
     renderAI();
   });
   $("#add-lab-item")?.addEventListener("click", () => {
-    content.aiLab = content.aiLab || { items: [] };
+    content.aiLab = content.aiLab || { items: [], buckets: [] };
     content.aiLab.items = content.aiLab.items || [];
-    content.aiLab.items.push({ name: "New build", summary: "", why: "", tech: "", learned: "", image: "", liveUrl: "", repoUrl: "" });
+    content.aiLab.items.push({
+      bucket: "personal",
+      name: "New build",
+      summary: "",
+      why: "",
+      tech: "",
+      learned: "",
+      image: "",
+      liveUrl: "",
+      repoUrl: "",
+      docs: []
+    });
     renderAI();
   });
   $("#add-speaking")?.addEventListener("click", () => {
