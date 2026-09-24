@@ -427,13 +427,13 @@
         "name": "Aurora Health Agent",
         "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
         "image": "images/builds/aurora-health.jpg",
-        "liveUrl": "https://aurorahealthagent-production.up.railway.app/"
+        "liveUrl": ""
       },
       {
         "name": "AI news summarizer",
         "summary": "An intelligent agent that scrapes the latest AI developments from sources like Hacker News, arXiv, TechCrunch, and VentureBeat, then generates OpenAI-powered summaries across infrastructure and frontier models.",
         "image": "images/builds/ai-news-agent.jpg",
-        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/"
+        "liveUrl": ""
       },
       {
         "name": "Audiobook",
@@ -445,13 +445,13 @@
         "name": "Instagram Post (Cursor)",
         "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds, templates, canvas export, and quick creative flow.",
         "image": "images/builds/instagram-post.jpg",
-        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/"
+        "liveUrl": ""
       },
       {
         "name": "Personal Website",
         "summary": "This site, a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/builds/personal-website.jpg",
-        "liveUrl": "https://mypersonalpage.up.railway.app/"
+        "liveUrl": ""
       }
     ],
     "projects": []
@@ -491,7 +491,7 @@
         "tech": "Claude Commerce Agents fork, FastAPI, Next.js, simulated OTA providers, Railway",
         "learned": "Forking a reference agent is faster than starting blank, but the real work is the product seams: site adapters, dual UI modes, and deploy hardening.",
         "image": "images/builds/travel-agent.jpg",
-        "liveUrl": "https://commerce-agents-production.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/commerce-agents",
         "bucket": "personal"
       },
@@ -502,7 +502,7 @@
         "tech": "Scraping, OpenAI summaries, Railway",
         "learned": "Curation beats volume; the product is the filter.",
         "image": "images/builds/ai-news-agent.jpg",
-        "liveUrl": "https://ai-news-agent-production-2f5e.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/AI-News-Agent",
         "bucket": "personal"
       },
@@ -513,7 +513,7 @@
         "tech": "Mobile-first web, canvas export, Cursor",
         "learned": "Tight creative constraints make the product feel finished sooner.",
         "image": "images/builds/instagram-post.jpg",
-        "liveUrl": "https://instagrampost-cursor-production.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/instagrampost-cursor",
         "bucket": "personal"
       },
@@ -547,7 +547,7 @@
         "tech": "Python server, content.json CMS, Railway",
         "learned": "A personal site is a product: content model and admin matter as much as the public pages.",
         "image": "images/builds/personal-website.jpg",
-        "liveUrl": "https://mypersonalpage.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/Personal-website"
       },
       {
@@ -557,7 +557,7 @@
         "tech": "LLM agent, health information UX",
         "learned": "Graceful handling of messy human input matters as much as model quality.",
         "image": "images/builds/aurora-health.jpg",
-        "liveUrl": "https://aurorahealthagent-production.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/Aurorahealthagent",
         "bucket": "enterprise"
       },
@@ -591,7 +591,7 @@
         "tech": "Node/Express, Claude agent, single-page skills dashboard, Railway",
         "learned": "Conversational analysts need clean domain models, not just a chat box.",
         "image": "images/builds/skills-hr.jpg",
-        "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
       },
       {
@@ -613,7 +613,7 @@
         "tech": "Claude Messages API / Agent SDK / Managed Agents, shopping + merchant packages, FastAPI + Next prototypes",
         "learned": "The product judgment is mapping your systems to backend contracts and keeping provenance gates in front of every write.",
         "image": "images/builds/commerce-agent.jpg",
-        "liveUrl": "https://claude.com/solutions/commerce",
+        "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/commerce-agents"
       },
       {

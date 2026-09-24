@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
       const docs = Array.isArray(p.docs) ? p.docs : [];
       const links = [
-        p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live →</a>` : "",
         p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
       ].filter(Boolean).join("");
       const docLinks = docs.length
