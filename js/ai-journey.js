@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       {
         id: "enterprise",
         title: "Enterprise Productivity",
-        blurb: "Products I build for enterprise work: HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
+        blurb: "Products I build for enterprise work: HR, decisioning, skills, commerce, and health agents meant to prove value quickly and hand off to a real team."
       }
     ];
     const buckets = Array.isArray(lab.buckets) && lab.buckets.length
