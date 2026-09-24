@@ -136,7 +136,7 @@ async function uploadFile(file, folder) {
   const res = await fetch("/api/upload", { method: "POST", body: fd, credentials: "same-origin" });
   const data = await res.json().catch(() => ({}));
   if (res.status === 401 || data.error === "Unauthorized") {
-    setStatus("Session expired — sign in again", "error");
+    setStatus("Session expired, sign in again", "error");
     setTimeout(() => { location.href = "login.html?next=admin.html"; }, 700);
     throw new Error("Unauthorized");
   }
@@ -291,7 +291,7 @@ function highlightCard(item, i) {
               <button type="button" class="btn btn-danger btn-small" data-remove-slide>Remove</button>
             </div>
           </div>
-        `).join("") || `<p class="hint">No slides yet — upload one below.</p>`}
+        `).join("") || `<p class="hint">No slides yet, upload one below.</p>`}
       </div>
       <div class="upload-row" style="margin-top:12px;">
         <input type="file" accept="image/jpeg,image/jpg,image/png,image/webp,image/gif" data-upload-folder="pillars" multiple>
@@ -1046,7 +1046,7 @@ function gatherContent() {
 
 async function requireAuthOrRedirect(res, data) {
   if (res.status === 401 || (data && data.error === "Unauthorized")) {
-    setStatus("Session expired — sign in again", "error");
+    setStatus("Session expired, sign in again", "error");
     setTimeout(() => {
       location.href = "login.html?next=admin.html";
     }, 700);
@@ -1091,7 +1091,7 @@ function bindActions() {
       const uploaded = await uploadFile(file, "hero");
       $("#home-heroImage").value = uploaded.path || uploaded;
       updateHeroPreview();
-      setStatus("Photo uploaded — click Save", "ok");
+      setStatus("Photo uploaded, click Save", "ok");
     } catch (err) {
       setStatus(err.message, "error");
     }
@@ -1255,7 +1255,7 @@ function bindActions() {
           });
         }
         renderAll();
-        setStatus(`Uploaded ${files.length} file(s) — click Save`, "ok");
+        setStatus(`Uploaded ${files.length} file(s), click Save`, "ok");
       } catch (err) {
         setStatus(err.message, "error");
       }
@@ -1278,7 +1278,7 @@ function bindActions() {
         const uploaded = await uploadFile(file, "pillars");
         pillar.image = uploaded.path || uploaded;
         renderAll();
-        setStatus("Image uploaded — click Save", "ok");
+        setStatus("Image uploaded, click Save", "ok");
       } catch (err) {
         setStatus(err.message, "error");
       }
@@ -1305,7 +1305,7 @@ function bindActions() {
         }
         pillar.image = pillar.slides[0] || "";
         renderAll();
-        setStatus(`Uploaded ${files.length} slide(s) — click Save`, "ok");
+        setStatus(`Uploaded ${files.length} slide(s), click Save`, "ok");
       } catch (err) {
         setStatus(err.message, "error");
       }
@@ -1365,7 +1365,7 @@ function bindActions() {
         $(`[data-k=${field}]`, card).value = uploaded.path || uploaded;
         content = gatherContent();
         renderAll();
-        setStatus("Uploaded — click Save", "ok");
+        setStatus("Uploaded, click Save", "ok");
       } catch (err) {
         setStatus(err.message, "error");
       }

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <p>${escapeHtml(s.blurb || "")}</p>
         ${s.link ? `<p style="margin-top:10px;"><a class="go" href="${escapeHtml(s.link)}" target="_blank" rel="noopener">Details →</a></p>` : ""}
       </article>
-    `).join("") || `<p style="color:var(--ink-soft);">Speaking calendar expanding — check back soon.</p>`;
+    `).join("") || `<p style="color:var(--ink-soft);">Speaking calendar expanding, check back soon.</p>`;
   } catch (err) {
     console.error(err);
   }

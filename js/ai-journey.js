@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       {
         id: "personal",
         title: "Personal Productivity",
-        blurb: "Agents I build for my own life — reclaiming time from noisy chats, shipping small tools I actually use, and learning by putting something live."
+        blurb: "Agents I build for my own life: reclaiming time from noisy chats, shipping small tools I actually use, and learning by putting something live."
       },
       {
         id: "enterprise",
         title: "Enterprise Productivity",
-        blurb: "Products I build for enterprise work — HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
+        blurb: "Products I build for enterprise work: HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
       }
     ];
     const buckets = Array.isArray(lab.buckets) && lab.buckets.length
@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           <div class="lab-body">
             <h3>${escapeHtml(p.name || "")}</h3>
             <p class="lab-summary">${escapeHtml(p.summary || "")}</p>
-            ${p.why ? `<p><strong>Why</strong> — ${escapeHtml(p.why)}</p>` : ""}
-            ${p.tech ? `<p class="lab-meta"><strong>Tech</strong> — ${escapeHtml(p.tech)}</p>` : ""}
-            ${p.learned ? `<p><strong>Learned</strong> — ${escapeHtml(p.learned)}</p>` : ""}
+            ${p.why ? `<p><strong>Why</strong>: ${escapeHtml(p.why)}</p>` : ""}
+            ${p.tech ? `<p class="lab-meta"><strong>Tech</strong>: ${escapeHtml(p.tech)}</p>` : ""}
+            ${p.learned ? `<p><strong>Learned</strong>: ${escapeHtml(p.learned)}</p>` : ""}
             ${docLinks}
             <div class="btn-row">${links}</div>
           </div>
@@ -114,8 +114,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         `);
       }
 
-      // If buckets metadata is missing but we only have a flat legacy grid container,
-      // still render a single grid of cards.
       if (!Array.isArray(lab.buckets) || !lab.buckets.length) {
         const hasBucketFields = labItems.some(p => p.bucket);
         if (!hasBucketFields && labEl.id === "lab-grid") {
@@ -127,34 +125,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       } else {
         labEl.innerHTML = sections.join("");
       }
-    }
-
-    const featuredNames = new Set(labItems.map(p => (p.name || "").toLowerCase()));
-    ["aurora health agent", "hr resume matching agent", "skills intelligence hr app"].forEach(n => featuredNames.add(n));
-    const gitEl = document.getElementById("git-projects");
-    if (gitEl) {
-      const projects = (Array.isArray(a.gitProjects) ? a.gitProjects : [])
-        .filter(p => !featuredNames.has((p.name || "").toLowerCase()));
-      gitEl.innerHTML = projects.length
-        ? projects.map(p => `
-          <article class="git-project-card">
-            <div class="git-project-media" style="${
-              p.image
-                ? `background-image:url('${escapeHtml(p.image)}')`
-                : `background:linear-gradient(155deg, var(--accent), var(--accent-deep))`
-            }" role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
-            <div class="git-project-body">
-              <h3>${escapeHtml(p.name || "Project")}</h3>
-              <p>${escapeHtml(p.summary || "")}</p>
-              <div class="btn-row">
-                ${p.repoUrl
-                  ? `<a class="btn btn-ghost btn-small git-project-link" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">View repo →</a>`
-                  : ""}
-              </div>
-            </div>
-          </article>
-        `).join("")
-        : `<p style="color:var(--ink-soft);">Additional Git projects appear here.</p>`;
     }
   } catch (err) {
     console.error(err);

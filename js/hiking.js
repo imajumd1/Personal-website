@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       document.querySelectorAll(".stat-num").forEach(el => {
         const target = parseInt(el.dataset.target, 10) || 0;
-        if (target === 0) { el.textContent = "—"; return; }
+        if (target === 0) { el.textContent = ", "; return; }
         let current = 0;
         const step = Math.max(1, Math.ceil(target / 40));
         const timer = setInterval(() => {

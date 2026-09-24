@@ -26,8 +26,8 @@ function applySiteChrome(content, session) {
   document.querySelectorAll(".brand-text").forEach(el => { el.textContent = brand; });
   document.querySelectorAll(".footer-tagline").forEach(el => { el.textContent = tagline; });
 
-  if (document.title.includes("—") || document.title.includes("–") || document.title.includes(" - ")) {
-    document.title = document.title.replace(/^.*?(?=\s*[—–-]\s*)/, brand);
+  if (document.title.includes(", ") || document.title.includes("–") || document.title.includes(" - ")) {
+    document.title = document.title.replace(/^.*?(?=\s*[, –-]\s*)/, brand);
   }
 
   document.querySelectorAll(".site-footer a[href^='mailto:'], a.btn[href^='mailto:']").forEach(el => {
@@ -70,7 +70,7 @@ function injectAdminNav(session) {
     else nav.appendChild(slot);
   }
 
-  // Floating edit button — easy to spot on any page
+  // Floating edit button, easy to spot on any page
   let fab = document.getElementById("admin-fab");
   if (!fab) {
     fab = document.createElement("a");

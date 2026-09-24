@@ -90,7 +90,7 @@ document.getElementById("login-form").addEventListener("submit", async e => {
     });
     const data = await res.json();
     if (!res.ok || !data.ok) throw new Error(data.error || "Login failed");
-    msg.textContent = "Welcome back — opening the editor…";
+    msg.textContent = "Welcome back, opening the editor…";
     msg.className = "login-msg ok";
     location.href = "admin.html";
   } catch (err) {

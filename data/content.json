@@ -298,50 +298,50 @@
     "builder": "<p>I am a builder. I roll up my sleeves, write the code, and take ideas all the way to a MVP. The path was not overnight. It took some time and experimentation, getting back into the weeds with modern AI tooling until I could go from use case to MVP myself.</p><p>As a C-suite executive I made a deliberate choice: stay close enough to the build that I can ship, not just sponsor. I scope a real job for v1, build module by module, test locally, push to Git, and then host it on the cloud. The MVP is the finish line.&nbsp;</p>",
     "bios": {
       "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She shapes the systems, platforms, and organizations that turn Data + AI into measurable business outcomes and stays close enough to the technical work to lead with judgment, not slideware.",
-      "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years—including senior roles at eBay, technology strategy at Huawei, and three U.S. patents, she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her through line is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
+      "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years, including senior roles at eBay, technology strategy at Huawei, and three U.S. patents, she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her through line is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
       "full": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes, while staying close enough to the technology to lead with judgment, not just strategy.</p>"
     },
     "headshot": "images/hero/ishita-portrait.jpg",
     "bioDownload": "",
     "career": [
       {
-        "title": "Chief Data and AI Officer — Relanto",
+        "title": "Chief Data and AI Officer, Relanto",
         "meta": "2025 – Present",
         "text": "<p>Leading global Data + AI strategy, building trusted intelligent systems that improve decision-making, automate workflows, and create customer value.</p>",
         "attachments": []
       },
       {
-        "title": "Co-Founder & CPTO — AI Startup",
+        "title": "Co-Founder & CPTO, AI Startup",
         "meta": "2024 – Sep 2025",
         "text": "<p>Co-founded a human-centered AI platform inspired by the challenges families face navigating neurodevelopmental care.</p><p>We built an AI-powered experience bringing together trusted information, community knowledge, and access to support.</p><p>The experience reinforced something I carry into enterprise AI today: great technology is not enough. Trust, distribution, behavior, and business model matter just as much.</p><p>Transitioned to Founder-Advisor; partnered with the CEO on the decision to wind down the company in an orderly, responsible manner.</p>",
         "attachments": []
       },
       {
-        "title": "Vice President, Data Analytics Platforms — eBay",
+        "title": "Vice President, Data Analytics Platforms, eBay",
         "meta": "2020 – 2024",
         "text": "<p>Led teams across data engineering, data science, and data product management with a mission to make trusted data accessible across the enterprise.</p><p>My operating principles were simple:</p><ul><li>Build exceptional, low-ego teams.</li><li>Build trusted data assets</li><li>Measure outcomes transparently.</li></ul>",
         "attachments": []
       },
       {
-        "title": "Global Head of Technology Products,  eBay",
+        "title": "Global Head of Technology Products, eBay",
         "meta": "2014 – 2019",
         "text": "<p>Built and scaled technical product and program organizations that turned complex infrastructure into intuitive, high-adoption platforms. Led end-to-end product strategy and execution across data, AI/ML, experimentation, personalization, cloud, and security.</p><p>Built and scaled technical product and program teams responsible for turning complex infrastructure into products, developers and businesses could actually use.</p>",
         "attachments": []
       },
       {
-        "title": "Sr. Director, Technology Strategy & Innovation — Huawei",
+        "title": "Sr. Director, Technology Strategy & Innovation, Huawei",
         "meta": "2011 – 2014",
         "text": "<p>Led global strategy for Big Data and AI innovation across the U.S. and China, including Spark-based data infrastructure and context-aware intelligent systems.</p>",
         "attachments": []
       },
       {
-        "title": "Executive in Residence — Plug and Play Tech Center",
+        "title": "Executive in Residence, Plug and Play Tech Center",
         "meta": "2008 – 2011",
         "text": "<p>Worked with startups, investors, and founders across product strategy, fundraising, partnerships, and company building.</p>",
         "attachments": []
       },
       {
-        "title": "Director / Principal Engineer — Motorola",
+        "title": "Director / Principal Engineer, Motorola",
         "meta": "2000 – 2008",
         "text": "<p>Started my career as an engineer building telecommunications systems before moving into technology commercialization and internal ventures.</p><p>Helped secure funding for 10 internal startups and bring three ventures to revenue.</p>",
         "attachments": []
@@ -413,74 +413,7 @@
     "lede": "<p>Recent AI applications I designed, coded, deployed, and they run on cloud. What they do, why I built them, and what I learned. I cannot share Enterprise apps and solutions as part of my career. Instead I share some of my thoughts which led to personal productivity and effective time management.</p>",
     "story": "<p>I'm a senior technology executive who still builds. I set the enterprise data and AI vision, and I build enough myself to prove it before asking an organization to bet on it.</p><p>I help enterprises modernize fragmented data environments, strengthen governance, define modern architectures, and make the Buy-Build-Partner calls that determine whether a transformation lands. I work directly with business leaders to translate challenges into agentic architectures, then rapidly build MVPs on synthetic data to validate the opportunity.</p><p>Staying hands-on is deliberate: I work primarily in Cursor and Claude Code, often combining both, to take ideas from concept to cloud-hosted MVP myself. Once proven, my teams productionize on real client data, integrate it into the existing stack, and drive adoption through training and internal AI champions.</p><p>That's how I lead: set the vision, build enough to prove it, stay engaged through impact. My professional work is confidential, but my GitHub shows how I think and build.</p>",
     "githubUsername": "imajumd1",
-    "gitProjects": [
-      {
-        "name": "AI News Agent",
-        "summary": "An intelligent agent that collects the latest AI developments and summarizes them across infrastructure (hardware, compute, MLOps) and frontier models.",
-        "image": "images/projects/ai-news-agent.jpg",
-        "repoUrl": "https://github.com/imajumd1/AI-News-Agent"
-      },
-      {
-        "name": "Aurora Health Agent",
-        "summary": "A specialized virtual health agent for Autism Spectrum Disorder powered by evidence-based information with a smooth experience and graceful handling of varied user input.",
-        "image": "images/projects/aurora-health.jpg",
-        "repoUrl": "https://github.com/imajumd1/Aurorahealthagent"
-      },
-      {
-        "name": "Claude AI Summarizer",
-        "summary": "A summarization system I built and run, turning language models into a daily production tool.",
-        "image": "images/projects/claude-summarizer.jpg",
-        "repoUrl": "https://github.com/imajumd1/Claude--AI-summarizer"
-      },
-      {
-        "name": "Wiki MCP",
-        "summary": "A Model Context Protocol server that gives Claude real-time Wikipedia access to search, fetch, and research tools in production use with Claude to search, fetch, and research over Wikipedia.",
-        "image": "images/projects/wiki-mcp.jpg",
-        "repoUrl": "https://github.com/imajumd1/Wiki-MCP"
-      },
-      {
-        "name": "Spelling Bee",
-        "summary": "I am a huge Spelling Bee addict. So I decided to build one for myself, when I am bored. This is a React game for practicing spelling with a clean, modern interface.",
-        "image": "images/projects/spelling-bee.jpg",
-        "repoUrl": "https://github.com/imajumd1/spelling-bee"
-      },
-      {
-        "name": "Evite Twin",
-        "summary": "An event invitation app with backend support, email invites, and RSVP tracking. Think of it as a twin of the classic Evite experience.",
-        "image": "images/projects/evitetwin.jpg",
-        "repoUrl": "https://github.com/imajumd1/evitetwin"
-      },
-      {
-        "name": "Instagram Post (Cursor)",
-        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds with templates, canvas export, and quick creative flow.",
-        "image": "images/projects/instagram-post.jpg",
-        "repoUrl": "https://github.com/imajumd1/instagrampost-cursor"
-      },
-      {
-        "name": "Audiobook",
-        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API, React frontend with an Express backend.",
-        "image": "images/projects/audiobook.jpg",
-        "repoUrl": "https://github.com/imajumd1/audiobook"
-      },
-      {
-        "name": "Lighthouse",
-        "summary": "A full-stack app for discovering and tracking high-impact AI trends using Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
-        "image": "images/projects/lighthouse.jpg",
-        "repoUrl": "https://github.com/imajumd1/Lighthouse"
-      },
-      {
-        "name": "Contact Me App",
-        "summary": "A professional contact form with rich text editing, file uploads, and email notifications in a modern black-and-white UI.",
-        "image": "images/projects/contact.jpg",
-        "repoUrl": "https://github.com/imajumd1/contactmeapp-aug26"
-      },
-      {
-        "name": "Personal Website",
-        "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
-        "image": "images/projects/personal-website.jpg",
-        "repoUrl": "https://github.com/imajumd1/Personal-website"
-      }
-    ],
+    "gitProjects": [],
     "featuredBuilds": [
       {
         "name": "Aurora Health Agent",
@@ -496,19 +429,19 @@
       },
       {
         "name": "Audiobook",
-        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
+        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API, React frontend with an Express backend.",
         "image": "images/builds/audiobook.jpg",
         "liveUrl": ""
       },
       {
         "name": "Instagram Post (Cursor)",
-        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds, templates, canvas export, and quick creative flow.",
         "image": "images/builds/instagram-post.jpg",
         "liveUrl": "https://instagrampost-cursor-production.up.railway.app/"
       },
       {
         "name": "Personal Website",
-        "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
+        "summary": "This site, a personal homepage that says a little more than LinkedIn, with biography, AI journey, musings, and more.",
         "image": "images/builds/personal-website.jpg",
         "liveUrl": "https://mypersonalpage.up.railway.app/"
       }
@@ -523,18 +456,18 @@
       {
         "id": "personal",
         "title": "Personal Productivity",
-        "blurb": "Agents I build for my own life — reclaiming time from noisy chats, shipping small tools I actually use, and learning by putting something live."
+        "blurb": "Agents I build for my own life, reclaiming time from noisy chats, shipping small tools I actually use, and learning by putting something live."
       },
       {
         "id": "enterprise",
         "title": "Enterprise Productivity",
-        "blurb": "Products I build for enterprise work — HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
+        "blurb": "Products I build for enterprise work, HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
       }
     ],
     "items": [
       {
-        "name": "WAC — WhatsApp Convo",
-        "summary": "Turns WhatsApp group chat exports into a searchable daily digest: thread summaries, action items, FAQ, curated media, and Ask WAC — a Q&A agent grounded only in the chat, with personal names redacted.",
+        "name": "WAC: WhatsApp Convo",
+        "summary": "Turns WhatsApp group chat exports into a searchable daily digest: thread summaries, action items, FAQ, curated media, and Ask WAC, a Q&A agent grounded only in the chat, with personal names redacted.",
         "why": "Reclaim time from muted 100+ member WhatsApp groups without missing the valuable information buried in the noise.",
         "tech": "Python pipeline, privacy redaction, local digest site, Ask WAC agent",
         "learned": "Peace of mind is the product: extract facts and TODOs, redact PII first, then answer only from a grounded chat window.",
@@ -567,7 +500,7 @@
       },
       {
         "name": "Instagram Post (Cursor)",
-        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds — templates, canvas export, and quick creative flow.",
+        "summary": "A mobile-first web app for creating beautiful 1080×1080 Instagram posts in under 30 seconds, templates, canvas export, and quick creative flow.",
         "why": "Ship a fast creative tool for square social posts without opening a design suite.",
         "tech": "Mobile-first web, canvas export, Cursor",
         "learned": "Tight creative constraints make the product feel finished sooner.",
@@ -578,7 +511,7 @@
       },
       {
         "name": "Audiobook",
-        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API — React frontend with an Express backend.",
+        "summary": "Convert any text into professional AI-generated audio using OpenAI's text-to-speech API, React frontend with an Express backend.",
         "why": "Turn arbitrary text into listen-able audio for accessibility and speed.",
         "tech": "React, Express, OpenAI TTS",
         "learned": "Simple APIs still need careful UX around latency and voice quality.",
@@ -589,7 +522,7 @@
       },
       {
         "name": "Lighthouse",
-        "summary": "A full-stack app for discovering and tracking high-impact AI trends — Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
+        "summary": "A full-stack app for discovering and tracking high-impact AI trends, Next.js frontend, FastAPI backend, MongoDB, and OpenAI.",
         "why": "Track high-impact AI trends with a full-stack research loop.",
         "tech": "Next.js, FastAPI, MongoDB, OpenAI",
         "learned": "Trend products fail without disciplined ingestion and ranking.",
@@ -601,7 +534,7 @@
       {
         "bucket": "personal",
         "name": "Personal Website",
-        "summary": "This site — a personal homepage that says a little more than LinkedIn, with biography, AI builds, perspectives, and life beyond work.",
+        "summary": "This site, a personal homepage that says a little more than LinkedIn, with biography, AI builds, perspectives, and life beyond work.",
         "why": "Own the narrative beyond a résumé dump, with a CMS I can update myself.",
         "tech": "Python server, content.json CMS, Railway",
         "learned": "A personal site is a product: content model and admin matter as much as the public pages.",
@@ -611,7 +544,7 @@
       },
       {
         "name": "Aurora",
-        "summary": "A specialized virtual health agent for Autism Spectrum Disorder — evidence-based information with a smooth experience and graceful handling of varied user input.",
+        "summary": "A specialized virtual health agent for Autism Spectrum Disorder, evidence-based information with a smooth experience and graceful handling of varied user input.",
         "why": "Give families navigating ASD a calmer, evidence-aware first stop for questions.",
         "tech": "LLM agent, health information UX",
         "learned": "Graceful handling of messy human input matters as much as model quality.",
@@ -623,8 +556,8 @@
       {
         "bucket": "enterprise",
         "name": "HR Matchmaker",
-        "summary": "Ranks the same resume pool against different job descriptions by seat — folder-based JDs and resumes, keyword-overlap scores, and fit notes (Advance, Stretch, Wrong seat, Pass).",
-        "why": "Matching is by seat, not generic seniority — the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
+        "summary": "Ranks the same resume pool against different job descriptions by seat, folder-based JDs and resumes, keyword-overlap scores, and fit notes (Advance, Stretch, Wrong seat, Pass).",
+        "why": "Matching is by seat, not generic seniority, the same five candidates rank differently for Chief Data Officer vs Chief AI Officer.",
         "tech": "Python 3.9, folder-based JD/resume pipeline, keyword scoring, markdown/CSV reports",
         "learned": "Automating seat-aware matching reduces manual grind and bias, and makes the ranking explainable.",
         "image": "images/builds/hr-resume-matching.jpg",
@@ -635,7 +568,7 @@
         "bucket": "enterprise",
         "name": "Nomad",
         "summary": "Marketer-facing Next Best Action trigger console: author triggers in plain language, test against synthetic Customer 360 profiles, and run a governed decision layer with consent, quiet hours, and frequency caps.",
-        "why": "Show how marketing decisioning should choose whether to engage, what action, which channel — and when no action is the right call.",
+        "why": "Show how marketing decisioning should choose whether to engage, what action, which channel, and when no action is the right call.",
         "tech": "Python server, SPA console, OpenAI NL parser, decision/arbitration engine, Railway",
         "learned": "Triggers create decision opportunities; consent and fatigue have to be hard gates, not afterthoughts.",
         "image": "images/builds/nomad.jpg",
@@ -645,10 +578,10 @@
       {
         "bucket": "enterprise",
         "name": "Skills Intelligence",
-        "summary": "An AI-powered workforce skills platform with a live Claude agent — skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
+        "summary": "An AI-powered workforce skills platform with a live Claude agent, skill catalog, supply inventory, demand forecasting, and a conversational analyst.",
         "why": "Ship how AI agents can reason over workforce skills supply and demand for HR and talent planning.",
         "tech": "Node/Express, Claude agent, single-page skills dashboard, Railway",
-        "learned": "Conversational analysts need clean domain models — not just a chat box.",
+        "learned": "Conversational analysts need clean domain models, not just a chat box.",
         "image": "images/builds/skills-hr.jpg",
         "liveUrl": "https://skills-intelligence-hr-app-production.up.railway.app/",
         "repoUrl": "https://github.com/imajumd1/skills-intelligence-HR-app"
@@ -656,7 +589,7 @@
       {
         "bucket": "enterprise",
         "name": "Vulnerability scanner",
-        "summary": "An enterprise security review agent for apps I ship — scans for common holes (secrets in git, unauthenticated expensive endpoints, traceback leaks, path traversal) and flags what to fix before a public URL goes live.",
+        "summary": "An enterprise security review agent for apps I ship, scans for common holes (secrets in git, unauthenticated expensive endpoints, traceback leaks, path traversal) and flags what to fix before a public URL goes live.",
         "why": "A public agent with my API key on the backend is a live system. I needed a repeatable scan before sharing links.",
         "tech": "Agent security checklist, static review patterns, loop-style app stewardship",
         "learned": "Preflight beats postmortems: catch spend, secrets, and abuse paths before strangers find them.",
@@ -668,7 +601,7 @@
         "bucket": "enterprise",
         "name": "Commerce agent",
         "summary": "Claude Commerce Agents blueprint: shopping and merchant agents with shared packages, safety gates, and runnable verticals across retail, travel, telecom, and entertainment.",
-        "why": "Enterprise commerce needs a reference architecture — not a one-off chatbot — so teams can map backends, skills, and approval gates.",
+        "why": "Enterprise commerce needs a reference architecture, not a one-off chatbot, so teams can map backends, skills, and approval gates.",
         "tech": "Claude Messages API / Agent SDK / Managed Agents, shopping + merchant packages, FastAPI + Next demos",
         "learned": "The product judgment is mapping your systems to backend contracts and keeping provenance gates in front of every write.",
         "image": "images/builds/commerce-agent.jpg",
@@ -678,7 +611,7 @@
       {
         "bucket": "enterprise",
         "name": "Scope and Design",
-        "summary": "The scope, design, and decision docs behind the enterprise builds — PRDs, frameworks, and README contracts I start from before writing code.",
+        "summary": "The scope, design, and decision docs behind the enterprise builds, PRDs, frameworks, and README contracts I start from before writing code.",
         "why": "I ask Cursor for scope.md and design.md first. Shipping without that paper trail is how demos become unhand-offable.",
         "tech": "Markdown scope/design docs, PRDs, decision frameworks in Git",
         "learned": "Docs are the handoff: teams reuse the design and requirements even when the code has to live inside their stack.",
@@ -857,7 +790,7 @@
           "#1f7a8c"
         ],
         "rating": 5,
-        "summary": "<p class=\"isSelectedEnd\">Hit Refresh showed me that strong leadership is not about protecting what worked in the past, but about staying curious, listening closely, and being willing to change how a company thinks and operates. To me personally, I learned on how to lead with empathy: listening, learning and partnering all the time. I liked the connection from his personal story to a large scale cultural transformation that he accomplished.</p><p>The book also changed how I think about leadership in my own work. Growth comes from creating an environment where people are comfortable learning, collaborating, and challenging old assumptions. It reinforced for me that the best leaders do not need to have every answer—they need to build teams and cultures that can keep adapting as technology, markets, and people change.&nbsp;</p><p><br></p>"
+        "summary": "<p class=\"isSelectedEnd\">Hit Refresh showed me that strong leadership is not about protecting what worked in the past, but about staying curious, listening closely, and being willing to change how a company thinks and operates. To me personally, I learned on how to lead with empathy: listening, learning and partnering all the time. I liked the connection from his personal story to a large scale cultural transformation that he accomplished.</p><p>The book also changed how I think about leadership in my own work. Growth comes from creating an environment where people are comfortable learning, collaborating, and challenging old assumptions. It reinforced for me that the best leaders do not need to have every answer, they need to build teams and cultures that can keep adapting as technology, markets, and people change.&nbsp;</p><p><br></p>"
       }
     ]
   },
@@ -869,7 +802,7 @@
       {
         "tag": "tech",
         "title": "Why I built WAC?",
-        "body": "<div><p data-path-to-node=\"5,0\"><b data-path-to-node=\"5,0\" data-index-in-node=\"0\">WAC = WhatsApp Convo</b></p><p data-path-to-node=\"5,1\">I build agents to reclaim my time and organize my life, and my biggest battleground right now is WhatsApp. Between school alumni networks, professional workshops, university updates, and kid logistics, I'm tucked into dozens of massive 100+ member groups. Leaving isn't an option because the underlying information is genuinely valuable—so I mute them when the noise gets too loud.</p><p data-path-to-node=\"5,2\">WAC is my answer to WhatsApp fatigue: an agent designed to mine the noise for real diamonds and give me peace of mind.</p><p data-path-to-node=\"5,3\"><span data-path-to-node=\"5,3\" data-index-in-node=\"0\">Version 1 Flow:</span></p><ul data-path-to-node=\"5,4\"><li><p data-path-to-node=\"5,4,0,0\"><span data-path-to-node=\"5,4,0,0\" data-index-in-node=\"0\"><u>The Daily Input</u></span><b data-path-to-node=\"5,4,0,0\" data-index-in-node=\"0\">:</b> I export a morning snapshot of the chat logs.</p></li><li><p data-path-to-node=\"5,4,1,0\"><span data-path-to-node=\"5,4,1,0\" data-index-in-node=\"0\"><u>The Extraction</u></span><b data-path-to-node=\"5,4,1,0\" data-index-in-node=\"0\">:</b> WAC parses through media-heavy threads to generate concise facts, key action items, and a quick FAQ on hot topics.</p></li><li><p data-path-to-node=\"5,4,2,0\"><span data-path-to-node=\"5,4,2,0\" data-index-in-node=\"0\"><u>Privacy First:</u></span> It automatically redacts all PII—names, phone numbers, and IDs stay completely private—before archiving the summary into a clean daily journal.</p></li></ul><p data-path-to-node=\"5,5\">V1 keeps me sane, but V2 is where the real magic happens. Upcoming updates will bring total automation and tailored filtering that knows what <i><b>I&nbsp;</b></i>care about, skipping generic summaries to highlight only what's actionable for me.</p><br></div>",
+        "body": "<div><p data-path-to-node=\"5,0\"><b data-path-to-node=\"5,0\" data-index-in-node=\"0\">WAC = WhatsApp Convo</b></p><p data-path-to-node=\"5,1\">I build agents to reclaim my time and organize my life, and my biggest battleground right now is WhatsApp. Between school alumni networks, professional workshops, university updates, and kid logistics, I'm tucked into dozens of massive 100+ member groups. Leaving isn't an option because the underlying information is genuinely valuable, so I mute them when the noise gets too loud.</p><p data-path-to-node=\"5,2\">WAC is my answer to WhatsApp fatigue: an agent designed to mine the noise for real diamonds and give me peace of mind.</p><p data-path-to-node=\"5,3\"><span data-path-to-node=\"5,3\" data-index-in-node=\"0\">Version 1 Flow:</span></p><ul data-path-to-node=\"5,4\"><li><p data-path-to-node=\"5,4,0,0\"><span data-path-to-node=\"5,4,0,0\" data-index-in-node=\"0\"><u>The Daily Input</u></span><b data-path-to-node=\"5,4,0,0\" data-index-in-node=\"0\">:</b> I export a morning snapshot of the chat logs.</p></li><li><p data-path-to-node=\"5,4,1,0\"><span data-path-to-node=\"5,4,1,0\" data-index-in-node=\"0\"><u>The Extraction</u></span><b data-path-to-node=\"5,4,1,0\" data-index-in-node=\"0\">:</b> WAC parses through media-heavy threads to generate concise facts, key action items, and a quick FAQ on hot topics.</p></li><li><p data-path-to-node=\"5,4,2,0\"><span data-path-to-node=\"5,4,2,0\" data-index-in-node=\"0\"><u>Privacy First:</u></span> It automatically redacts all PII, names, phone numbers, and IDs stay completely private, before archiving the summary into a clean daily journal.</p></li></ul><p data-path-to-node=\"5,5\">V1 keeps me sane, but V2 is where the real magic happens. Upcoming updates will bring total automation and tailored filtering that knows what <i><b>I&nbsp;</b></i>care about, skipping generic summaries to highlight only what's actionable for me.</p><br></div>",
         "category": "AI & Enterprise Transformation",
         "thesis": "",
         "readingTime": "",
@@ -1125,7 +1058,7 @@
     ],
     "trips": [
       {
-        "name": "Grand Canyon — Descent to Arizona River",
+        "name": "Grand Canyon, Descent to Arizona River",
         "meta": "South Rim, AZ · Bright Angel / South Kaibab to Colorado River · Strenuous",
         "photo": "images/hiking/grand-canyon-river.jpg",
         "colors": [
@@ -1152,7 +1085,7 @@
           "#2f5d50",
           "#1a332c"
         ],
-        "story": "<p>The approach to Machu Picchu — stones, mist, and the sudden reveal of the citadel on the ridge. Altitude does half the talking; the Andes do the rest.</p><p>(My first international hiking trip in 2018. Will fill in more)</p>"
+        "story": "<p>The approach to Machu Picchu, stones, mist, and the sudden reveal of the citadel on the ridge. Altitude does half the talking; the Andes do the rest.</p><p>(My first international hiking trip in 2018. Will fill in more)</p>"
       },
       {
         "name": "Half Dome Hike",
@@ -1182,7 +1115,7 @@
           "#3d5a80",
           "#1b2838"
         ],
-        "story": "<p>A catch-all for Yosemite days beyond Half Dome — valley floor walks, waterfall trails, and granite overlooks that make the park feel endless.</p><p>Loved all the hikes that I have done here. To be continued.....</p>"
+        "story": "<p>A catch-all for Yosemite days beyond Half Dome, valley floor walks, waterfall trails, and granite overlooks that make the park feel endless.</p><p>Loved all the hikes that I have done here. To be continued.....</p>"
       },
       {
         "name": "Dipsea Trail",
