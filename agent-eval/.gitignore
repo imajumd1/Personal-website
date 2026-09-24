@@ -1,0 +1,10 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+reports/*.md
+reports/*.json
+!reports/.gitkeep
+baselines/*.json
+!baselines/.gitkeep

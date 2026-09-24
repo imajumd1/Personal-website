@@ -168,6 +168,14 @@
     ],
     "featuredPerspectives": [
       {
+        "title": "How I EVAL agents",
+        "thesis": "A demo that felt good in chat is not EVAL. Agent EVAL is a golden-set scoreboard for task success, groundedness, latency, cost, safety, and regression before any public URL.",
+        "category": "AI & Enterprise Transformation",
+        "readingTime": "3 min read",
+        "date": "September 23, 2026",
+        "href": "musings.html"
+      },
+      {
         "title": "Data vs Data",
         "thesis": "We keep using the word \"data\" as if it were one substance. Machine-generated and human-generated data do not share the same moral weight, evidentiary value, or ownership story.",
         "category": "Data & Platforms",
@@ -599,6 +607,17 @@
       },
       {
         "bucket": "enterprise",
+        "name": "Agent EVAL harness",
+        "summary": "A config-driven workflow to EVAL selected agents I have built: golden cases, task success, groundedness, PII safety, latency budgets, and regression vs baseline, with markdown and JSON reports.",
+        "why": "Shipping without a scoreboard is theater. I needed one runner I can point at WAC, Aurora, Travel Agent, and the rest before deploy.",
+        "tech": "Python CLI, YAML agent registry, golden-case suites, optional LLM-as-judge",
+        "learned": "EVAL is product QA for autonomy: same suite in local, CI, and preflight, with humans owning the rubric.",
+        "image": "images/builds/vulnerability-scanner.jpg",
+        "liveUrl": "",
+        "repoUrl": "https://github.com/imajumd1/Personal-website/tree/main/agent-eval"
+      },
+      {
+        "bucket": "enterprise",
         "name": "Commerce agent",
         "summary": "Claude Commerce Agents blueprint: shopping and merchant agents with shared packages, safety gates, and runnable verticals across retail, travel, telecom, and entertainment.",
         "why": "Enterprise commerce needs a reference architecture, not a one-off chatbot, so teams can map backends, skills, and approval gates.",
@@ -807,6 +826,15 @@
         "thesis": "",
         "readingTime": "",
         "date": ""
+      },
+      {
+        "tag": "tech",
+        "title": "How I EVAL agents",
+        "body": "<p>I ship agents the same way I ship anything else that can spend money or touch real people: with a scoreboard. A demo that \"felt good\" in chat is not EVAL. EVAL is a repeatable suite that answers one question before I share a public URL: does this agent still do the job I claimed, under the constraints I care about?</p>\n<p>That sounds obvious. It is easy to skip when Cursor just made the happy path work.</p>\n\n<h3>What EVAL means for agents</h3>\n<p>Model benchmarks tell you how a foundation model scores on someone else's tasks. Agent EVAL tells you how <em>your</em> workflow behaves on <em>your</em> cases. The unit under test is the loop: prompt, retrieval or tools, policy gates, and the final artifact a human will trust, use, and act on.</p>\n<p>I treat EVAL as product QA for autonomy. If I cannot name the task, the success signal, and the failure modes I refuse to ship, I am not evaluating. I am sightseeing.</p>\n\n<h3>What I measure</h3>\n<p>Six dimensions cover most of what I build for myself and for enterprise demos:</p>\n<ol>\n<li><strong>Task success.</strong> Did the agent complete the job? For WAC that means a digest with facts and TODOs. For Travel Agent it means comparable offers for the requested trip. Binary when I can, scored when the output is graded.</li>\n<li><strong>Groundedness.</strong> Did claims stay inside the allowed evidence? Ask WAC should not invent a school event that was never in the export. Citations or source IDs when the product needs them.</li>\n<li><strong>Latency.</strong> Time to first useful result and end-to-end duration against a budget. A correct answer that arrives after the decision window is still a miss.</li>\n<li><strong>Cost.</strong> Tokens, tool calls, and dollars per successful task. I want a ceiling before Railway traffic finds the unbounded path.</li>\n<li><strong>Safety and PII.</strong> Names, phones, IDs, and secrets must stay redacted or out of logs. This is non-negotiable on WhatsApp digests and health-adjacent agents.</li>\n<li><strong>Regression.</strong> Same golden set against the last known-good baseline. Prompt edits and model swaps are change management, not vibes.</li>\n</ol>\n\n<h3>Golden sets first</h3>\n<p>I start with a small, nasty set: ten to thirty cases that represent the real job, plus the ugly edges. Happy paths, empty input, contradictory evidence, PII-heavy text, and one case that should refuse. Each case has an input, the expected behavior, and notes on what \"pass\" looks like. I version the set in git next to the agent so the suite travels with the code.</p>\n<p>Quantity is not the point. Coverage of the failure modes I have already seen is.</p>\n\n<h3>How I judge</h3>\n<p>Humans set the bar. I spot-check hard cases and anything safety-related myself. For volume, I use LLM-as-judge with a tight rubric: task complete, grounded, policy respected, and a short rationale. The judge never gets to invent new success criteria. When human and judge disagree, the human wins and the rubric gets sharper.</p>\n\n<h3>CI and preflight before deploy</h3>\n<p>EVAL belongs in the same loop as Agent Preflight. Locally I run the suite after any prompt, tool, or model change. In CI I gate merge on golden-set pass rate and latency budget. Before a public share I want: suite green, secrets only in env, spend caps on, and a smoke test on the live URL. If regression fails, I do not \"just ship and watch.\" I fix or roll back.</p>\n<p>Building agents taught me to move fast. EVAL is how I keep that speed from becoming theater. The agents I trust in production are the ones I can fail on purpose, on a known set, before a stranger does it for me.</p>",
+        "category": "AI & Enterprise Transformation",
+        "thesis": "A demo that felt good in chat is not EVAL. Agent EVAL is a golden-set scoreboard for task success, groundedness, latency, cost, safety, and regression before any public URL.",
+        "readingTime": "3 min read",
+        "date": "September 23, 2026"
       },
       {
         "tag": "tech",

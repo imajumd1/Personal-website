@@ -1,0 +1,30 @@
+{
+  "agent_id": "travel-agent",
+  "notes": "Template cases for the commerce-agents travel personalization. Swap fixture_output for live Search API responses when ready.",
+  "cases": [
+    {
+      "id": "travel-sfo-jfk-compare",
+      "description": "Returns comparable offers for SFO to JFK across sites.",
+      "input": "Find round-trip flights SFO to JFK, departing 2026-10-10, returning 2026-10-17, 1 adult, budget $600.",
+      "fixture_output": "Offers:\n- Expedia: SFO-JFK Oct 10/17, $482\n- Google Flights: SFO-JFK Oct 10/17, $510\n- Travelocity: SFO-JFK Oct 10/17, $495\nAll within budget $600.",
+      "expect": {
+        "must_contain": ["SFO", "JFK", "Expedia"],
+        "must_not_contain": ["traceback"],
+        "refuse": false
+      },
+      "latency_budget_ms": 25000
+    },
+    {
+      "id": "travel-missing-dates",
+      "description": "Asks for missing dates instead of inventing a trip.",
+      "input": "Book me something nice to Europe soon.",
+      "fixture_output": "I need origin, destination city or airport, and travel dates (and travelers if known) before I can search comparable tickets.",
+      "expect": {
+        "must_contain": ["dates", "origin"],
+        "must_not_contain": ["confirmed booking Paris"],
+        "refuse": false
+      },
+      "latency_budget_ms": 10000
+    }
+  ]
+}

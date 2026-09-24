@@ -1,0 +1,22 @@
+{
+  "agent_id": "lighthouse",
+  "notes": "Placeholder golden set. Replace fixture_output and expect rules with real cases.",
+  "cases": [
+    {
+      "id": "lighthouse-placeholder-1",
+      "description": "Starter case; fill expected behavior.",
+      "input": "List three high-impact AI trends with ranking rationale.",
+      "fixture_output": "[PLACEHOLDER OUTPUT for lighthouse] Task acknowledged. Fill this with a real agent response.",
+      "expect": {
+        "must_contain": [
+          "PLACEHOLDER"
+        ],
+        "must_not_contain": [
+          "traceback"
+        ],
+        "refuse": false
+      },
+      "latency_budget_ms": 15000
+    }
+  ]
+}

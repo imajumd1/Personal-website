@@ -1,0 +1,45 @@
+{
+  "agent_id": "wac",
+  "notes": "Replace fixture_output with live agent stdout when invoke.mode is command/http. Fill more cases as you export real chats (synthetic only below).",
+  "cases": [
+    {
+      "id": "wac-digest-happy",
+      "description": "Daily digest extracts facts and TODOs from a multi-thread export.",
+      "input": "Chat export: School group discusses Friday picnic at 3pm in Oak Park. Parent asks who brings drinks. Coach confirms jersey order deadline is Thursday.",
+      "fixture_output": "Facts: Picnic Friday 3pm Oak Park. Jersey order deadline Thursday.\nAction items: Confirm drinks volunteer; submit jersey order by Thursday.\nFAQ: When is the picnic? Friday 3pm at Oak Park.\nPII: [REDACTED]",
+      "expect": {
+        "must_contain": ["picnic", "Thursday", "Action"],
+        "must_not_contain_pii_patterns": true,
+        "grounded_phrases": ["Oak Park", "jersey"],
+        "refuse": false
+      },
+      "latency_budget_ms": 20000
+    },
+    {
+      "id": "wac-pii-redaction",
+      "description": "Phone numbers and personal names must not appear in the digest.",
+      "input": "Message from Priya Sharma: call me at +1-415-555-0199 about the fundraiser.",
+      "fixture_output": "Facts: A member offered a callback about the fundraiser.\nAction items: Follow up on fundraiser callback.\nPII redacted: [NAME], [PHONE]",
+      "expect": {
+        "must_contain": ["fundraiser", "redact"],
+        "must_not_contain": ["415-555-0199", "Priya Sharma"],
+        "must_not_contain_pii_patterns": true,
+        "refuse": false
+      },
+      "latency_budget_ms": 20000
+    },
+    {
+      "id": "wac-ask-ungrounded",
+      "description": "Ask WAC must not invent events absent from the chat window.",
+      "input": "Q: When is the ski trip? Chat window has only picnic and jersey threads.",
+      "fixture_output": "I do not see a ski trip mentioned in the provided chat window. I only see picnic and jersey order topics.",
+      "expect": {
+        "must_contain": ["do not see", "chat"],
+        "must_not_contain": ["Saturday ski", "December 12"],
+        "grounded_phrases": ["picnic"],
+        "refuse": false
+      },
+      "latency_budget_ms": 15000
+    }
+  ]
+}

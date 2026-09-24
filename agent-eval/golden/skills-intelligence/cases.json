@@ -1,0 +1,22 @@
+{
+  "agent_id": "skills-intelligence",
+  "notes": "Placeholder golden set. Replace fixture_output and expect rules with real cases.",
+  "cases": [
+    {
+      "id": "skills-intelligence-placeholder-1",
+      "description": "Starter case; fill expected behavior.",
+      "input": "What skills are in shortest supply for data engineering?",
+      "fixture_output": "[PLACEHOLDER OUTPUT for skills-intelligence] Task acknowledged. Fill this with a real agent response.",
+      "expect": {
+        "must_contain": [
+          "PLACEHOLDER"
+        ],
+        "must_not_contain": [
+          "traceback"
+        ],
+        "refuse": false
+      },
+      "latency_budget_ms": 15000
+    }
+  ]
+}

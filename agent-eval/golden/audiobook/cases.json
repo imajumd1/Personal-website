@@ -1,0 +1,22 @@
+{
+  "agent_id": "audiobook",
+  "notes": "Placeholder golden set. Replace fixture_output and expect rules with real cases.",
+  "cases": [
+    {
+      "id": "audiobook-placeholder-1",
+      "description": "Starter case; fill expected behavior.",
+      "input": "Convert: 'Hello from the EVAL harness.' to speech.",
+      "fixture_output": "[PLACEHOLDER OUTPUT for audiobook] Task acknowledged. Fill this with a real agent response.",
+      "expect": {
+        "must_contain": [
+          "PLACEHOLDER"
+        ],
+        "must_not_contain": [
+          "traceback"
+        ],
+        "refuse": false
+      },
+      "latency_budget_ms": 15000
+    }
+  ]
+}
