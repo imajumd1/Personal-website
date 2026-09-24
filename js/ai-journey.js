@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const labItems = Array.isArray(lab.items) && lab.items.length
       ? lab.items
-      : (a.featuredBuilds || []).map(p => ({
+      : (Array.isArray(a.featuredBuilds) ? a.featuredBuilds : []).map(p => ({
           name: p.name,
           summary: p.summary,
           image: p.image,
@@ -38,78 +38,98 @@ document.addEventListener("DOMContentLoaded", async () => {
       {
         id: "personal",
         title: "Personal Productivity",
-        blurb: "Agents I build for my own life."
+        blurb: "Agents I build for my own life — reclaiming time from noisy chats, shipping small tools I actually use, and learning by putting something live."
       },
       {
         id: "enterprise",
         title: "Enterprise Productivity",
-        blurb: "Products I build for enterprise work."
+        blurb: "Products I build for enterprise work — HR, decisioning, skills, commerce, and health agents meant to demo clearly and hand off to a real team."
       }
     ];
     const buckets = Array.isArray(lab.buckets) && lab.buckets.length
       ? lab.buckets
       : defaultBuckets;
 
-    const labEl = document.getElementById("lab-buckets");
-    if (labEl) {
-      const renderCard = (p) => {
-        const media = p.image
-          ? `style="background-image:url('${escapeHtml(p.image)}')"`
-          : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
-        const docs = Array.isArray(p.docs) ? p.docs : [];
-        const links = [
-          p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live →</a>` : "",
-          p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
-        ].filter(Boolean).join("");
-        const docLinks = docs.length
-          ? `<ul class="lab-docs">${docs.map(d =>
-              `<li><a href="${escapeHtml(d.url || "")}" target="_blank" rel="noopener">${escapeHtml(d.label || d.url || "Doc")}</a></li>`
-            ).join("")}</ul>`
-          : "";
-        return `
-          <article class="lab-card${docs.length ? " lab-card-docs" : ""}">
-            <div class="lab-media" ${media} role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
-            <div class="lab-body">
-              <h3>${escapeHtml(p.name || "")}</h3>
-              <p class="lab-summary">${escapeHtml(p.summary || "")}</p>
-              ${p.why ? `<p><strong>Why</strong> — ${escapeHtml(p.why)}</p>` : ""}
-              ${p.tech ? `<p class="lab-meta"><strong>Tech</strong> — ${escapeHtml(p.tech)}</p>` : ""}
-              ${p.learned ? `<p><strong>Learned</strong> — ${escapeHtml(p.learned)}</p>` : ""}
-              ${docLinks}
-              <div class="btn-row">${links}</div>
-            </div>
-          </article>
-        `;
-      };
+    // Prefer #lab-buckets; fall back to legacy #lab-grid so a partial deploy never blanks the page.
+    const labEl =
+      document.getElementById("lab-buckets") ||
+      document.getElementById("lab-grid");
 
+    const renderCard = (p) => {
+      const media = p.image
+        ? `style="background-image:url('${escapeHtml(p.image)}')"`
+        : `style="background:linear-gradient(155deg, var(--accent), var(--accent-deep))"`;
+      const docs = Array.isArray(p.docs) ? p.docs : [];
+      const links = [
+        p.liveUrl ? `<a class="btn btn-primary btn-small" href="${escapeHtml(p.liveUrl)}" target="_blank" rel="noopener">Live →</a>` : "",
+        p.repoUrl ? `<a class="btn btn-ghost btn-small" href="${escapeHtml(p.repoUrl)}" target="_blank" rel="noopener">GitHub</a>` : ""
+      ].filter(Boolean).join("");
+      const docLinks = docs.length
+        ? `<ul class="lab-docs">${docs.map(d =>
+            `<li><a href="${escapeHtml(d.url || "")}" target="_blank" rel="noopener">${escapeHtml(d.label || d.url || "Doc")}</a></li>`
+          ).join("")}</ul>`
+        : "";
+      return `
+        <article class="lab-card${docs.length ? " lab-card-docs" : ""}">
+          <div class="lab-media" ${media} role="img" aria-label="${escapeHtml(p.name || "Project")}"></div>
+          <div class="lab-body">
+            <h3>${escapeHtml(p.name || "")}</h3>
+            <p class="lab-summary">${escapeHtml(p.summary || "")}</p>
+            ${p.why ? `<p><strong>Why</strong> — ${escapeHtml(p.why)}</p>` : ""}
+            ${p.tech ? `<p class="lab-meta"><strong>Tech</strong> — ${escapeHtml(p.tech)}</p>` : ""}
+            ${p.learned ? `<p><strong>Learned</strong> — ${escapeHtml(p.learned)}</p>` : ""}
+            ${docLinks}
+            <div class="btn-row">${links}</div>
+          </div>
+        </article>
+      `;
+    };
+
+    if (labEl) {
+      // Do NOT add class "reveal" on dynamically injected nodes.
+      // main.js only observes .reveal at DOMContentLoaded; late nodes would stay opacity:0 forever.
       const usedIds = new Set();
-      labEl.innerHTML = buckets.map(bucket => {
-        usedIds.add(bucket.id);
-        const items = labItems.filter(p => (p.bucket || "personal") === bucket.id);
+      const sections = buckets.map(bucket => {
+        const id = bucket.id || "personal";
+        usedIds.add(id);
+        const items = labItems.filter(p => (p.bucket || "personal") === id);
         return `
-          <section class="lab-bucket reveal" id="bucket-${escapeHtml(bucket.id || "")}">
-            <h3 class="lab-bucket-title">${escapeHtml(bucket.title || "")}</h3>
+          <section class="lab-bucket" id="bucket-${escapeHtml(id)}">
+            <h3 class="lab-bucket-title">${escapeHtml(bucket.title || id)}</h3>
             <p class="lab-bucket-blurb">${escapeHtml(bucket.blurb || "")}</p>
             <div class="lab-grid">
               ${items.map(renderCard).join("") || `<p style="color:var(--ink-soft);">No builds in this section yet.</p>`}
             </div>
           </section>
         `;
-      }).join("");
+      });
 
       const orphan = labItems.filter(p => !usedIds.has(p.bucket || "personal"));
       if (orphan.length) {
-        labEl.innerHTML += `
-          <section class="lab-bucket reveal">
+        sections.push(`
+          <section class="lab-bucket">
             <h3 class="lab-bucket-title">More builds</h3>
             <div class="lab-grid">${orphan.map(renderCard).join("")}</div>
           </section>
-        `;
+        `);
+      }
+
+      // If buckets metadata is missing but we only have a flat legacy grid container,
+      // still render a single grid of cards.
+      if (!Array.isArray(lab.buckets) || !lab.buckets.length) {
+        const hasBucketFields = labItems.some(p => p.bucket);
+        if (!hasBucketFields && labEl.id === "lab-grid") {
+          labEl.innerHTML = labItems.map(renderCard).join("") ||
+            `<p style="color:var(--ink-soft);">No Building with AI items yet.</p>`;
+        } else {
+          labEl.innerHTML = sections.join("");
+        }
+      } else {
+        labEl.innerHTML = sections.join("");
       }
     }
 
     const featuredNames = new Set(labItems.map(p => (p.name || "").toLowerCase()));
-    // Also hide aliases that moved into buckets
     ["aurora health agent", "hr resume matching agent", "skills intelligence hr app"].forEach(n => featuredNames.add(n));
     const gitEl = document.getElementById("git-projects");
     if (gitEl) {
@@ -138,5 +158,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   } catch (err) {
     console.error(err);
+    const labEl =
+      document.getElementById("lab-buckets") ||
+      document.getElementById("lab-grid");
+    if (labEl && !labEl.innerHTML.trim()) {
+      labEl.innerHTML = `<p style="color:var(--ink-soft);">Could not load builds. Refresh and try again.</p>`;
+    }
   }
 });
