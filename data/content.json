@@ -691,6 +691,17 @@
     "lede": "<p>Reading is a constant for me, usually a book every month across fiction and non-fiction. Here are a few favorites that have stayed with me over time and that I continually return to for inspiration.</p>",
     "items": [
       {
+        "title": "Quiet",
+        "author": "Susan Cain",
+        "cover": "images/books/quiet.jpg",
+        "colors": [
+          "#3e4348",
+          "#7a1f24"
+        ],
+        "rating": 5,
+        "summary": "<p>For years, I struggled with the pressure to speak up quickly and dominate meetings, often feeling like my natural quiet was a disadvantage in corporate settings. Reading Susan Cain's Quiet completely reframed my perspective: introversion isn't something to fix, but a distinct strength with immense strategic value.</p><p>Instead of forcing myself into an extroverted mold, I leaned into my natural way of leading. I started creating \"listening lounges\": spaces designed to hear team members out, synthesize ideas, and act thoughtfully rather than react on the spot. I blocked focus time on my calendar to process complex problems deeply and evaluate risks objectively before making high-stakes decisions. Over time, I became the go-to person in moments of crisis because my steady presence helped keep teams clear-headed and grounded, preventing knee-jerk reactions.</p><p>I've learned that you don't need to change who you are to step into the spotlight. You just need to stretch into high-visibility moments for work you care about, while honoring the quiet focus you need to recharge. The very qualities I once thought held me back turned out to be my greatest assets, giving me the confidence to show up authentically in any room.</p>"
+      },
+      {
         "title": "Think Again",
         "author": "Adam Grant",
         "cover": "images/books/images.jpg",
