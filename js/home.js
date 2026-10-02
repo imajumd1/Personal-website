@@ -68,8 +68,9 @@ function renderProof(items) {
 function renderWhatIDo(items) {
   const el = document.getElementById("what-i-do-grid");
   if (!el) return;
-  // Always keep the leverage section as a 3-column row (stacks on mobile via CSS).
-  el.classList.remove("pillars-5");
+  // Always keep the leverage section as a 4-column row (stacks on mobile via CSS).
+  el.classList.remove("pillars-3", "pillars-5");
+  el.classList.add("pillars-4");
   el.innerHTML = items.map((p, i) => `
     <article class="pillar-card reveal in">
       <span class="num">${String(i + 1).padStart(2, "0")}</span>

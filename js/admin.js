@@ -946,7 +946,7 @@ function gatherContent() {
       ctaLinkedIn: content.home.ctaLinkedIn || {},
       proofMetrics,
       whatIDoEyebrow: content.home.whatIDoEyebrow || "What I Do",
-      whatIDoTitle: content.home.whatIDoTitle || "Three ways I create leverage",
+      whatIDoTitle: content.home.whatIDoTitle || "Four ways I create leverage",
       whatIDo,
       selectedImpact,
       careerArc,

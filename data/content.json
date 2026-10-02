@@ -44,7 +44,7 @@
       }
     ],
     "whatIDoEyebrow": "What I Do",
-    "whatIDoTitle": "Three ways I create leverage",
+    "whatIDoTitle": "Four ways I create leverage",
     "whatIDo": [
       {
         "title": "Enterprise AI",
@@ -57,8 +57,13 @@
         "image": ""
       },
       {
-        "title": "Technology Leadership",
-        "text": "I lead from the build: technology leadership and team leadership in large-scale organizations, connecting strategy, product, and engineering so the work ships and creates leverage.",
+        "title": "Tech Leadership",
+        "text": "Connecting product strategy, architecture, and technology to design and build scalable, production-ready platforms.",
+        "image": ""
+      },
+      {
+        "title": "Organizational Leadership",
+        "text": "Building, scaling, and guiding high-performing multi-disciplinary organizations to execute at scale and deliver lasting enterprise value.",
         "image": ""
       }
     ],
