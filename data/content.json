@@ -47,13 +47,8 @@
     "whatIDoTitle": "Four ways I create leverage",
     "whatIDo": [
       {
-        "title": "Enterprise AI",
-        "text": "I ship enterprise AI as working systems; products and workflows not in slides or isolated pilots.",
-        "image": ""
-      },
-      {
         "title": "Trusted Platforms",
-        "text": "I build secure, scalable platforms that teams and customers run the business on as they grow.",
+        "text": "Building secure, scalable platforms that teams and customers run the business on as they grow.",
         "image": ""
       },
       {
@@ -64,6 +59,11 @@
       {
         "title": "Organizational Leadership",
         "text": "Building, scaling, and guiding high-performing multi-disciplinary organizations to execute at scale and deliver lasting enterprise value.",
+        "image": ""
+      },
+      {
+        "title": "Enterprise Data & AI",
+        "text": "Engineering and shipping production-grade Data and AI platforms, products, and agentic workflows to drive real-world operational impact.",
         "image": ""
       }
     ],
