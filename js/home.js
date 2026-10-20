@@ -7,10 +7,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const eyebrow = document.querySelector(".hero .eyebrow");
     const nameEl = document.querySelector(".hero-name");
+    const roleEl = document.querySelector(".hero-role");
     const headline = document.querySelector(".hero h1");
     const pitch = document.querySelector(".hero .pitch");
-    if (eyebrow) eyebrow.textContent = h.eyebrow || "Builder-Executive";
+    if (eyebrow) eyebrow.textContent = h.eyebrow || "Builder-Executive · CDO / CAIO / CTO";
     if (nameEl) nameEl.textContent = h.name || site.brand || "Ishita Majumdar";
+    if (roleEl) {
+      roleEl.textContent = h.roleLine || "Chief Data & AI Officer, formerly VP of Data Analytics Platforms at eBay";
+    }
     if (headline) headline.textContent = h.headline || "";
     if (pitch) {
       pitch.classList.add("rich-text");

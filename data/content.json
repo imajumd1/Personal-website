@@ -7,10 +7,11 @@
     "github": "imajumd1"
   },
   "home": {
-    "eyebrow": "Enterprise Data and AI Leader",
+    "eyebrow": "Builder-Executive · CDO / CAIO / CTO",
     "name": "Ishita Majumdar",
-    "headline": "I build the strategy, platforms and organizations that turn Data + AI into business outcomes.",
-    "pitch": "<p>Curiosity has shaped my two decades of technology leadership. From defining data strategy, developing&nbsp; platforms and tools at scale, to advancing agentic AI, I thrive on solving what has not yet been solved, turning emerging technologies into scalable solutions and building teams that create enduring impact.</p>",
+    "roleLine": "Chief Data & AI Officer, formerly VP of Data Analytics Platforms at eBay",
+    "headline": "I build the strategy, platforms, and organizations that turn Data + AI into business outcomes.",
+    "pitch": "<p>Technology executive with 25+ years modernizing data and platform ecosystems. Led a 300+ person engineering organization at eBay, modernized a 15PB+ enterprise data platform with 40% TCO reduction, and now leads enterprise Data &amp; AI strategy.</p>",
     "heroImage": "images/hero/ishita-portrait.jpg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
@@ -27,20 +28,24 @@
     },
     "proofMetrics": [
       {
+        "value": "15PB+",
+        "label": "Enterprise data platform modernized"
+      },
+      {
+        "value": "40%",
+        "label": "Platform TCO reduction"
+      },
+      {
+        "value": "300+",
+        "label": "Engineering & platform org led"
+      },
+      {
+        "value": "150+",
+        "label": "Business metrics via AI analytics"
+      },
+      {
         "value": "25+",
         "label": "Years in technology"
-      },
-      {
-        "value": "PB-scale",
-        "label": "Data platforms led"
-      },
-      {
-        "value": "Global",
-        "label": "Teams & transformations"
-      },
-      {
-        "value": "Top 10",
-        "label": "Data Innovator (2024)"
       }
     ],
     "whatIDoEyebrow": "What I Do",

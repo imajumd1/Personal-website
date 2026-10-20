@@ -159,6 +159,7 @@ function renderHome() {
   const h = content.home;
   $("#home-eyebrow").value = h.eyebrow || "";
   if ($("#home-name")) $("#home-name").value = h.name || "";
+  if ($("#home-roleLine")) $("#home-roleLine").value = h.roleLine || "";
   $("#home-headline").value = h.headline || "";
   setStaticRte("home-pitch", h.pitch || "", { minHeight: "120px" });
   $("#home-heroImage").value = h.heroImage || "";
@@ -937,6 +938,7 @@ function gatherContent() {
     home: {
       eyebrow: $("#home-eyebrow").value.trim(),
       name: ($("#home-name")?.value || content.home.name || "Ishita Majumdar").trim(),
+      roleLine: ($("#home-roleLine")?.value || content.home.roleLine || "").trim(),
       headline: $("#home-headline").value.trim(),
       pitch: getStaticRte("home-pitch"),
       heroImage: $("#home-heroImage").value.trim(),

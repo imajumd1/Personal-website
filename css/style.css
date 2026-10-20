@@ -263,8 +263,20 @@ a { color: inherit; text-decoration: none; }
   font-weight: 550;
   line-height: 1.08;
   letter-spacing: -0.025em;
-  margin: 0 0 14px;
+  margin: 0 0 8px;
   color: var(--ink);
+}
+
+.hero-role {
+  font-family: var(--serif);
+  font-size: clamp(1rem, 1.7vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+  max-width: 34em;
+  color: var(--accent-deep);
+  text-align: left;
 }
 
 .pitch-headline,
@@ -335,6 +347,11 @@ a { color: inherit; text-decoration: none; }
   .hero-copy {
     text-align: center;
     max-width: 36rem;
+  }
+  .hero-role {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   .hero .pitch {
     margin-left: auto;
