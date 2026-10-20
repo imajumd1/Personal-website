@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  // Bind expanders on the static fallback cards immediately so Read More works
+  // even if content.json fails to load.
+  bindImpactExpanders(document.getElementById("impact-grid"));
+
   try {
     const content = await loadContent();
     await bootChrome(content);
@@ -44,9 +48,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const whatHead = document.getElementById("what-i-do-head");
     if (whatHead) {
-      const eyebrow = whatHead.querySelector(".eyebrow");
+      const headEyebrow = whatHead.querySelector(".eyebrow");
       const title = whatHead.querySelector("h2");
-      if (eyebrow && h.whatIDoEyebrow) eyebrow.textContent = h.whatIDoEyebrow;
+      if (headEyebrow && h.whatIDoEyebrow) headEyebrow.textContent = h.whatIDoEyebrow;
       if (title && h.whatIDoTitle) title.textContent = h.whatIDoTitle;
     }
 
@@ -60,9 +64,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function renderProof(items) {
   const el = document.getElementById("proof-metrics");
-  if (!el) return;
+  if (!el || !items.length) return;
+  // Do NOT add class "reveal" on dynamically injected nodes.
+  // main.js only observes .reveal at DOMContentLoaded; late nodes would stay opacity:0 forever.
   el.innerHTML = items.map(m => `
-    <div class="proof-item reveal in">
+    <div class="proof-item">
       <span class="proof-value">${escapeHtml(m.value || "")}</span>
       <span class="proof-label">${escapeHtml(m.label || "")}</span>
     </div>
@@ -71,12 +77,12 @@ function renderProof(items) {
 
 function renderWhatIDo(items) {
   const el = document.getElementById("what-i-do-grid");
-  if (!el) return;
+  if (!el || !items.length) return;
   // Always keep the leverage section as a 4-column row (stacks on mobile via CSS).
   el.classList.remove("pillars-3", "pillars-5");
   el.classList.add("pillars-4");
   el.innerHTML = items.map((p, i) => `
-    <article class="pillar-card reveal in">
+    <article class="pillar-card">
       <span class="num">${String(i + 1).padStart(2, "0")}</span>
       <h3>${escapeHtml(p.title || "")}</h3>
       <p>${escapeHtml(p.text || "")}</p>
@@ -89,9 +95,32 @@ function impactTeaser(item) {
   return truncateWords(raw, 18);
 }
 
+function bindImpactExpanders(el) {
+  if (!el || el.dataset.expandBound === "1") return;
+  el.dataset.expandBound = "1";
+  el.addEventListener("click", e => {
+    const btn = e.target.closest(".impact-read-more");
+    if (!btn || !el.contains(btn)) return;
+    const detail = document.getElementById(btn.getAttribute("aria-controls"));
+    if (!detail) return;
+    const open = detail.hasAttribute("hidden");
+    if (open) {
+      detail.removeAttribute("hidden");
+      btn.setAttribute("aria-expanded", "true");
+      btn.textContent = "Show less";
+      btn.closest(".impact-card")?.classList.add("is-expanded");
+    } else {
+      detail.setAttribute("hidden", "");
+      btn.setAttribute("aria-expanded", "false");
+      btn.textContent = "Read More";
+      btn.closest(".impact-card")?.classList.remove("is-expanded");
+    }
+  });
+}
+
 function renderImpact(items) {
   const el = document.getElementById("impact-grid");
-  if (!el) return;
+  if (!el || !items.length) return;
   el.innerHTML = items.map((item, i) => {
     const teaser = impactTeaser(item);
     const id = `impact-detail-${i}`;
@@ -102,7 +131,7 @@ function renderImpact(items) {
       ? ` role="img" aria-label="${escapeHtml(item.title || item.org || "Case study")}"`
       : ` aria-hidden="true"`;
     return `
-    <article class="impact-card impact-card-compact reveal in">
+    <article class="impact-card impact-card-compact">
       <div class="impact-media"${mediaStyle}${mediaAttrs}></div>
       <div class="impact-body">
         <span class="tag">${escapeHtml(item.org || "")}</span>
@@ -122,23 +151,4 @@ function renderImpact(items) {
     </article>
   `;
   }).join("");
-
-  el.querySelectorAll(".impact-read-more").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const detail = document.getElementById(btn.getAttribute("aria-controls"));
-      if (!detail) return;
-      const open = detail.hasAttribute("hidden");
-      if (open) {
-        detail.removeAttribute("hidden");
-        btn.setAttribute("aria-expanded", "true");
-        btn.textContent = "Show less";
-        btn.closest(".impact-card")?.classList.add("is-expanded");
-      } else {
-        detail.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-        btn.textContent = "Read More";
-        btn.closest(".impact-card")?.classList.remove("is-expanded");
-      }
-    });
-  });
 }
