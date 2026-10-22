@@ -97,6 +97,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       `).join("") || `<p style="color:var(--ink-soft);">Beliefs coming soon.</p>`;
     }
 
+    // Content above #beliefs loads async and shifts layout; re-apply hash scroll after render.
+    // Also accept legacy #how-i-think bookmarks.
+    const hash = (location.hash || "").slice(1);
+    const hashTarget =
+      (hash && document.getElementById(hash)) ||
+      (hash === "how-i-think" ? document.getElementById("beliefs") : null);
+    if (hashTarget) {
+      requestAnimationFrame(() => {
+        hashTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
     const subnav = document.querySelector(".bio-subnav");
     if (subnav) {
       const links = [...subnav.querySelectorAll("a[href^='#']")];

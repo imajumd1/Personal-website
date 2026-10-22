@@ -943,7 +943,7 @@ function gatherContent() {
       pitch: getStaticRte("home-pitch"),
       heroImage: $("#home-heroImage").value.trim(),
       heroLabel: $("#home-heroLabel").value.trim(),
-      ctaPrimary: content.home.ctaPrimary || { label: "Beliefs that shape my work", href: "biography.html#how-i-think" },
+      ctaPrimary: content.home.ctaPrimary || { label: "Beliefs that shape my work", href: "biography.html#beliefs" },
       ctaSecondary: content.home.ctaSecondary || { label: "Building with AI", href: "ai-journey.html" },
       ctaLinkedIn: content.home.ctaLinkedIn || {},
       proofMetrics,
