@@ -97,15 +97,24 @@ document.addEventListener("DOMContentLoaded", async () => {
       `).join("") || `<p style="color:var(--ink-soft);">Beliefs coming soon.</p>`;
     }
 
-    // Content above #beliefs loads async and shifts layout; re-apply hash scroll after render.
-    // Also accept legacy #how-i-think bookmarks.
+    // Content above Beliefs loads async and shifts layout; re-apply hash scroll after render.
+    // Accept both #beliefs (current) and #how-i-think (legacy Oct-20 Railway HTML / bookmarks).
     const hash = (location.hash || "").slice(1);
-    const hashTarget =
-      (hash && document.getElementById(hash)) ||
-      (hash === "how-i-think" ? document.getElementById("beliefs") : null);
+    const beliefsAliases = new Set(["beliefs", "how-i-think"]);
+    const hashTarget = hash
+      ? (document.getElementById(hash)
+        || (beliefsAliases.has(hash)
+          ? (document.getElementById("beliefs") || document.getElementById("how-i-think"))
+          : null))
+      : null;
     if (hashTarget) {
-      requestAnimationFrame(() => {
+      const scrollToBeliefs = () => {
         hashTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+      };
+      requestAnimationFrame(() => {
+        scrollToBeliefs();
+        // Second pass after layout settles (career timeline / recognition often expands further).
+        setTimeout(scrollToBeliefs, 100);
       });
     }
 
