@@ -88,24 +88,39 @@ document.addEventListener("DOMContentLoaded", async () => {
     const beliefs = document.getElementById("beliefs-grid");
     if (beliefs) {
       const items = content.home?.beliefs || [];
-      beliefs.innerHTML = items.map(item => `
+      beliefs.innerHTML = items.map(item => {
+        let href = item.link || "";
+        // Belief → musing deep links: carry return marker so lightbox close can leave Musings.
+        if (/musings\.html/i.test(href) && !/[?&]from=/i.test(href) && !/[?&]return=/i.test(href)) {
+          href = href.replace(/musings\.html(?=([?#]|$))/i, "musings.html?from=beliefs");
+        }
+        const isExternalTab = /^(https?:)?\/\//i.test(href)
+          || /musings\.html/i.test(href)
+          || /ai-journey\.html/i.test(href);
+        // rel=opener so musings.js can window.close() the tab and reveal Beliefs underneath.
+        const isMusingFromBeliefs = /musings\.html/i.test(href) && /[?&]from=beliefs\b/i.test(href);
+        const blank = isExternalTab
+          ? (isMusingFromBeliefs ? ` target="_blank" rel="opener"` : ` target="_blank" rel="noopener"`)
+          : "";
+        return `
         <article class="belief-card reveal in">
           <h3>${escapeHtml(item.title || "")}</h3>
           <p>${escapeHtml(item.text || "")}</p>
-          ${item.link ? `<a class="go" href="${escapeHtml(item.link)}">${escapeHtml(item.linkLabel || "Read more")} →</a>` : ""}
+          ${href ? `<a class="go" href="${escapeHtml(href)}"${blank}>${escapeHtml(item.linkLabel || "Read more")} →</a>` : ""}
         </article>
-      `).join("") || `<p style="color:var(--ink-soft);">Beliefs coming soon.</p>`;
+      `;
+      }).join("") || `<p style="color:var(--ink-soft);">Beliefs coming soon.</p>`;
     }
 
     // Content above Beliefs loads async and shifts layout; re-apply hash scroll after render.
-    // Accept both #beliefs (current) and #how-i-think (legacy Oct-20 Railway HTML / bookmarks).
+    // Prefer #beliefs for both current and legacy #how-i-think so section scroll-margin applies
+    // (the hidden legacy span alone would land under the sticky subnav).
     const hash = (location.hash || "").slice(1);
     const beliefsAliases = new Set(["beliefs", "how-i-think"]);
     const hashTarget = hash
-      ? (document.getElementById(hash)
-        || (beliefsAliases.has(hash)
+      ? (beliefsAliases.has(hash)
           ? (document.getElementById("beliefs") || document.getElementById("how-i-think"))
-          : null))
+          : document.getElementById(hash))
       : null;
     if (hashTarget) {
       const scrollToBeliefs = () => {

@@ -485,7 +485,7 @@ function renderImpact() {
       </div>
       ${item.image ? `<img class="thumb" src="${escapeHtml(item.image)}" alt="">` : `<div class="thumb empty">No cover yet</div>`}
       <div class="field"><label>Challenge</label><textarea data-k="challenge" rows="3">${escapeHtml(item.challenge || "")}</textarea></div>
-      <div class="field"><label>Built / Action</label><textarea data-k="action" rows="3">${escapeHtml(item.action || "")}</textarea></div>
+      <div class="field"><label>Build / Action</label><textarea data-k="action" rows="3">${escapeHtml(item.action || "")}</textarea></div>
       <div class="field"><label>Impact</label><textarea data-k="impact" rows="3">${escapeHtml(item.impact || "")}</textarea></div>`;
     list.appendChild(el);
   });

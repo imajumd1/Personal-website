@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <h3>${escapeHtml(item.title || "")}</h3>
           <dl class="impact-dl">
             <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge || "")}</dd></div>
-            <div><dt>Built</dt><dd>${escapeHtml(item.action || "")}</dd></div>
+            <div><dt>Build</dt><dd>${escapeHtml(item.action || "")}</dd></div>
             <div><dt>Impact</dt><dd>${escapeHtml(item.impact || "")}</dd></div>
           </dl>
         </div>

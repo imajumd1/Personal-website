@@ -11,7 +11,7 @@
     "name": "Ishita Majumdar",
     "roleLine": "Chief Data & AI Officer, formerly VP of Data Analytics Platforms at eBay",
     "headline": "I build the strategy, platforms, and organizations that turn Data + AI into business outcomes.",
-    "pitch": "<p>Technology executive with 25+ years modernizing data and platform ecosystems. Led a 300+ person engineering organization at eBay, modernized a 15PB+ enterprise data platform with 40% TCO reduction, and now leads enterprise Data &amp; AI strategy.</p>",
+    "pitch": "<p>Curiosity has shaped my two decades of technology leadership. From defining data strategy, developing platforms and tools at scale, to advancing agentic AI, I thrive on solving complex, unresolved challenges; turning emerging technologies into scalable solutions that directly address real customer pain points.</p>",
     "heroImage": "images/hero/ishita-portrait.jpg",
     "heroLabel": "Ishita Majumdar",
     "ctaPrimary": {
@@ -53,22 +53,22 @@
     "whatIDo": [
       {
         "title": "Trusted Platforms",
-        "text": "Architecting and delivering secure, scalable foundation platforms that power critical business operations through every stage of growth.",
+        "text": "Delivering secure, scalable platforms that fuel business growth.",
         "image": ""
       },
       {
         "title": "Tech Leadership",
-        "text": "Connecting product strategy, architecture, and technology to design and build scalable, production-ready platforms.",
+        "text": "Bridging product vision and engineering to build robust solutions.",
         "image": ""
       },
       {
         "title": "Organizational Leadership",
-        "text": "Building, scaling, and guiding high-performing multi-disciplinary organizations to execute at scale and deliver lasting enterprise value.",
+        "text": "Scaling multi-disciplinary teams to execute fast and create lasting value.",
         "image": ""
       },
       {
         "title": "Enterprise Data & AI",
-        "text": "Engineering and shipping production-grade Data and AI platforms, products, and agentic workflows to drive real-world operational impact.",
+        "text": "Turning data and AI strategy into everyday decisions and execution.",
         "image": ""
       }
     ],
@@ -154,25 +154,25 @@
       {
         "title": "Data access is an org responsibility",
         "text": "Every enterprise worker should reach trusted information with the right controls, SQL-savvy or not. Platforms exist to remove that friction.",
-        "link": "musings.html",
-        "linkLabel": "Read perspectives"
+        "link": "musings.html?from=beliefs#preparing-data-for-ai",
+        "linkLabel": "Read the musing"
       },
       {
         "title": "Transformation is architecture plus behavior",
         "text": "Shipping technology is half the work. Changing how people decide, review, and operate is where value sticks.",
-        "link": "biography.html",
+        "link": "biography.html#builder",
         "linkLabel": "About my path"
       },
       {
         "title": "Judgment does not commoditize",
         "text": "AI compresses the time from idea to a working product. What remains scarce is knowing which system to put in production and which tradeoff the business can live with.",
-        "link": "musings.html",
-        "linkLabel": "On PMs, engineers & AI"
+        "link": "musings.html?from=beliefs#can-we-interview-for-judgment",
+        "linkLabel": "Read the musing"
       },
       {
         "title": "Operating rhythm is a product",
         "text": "Reviews, decision rights, and experiment loops compound faster than any single feature. Design the cadence and ship it.",
-        "link": "musings.html",
+        "link": "musings.html?from=beliefs#operating-rhythm-is-a-product",
         "linkLabel": "Read the musing"
       }
     ],
@@ -313,7 +313,7 @@
     "lede": "<p>I combine analytical problem-solving with AI-powered development to build high-impact, interactive solutions.</p>",
     "quote": "Technology creates value only when people can trust it, use it, and act on it",
     "summary": "<p>I’m a technology executive and builder with 25+ years across engineering, product, data platforms, and enterprise AI.</p><p>My career has taken me from architecting complex systems to building global technology platforms, leading data organizations, founding an AI startup, and now shaping enterprise Data + AI strategy.</p><p>I thrive on developing people, teams, and organizations, and I have scaled both product and data organizations to deliver technology solutions.</p><p>Through every chapter, one principle has stayed constant: technology creates value only when people can trust it, use it, and act on it.</p><p>Today, as Chief Data and AI Officer at Relanto, I focus on turning Data + AI into measurable business outcomes, while staying close enough to the technology to lead with judgment, not just strategy.</p>",
-    "builder": "<p>I lead as an executive first; building the teams, culture, and operational structures required to ship complex products at scale. At the same time, I intentionally stay close to the build. Maintaining visibility into the work allows me to ensure direct alignment with customer needs, and apply sound technical and business judgment to push products over the finish line.</p><p>For key v1 initiatives, I step in to establish the initial scope and operating rhythm, staying hands-on until the framework is mature enough for autonomous team execution. Today, leveraging modern AI tooling allows me to engage directly with technical realities, transforming traditional executive sponsorship into active, high-leverage guidance.</p>",
+    "builder": "<p>I lead as an executive first; building the teams, culture, and operational structures required to ship complex products at scale. At the same time, I intentionally stay close to the build. Maintaining visibility into the work allows me to ensure direct alignment with customer needs, and apply sound technical and business judgment to push products over the finish line.</p><p>For key v1 initiatives, I am closely involved in the initial scoping and planning exercise, staying hands-on until the framework is mature enough for autonomous team execution. Today, leveraging modern AI tooling allows me to engage directly with technical realities, transforming traditional executive sponsorship into active, high-leverage guidance.</p>",
     "bios": {
       "short": "Ishita Majumdar is a builder-executive with 25+ years across engineering, product, data platforms, and enterprise AI transformation. She shapes the systems, platforms, and organizations that turn Data + AI into measurable business outcomes and stays close enough to the technical work to lead with judgment, not slideware.",
       "medium": "Ishita Majumdar is a technology executive who progressed from engineering complex systems to platform building, product leadership, data executive roles, and AI transformation leadership. Over more than twenty-five years, including senior roles at eBay, technology strategy at Huawei, and three U.S. patents, she has scaled trusted data platforms, product organizations, and global teams. She co-founded a human-centered AI startup for families navigating special needs, then returned to enterprise leadership as Chief Data and AI Officer at Relanto. Her through line is consistent: stay close to the build, make trusted data usable for every worker, and treat transformation as architecture plus behavior so AI delivers durable business outcomes rather than pilots that never leave the lab. Named a Top 10 Data Innovator and CDO Magazine Global Data Power Woman, she mentors first-time builders while leading enterprise intelligence strategies that connect platforms, people, and measurable results.",
@@ -330,7 +330,7 @@
       },
       {
         "title": "Co-Founder & CPTO, AI Startup",
-        "meta": "2024 – Sep 2025",
+        "meta": "2024 – Sep 2026",
         "text": "<p>Co-founded a human-centered AI platform inspired by the challenges families face navigating neurodevelopmental care.</p><p>We built an AI-powered experience bringing together trusted information, community knowledge, and access to support.</p><p>The experience reinforced something I carry into enterprise AI today: great technology is not enough. Trust, distribution, behavior, and business model matter just as much.</p><p>Transitioned to Founder-Advisor; partnered with the CEO on the decision to wind down the company in an orderly, responsible manner.</p>",
         "attachments": []
       },
