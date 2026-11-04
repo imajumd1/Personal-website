@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <span class="musing-tile-cta">Read more</span>
         </article>
       `;
-      }).join("") || `<p style="color:var(--ink-soft); grid-column:1/-1;">No perspectives in this category yet.</p>`;
+      }).join("") || `<p style="color:var(--ink-soft); grid-column:1/-1;">No blogs in this category yet.</p>`;
 
       list.querySelectorAll(".musing-tile").forEach(tile => {
         const open = () => {

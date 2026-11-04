@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const roleEl = document.querySelector(".hero-role");
     const headline = document.querySelector(".hero h1");
     const pitch = document.querySelector(".hero .pitch");
-    if (eyebrow) eyebrow.textContent = h.eyebrow || "Builder-Executive · CDO / CAIO / CTO";
+    if (eyebrow) eyebrow.textContent = h.eyebrow || "Builder Executive";
     if (nameEl) nameEl.textContent = h.name || site.brand || "Ishita Majumdar";
     if (roleEl) {
       roleEl.textContent = h.roleLine || "Chief Data & AI Officer, formerly VP of Data Analytics Platforms at eBay";

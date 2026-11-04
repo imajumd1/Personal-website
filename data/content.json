@@ -7,7 +7,7 @@
     "github": "imajumd1"
   },
   "home": {
-    "eyebrow": "Builder-Executive · CDO / CAIO / CTO",
+    "eyebrow": "Builder Executive",
     "name": "Ishita Majumdar",
     "roleLine": "Chief Data & AI Officer, formerly VP of Data Analytics Platforms at eBay",
     "headline": "I build the strategy, platforms, and organizations that turn Data + AI into business outcomes.",
@@ -552,7 +552,7 @@
       {
         "bucket": "personal",
         "name": "Personal Website",
-        "summary": "This site, a personal homepage that says a little more than LinkedIn, with biography, AI builds, perspectives, and life beyond work.",
+        "summary": "This site, a personal homepage that says a little more than LinkedIn, with biography, AI builds, blogs, and life beyond work.",
         "why": "Own the narrative beyond a résumé dump, with a CMS I can update myself.",
         "tech": "Python server, content.json CMS, Railway",
         "learned": "A personal site is a product: content model and admin matter as much as the public pages.",
@@ -824,10 +824,20 @@
     ]
   },
   "musings": {
-    "eyebrow": "Perspectives",
-    "title": "Featured perspectives",
+    "eyebrow": "Blogs",
+    "title": "Featured blogs",
     "lede": "<p>What I think about AI transformation, data platforms, my own learning journey and various musings on tech, leadership, life.</p>",
     "items": [
+      {
+        "tag": "leadership",
+        "slug": "how-to-lead-under-pressure",
+        "title": "How to Lead Under Pressure",
+        "body": "<p>Uncle Ben's line lands differently when your product is data. With great data power comes great data responsibility. That is not a poster for the wall. It is the operating brief when you are asking an organization to change how it builds, moves, and trusts the information everything else depends on. Pressure in those moments is not noise. It is the signal that the stakes are real.</p>\n<p>I have lived that pressure across multi-year initiatives: a complete overhaul of an ecommerce technology stack, metal to apps, south to north; and a data-stack migration from a vendor monolith to a modular open-source foundation. In both cases the technical destination mattered less than whether the business could own the why. Tech cannot decide from and to for tech's sake. Business has to buy in on why the change helps customers and the company, and what it will feel like during the busiest shopping days of the year. My boss framed the ecommerce work bluntly: we were changing the engine of the plane while the plane was still flying.</p>\n\n<h3>Own the destiny, not the mandate</h3>\n<p>The data migration had a clear strategic spine. We needed to own our data-tech destiny instead of living inside expensive vendor lock-in. We were custodians of the company's data, and everyone else had to use it. That dual role forces a different posture. You do not get to optimize tech debt in private. You build bridges and consensus before every migration and every optimization, because the people who consume the platform will either carry the change or quietly route around it.</p>\n<p>The hard challenge was perception. We were seen, too often, as a tech organization that mandated Tech 2 over Tech 1 without explaining why. Under pressure, that reputation is lethal. People stop arguing with you in the room and start resisting you in the roadmap. Leading through that is less about louder architecture reviews and more about earning the right to ask for disruption.</p>\n\n<h3>Sell the why, one leader at a time</h3>\n<p>My method was deliberately unscalable at the start. I met each leader. I explained the why and the business impact for the company, for their organization, and for end customers. I went into the numbers: short-term cost and friction against long-term leverage. The conversations were candid, honest, and sometimes combative. That was the point. Consensus with give-and-take is not a workshop exercise. It is the product of people being allowed to push back until the tradeoffs are shared, not imposed.</p>\n<p>I also asked product organizations to nominate their best product architects into a centralized architecture team. The frame mattered: a We coalition, not an I decree. We borrowed those people at roughly half time as ambassadors while their home teams did the forklift work of migrating. Ambassadors carried context in both directions. They kept the center honest about product reality, and they kept the edges honest about platform constraints. Under pressure, translation is a leadership function.</p>\n\n<h3>Stay in the decision, not above it</h3>\n<p>I stayed deeply involved in decision-making. I listened as options were debated. I ultimately voted. Every question got an answer. There was no my-way-or-highway theater. Pressure tempts leaders to compress debate into compliance. That compression is expensive later, when unresolved objections resurface as missed dates, shadow systems, or quiet non-adoption.</p>\n<p>When conflicts surfaced, we resolved them. Every leader on the functional, multidisciplinary team had authority to deliver, decide, manage people, and escalate when stuck. Authority without escalation paths is theater. Escalation without timely detection is theater of a different kind. We built a culture of spotting small and big red flags early, then resolving them quickly. Leading under pressure is often just refusing to let a yellow flag age into a crisis because no one wanted an uncomfortable meeting.</p>\n\n<h3>Obsess over cost, time, and the people carrying both</h3>\n<p>I was obsessive about cost and timeline. Multi-year work fails when urgency is rhetorical. We hired A-plus program and product managers who treated execution as the job, not the afterthought. A strong communications team updated every level, including the C-suite, on progress across years. Visibility is not bureaucracy when the plane is still flying. It is how sponsors stay oriented and how teams stay honest about drift.</p>\n<p>We celebrated small and big milestones so people felt appreciated for carrying work that rarely fits neatly into a quarterly narrative. We also \"celebrated\" failures as chances to do things differently. An overhaul of this scale requires disruption and experimentation. If the only safe story is success, people hide the learning you need while the engine is still open on the wing.</p>\n\n<h3>What pressure actually asks of you</h3>\n<p>Leading under pressure, in these migrations, was never mainly about surviving the calendar. It was about holding two truths at once: the stack had to change, and the people who depend on it had to help choose how. Great data power without that responsibility becomes mandate. Responsibility without the hard conversations becomes delay dressed as empathy.</p>\n<p>The work is slower at the front: one leader at a time, numbers on the table, architects borrowed into a shared center, votes taken in the open, red flags escalated before they compound. Then the plane keeps flying while the engine changes, because enough of the organization believes the why and owns the how. That is the standard I hold myself to when the stakes are data, customers, and years of institutional trust.</p>",
+        "category": "Leadership & Organizations",
+        "thesis": "With great data power comes great data responsibility. Multi-year stack overhauls under live traffic are won by consensus, coalition, and execution — not by mandating Tech 2 over Tech 1.",
+        "readingTime": "5 min read",
+        "date": "November 4, 2026"
+      },
       {
         "tag": "tech",
         "title": "Why I built WAC?",

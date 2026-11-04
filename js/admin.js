@@ -50,8 +50,8 @@ function normalizeContent(raw) {
     lede: "<p>Click a cover to flip it over for the summary.</p>"
   });
   c.musings = normalizeListPage(c.musings, {
-    eyebrow: "Perspectives",
-    title: "Featured perspectives",
+    eyebrow: "Blogs",
+    title: "Featured blogs",
     lede: "<p>What I think about AI transformation, data platforms, and how organizations actually change.</p>"
   });
   c.art = normalizeListPage(c.art, {
@@ -1182,7 +1182,7 @@ function bindActions() {
     renderBooks();
   });
   $("#add-musing").addEventListener("click", () => {
-    content.musings.items.push({ tag: "tech", title: "New perspective", body: "", category: "AI & Enterprise Transformation" });
+    content.musings.items.push({ tag: "tech", title: "New blog", body: "", category: "AI & Enterprise Transformation" });
     renderMusings();
   });
   $("#add-art").addEventListener("click", () => {
