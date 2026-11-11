@@ -7,9 +7,9 @@
     "github": "imajumd1"
   },
   "home": {
-    "eyebrow": "Builder Executive",
+    "eyebrow": "Builder Executive - Product and Tech",
     "name": "Ishita Majumdar",
-    "roleLine": "Chief Data & AI Officer, formerly VP of Data Analytics Platforms at eBay",
+    "roleLine": "​",
     "headline": "I build the strategy, platforms, and organizations that turn Data + AI into business outcomes.",
     "pitch": "<p>Curiosity has shaped my two decades of technology leadership. From defining data strategy, developing platforms and tools at scale, to advancing agentic AI, I thrive on solving complex, unresolved challenges; turning emerging technologies into scalable solutions that directly address real customer pain points.</p>",
     "heroImage": "images/hero/ishita-portrait.jpg",
@@ -177,6 +177,14 @@
       }
     ],
     "featuredPerspectives": [
+      {
+        "title": "How to Lead Under Pressure",
+        "thesis": "With great data power comes great data responsibility. Multi-year stack overhauls under live traffic are won by consensus, coalition, and execution — not by mandating Tech 2 over Tech 1.",
+        "category": "Leadership & Organizations",
+        "readingTime": "5 min read",
+        "date": "November 4, 2026",
+        "href": "musings.html#how-to-lead-under-pressure"
+      },
       {
         "title": "How I EVAL agents",
         "thesis": "A chat that felt good is not EVAL. Agent EVAL is a golden-set scoreboard for task success, groundedness, latency, cost, safety, and regression before any public URL.",
@@ -559,6 +567,23 @@
         "image": "images/builds/personal-website.jpg",
         "liveUrl": "",
         "repoUrl": "https://github.com/imajumd1/Personal-website"
+      },
+      {
+        "bucket": "enterprise",
+        "name": "Meridian CS",
+        "summary": "A proactive AI customer success engine for financial products: executive command center for NRR, GRR, and revenue at risk, client health scores with explainable drivers, dollar-ranked save plays, and cross-product Grow opportunities.",
+        "why": "Show how CS can own retention and expansion with outcome metrics, not CSAT-only dashboards, and hand executives a weekly operating cadence.",
+        "tech": "Next.js, Prisma/SQLite, OpenAI briefs with rules fallbacks, Railway",
+        "learned": "Executives trust explainable health scores and $-ranked queues more than a chat box; AI should draft the play, not invent the risk.",
+        "image": "images/builds/meridian-cs.jpg",
+        "liveUrl": "https://meridian-cs-production-7e6399ae.up.railway.app/",
+        "repoUrl": "https://github.com/imajumd1/Meridian-CS",
+        "docs": [
+          {
+            "label": "Open live",
+            "url": "https://meridian-cs-production-7e6399ae.up.railway.app/"
+          }
+        ]
       },
       {
         "name": "Aurora",
